@@ -10,6 +10,10 @@ Copier le dossier dans `~/.themes/`. Pour que les logiciels lancés en tant que 
 
 Ensuite, choisir le thème Clearwaita pour GTK et les fenêtres avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool).
 
+## Icônes
+
+
+
 ## Licence
 
 Auteur: Jean-Philippe Fleury <contact@jpfleury.net>  

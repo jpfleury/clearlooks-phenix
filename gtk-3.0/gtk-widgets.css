@@ -1381,6 +1381,14 @@ GtkTreeView.separator {
     background-color: darker (@theme_bg_color);
 }
 
+GtkTreeView row:nth-child(even) {
+    background-color: #EDECEB;
+}
+
+GtkTreeView row:nth-child(odd):hover {
+    background-color: #ffffff;
+}
+
 column-header {
     padding: 1 2;
 }
@@ -1464,7 +1472,7 @@ row:selected {
     color: @internal_element_color;
     border-color: shade (@internal_element_color, 1.40);
 
-    background-color: shade (@theme_bg_color, 1.02);
+    background-color: #000000;
 }
 
 .expander row:selected,
