@@ -111,7 +111,7 @@
 @define-color highlighted_border #8a8f8a;
 
 @define-color notebook_border #a6a6a6;
-@define-color notebook_active_tab_border @theme_selected_bg_color;
+@define-color notebook_active_tab_border @notebook_border;
 @define-color notebook_selected_tab_color @theme_selected_bg_color;
 
 @define-color notebook_tab_gradient_a @theme_base_color;
