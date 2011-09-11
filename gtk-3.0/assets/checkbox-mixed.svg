@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg814" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="16" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs id="defs816">
+  <linearGradient id="linearGradient3951" y2="-202.35" gradientUnits="userSpaceOnUse" y1="-186.45" gradientTransform="translate(-1610 -78.958)" x2="1205.6" x1="1205.6">
+   <stop id="stop10356-2" style="stop-color:#bcbfb8" offset="0"/>
+   <stop id="stop10358-2" style="stop-color:#fff" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient3953" y2="248.98" gradientUnits="userSpaceOnUse" y1="233.78" gradientTransform="matrix(.84941 0 0 .84794 -623.98 -483.16)" x2="260.93" x1="260.93">
+   <stop id="stop10334-5" style="stop-color:#d3d7cf" offset="0"/>
+   <stop id="stop10336-29" style="stop-color:#8f9985" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient7352" y2="9.8281" gradientUnits="userSpaceOnUse" x2="5.6562" y1="6.3906" x1="5.6562">
+   <stop id="stop7348" style="stop-color:#1969ba" offset="0"/>
+   <stop id="stop7350" style="stop-color:#145393" offset="1"/>
+  </linearGradient>
+ </defs>
+ <metadata id="metadata819">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(0 -1036.4)">
+  <g id="g16853" style="enable-background:new" transform="translate(410.01 765)">
+   <rect id="rect6506" ry="1.6106" style="color:#000000;stroke:url(#linearGradient3953);enable-background:accumulate;fill:url(#linearGradient3951)" rx="1.6106" transform="scale(1,-1)" height="11.023" width="11.042" y="-284.86" x="-409.51"/>
+  </g>
+  <rect id="rect5494" ry="1.5156" style="fill-opacity:.98824;color:#000000;stroke:url(#linearGradient7352);fill:#4588ca" rx="1.5156" transform="translate(0 1036.4)" height="3.0312" width="8.9375" y="6.5" x="1.5312"/>
+  <path id="path5496" style="opacity:.50431;stroke:#fff;stroke-linecap:round;stroke-width:1px;fill:none" d="m2.5312 7.5625h6.9375" transform="translate(0 1036.4)"/>
+ </g>
+</svg>

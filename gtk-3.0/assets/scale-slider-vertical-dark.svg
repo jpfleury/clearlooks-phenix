@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg5980" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="16" width="20" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs id="defs5982">
+  <radialGradient id="radialGradient4740" gradientUnits="userSpaceOnUse" cy="286.06" cx="312.38" gradientTransform="matrix(1.5575 0 0 1.5575 -174.16 -159.48)" r="7.3988">
+   <stop id="stop4736" style="stop-color:#fff" offset="0"/>
+   <stop id="stop4738" style="stop-color:#fff;stop-opacity:0" offset="1"/>
+  </radialGradient>
+  <linearGradient id="linearGradient10555" y2="477.02" gradientUnits="userSpaceOnUse" y1="477.02" gradientTransform="matrix(0 -1 1 0 -167.31 401.4)" x2="117.16" x1="108.6">
+   <stop id="stop2994" style="stop-color:#2e3436" offset="0"/>
+   <stop id="stop2996" style="stop-color:#555753" offset="1"/>
+  </linearGradient>
+  <linearGradient id="linearGradient10557" y2="295.24" gradientUnits="userSpaceOnUse" y1="287.88" x2="313.21" x1="313.21">
+   <stop id="stop3768" style="stop-color:#2e3436" offset="0"/>
+   <stop id="stop3770" style="stop-color:#101112" offset="1"/>
+  </linearGradient>
+ </defs>
+ <metadata id="metadata5985">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer1" transform="translate(0,-16)">
+  <path id="path5387" style="stroke-linejoin:round;stroke-width:.91667;color:#000000;stroke:url(#linearGradient10557);stroke-linecap:round;fill:url(#linearGradient10555)" d="m319.25 290.25a6.875 6.875 0 1 1 -13.75 0 6.875 6.875 0 1 1 13.75 0z" transform="matrix(1.0909 0 0 1.0909 -330.79 -292.66)"/>
+  <path id="path4220" style="opacity:.2;stroke-linejoin:round;stroke-width:1.0476;color:#000000;stroke:url(#radialGradient4740);stroke-linecap:round;fill:none" d="m319.25 290.25a6.875 6.875 0 1 1 -13.75 0 6.875 6.875 0 1 1 13.75 0z" transform="matrix(.95455 0 0 .95455 -288.19 -253.08)"/>
+ </g>
+</svg>
