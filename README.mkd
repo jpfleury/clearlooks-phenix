@@ -12,7 +12,10 @@ Ensuite, choisir le thème Clearwaita pour GTK et les fenêtres avec le logiciel
 
 ## Icônes
 
+Suggestion d'icônes pour accompagner le thème: Mist, installé avec le paquet `gnome-themes`:
 
+- <http://git.gnome.org/browse/gnome-themes/tree/>
+- <http://packages.ubuntu.com/oneiric/gnome-themes>
 
 ## Licence
 
@@ -32,4 +35,21 @@ générale GNU pour plus de détails.
 Vous devriez avoir reçu une copie de la Licence publique générale GNU avec
 ce programme; si ce n'est pas le cas, consultez
 <http://www.gnu.org/licenses/>.
+
+## Matériel tierce utilisé
+
+- Thème Adwaita, provenant du paquet `gnome-themes-standard`, sous licence LGPL:
+
+  - <http://git.gnome.org/browse/gnome-themes-standard/tree/>
+  - <http://packages.ubuntu.com/oneiric/gnome-themes-standard>
+
+- Fichier `gtk-2.0/gtkrc`, provenant du paquet `gtk2-engines`, sous licence LGPL:
+
+  - <http://git.gnome.org/browse/gtk-engines/tree/?id=GTK_ENGINES_2_20_2>
+  - <http://packages.ubuntu.com/oneiric/gtk2-engines>
+
+- Fichier `metacity-1/metacity-theme-1.xml`, provenant du paquet `gnome-themes-selected`, sous licence LGPL:
+
+  - <http://git.gnome.org/browse/gnome-themes/tree/?id=GNOME_THEMES_2_32_1>
+  - <http://packages.ubuntu.com/oneiric/gnome-themes-selected>
 
