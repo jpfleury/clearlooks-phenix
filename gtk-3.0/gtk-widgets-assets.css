@@ -64,26 +64,6 @@
     background-image: url("assets/radio-mixed.svg");
 }
 
-.sidebar .radio:active,
-.sidebar .radio:active:focused,
-.sidebar .radio:active:prelight {
-    background-image: url("assets/sidebar-radio-checked.svg");
-}
-
-.sidebar .radio:prelight {
-    background-image: url("assets/sidebar-radio-prelight.svg");
-}
-
-.sidebar .radio:active:selected,
-.sidebar .radio:active:selected:focused {
-    background-image: url("assets/sidebar-radio-selected.svg");
-}
-
-.sidebar .radio:selected:prelight,
-.sidebar .radio:selected:focused {
-    background-image: url("assets/sidebar-radio-selected-prelight.svg");    
-}
-
 .entry {
     border-image: url("assets/entry-border-normal.svg") 2 / 2 stretch;
 }
@@ -216,35 +196,37 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
     border-image: url("assets/primary-toolbar-button-active-border.svg") 4 / 4 stretch;
 }
 
-.toolbar .raised .button,
-.toolbar .raised.button {
+.primary-toolbar .toolbar .raised .button,
+.primary-toolbar.toolbar .raised .button,
+.primary-toolbar .toolbar .raised.button,
+.primary-toolbar.toolbar .raised.button {
     border-image: url("assets/primary-toolbar-raised-button-border.svg") 4 / 4 stretch;
 }
 
 /* nth-child for linked areas */
-.toolbar .raised.linked.button,
-.toolbar .raised.linked.button:active,
-.toolbar .raised.linked.button:active:hover,
-.toolbar .raised.linked .button,
-.toolbar .raised.linked .button:active,
-.toolbar .raised.linked .button:active:hover {
+.primary-toolbar.toolbar .raised.linked.button,
+.primary-toolbar.toolbar .raised.linked.button:active,
+.primary-toolbar.toolbar .raised.linked.button:active:hover,
+.primary-toolbar.toolbar .raised.linked .button,
+.primary-toolbar.toolbar .raised.linked .button:active,
+.primary-toolbar.toolbar .raised.linked .button:active:hover {
     border-image: url("assets/primary-toolbar-raised-button-border.svg") 4 / 4 0 stretch;
 }
 
-.toolbar .raised.linked.button:nth-child(first) ,
-.toolbar .raised.linked.button:active:nth-child(first),
-.toolbar .raised.linked.button:active:hover:nth-child(first),
-.toolbar .raised.linked:nth-child(first) .button,
-.toolbar .raised.linked:nth-child(first) .button:active,
-.toolbar .raised.linked:nth-child(first) .button:active:hover {
+.primary-toolbar.toolbar .raised.linked.button:nth-child(first) ,
+.primary-toolbar.toolbar .raised.linked.button:active:nth-child(first),
+.primary-toolbar.toolbar .raised.linked.button:active:hover:nth-child(first),
+.primary-toolbar.toolbar .raised.linked:nth-child(first) .button,
+.primary-toolbar.toolbar .raised.linked:nth-child(first) .button:active,
+.primary-toolbar.toolbar .raised.linked:nth-child(first) .button:active:hover {
     border-image: url("assets/primary-toolbar-raised-button-border.svg") 4 / 4 0 4 4 stretch;
 }
 
-.toolbar .raised.linked.button:nth-child(last),
-.toolbar .raised.linked.button:active:nth-child(last),
-.toolbar .raised.linked.button:active:hover:nth-child(last),
-.toolbar .raised.linked:nth-child(last) .button,
-.toolbar .raised.linked:nth-child(last) .button:active,
-.toolbar .raised.linked:nth-child(last) .button:active:hover {
+.primary-toolbar.toolbar .raised.linked.button:nth-child(last),
+.primary-toolbar.toolbar .raised.linked.button:active:nth-child(last),
+.primary-toolbar.toolbar .raised.linked.button:active:hover:nth-child(last),
+.primary-toolbar.toolbar .raised.linked:nth-child(last) .button,
+.primary-toolbar.toolbar .raised.linked:nth-child(last) .button:active,
+.primary-toolbar.toolbar .raised.linked:nth-child(last) .button:active:hover {
     border-image: url("assets/primary-toolbar-raised-button-border.svg") 4 / 4 4 4 0 stretch;
 }
