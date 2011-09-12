@@ -49,7 +49,7 @@
 @define-color os_chrome_selected_fg_color white;
 
 @define-color chrome_bg_color #1e1a17;
-@define-color chrome_fg_color #fff;
+@define-color chrome_fg_color #ffffff;
 
 @define-color focused_entry_border #4B6E99;
 @define-color focused_entry_inset #C3D4EA;

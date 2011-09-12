@@ -1577,10 +1577,15 @@ PanelWidget,
 PanelApplet,
 PanelApplet > GtkMenuBar.menubar,
 .gnome-panel-menu-bar,
-PanelAppletFrame,
 PanelMenuBar.menubar,
 PanelToplevel {
-    background-color: @os_chrome_bg_color;
+    background-color: #EDECEB;
+    background-image: none;
+    color: @os_chrome_fg_color;
+}
+
+PanelAppletFrame {
+    background-color: #D4D4D4;
     background-image: none;
     color: @os_chrome_fg_color;
 }
@@ -1622,13 +1627,39 @@ PanelApplet GtkToggleButton:prelight {
     color: @os_chrome_selected_fg_color;
 }
 
-NaTrayApplet {
-    -NaTrayApplet-icon-padding: 12;
-    -NaTrayApplet-icon-size: 16;
+PanelApplet .button, PanelApplet .button:prelight, PanelApplet .button:prelight:active {
+    background-image: -gtk-gradient (linear,
+                          left top, left bottom,
+                          from (#FEFEFE),
+                          color-stop (0.50, #FBFBFB),
+                          color-stop (0.50, #F6F6F5),
+                          to (#E8E7E6));
 }
 
-WnckPager, WnckTasklist {
+PanelApplet .button:active {
+    background-image: -gtk-gradient (linear,
+                          left top, left bottom,
+                          from (#CCC9C7),
+                          color-stop (0.15, #D7D5D3),
+                          color-stop (0.15, #D5D3D1),
+                          color-stop (0.50, #D0CECC),
+                          color-stop (0.50, #CBC9C6),
+                          to (#C0BDBA));
+}
+
+NaTrayApplet {
+    -NaTrayApplet-icon-padding: 7;
+    -NaTrayApplet-icon-size: 22;
+}
+
+WnckTasklist {
     background-color: @os_chrome_selected_bg_color;
+    background-image: none;
+    color: @os_chrome_fg_color;
+}
+
+WnckPager {
+    background-color: #F0F0F0;
     background-image: none;
     color: @os_chrome_fg_color;
 }
