@@ -4,7 +4,7 @@
 
 En mettant à jour mon système vers Gnome 3, je me suis rendu compte que le thème Clearlooks, que j'utilisais depuis longtemps, n'avait malheureusement pas été porté vers GTK3. J'ai donc modifié Adwaita, le thème par défaut de Gnome 3, pour en faire un thème GTK3 proche visuellement de Clearlooks. Les fichiers GTK2 sont une copie non modifiée du thème Clearlooks original.
 
-<img src="https://github.com/jpfleury/clearwaita/raw/master/exemple1.png" alt="Capture d'écran du bureau avec le thème Clearwaita" />
+<a href="https://github.com/jpfleury/clearwaita/raw/master/exemple1.png"><img src="https://github.com/jpfleury/clearwaita/raw/master/exemple1.png" alt="Capture d'écran du bureau avec le thème Clearwaita" width="895" height="717" /></a>
 
 ## Installation
 
