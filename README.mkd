@@ -12,7 +12,7 @@ Ensuite, choisir le thème Clearwaita pour GTK et les fenêtres avec le logiciel
 
 ## Icônes
 
-Suggestion d'icônes pour accompagner le thème: Mist, installé avec le paquet `gnome-themes`:
+Suggestion d'icônes pour accompagner Clearwaita: Mist, thème d'icônes installé avec le paquet `gnome-themes`:
 
 - <http://git.gnome.org/browse/gnome-themes/tree/>
 - <http://packages.ubuntu.com/oneiric/gnome-themes>
