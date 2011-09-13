@@ -62,12 +62,12 @@ GtkWindow {
 }
 
 *:selected {
-    background-color: @theme_selected_bg_color;
+    background-color: #7fa5d5;
     color: @theme_selected_fg_color;
 }
 
 *:selected:focused {
-    background-color: @theme_selected_bg_color;
+    background-color: #7fa5d5;
     color: @theme_selected_fg_color;
 }
 
@@ -83,9 +83,11 @@ GtkWindow {
 
 .tooltip {
     padding: 4 4;
-    border-style: none;
-    background-color: @theme_tooltip_bg_color;
-    color: @theme_tooltip_fg_color;
+    border-width: 1;
+    border-style: solid;
+    border-color: #BABA45;
+    background-color: #F5F5B5;
+    color: #000000;
 }
 
 .grip {
@@ -93,9 +95,9 @@ GtkWindow {
 }
 
 .rubberband {
-    background-color: alpha (@theme_selected_bg_color, 0.35);
+    background-color: alpha (#7fa5d5, 0.35);
 
-    border-color: @theme_selected_bg_color;
+    border-color: #7fa5d5;
     border-style: solid;
     border-width: 1;
     border-radius: 2;
@@ -160,7 +162,7 @@ GtkComboBox.combobox-entry .button:prelight,
 }
 
 .entry.progressbar {
-    background-color: @theme_selected_bg_color;
+    background-color: #7fa5d5;
     color: @theme_selected_fg_color;
 
     border-width: 1;
@@ -292,8 +294,8 @@ GtkProgressBar,
 .trough row:selected:focused {
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (mix (@trough_bg_color_a, @theme_selected_bg_color, 0.25)),
-                                     to (mix (@trough_bg_color_b, @theme_selected_bg_color, 0.25)));
+                                     from (mix (@trough_bg_color_a, #7fa5d5, 0.25)),
+                                     to (mix (@trough_bg_color_b, #7fa5d5, 0.25)));
 }
 
 /************
@@ -470,7 +472,7 @@ GtkScrolledWindow.frame {
                                              from (@notebook_active_tab_border),
                                              to (@notebook_border));
 
-    -adwaita-selected-tab-color: @notebook_selected_tab_color;
+    -adwaita-selected-tab-color: #7fa5d5;
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade (@theme_base_color, 0.98)),
@@ -1349,7 +1351,7 @@ GtkIconView {
 
 GtkIconView.view.cell:selected,
 GtkIconView.view.cell:selected:focused {
-    background-color: @theme_selected_bg_color;
+    background-color: #7fa5d5;
     border-radius: 4;
 
     /* FIXME: this probably needs to be better;
@@ -1374,7 +1376,7 @@ GtkTreeView {
     -GtkWidget-focus-padding: 1;
     -adwaita-focus-border-radius: 2;
     -adwaita-focus-border-dashes: 1;
-    -adwaita-focus-border-color: mix(@theme_selected_fg_color, @theme_selected_bg_color, 0.30);
+    -adwaita-focus-border-color: mix(@theme_selected_fg_color, #7fa5d5, 0.30);
 }
 
 GtkTreeView.separator {
@@ -1422,14 +1424,14 @@ row:insensitive {
 
 row:selected:focused {
     border-width: 0;
-    background-color: @theme_selected_bg_color;
+    background-color: #7fa5d5;
 }
 
 row:selected {
     border-width: 0;
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (@theme_selected_bg_color),
+                                     from (#7fa5d5),
                                      color-stop(0.50, #6f98cb),
                                      color-stop(0.50, #749cce),
                                      to (#658fc4));
@@ -1442,7 +1444,7 @@ row:selected {
 }
 
 .cell:selected {
-    background-color: @theme_selected_bg_color;
+    background-color: #7fa5d5;
 }
 
 .expander {
@@ -1482,7 +1484,7 @@ row:selected {
 
     border-color: @expander_row_selected_color;
     color: @expander_row_selected_color;
-    background-color: @theme_selected_bg_color;
+    background-color: #7fa5d5;
 }
 
 /* Calendars */
@@ -1517,7 +1519,7 @@ GtkCalendar.button {
 
 .highlight,
 GtkCalendar.highlight {
-    background-color: @theme_selected_bg_color;
+    background-color: #7fa5d5;
     color: @theme_selected_fg_color;
     border-radius: 0;
     padding: 0;
