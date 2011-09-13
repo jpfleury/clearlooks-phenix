@@ -12,12 +12,14 @@ Copier le dossier dans `~/.themes/`. Pour que les logiciels lancés en tant que 
 
 Ensuite, choisir le thème Clearwaita pour GTK et les fenêtres avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool).
 
-## Icônes
+## Icônes et arrière-plan
 
-Suggestion d'icônes pour accompagner Clearwaita: Mist, thème d'icônes installé avec le paquet `gnome-themes`:
+Sur les captures d'écran, le thème d'icônes utilisé est Mist, installé avec le paquet `gnome-themes`:
 
 - <http://git.gnome.org/browse/gnome-themes/tree/>
 - <http://packages.ubuntu.com/oneiric/gnome-themes>
+
+L'arrière-plan est une légère modification d'une [image de volvoguy](http://www.volvoguy.net/ubuntu/).
 
 ## Licence
 
