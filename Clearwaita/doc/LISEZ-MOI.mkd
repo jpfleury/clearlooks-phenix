@@ -4,22 +4,41 @@
 
 En mettant à jour mon système vers Gnome 3, je me suis rendu compte que le thème Clearlooks, que j'utilisais depuis longtemps, n'avait malheureusement pas été porté vers GTK3. J'ai donc modifié Adwaita, le thème par défaut de Gnome 3, pour en faire un thème GTK3 proche visuellement de Clearlooks. Les fichiers GTK2 sont une copie non modifiée du thème Clearlooks original.
 
-<a href="https://github.com/jpfleury/clearwaita/raw/master/exemple1.png"><img src="https://github.com/jpfleury/clearwaita/raw/master/exemple1.png" alt="Capture d'écran du bureau avec le thème Clearwaita" width="895" height="717" /></a>
+Voici une capture d'écran (cliquer pour télécharger l'image au format original):
+
+<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/Clearwaita/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/Clearwaita/doc/exemple1.png" alt="Capture d'écran du bureau avec le thème Clearwaita" width="684" height="547" /></a>
 
 ## Installation
 
-Copier le dossier dans `~/.themes/`. Pour que les logiciels lancés en tant que super-utilisateur (par exemple Synaptic) utilisent également Clearwaita, copier le dossier dans `/usr/share/themes/`.
+- [Télécharger l'archive de la dernière version.](http://jpfleury.indefero.net/p/clearwaita/source/download/master/)
 
-Ensuite, choisir le thème Clearwaita pour GTK et les fenêtres avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool).
+- Décompresser l'archive.
+
+- Copier le dossier `Clearwaita` dans un des deux emplacements suivants:
+
+	- `~/.themes/` pour l'utilisateur courant;
+	
+	- `/usr/share/themes/` pour tous les utilisateurs, incluant le style des logiciels lancés en tant que super-utilisateur (par exemple Synaptic).
+
+- Ensuite, choisir le thème Clearwaita pour GTK et les fenêtres avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool).
 
 ## Icônes et arrière-plan
 
-Sur les captures d'écran, le thème d'icônes utilisé est Mist, installé avec le paquet `gnome-themes`:
+Sur les captures d'écran présentes dans le dossier `Clearwaita/doc/`, le thème d'icônes utilisé est Mist, installé avec le paquet `gnome-themes`:
 
 - <http://git.gnome.org/browse/gnome-themes/tree/>
 - <http://packages.ubuntu.com/oneiric/gnome-themes>
 
 L'arrière-plan est une légère modification d'une [image de volvoguy](http://www.volvoguy.net/ubuntu/).
+
+## Développement
+
+Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
+
+Clearwaita dispose également d'un [système de suivi], sur lequel les rapports de bogues et les suggestions peuvent être soumis.
+
+[git]: http://jpfleury.indefero.net/p/clearwaita/source/tree/master/
+[système de suivi]: http://jpfleury.indefero.net/p/clearwaita/issues/
 
 ## Licence
 
