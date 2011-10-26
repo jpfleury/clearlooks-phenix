@@ -6,13 +6,15 @@ En mettant à jour mon système vers Gnome 3, je me suis rendu compte que le th�
 
 Voici une capture d'écran (cliquer pour télécharger l'image au format original):
 
-<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/Clearwaita/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/Clearwaita/doc/exemple1.png" alt="Capture d'écran du bureau avec le thème Clearwaita" width="684" height="547" /></a>
+<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png" alt="Capture d'écran du bureau avec le thème Clearwaita" width="684" height="547" /></a>
 
 ## Installation
 
 - [Télécharger l'archive de la dernière version.](http://jpfleury.indefero.net/p/clearwaita/source/download/master/)
 
 - Décompresser l'archive.
+
+- Renommer le dossier extrait en `Clearwaita`.
 
 - Copier le dossier `Clearwaita` dans un des deux emplacements suivants:
 
@@ -24,7 +26,7 @@ Voici une capture d'écran (cliquer pour télécharger l'image au format origina
 
 ## Icônes et arrière-plan
 
-Sur les captures d'écran présentes dans le dossier `Clearwaita/doc/`, le thème d'icônes utilisé est Mist, installé avec le paquet `gnome-themes`:
+Sur les captures d'écran présentes dans le dossier `doc/`, le thème d'icônes utilisé est Mist, installé avec le paquet `gnome-themes`:
 
 - <http://git.gnome.org/browse/gnome-themes/tree/>
 - <http://packages.ubuntu.com/oneiric/gnome-themes>
