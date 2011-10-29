@@ -14,7 +14,7 @@ Voici deux captures d'écran (cliquer pour télécharger l'image au format origi
 
 - [Télécharger l'archive de la dernière version.](http://jpfleury.indefero.net/p/clearwaita/source/download/master/)
 
-- Décompresser l'archive.
+- Extraire l'archive.
 
 - Renommer le dossier extrait en `Clearwaita`.
 
@@ -28,7 +28,7 @@ Voici deux captures d'écran (cliquer pour télécharger l'image au format origi
 
 ## Icônes et arrière-plan
 
-Sur les captures d'écran présentes dans le dossier `doc/`, le thème d'icônes utilisé est Mist, installé avec le paquet `gnome-themes`:
+Sur les captures d'écran, le thème d'icônes utilisé est Mist, installé avec le paquet `gnome-themes`:
 
 - <http://git.gnome.org/browse/gnome-themes/tree/>
 - <http://packages.ubuntu.com/oneiric/gnome-themes>
