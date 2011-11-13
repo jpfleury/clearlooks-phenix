@@ -1,0 +1,79 @@
+<p lang="fr"><strong><a hreflang="fr" href="http://www.jpfleury.net/logiciels/clearwaita.php">Lire cette page en français.</a></strong></p>
+
+## Overview
+
+**Clearwaita = Clearlooks + Adwaita**
+
+Clearwaita is a GTK2/GTK3 theme. Files for GTK3 are a modified version of Adwaita, the default Gnome 3 theme, to make it visually close to Clearlooks. Files for GTK2 come from the unmodified Clearlooks theme.
+
+Here are two screenshots (click to download the original image):
+
+<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png" alt="Screenshot of desktop with Clearwaita theme" width="684" height="547" /></a>
+
+<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png" alt="Screenshot of Nautilus with Clearwaita theme" width="684" height="469" /></a>
+
+## Requirements
+
+The package `gnome-themes-standard` must be installed. It should be the case on Gnome 3, but not on XFCE.
+
+## Installation
+
+- [Download the archive of the latest version.](http://jpfleury.indefero.net/p/clearwaita/source/download/master/)
+
+- Extract the archive.
+
+- Rename the extracted folder to `Clearwaita`.
+
+- Copy the folder `Clearwaita` in one of the following two locations:
+
+	- `~/.themes/` for the current user;
+	
+	- `/usr/share/themes/` for all users, including style for programs ran with root privileges (e.g. Synaptic).
+
+- Then, choose Clearwaita theme:
+
+	- on Gnome: with [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool);
+	
+	- on XFCE: by going to *Settings > Appearence* in the main menu.
+
+## Icons and wallpaper
+
+On screenshots, the icon theme used is Mist, installed with the package [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes).
+
+The wallpaper is a slightly modified version of an [image from volvoguy](http://www.volvoguy.net/ubuntu/).
+
+## Development
+
+Git is used for revision control. [Repository can be browsed online or cloned.][git]
+
+Clearwaita has an [issue tracker], on which bug reports and feature requests can be submitted.
+
+[git]: http://jpfleury.indefero.net/p/clearwaita/source/tree/master/
+[issue tracker]: http://jpfleury.indefero.net/p/clearwaita/issues/
+
+## License
+
+Author: Jean-Philippe Fleury <contact@jpfleury.net>  
+Copyright © 2011 Jean-Philippe Fleury
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+### Included scripts
+
+- Adwaita theme, from the package [`gnome-themes-standard`](http://packages.ubuntu.com/oneiric/gnome-themes-standard), under LGPL.
+
+- File `gtk-2.0/gtkrc`, from the package [`gtk2-engines`](http://packages.ubuntu.com/oneiric/gtk2-engines), under LGPL.
+
+- File `metacity-1/metacity-theme-1.xml`, from the package [`gnome-themes-selected`](http://packages.ubuntu.com/oneiric/gnome-themes-selected), under LGPL.
+

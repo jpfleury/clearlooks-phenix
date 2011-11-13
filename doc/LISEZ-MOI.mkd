@@ -1,3 +1,5 @@
+<p lang="en"><strong><a hreflang="en" href="http://www.jpfleury.net/en/software/clearwaita.php">Read this page in English.</a></strong></p>
+
 ## À propos
 
 **Clearwaita = Clearlooks + Adwaita**
@@ -68,7 +70,7 @@ Vous devriez avoir reçu une copie de la Licence publique générale GNU avec
 ce programme; si ce n'est pas le cas, consultez
 <http://www.gnu.org/licenses/>.
 
-## Matériel tierce utilisé
+### Matériel tierce utilisé
 
 - Thème Adwaita, provenant du paquet [`gnome-themes-standard`](http://packages.ubuntu.com/oneiric/gnome-themes-standard), sous licence LGPL.
 
