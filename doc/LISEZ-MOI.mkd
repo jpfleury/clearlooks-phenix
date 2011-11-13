@@ -2,13 +2,17 @@
 
 **Clearwaita = Clearlooks + Adwaita**
 
-En mettant à jour mon système vers Gnome 3, je me suis rendu compte que le thème Clearlooks, que j'utilisais depuis longtemps, n'avait malheureusement pas été porté vers GTK3. J'ai donc modifié Adwaita, le thème par défaut de Gnome 3, pour en faire un thème GTK3 proche visuellement de Clearlooks. Les fichiers GTK2 sont une copie non modifiée du thème Clearlooks original.
+Clearwaita est un thème GTK2/GTK3. Les fichiers pour GTK3 correspondent à une modification d'Adwaita, le thème par défaut de Gnome 3, pour en faire un thème proche visuellement de Clearlooks. Les fichiers pour GTK2 sont une copie non modifiée du thème Clearlooks original.
 
 Voici deux captures d'écran (cliquer pour télécharger l'image au format original):
 
 <a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png" alt="Capture d'écran du bureau avec le thème Clearwaita" width="684" height="547" /></a>
 
 <a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png" alt="Capture d'écran de Nautilus avec le thème Clearwaita" width="684" height="469" /></a>
+
+## Dépendances
+
+S'assurer que le paquet `gnome-themes-standard` est installé. Ça devrait être le cas sous Gnome 3, mais pas sous XFCE.
 
 ## Installation
 
@@ -22,16 +26,17 @@ Voici deux captures d'écran (cliquer pour télécharger l'image au format origi
 
 	- `~/.themes/` pour l'utilisateur courant;
 	
-	- `/usr/share/themes/` pour tous les utilisateurs, incluant le style des logiciels lancés en tant que super-utilisateur (par exemple Synaptic).
+	- `/usr/share/themes/` pour tous les utilisateurs, incluant le style des logiciels lancés en tant que superutilisateur (par exemple Synaptic).
 
-- Ensuite, choisir le thème Clearwaita pour GTK et les fenêtres avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool).
+- Ensuite, choisir le thème Clearwaita:
+
+	- sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool);
+	
+	- sous XFCE: en allant dans *Paramètres > Apparence* du menu principal.
 
 ## Icônes et arrière-plan
 
-Sur les captures d'écran, le thème d'icônes utilisé est Mist, installé avec le paquet `gnome-themes`:
-
-- <http://git.gnome.org/browse/gnome-themes/tree/>
-- <http://packages.ubuntu.com/oneiric/gnome-themes>
+Sur les captures d'écran, le thème d'icônes utilisé est Mist, installé avec le paquet [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes).
 
 L'arrière-plan est une légère modification d'une [image de volvoguy](http://www.volvoguy.net/ubuntu/).
 
@@ -65,18 +70,9 @@ ce programme; si ce n'est pas le cas, consultez
 
 ## Matériel tierce utilisé
 
-- Thème Adwaita, provenant du paquet `gnome-themes-standard`, sous licence LGPL:
+- Thème Adwaita, provenant du paquet [`gnome-themes-standard`](http://packages.ubuntu.com/oneiric/gnome-themes-standard), sous licence LGPL.
 
-  - <http://git.gnome.org/browse/gnome-themes-standard/tree/>
-  - <http://packages.ubuntu.com/oneiric/gnome-themes-standard>
+- Fichier `gtk-2.0/gtkrc`, provenant du paquet [`gtk2-engines`](http://packages.ubuntu.com/oneiric/gtk2-engines), sous licence LGPL.
 
-- Fichier `gtk-2.0/gtkrc`, provenant du paquet `gtk2-engines`, sous licence LGPL:
-
-  - <http://git.gnome.org/browse/gtk-engines/tree/?id=GTK_ENGINES_2_20_2>
-  - <http://packages.ubuntu.com/oneiric/gtk2-engines>
-
-- Fichier `metacity-1/metacity-theme-1.xml`, provenant du paquet `gnome-themes-selected`, sous licence LGPL:
-
-  - <http://git.gnome.org/browse/gnome-themes/tree/?id=GNOME_THEMES_2_32_1>
-  - <http://packages.ubuntu.com/oneiric/gnome-themes-selected>
+- Fichier `metacity-1/metacity-theme-1.xml`, provenant du paquet [`gnome-themes-selected`](http://packages.ubuntu.com/oneiric/gnome-themes-selected), sous licence LGPL.
 
