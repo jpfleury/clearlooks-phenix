@@ -1,0 +1,11 @@
+.nautilus-desktop.nautilus-canvas-item {
+	color: #ffffff;
+	text-shadow: 1 1 alpha (#000000, 0.8);
+}
+
+.nautilus-desktop.nautilus-canvas-item:active,
+.nautilus-desktop.nautilus-canvas-item:prelight,
+.nautilus-desktop.nautilus-canvas-item:selected {
+	text-shadow: none;
+}
+

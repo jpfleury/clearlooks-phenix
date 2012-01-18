@@ -36,6 +36,18 @@ The package `gnome-themes-standard` must be installed. It should be the case on 
 	
 	- on XFCE: by going to *Settings > Appearence* in the main menu.
 
+## Configuration
+
+By default, the font color on a desktop managed by Nautilus is black. To set it to white, open the file `gtk-3.0/gtk.css` with a text editor, find the following line (at the end of the file):
+
+    /*@import url("apps/nautilus.css");*/
+
+and uncomment it, as follows:
+
+    @import url("apps/nautilus.css");
+
+To get a custom color, change the color directly in the file `gtk-3.0/apps/nautilus.css`.
+
 ## Icons and wallpaper
 
 On screenshots, the icon theme used is Mist, installed with the package [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes).

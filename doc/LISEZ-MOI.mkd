@@ -36,6 +36,18 @@ S'assurer que le paquet `gnome-themes-standard` est installé. Ça devrait être
 	
 	- sous XFCE: en allant dans *Paramètres > Apparence* du menu principal.
 
+## Configuration
+
+Par défaut, le texte des icônes sur un bureau géré par Nautilus est noir. Pour afficher le texte en blanc, ouvrir le fichier `gtk-3.0/gtk.css` dans un éditeur de texte, trouver la ligne suivante (à la fin du fichier):
+
+    /*@import url("apps/nautilus.css");*/
+
+et la décommenter, ce qui donne:
+
+    @import url("apps/nautilus.css");
+
+Pour avoir une couleur personnalisée, modifier la couleur directement dans le fichier `gtk-3.0/apps/nautilus.css`.
+
 ## Icônes et arrière-plan
 
 Sur les captures d'écran, le thème d'icônes utilisé est Mist, installé avec le paquet [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes).
