@@ -94,6 +94,7 @@ GtkWindow {
     background-color: shade (@inactive_frame_color, 0.93);
 }
 
+.view.rubberband,
 .rubberband {
     background-color: alpha (#7fa5d5, 0.35);
 
