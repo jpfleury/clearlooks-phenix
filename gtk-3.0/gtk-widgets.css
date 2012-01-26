@@ -1593,10 +1593,6 @@ PanelAppletFrame {
     color: @os_chrome_fg_color;
 }
 
-.gnome-panel-menu-bar {
-    font: bold;
-}
-
 PanelApplet > GtkMenuBar.menubar.menuitem:prelight,
 .gnome-panel-menu-bar.menuitem:prelight {
     background-color: @os_chrome_selected_bg_color;
