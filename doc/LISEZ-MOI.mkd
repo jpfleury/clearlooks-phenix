@@ -6,6 +6,8 @@
 
 Clearwaita est un thème GTK2/GTK3. Les fichiers pour GTK3 correspondent à une modification d'Adwaita, le thème par défaut de Gnome 3, pour en faire un thème proche visuellement de Clearlooks. Les fichiers pour GTK2 sont une copie non modifiée du thème Clearlooks original.
 
+Aussi, des fichiers pour les gestionnaires de fenêtres Metacity et Openbox sont inclus.
+
 Voici deux captures d'écran (cliquer pour télécharger l'image au format original):
 
 <a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png" alt="Capture d'écran du bureau avec le thème Clearwaita" width="684" height="547" /></a>
@@ -89,4 +91,6 @@ ce programme; si ce n'est pas le cas, consultez
 - Fichier `gtk-2.0/gtkrc`, provenant du paquet [`gtk2-engines`](http://packages.ubuntu.com/oneiric/gtk2-engines), sous licence LGPL.
 
 - Fichier `metacity-1/metacity-theme-1.xml`, provenant du paquet [`gnome-themes-selected`](http://packages.ubuntu.com/oneiric/gnome-themes-selected), sous licence LGPL.
+
+- Fichier `openbox-3/themerc`, provenant du paquet [`openbox`](http://packages.ubuntu.com/oneiric/openbox), sous licence GPL.
 
