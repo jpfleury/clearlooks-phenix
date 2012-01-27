@@ -1,9 +1,7 @@
 
 # Please keep this gtkrc in sync with the other ones from Clearlooks based themes.
 
-gtk-color-scheme = "base_color:#ffffff\nfg_color:#000000\ntooltip_fg_color:#000000\nselected_bg_color:#86ABD9\nselected_fg_color:#ffffff\ntext_color:#1A1A1A\nbg_color:#EDECEB\ntooltip_bg_color:#E7F3FD"
-
-gtk-auto-mnemonics = 1
+gtk-color-scheme = "base_color:#ffffff\nfg_color:#000000\ntooltip_fg_color:#000000\nselected_bg_color:#86ABD9\nselected_fg_color:#ffffff\ntext_color:#1A1A1A\nbg_color:#EDECEB\ntooltip_bg_color:#F5F5B5"
 
 style "default" {
 	xthickness = 1
@@ -19,8 +17,6 @@ style "default" {
 	GtkToolButton::icon-spacing = 4
 
 	GtkCheckButton::indicator-size = 14
-
-	GtkEntry::invisible-char = 0x2022
 
 	GtkPaned::handle-size = 6
 
@@ -80,7 +76,7 @@ style "default" {
 		colorize_scrollbar = TRUE
 		reliefstyle = 1
 		menubarstyle = 2
-		toolbarstyle = 0
+		toolbarstyle = 1
 		animation = FALSE
 		radius = 3.0
 		style = GUMMY
@@ -205,8 +201,6 @@ style "comboboxentry" {
 
 style "menubar" {
 
-        GtkWidget::window-dragging = 1
-
 	engine "clearlooks" {
 		hint = "menubar"
 	}
@@ -282,10 +276,8 @@ style "treeview_header" = "default" {
 }
 
 style "tooltips" {
-	xthickness = 8
+	xthickness = 4
 	ythickness = 4
-
-	GtkWidget::new-tooltip-style = 1
 
 	bg[NORMAL]        = @tooltip_bg_color
 	fg[NORMAL]        = @tooltip_fg_color
@@ -408,9 +400,9 @@ widget "gtk-tooltip*" style "tooltips"
 ##########################################################################
 
 # Workaround for the evolution ETable (bug #527532)
-widget_class "*.ETable.ECanvas" style "treeview_header"
+widget_class "*.<ETable>.<ECanvas>" style "treeview_header"
 # Workaround for the evolution ETree
-widget_class "*.ETree.ECanvas" style "treeview_header"
+widget_class "*.<ETree>.<ECanvas>" style "treeview_header"
 
 # Special case the nautilus-extra-view-widget
 # ToDo: A more generic approach for all applications that have a widget like this.
