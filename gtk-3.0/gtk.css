@@ -54,17 +54,21 @@
 @define-color focused_entry_border #4B6E99;
 @define-color focused_entry_inset #C3D4EA;
 
-@define-color button_gradient_color_a #ecebea;
-@define-color button_gradient_color_b #e4e3e2;
+@define-color button_gradient_color_a #ffffff;
+@define-color button_gradient_color_b #fbfbfb;
+@define-color button_gradient_color_c #f5f5f5;
+@define-color button_gradient_color_d #e8e8e8;
 @define-color button_border #a7aba7;
 
-@define-color button_active_gradient_color_a #e4e3e2;
-@define-color button_active_gradient_color_b #E6E4E3;
-@define-color button_active_gradient_color_c #e8e7e6;
-@define-color button_active_gradient_color_d #ecebea;
+@define-color button_active_gradient_color_a #d9d7d5;
+@define-color button_active_gradient_color_b #cfcdcb;
+@define-color button_active_gradient_color_c #cbc9c6;
+@define-color button_active_gradient_color_d #c0bdba;
 
-@define-color button_hover_gradient_color_a @theme_base_color;
-@define-color button_hover_gradient_color_b shade (@button_gradient_color_a, 0.94);
+@define-color button_hover_gradient_color_a #ffffff;
+@define-color button_hover_gradient_color_b #ffffff;
+@define-color button_hover_gradient_color_c #fafafa;
+@define-color button_hover_gradient_color_d #ededed;
 
 @define-color button_raised_gradient_color_a @button_gradient_color_a;
 @define-color button_raised_gradient_color_b @button_gradient_color_b;
@@ -119,7 +123,7 @@
 
 @define-color toolbar_gradient_base #F5F5F4;
 @define-color toolbar_gradient_step1 #F0EFEE;
-@define-color toolbar_gradient_step2 #ECEBEA;
+@define-color toolbar_gradient_step2 #edeceb;
 @define-color toolbar_gradient_final #E7E5E4;
 
 @define-color toolbar_border_top #C4C2BF;

@@ -78,8 +78,10 @@ GtkComboBox.combobox-entry .button {
 }
 
 .primary-toolbar GtkComboBox.combobox-entry .button:active,
+.primary-toolbar GtkComboBox.combobox-entry .button:hover,
 .primary-toolbar GtkComboBox.combobox-entry .button:hover:active,
 GtkComboBox.combobox-entry .button:active,
+GtkComboBox.combobox-entry .button:hover,
 GtkComboBox.combobox-entry .button:hover:active {
     border-image: url("assets/combobox-entry-border-active.svg") 2 / 2 2 2 0 stretch;
 }
@@ -190,7 +192,9 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
 }
 
 .primary-toolbar .toolbar .button:active,
+.primary-toolbar .toolbar .button:hover,
 .primary-toolbar.toolbar .button:active,
+.primary-toolbar.toolbar .button:hover,
 .primary-toolbar .toolbar .button:active:hover,
 .primary-toolbar.toolbar .button:active:hover {
     border-image: url("assets/primary-toolbar-button-active-border.svg") 4 / 4 stretch;
@@ -206,27 +210,33 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
 /* nth-child for linked areas */
 .primary-toolbar.toolbar .raised.linked.button,
 .primary-toolbar.toolbar .raised.linked.button:active,
+.primary-toolbar.toolbar .raised.linked.button:hover,
 .primary-toolbar.toolbar .raised.linked.button:active:hover,
 .primary-toolbar.toolbar .raised.linked .button,
 .primary-toolbar.toolbar .raised.linked .button:active,
+.primary-toolbar.toolbar .raised.linked .button:hover,
 .primary-toolbar.toolbar .raised.linked .button:active:hover {
     border-image: url("assets/primary-toolbar-raised-button-border.svg") 4 / 4 0 stretch;
 }
 
 .primary-toolbar.toolbar .raised.linked.button:nth-child(first) ,
 .primary-toolbar.toolbar .raised.linked.button:active:nth-child(first),
+.primary-toolbar.toolbar .raised.linked.button:hover:nth-child(first),
 .primary-toolbar.toolbar .raised.linked.button:active:hover:nth-child(first),
 .primary-toolbar.toolbar .raised.linked:nth-child(first) .button,
 .primary-toolbar.toolbar .raised.linked:nth-child(first) .button:active,
+.primary-toolbar.toolbar .raised.linked:nth-child(first) .button:hover,
 .primary-toolbar.toolbar .raised.linked:nth-child(first) .button:active:hover {
     border-image: url("assets/primary-toolbar-raised-button-border.svg") 4 / 4 0 4 4 stretch;
 }
 
 .primary-toolbar.toolbar .raised.linked.button:nth-child(last),
 .primary-toolbar.toolbar .raised.linked.button:active:nth-child(last),
+.primary-toolbar.toolbar .raised.linked.button:hover:nth-child(last),
 .primary-toolbar.toolbar .raised.linked.button:active:hover:nth-child(last),
 .primary-toolbar.toolbar .raised.linked:nth-child(last) .button,
 .primary-toolbar.toolbar .raised.linked:nth-child(last) .button:active,
+.primary-toolbar.toolbar .raised.linked:nth-child(last) .button:hover,
 .primary-toolbar.toolbar .raised.linked:nth-child(last) .button:active:hover {
     border-image: url("assets/primary-toolbar-raised-button-border.svg") 4 / 4 4 4 0 stretch;
 }
@@ -238,6 +248,7 @@ PanelApplet .button {
 }
 
 PanelApplet .button:active,
+PanelApplet .button:hover,
 PanelApplet .button:hover:active {
     border-image: url("assets/button-active-border-panel.svg") 3 / 3 stretch;
 }
