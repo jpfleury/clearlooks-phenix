@@ -420,11 +420,13 @@ GtkScrolledWindow.frame {
 .button:active,
 .toolbar .button:active {
     background-image: -gtk-gradient (linear,
-    				     left top, left bottom,
-                                     from (@button_active_gradient_color_a),
-                                     color-stop (0.50, @button_active_gradient_color_b),
-                                     color-stop (0.50, @button_active_gradient_color_c),
-				     to (@button_active_gradient_color_d));
+    left top, left bottom,
+    from (@button_active_gradient_color_a),
+    color-stop (0.10, @button_active_gradient_color_b),
+    color-stop (0.10, @button_active_gradient_color_c),
+    color-stop (0.50, @button_active_gradient_color_d),
+    color-stop (0.50, @button_active_gradient_color_e),
+    to (@button_active_gradient_color_f));
 }
 
 .button:hover:active,
@@ -1020,11 +1022,13 @@ GtkTreeMenu .menuitem * {
     /* border-image defined in the -assets variant */
 
     background-image: -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (@button_active_gradient_color_a),
-                                     color-stop (0.50, @button_active_gradient_color_b),
-                                     color-stop (0.50, @button_active_gradient_color_c),
-                                     to (@button_active_gradient_color_d));
+    left top, left bottom,
+    from (@button_active_gradient_color_a),
+    color-stop (0.10, @button_active_gradient_color_b),
+    color-stop (0.10, @button_active_gradient_color_c),
+    color-stop (0.50, @button_active_gradient_color_d),
+    color-stop (0.50, @button_active_gradient_color_e),
+    to (@button_active_gradient_color_f));
 }
 
 .primary-toolbar .toolbar .button *:active,

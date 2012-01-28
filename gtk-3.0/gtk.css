@@ -60,10 +60,12 @@
 @define-color button_gradient_color_d #e8e8e8;
 @define-color button_border #a7aba7;
 
-@define-color button_active_gradient_color_a #d9d7d5;
-@define-color button_active_gradient_color_b #cfcdcb;
-@define-color button_active_gradient_color_c #cbc9c6;
-@define-color button_active_gradient_color_d #c0bdba;
+@define-color button_active_gradient_color_a #ccc9c7;
+@define-color button_active_gradient_color_b #d7d5d3;
+@define-color button_active_gradient_color_c #d5d3d1;
+@define-color button_active_gradient_color_d #d0cecc;
+@define-color button_active_gradient_color_e #cbc9c6;
+@define-color button_active_gradient_color_f #c0bdba;
 
 @define-color button_hover_gradient_color_a #ffffff;
 @define-color button_hover_gradient_color_b #ffffff;
