@@ -6,7 +6,7 @@
 
 Clearwaita est un thème GTK2/GTK3. Les fichiers pour GTK3 correspondent à une modification d'Adwaita, le thème par défaut de Gnome 3, pour en faire un thème proche visuellement de Clearlooks. Les fichiers pour GTK2 sont une copie non modifiée du thème Clearlooks original.
 
-Aussi, des fichiers pour les gestionnaires de fenêtres Metacity et Openbox sont inclus.
+Aussi, des fichiers pour les gestionnaires de fenêtres Metacity, Openbox et Xfwm4 sont inclus.
 
 Voici deux captures d'écran (cliquer pour télécharger l'image au format original):
 
@@ -36,7 +36,7 @@ S'assurer que le paquet `gnome-themes-standard` est installé. Ça devrait être
 
 	- sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool);
 	
-	- sous XFCE: en allant dans *Paramètres > Apparence* du menu principal.
+	- sous XFCE: en allant dans *Paramètres > Apparence* du menu principal pour le thème GTK, et dans *Paramètres > Gestionnaire de fenêtres* pour le thème de Xfwm4.
 
 ## Configuration
 
@@ -93,4 +93,6 @@ ce programme; si ce n'est pas le cas, consultez
 - Fichier `metacity-1/metacity-theme-1.xml`, provenant du paquet [`gnome-themes-selected`](http://packages.ubuntu.com/oneiric/gnome-themes-selected), sous licence LGPL.
 
 - Fichier `openbox-3/themerc`, provenant du paquet [`openbox`](http://packages.ubuntu.com/oneiric/openbox), sous licence GPL.
+
+- Thème [Clearlooks XFWM4](http://xfce-look.org/content/show.php/Clearlooks+for+XFWM4?content=137055), sous licence GPL.
 
