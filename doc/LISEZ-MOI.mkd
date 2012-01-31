@@ -16,7 +16,7 @@ Voici deux captures d'écran (cliquer pour télécharger l'image au format origi
 
 ## Dépendances
 
-S'assurer que le paquet `gnome-themes-standard` est installé. Ça devrait être le cas sous Gnome 3, mais pas sous XFCE.
+S'assurer que le paquet `gnome-themes-standard` est installé. Ça devrait être le cas sous Gnome 3, mais pas sous Xfce.
 
 ## Installation
 
@@ -36,7 +36,7 @@ S'assurer que le paquet `gnome-themes-standard` est installé. Ça devrait être
 
 	- sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool);
 	
-	- sous XFCE: en allant dans *Paramètres > Apparence* du menu principal pour le thème GTK, et dans *Paramètres > Gestionnaire de fenêtres* pour le thème de Xfwm4.
+	- sous Xfce: en allant dans *Paramètres > Apparence* du menu principal pour le thème GTK, et dans *Paramètres > Gestionnaire de fenêtres* pour le thème de Xfwm4.
 
 ## Configuration
 

@@ -16,7 +16,7 @@ Here are two screenshots (click to download the original image):
 
 ## Requirements
 
-The package `gnome-themes-standard` must be installed. It should be the case on Gnome 3, but not on XFCE.
+The package `gnome-themes-standard` must be installed. It should be the case on Gnome 3, but not on Xfce.
 
 ## Installation
 
@@ -36,7 +36,7 @@ The package `gnome-themes-standard` must be installed. It should be the case on 
 
 	- on Gnome: with [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool);
 	
-	- on XFCE: by going to *Settings > Appearence* in the main menu for the GTK theme, and to *Settings > Window Manager* for the Xfwm4 theme.
+	- on Xfce: by going to *Settings > Appearence* in the main menu for the GTK theme, and to *Settings > Window Manager* for the Xfwm4 theme.
 
 ## Configuration
 
