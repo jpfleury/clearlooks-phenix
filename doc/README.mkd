@@ -10,9 +10,9 @@ Also, files for Metacity, Openbox and Xfwm4 window managers are included.
 
 Here are two screenshots (click to download the original image):
 
-<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png" alt="Screenshot of desktop with Clearwaita theme" width="684" height="547" /></a>
+<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png" alt="Screenshot of a Gnome desktop with Clearwaita theme" width="684" height="482" /></a>
 
-<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png" alt="Screenshot of Nautilus with Clearwaita theme" width="684" height="469" /></a>
+<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png" alt="Screenshot of AbiWord with Clearwaita theme" width="684" height="675" /></a>
 
 ## Requirements
 

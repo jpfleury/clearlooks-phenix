@@ -10,9 +10,9 @@ Aussi, des fichiers pour les gestionnaires de fenêtres Metacity, Openbox et Xfw
 
 Voici deux captures d'écran (cliquer pour télécharger l'image au format original):
 
-<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png" alt="Capture d'écran du bureau avec le thème Clearwaita" width="684" height="547" /></a>
+<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png" alt="Capture d'écran d'un bureau sous Gnome avec le thème Clearwaita" width="684" height="482" /></a>
 
-<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png" alt="Capture d'écran de Nautilus avec le thème Clearwaita" width="684" height="469" /></a>
+<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png" alt="Capture d'écran d'AbiWord avec le thème Clearwaita" width="684" height="675" /></a>
 
 ## Dépendances
 
