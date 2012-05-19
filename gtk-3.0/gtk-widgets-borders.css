@@ -1,0 +1,253 @@
+/* Borders */
+
+/* generic element borders */
+.entry,
+GtkComboBox.combobox-entry .entry,
+GtkComboBox.combobox-entry .button,
+.button:active,
+.button:insensitive,
+.trough,
+.trough.highlight,
+GtkSwitch.trough {
+    border-image: url("borders/generic-border.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.trough row {
+    border-image: url("borders/generic-border-alt.svg") 3 / 3px stretch;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/* focused element borders */
+.entry:focus,
+GtkComboBox.combobox-entry .entry:focus,
+.button:focus:active,
+.button.default:active,
+GtkSwitch.trough:active { 
+    border-image: url("borders/generic-border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+
+}
+
+/* generic button borders */
+.button {
+    border-image: url("borders/button-border.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+
+}
+
+/* focused button borders */
+.button:focus,
+.button.default { 
+    border-image: url("borders/button-border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/* tooltip elements borders */
+.tooltip .entry,
+.tooltip .button {
+    border-image: url("borders/tooltip-generic-border.svg") 3 / 3px stretch;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/* tooltip focused elements borders */
+.tooltip .entry:focus,
+.tooltip .button:focus {
+    border-image: url("borders/tooltip-generic-border-focused.svg") 3 / 3px stretch;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/* primary toolbar - generic element borders */
+.primary-toolbar .entry,
+.primary-toolbar GtkComboBox.combobox-entry .entry,
+.primary-toolbar GtkComboBox.combobox-entry .button,
+.primary-toolbar .button:active,
+.primary-toolbar .button.raised:active,
+.primary-toolbar .raised .button:active,
+.primary-toolbar .button.raised:insensitive,
+.primary-toolbar .raised .button:insensitive,
+.inline-toolbar.toolbar .button:active,
+.inline-toolbar.toolbar .button:insensitive,
+.inline-toolbar.toolbar GtkToolButton .button:active,
+.inline-toolbar.toolbar GtkToolButton .button:insensitive,
+.primary-toolbar GtkSwitch.trough,
+.primary-toolbar GtkSwitch.trough:insensitive,
+.primary-toolbar GtkComboBox .button:active,
+.primary-toolbar GtkComboBox .button:insensitive {
+    border-image: url("borders/primary-toolbar-generic-border.svg") 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/* primary toolbar - focused element borders */
+.primary-toolbar .entry:focus,
+.primary-toolbar .button:active:focus,
+.primary-toolbar GtkComboBox.combobox-entry .entry:focus,
+.primary-toolbar GtkComboBox.combobox-entry .button:focus,
+.primary-toolbar .button.raised:focus:active,
+.primary-toolbar .raised .button:focus:active,
+.primary-toolbar .button.raised.default:active,
+.primary-toolbar .raised .button.default:active,
+.inline-toolbar.toolbar .button:focus:active,
+.inline-toolbar.toolbar .button.default:active,
+.primary-toolbar GtkComboBox .button:active:focus { 
+    border-image: url("borders/primary-toolbar-generic-border-focused.svg") 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/* primary toolbar - generic button borders */
+.primary-toolbar .button.raised,
+.primary-toolbar .raised .button,
+.inline-toolbar.toolbar .button,
+.primary-toolbar GtkComboBox .button {
+    border-image: url("borders/primary-toolbar-button-border.svg") 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/* primary toolbar - focused button borders */
+.primary-toolbar .button.raised:focus,
+.primary-toolbar .button.raised.default,
+.primary-toolbar .raised .button:focus,
+.primary-toolbar .raised .button.default,
+.inline-toolbar.toolbar .button:focus,
+.inline-toolbar.toolbar .button.default,
+.primary-toolbar GtkComboBox .button:focus { 
+    border-image: url("borders/primary-toolbar-button-border-focused.svg") 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/* column-headers borders */
+column-header.button,
+column-header .button,
+column-header.button:focus,
+column-header .button:focus,
+column-header.button:active,
+column-header .button:active,
+column-header.button:active:hover,
+column-header .button:active:hover
+column-header.button:active:focus,
+column-header .button:active:focus {
+    border-image: -gtk-gradient (linear,
+                                 left top, left bottom,
+                                 from (@borders),
+                                 to (@theme_base_color)) 0 1 0 0;
+    border-width: 0 1px 0 0;
+    border-radius: 0;
+    border-style: solid;
+    border-color: transparent;
+
+}
+
+column-header.button:backdrop,
+column-header .button:backdrop {
+    border-image: -gtk-gradient (linear,
+                                 left top, left bottom,
+                                 from (@unfocused_borders),
+                                 to (@theme_unfocused_base_color)) 0 1 0 0;
+    border-width: 0 1px 0 0;
+    border-radius: 0;
+    border-style: solid;
+    border-color: transparent;
+}
+
+column-header.button:insensitive,
+column-header .button:insensitive {
+    border-image: -gtk-gradient (linear,
+                                 left top, left bottom,
+                                 from (@insensitive_borders),
+                                 to (@insensitive_bg_color)) 0 1 0 0;
+
+    border-width: 0 1px 0 0;
+    border-radius: 0;
+    border-style: solid;
+    border-color: transparent;
+}
+
+column-header.button:last-child,
+column-header:last-child .button,
+column-header.button:last-child:focus,
+column-header:last-child .button:focus,
+column-header.button:last-child:active,
+column-header:last-child .button:active,
+column-header.button:last-child:active:hover,
+column-header:last-child .button:active:hover,
+column-header.button:last-child:active:focus,
+column-header:last-child .button:active:focus {
+    border-image: none;
+    border-width: 0;
+    border-radius: 0;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/* unfocused window: generic element borders */
+.button:backdrop,
+GtkComboBox.combobox-entry .entry:backdrop,
+GtkComboBox.combobox-entry .button:backdrop,
+GtkComboBox *:backdrop,
+.entry:backdrop,
+GtkSwitch.trough:backdrop,
+.trough:backdrop {
+    border-image: url("borders/generic-border-unfocused.svg") 3 3 4 3 / 3px 3px 4px 3px stretch;
+    border-radius: 3px;
+    border-width: 1px 1px 2px 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.trough row:backdrop {
+    border-image: url("borders/generic-border-unfocused-alt.svg") 3 / 3px stretch;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+/* unfocused window: primary toolbar generic element borders */
+.primary-toolbar .button:active:backdrop,
+.primary-toolbar .button.raised:backdrop,
+.primary-toolbar .raised .button:backdrop,
+.primary-toolbar GtkComboBox.combobox-entry .entry:backdrop,
+.primary-toolbar GtkComboBox.combobox-entry .button:backdrop,
+.primary-toolbar .entry:backdrop,
+.primary-toolbar GtkSwitch.trough:backdrop,
+.inline-toolbar.toolbar .button:backdrop,
+.inline-toolbar.toolbar .button:backdrop:insensitive,
+.primary-toolbar GtkComboBox *:backdrop,
+.primary-toolbar GtkComboBox *:backdrop:insensitive { 
+    border-image: url("borders/primary-toolbar-generic-border-unfocused.svg") 4 / 4px stretch;
+    border-radius: 3px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+}
