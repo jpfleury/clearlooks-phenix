@@ -40,6 +40,8 @@ S'assurer que le paquet `gnome-themes-standard` est installé. Ça devrait être
 
 ## Configuration
 
+### Bureau géré par Nautilus
+
 Par défaut, le texte des icônes sur un bureau géré par Nautilus est noir. Pour afficher le texte en blanc, ouvrir le fichier `gtk-3.0/gtk.css` dans un éditeur de texte, trouver la ligne suivante (à la fin du fichier):
 
     /*@import url("apps/nautilus.css");*/
@@ -49,6 +51,12 @@ et la décommenter, ce qui donne:
     @import url("apps/nautilus.css");
 
 Pour avoir une couleur personnalisée, modifier la couleur directement dans le fichier `gtk-3.0/apps/nautilus.css`.
+
+### Emplacement des boutons de fenêtres
+
+Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtres se trouvent à gauche, mais que vous les voulez à droite, lancez la commande suivante dans une console:
+
+	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
 
 ## Icônes et arrière-plan
 
