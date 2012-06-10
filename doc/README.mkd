@@ -58,6 +58,8 @@ The wallpaper is a slightly modified version of an [image from volvoguy](http://
 
 ## Development
 
+Last version: 1.0.1 (2012-06-10)
+
 Git is used for revision control. [Repository can be browsed online or cloned.][git]
 
 Clearwaita has an [issue tracker], on which bug reports and feature requests can be submitted.

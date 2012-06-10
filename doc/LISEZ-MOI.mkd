@@ -58,6 +58,8 @@ L'arrière-plan est une légère modification d'une [image de volvoguy](http://w
 
 ## Développement
 
+Dernière version: 1.0.1 (2012-06-10)
+
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
 
 Clearwaita dispose également d'un [système de suivi], sur lequel les rapports de bogues et les suggestions peuvent être soumis.
