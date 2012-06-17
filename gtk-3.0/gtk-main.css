@@ -25,6 +25,16 @@
 @define-color menubar_gradient_b #e8e7e6;
 @define-color menubar_gradient_c #e4e3e2;
 
+@define-color menubar_menuitem_hover_color @theme_base_color;
+
+@define-color menubar_menuitem_hover_gradient_a #A4C2E8;
+@define-color menubar_menuitem_hover_gradient_b #97B8E2;
+@define-color menubar_menuitem_hover_gradient_c #91B3DE;
+@define-color menubar_menuitem_hover_gradient_d #84AAD8;
+
+@define-color menubar_menuitem_hover_border_color #4B6E99;
+
+@define-color menu_border_color #AAAAAA;
 @define-color menu_bg_color shade (@theme_bg_color, 1.1);
 @define-color menu_fg_color @theme_fg_color;
 

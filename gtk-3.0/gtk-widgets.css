@@ -1738,7 +1738,9 @@ GtkTreeMenu .menuitem * {
     background-color: @menu_bg_color;
     color: @menu_fg_color;
     padding: 0;
-    border-style: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: @menu_border_color;
 }
 
 .menu.button {
@@ -1789,14 +1791,23 @@ GtkTreeMenu .menuitem * {
 
 /* remove the image from the prelight areas */
 .menubar .menuitem:hover {
-    background-image: none;
     background-color: @menu_bg_color;
-
-    border-radius: 4px 4px 0 0;
+    border-style: solid;
+    border-width: 1px 1px 0px;
+    border-color: @menubar_menuitem_hover_border_color;
+    border-radius: 3px 3px 0 0;
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      left bottom,
+                      from (@menubar_menuitem_hover_gradient_a),
+                      color-stop (0.50, @menubar_menuitem_hover_gradient_b),
+                      color-stop (0.50, @menubar_menuitem_hover_gradient_c),
+                      to (@menubar_menuitem_hover_gradient_d));
 }
 
 .menubar .menuitem *:hover {
-    color: @menu_fg_color;
+    border-width: 1px;
+    color: @menubar_menuitem_hover_color;
 }
 
 .menu .menuitem {
