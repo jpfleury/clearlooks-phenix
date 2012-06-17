@@ -1232,10 +1232,11 @@ GtkLinkButton.button *:active {
     border-width: 0;
 
     background-image: linear-gradient(to bottom,
-                                      @notebook_tab_hilight 2px,
-                                      @notebook_tab_gradient_a 2px,
-                                      @notebook_tab_gradient_a 7px,
-                                      @notebook_tab_gradient_b);
+                                      @notebook_tab_gradient_a 1px,
+                                      @notebook_tab_gradient_b 2px,
+                                      @notebook_tab_gradient_c 50%,
+                                      @notebook_tab_gradient_d 50%,
+                                      @notebook_tab_gradient_e);
 
     -adwaita-focus-border-radius: 2;
 }
@@ -1253,10 +1254,11 @@ GtkLinkButton.button *:active {
                                              to (@borders));
 
     background-image: linear-gradient(to bottom,
-                                      @notebook_selected_tab_color,
-                                      @notebook_selected_tab_color 2px,
-                                      @button_gradient_color_a 3px, /* FIXME */
-                                      @theme_base_color);
+                                      @notebook_selected_tab_strip_gradient_a,
+                                      @notebook_selected_tab_strip_gradient_b 3px,
+                                      @notebook_selected_tab_strip_border_color 4px,
+                                      @notebook_selected_tab_gradient_a 5px,
+                                      @notebook_selected_tab_gradient_b);
 }
 
 .notebook tab:active:backdrop {
@@ -1264,7 +1266,7 @@ GtkLinkButton.button *:active {
     background-image: linear-gradient(to bottom,
                                       @unfocused_borders,
                                       @unfocused_borders 2px,
-                                      @theme_unfocused_base_color 3px,
+                                      @theme_unfocused_base_color 4px,
                                       @theme_unfocused_base_color);
     background-color:  @theme_unfocused_base_color;
     border-color: @unfocused_borders;

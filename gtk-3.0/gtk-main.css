@@ -37,7 +37,7 @@
 @define-color button_gradient_color_a shade(@theme_bg_color, 1.05);
 @define-color button_gradient_color_b @theme_bg_color;
 @define-color button_gradient_color_c shade(@theme_bg_color, 0.92);
-@define-color borders #a7aba7;
+@define-color borders #a4a09d;
 
 @define-color button_active_gradient_color_a #a2a9a2;
 @define-color button_active_gradient_color_b shade (@button_active_gradient_color_a, 0.83);
@@ -88,12 +88,18 @@
 
 @define-color scale_progress_fill #2c85e2;
 
-@define-color notebook_active_tab_border #1372d3;
-@define-color notebook_selected_tab_color #8dc0f3;
+@define-color notebook_active_tab_border #4b6e99;
+@define-color notebook_selected_tab_strip_gradient_a #B3CDED;
+@define-color notebook_selected_tab_strip_gradient_b #95B6E0;
+@define-color notebook_selected_tab_strip_border_color #7992B1;
+@define-color notebook_selected_tab_gradient_a #FEFEFE;
+@define-color notebook_selected_tab_gradient_b #F2F1F0;
 
-@define-color notebook_tab_gradient_a shade(@theme_bg_color, 0.97);
-@define-color notebook_tab_gradient_b shade(@theme_bg_color, 0.85);
-@define-color notebook_tab_hilight shade(@theme_bg_color, 1.02);
+@define-color notebook_tab_gradient_a #F5F5F4;
+@define-color notebook_tab_gradient_b #E7E6E4;
+@define-color notebook_tab_gradient_c #DBD9D7;
+@define-color notebook_tab_gradient_d #D6D4D2;
+@define-color notebook_tab_gradient_e #CDCBC8;
 
 @define-color toolbar_gradient_a shade(@borders, 1.15);
 @define-color toolbar_gradient_b shade(@borders, 1.25);
