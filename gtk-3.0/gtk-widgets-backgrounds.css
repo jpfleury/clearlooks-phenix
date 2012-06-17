@@ -195,12 +195,12 @@ GtkComboBox.combobox-entry .button:insensitive:backdrop {
 .primary-toolbar.toolbar,
 .inline-toolbar.toolbar  {
     background-color: transparent;
-    background-image: -gtk-gradient (linear,
-				     left top,
-				     left bottom,
-				     from (@toolbar_gradient_a),
-				     color-stop (0.50, @toolbar_gradient_b),
-				     to (@toolbar_gradient_c));
+    background-image: linear-gradient(to bottom,
+                                      @toolbar_second_border_color 1px,
+                                      @toolbar_gradient_a 2px,
+                                      @toolbar_gradient_b 50%,
+                                      @toolbar_gradient_c 50%,
+                                      @toolbar_gradient_d);
 }
 
 /* Unfocused window primary and inline toolbars background */

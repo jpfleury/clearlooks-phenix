@@ -95,18 +95,20 @@
 @define-color notebook_selected_tab_gradient_a #FEFEFE;
 @define-color notebook_selected_tab_gradient_b #F2F1F0;
 
-@define-color notebook_tab_gradient_a #F5F5F4;
-@define-color notebook_tab_gradient_b #E7E6E4;
-@define-color notebook_tab_gradient_c #DBD9D7;
-@define-color notebook_tab_gradient_d #D6D4D2;
-@define-color notebook_tab_gradient_e #CDCBC8;
+@define-color notebook_tab_second_border_color #F5F5F4;
+@define-color notebook_tab_gradient_a #E7E6E4;
+@define-color notebook_tab_gradient_b #DBD9D7;
+@define-color notebook_tab_gradient_c #D6D4D2;
+@define-color notebook_tab_gradient_d #CDCBC8;
 
-@define-color toolbar_gradient_a shade(@borders, 1.15);
-@define-color toolbar_gradient_b shade(@borders, 1.25);
-@define-color toolbar_gradient_c shade(@borders, 1.3);
+@define-color toolbar_second_border_color #FFFFFF;
+@define-color toolbar_gradient_a #F5F5F4;
+@define-color toolbar_gradient_b #F0EFEE;
+@define-color toolbar_gradient_c #ECEBEA;
+@define-color toolbar_gradient_d #E7E5E4;
 
-@define-color toolbar_border_top shade(@borders, 0.9);
-@define-color toolbar_border_bottom shade(@borders, 1.1);
+@define-color toolbar_border_top #C4C2BF;
+@define-color toolbar_border_bottom @toolbar_border_top;
 
 @define-color toolbar_active_button_color #909081;
 @define-color toolbar_button_prelight alpha(white, 0.4);
