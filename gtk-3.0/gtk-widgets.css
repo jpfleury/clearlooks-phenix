@@ -1710,6 +1710,12 @@ GtkTreeMenu .menuitem * {
 
     -GtkWidget-window-dragging: true;
     -GtkMenuBar-internal-padding: 0;
+    background-image: -gtk-gradient (linear,
+				     left top,
+				     left bottom,
+				     from (@menubar_gradient_a),
+				     color-stop (0.50, @menubar_gradient_b),
+				     to (@menubar_gradient_c));
 }
 
 .menubar .menuitem {

@@ -21,6 +21,10 @@
 @define-color unfocused_insensitive_bg_color mix(@theme_unfocused_bg_color, @theme_unfocused_base_color, 0.5);
 @define-color unfocused_dark_bg mix(@theme_unfocused_bg_color, @unfocused_borders, 0.3);
 
+@define-color menubar_gradient_a #ecebea;
+@define-color menubar_gradient_b #e8e7e6;
+@define-color menubar_gradient_c #e4e3e2;
+
 @define-color menu_bg_color shade (@theme_bg_color, 1.1);
 @define-color menu_fg_color @theme_fg_color;
 
