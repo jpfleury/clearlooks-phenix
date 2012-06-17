@@ -1232,7 +1232,7 @@ GtkLinkButton.button *:active {
     border-width: 0;
 
     background-image: linear-gradient(to bottom,
-                                      @notebook_tab_second_border_color 1px,
+                                      @notebook_tab_inner_border_color 1px,
                                       @notebook_tab_gradient_a 2px,
                                       @notebook_tab_gradient_b 50%,
                                       @notebook_tab_gradient_c 50%,

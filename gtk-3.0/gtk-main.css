@@ -148,7 +148,7 @@
 @define-color notebook_selected_tab_gradient_a #FEFEFE;
 @define-color notebook_selected_tab_gradient_b #F2F1F0;
 
-@define-color notebook_tab_second_border_color #F5F5F4;
+@define-color notebook_tab_inner_border_color #F5F5F4;
 @define-color notebook_tab_gradient_a #E7E6E4;
 @define-color notebook_tab_gradient_b #DBD9D7;
 @define-color notebook_tab_gradient_c #D6D4D2;
