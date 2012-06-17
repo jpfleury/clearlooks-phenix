@@ -1212,7 +1212,7 @@ GtkLinkButton.button *:active {
     -GtkNotebook-tab-overlap: 2;
     -GtkNotebook-tab-curvature: 3;
     /* FIXME - the gap should be applied only to top or bottom tabs */
-    -GtkNotebook-initial-gap: 8;
+    -GtkNotebook-initial-gap: 0;
 }
 
 .notebook GtkViewport {
