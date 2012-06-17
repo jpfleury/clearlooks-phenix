@@ -1496,158 +1496,222 @@ GtkComboBox .button *:hover {
     background-image: none;
     border-style: solid;
     -GtkRange-trough-border: 0;
-    -GtkScrollbar-has-backward-stepper: false;
-    -GtkScrollbar-has-forward-stepper: false;
-    -GtkRange-slider-width: 13;
-    -GtkScrollbar-min-slider-length: 42; /* minimum size for the slider. sadly can't be in '.slider' where it belongs */
-
+    -GtkScrollbar-has-backward-stepper: true;
+    -GtkScrollbar-has-forward-stepper: true;
+    -GtkRange-arrow-scaling: 0.444;
+    -GtkRange-slider-width: 15;
+    -GtkRange-stepper-size: 15px;
+    -GtkScrollbar-min-slider-length: 30;
     -GtkRange-stepper-spacing: 0;
-    -GtkRange-trough-under-steppers: 1;
+    -GtkRange-trough-under-steppers: 0;
+}
+
+.scrollbar.vertical {
+    engine: unico;
+    -unico-centroid-texture: url("assets/slider-vertical-grip.png");
+}
+
+.scrollbar.horizontal {
+    engine: unico;
+    -unico-centroid-texture: url("assets/slider-horizontal-grip.png");
 }
 
 .scrollbars-junction, /* the small square between scrollbars!!! */
 .scrollbar.trough {
     background-image: none;
     background-color: @scrollbar_trough;
-    border-width: 0;
+    border-color: @scrollbar_trough_border;
     border-radius: 0;
     border-image: none;
 }
 
-.scrollbar.button,
-.scrollbar.button:active,
-.scrollbar.button:active:hover,
-.scrollbar.button:insensitive,
-.scrollbar.button:hover:backdrop,
-.scrollbar.button:active:hover:backdrop {
-    border-style: none;
-    border-image: none;
-    border-radius: 0;
-    background-image: none;
-    background-color: transparent;
+.scrollbar.trough.horizontal {
+    border-width: 1px 0px;
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      left bottom,
+                      color-stop (0, @scrollbar_trough_gradient_a),
+                      color-stop (0.5, @scrollbar_trough_gradient_b));
 }
 
-.scrollbar.button:active,
-.scrollbar.button:active:hover {
-    background-color: mix(@scrollbar_slider, @scrollbar_trough, 0.8);
-}
-
-.scrollbar.button.top:hover {
-    box-shadow: inset 0 -1px mix(@scrollbar_slider, @scrollbar_trough, 0.8);
-}
-
-.scrollbar.button.bottom:hover {
-    box-shadow: inset 0 1px mix(@scrollbar_slider, @scrollbar_trough, 0.8);
-}
-
-.scrollbar.button.right:hover {
-    box-shadow: inset 1px 0 mix(@scrollbar_slider, @scrollbar_trough, 0.8);
-}
-
-.scrollbar.button.left:hover {
-    box-shadow: inset -1px 0 mix(@scrollbar_slider, @scrollbar_trough, 0.8);
-}
-
-.scrollbar.button.top:hover:backdrop,
-.scrollbar.button.bottom:hover:backdrop,
-.scrollbar.button.right:hover:backdrop,
-.scrollbar.button.left:hover:backdrop {
-    box-shadow: none;
+.scrollbar.trough.vertical {
+    border-width: 0px 1px;
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      right top,
+                      color-stop (0, @scrollbar_trough_gradient_a),
+                      color-stop (0.5, @scrollbar_trough_gradient_b));
 }
 
 .scrollbar.button {
-    color: @scrollbar_slider;
+    engine: adwaita;
+    border-width: 1px;
+    border-image: none;
+    border-color: @scrollbar_button_border_color;
+    background-image: none;
+    background-color: transparent;
+    color: @scrollbar_button_color;
 }
 
-.scrollbar.button:hover {
-    color: @scrollbar_slider_prelight;
+.scrollbar.button.top {
+    border-radius: 3px 3px 0px 0px;
+}
+
+.scrollbar.button.bottom {
+    border-radius: 0px 0px 3px 3px;
+}
+
+.scrollbar.button.left {
+    border-radius: 3px 0px 0px 3px;
+}
+
+.scrollbar.button.right {
+    border-radius: 0px 3px 3px 0px;
+}
+
+.scrollbar.button.horizontal {
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      left bottom,
+                      from (@scrollbar_button_gradient_a),
+                      color-stop (0.50, @scrollbar_button_gradient_b),
+                      color-stop (0.50, @scrollbar_button_gradient_c),
+                      to (@scrollbar_button_gradient_d));
+}
+
+.scrollbar.button.vertical {
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      right top,
+                      from (@scrollbar_button_gradient_a),
+                      color-stop (0.50, @scrollbar_button_gradient_b),
+                      color-stop (0.50, @scrollbar_button_gradient_c),
+                      to (@scrollbar_button_gradient_d));
+}
+
+.scrollbar.button.horizontal:hover {
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      left bottom,
+                      from (@scrollbar_button_hover_gradient_a),
+                      color-stop (0.50, @scrollbar_button_hover_gradient_b),
+                      color-stop (0.50, @scrollbar_button_hover_gradient_c),
+                      to (@scrollbar_button_hover_gradient_d));
+}
+
+.scrollbar.button.vertical:hover {
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      right top,
+                      from (@scrollbar_button_hover_gradient_a),
+                      color-stop (0.50, @scrollbar_button_hover_gradient_b),
+                      color-stop (0.50, @scrollbar_button_hover_gradient_c),
+                      to (@scrollbar_button_hover_gradient_d));
+}
+
+.scrollbar.button.horizontal:active {
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      left bottom,
+                      from (@scrollbar_button_active_gradient_a),
+                      color-stop (0.50, @scrollbar_button_active_gradient_b),
+                      color-stop (0.50, @scrollbar_button_active_gradient_c),
+                      to (@scrollbar_button_active_gradient_d));
+}
+
+.scrollbar.button.vertical:active {
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      right top,
+                      from (@scrollbar_button_active_gradient_a),
+                      color-stop (0.50, @scrollbar_button_active_gradient_b),
+                      color-stop (0.50, @scrollbar_button_active_gradient_c),
+                      to (@scrollbar_button_active_gradient_d));
 }
 
 .scrollbar.button:insensitive {
-    color: mix(@scrollbar_slider, @scrollbar_trough, 0.6);
+    color: @scrollbar_button_insensitive_color;
 }
 
-.scrollbar.button:active {
-    color: @scrollbar_slider_active;
+.scrollbar.button.top:insensitive {
+    border-bottom: none;
 }
 
-.scrollbar.button:backdrop {
-    color: @scrollbar_slider_unfocused;
+.scrollbar.button.bottom:insensitive {
+    border-top: none;
 }
 
-.scrollbar.button:insensitive:backdrop {
-    color: mix(@scrollbar_slider_unfocused, @scrollbar_trough_unfocused, 0.7);
+.scrollbar.button.left:insensitive {
+    border-right: none;
 }
 
-.scrollbar.trough:insensitive {
-    background-color: @scrollbar_trough_insensitive;
-    border-style: solid;
-    border-image: none;
-    border-color: transparent;
-    border-width: 3px;
+.scrollbar.button.right:insensitive {
+    border-left: none;
 }
-
-.scrollbars-junction:backdrop,
-.scrollbar.trough:backdrop {
-    background-image: none;
-    background-color: @scrollbar_trough_unfocused;
-    border-width: 0;
-    border-radius: 0;
-    border-image: none;
-}
-
-.scrollbar.trough:insensitive:backdrop {
-    background-image: none;
-    background-color: mix(@scrollbar_trough_unfocused, @scrollbar_trough_insensitive, 0.5);
-    border-width: 0;
-    border-radius: 0;
-    border-image: none;
-}
-
 
 .scrollbar.slider {
+    -unico-inner-stroke-width: 1px;
     background-image: none;
     background-color: @scrollbar_slider;
-    border-radius: 20px;
+    border-radius: 0;
     border-style: solid;
     border-image: none;
-    border-color: transparent;
-    border-width: 3px;
+    border-color: @scrollbar_slider_border_color;
+    border-width: 1px;
 }
 
-.scrollbar.slider:hover {
-    transition: 1000ms linear; /* doesn't work */
-    background-image: none;
-    background-color: @scrollbar_slider_prelight;
-    border-style: solid;
-    border-image: none;
-    border-color: transparent;
-    border-width: 3px;
+.scrollbar.slider.horizontal {
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                      left top,
+                      left bottom,
+                      from (@scrollbar_slider_inner_gradient_a),
+                      color-stop (0.50, @scrollbar_slider_inner_gradient_b),
+                      color-stop (0.50, @scrollbar_slider_inner_gradient_c),
+                      to (@scrollbar_slider_inner_gradient_d));
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      left bottom,
+                      from (@scrollbar_slider_gradient_a),
+                      color-stop (0.50, @scrollbar_slider_gradient_b),
+                      color-stop (0.50, @scrollbar_slider_gradient_c),
+                      to (@scrollbar_slider_gradient_d));
 }
 
-.scrollbar.slider:prelight:active {
-    background-image: none;
-    background-color: @scrollbar_slider_active;
-    border-style: solid;
-    border-image: none;
-    border-color: transparent;
-    border-width: 3px;
+.scrollbar.slider.vertical {
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                      left top,
+                      right top,
+                      from (@scrollbar_slider_inner_gradient_a),
+                      color-stop (0.50, @scrollbar_slider_inner_gradient_b),
+                      color-stop (0.50, @scrollbar_slider_inner_gradient_c),
+                      to (@scrollbar_slider_inner_gradient_d));
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      right top,
+                      from (@scrollbar_slider_gradient_a),
+                      color-stop (0.50, @scrollbar_slider_gradient_b),
+                      color-stop (0.50, @scrollbar_slider_gradient_c),
+                      to (@scrollbar_slider_gradient_d));
 }
 
-.scrollbar.slider:insensitive {
-    background-color: @scrollbar_slider_insensitive;
-    border-style: solid;
-    border-image: none;
-    border-color: transparent;
-    border-width: 3px;
+.scrollbar.slider.horizontal:hover {
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      left bottom,
+                      from (@scrollbar_slider_hover_gradient_a),
+                      color-stop (0.50, @scrollbar_slider_hover_gradient_b),
+                      color-stop (0.50, @scrollbar_slider_hover_gradient_c),
+                      to (@scrollbar_slider_hover_gradient_d));
 }
 
-.scrollbar.slider:backdrop {
-    background-color: @scrollbar_slider_unfocused;
-    border-style: solid;
-    border-image: none;
-    border-color: transparent;
-    border-width: 3px;
+.scrollbar.slider.vertical:hover {
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      right top,
+                      from (@scrollbar_slider_hover_gradient_a),
+                      color-stop (0.50, @scrollbar_slider_hover_gradient_b),
+                      color-stop (0.50, @scrollbar_slider_hover_gradient_c),
+                      to (@scrollbar_slider_hover_gradient_d));
 }
 
 /*********
@@ -1711,11 +1775,11 @@ GtkTreeMenu .menuitem * {
     -GtkWidget-window-dragging: true;
     -GtkMenuBar-internal-padding: 0;
     background-image: -gtk-gradient (linear,
-				     left top,
-				     left bottom,
-				     from (@menubar_gradient_a),
-				     color-stop (0.50, @menubar_gradient_b),
-				     to (@menubar_gradient_c));
+                      left top,
+                      left bottom,
+                      from (@menubar_gradient_a),
+                      color-stop (0.50, @menubar_gradient_b),
+                      to (@menubar_gradient_c));
 }
 
 .menubar .menuitem {

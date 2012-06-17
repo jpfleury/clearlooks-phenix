@@ -60,13 +60,52 @@
 @define-color trough_bg_color_b #e0e0dd;
 
 @define-color scrollbar_trough shade(@theme_bg_color, 0.9);
+@define-color scrollbar_trough_border #A19D9A;
+@define-color scrollbar_trough_gradient_a #CECBC9;
+@define-color scrollbar_trough_gradient_b #D6D4D2;
 @define-color scrollbar_trough_insensitive shade(@theme_bg_color, 0.9);
 @define-color scrollbar_trough_unfocused shade(@theme_unfocused_bg_color, 0.9);
+
 @define-color scrollbar_slider mix(@scrollbar_trough, @theme_fg_color, 0.35);
-@define-color scrollbar_slider_prelight mix(@scrollbar_trough, @theme_fg_color, 0.5);
+@define-color scrollbar_slider_gradient_a #A2C1E7;
+@define-color scrollbar_slider_gradient_b #98B9E2;
+@define-color scrollbar_slider_gradient_c #90B3DE;
+@define-color scrollbar_slider_gradient_d #84A9D8;
+
+@define-color scrollbar_slider_inner_gradient_a #B0CBEC;
+@define-color scrollbar_slider_inner_gradient_b #A7C3E7;
+@define-color scrollbar_slider_inner_gradient_c #A0BEE4;
+@define-color scrollbar_slider_inner_gradient_d #96B6DF;
+
+@define-color scrollbar_slider_border_color #5E7EA5;
+
+@define-color scrollbar_slider_hover_gradient_a #ADC9EB;
+@define-color scrollbar_slider_hover_gradient_b #A2C1E6;
+@define-color scrollbar_slider_hover_gradient_c #9ABBE3;
+@define-color scrollbar_slider_hover_gradient_d #8DB1DD;
+
 @define-color scrollbar_slider_active @theme_selected_bg_color;
 @define-color scrollbar_slider_insensitive alpha(black, 0); /* FIXME should be transparent */
 @define-color scrollbar_slider_unfocused @theme_unfocused_bg_color;
+
+@define-color scrollbar_button_color @theme_fg_color;
+@define-color scrollbar_button_insensitive_color #A9A5A2;
+@define-color scrollbar_button_border_color #868482;
+
+@define-color scrollbar_button_gradient_a #FDFDFD;
+@define-color scrollbar_button_gradient_b #F2F1F0;
+@define-color scrollbar_button_gradient_c #EBEAE9;
+@define-color scrollbar_button_gradient_d #E2E0DF;
+
+@define-color scrollbar_button_hover_gradient_a #FEFEFE;
+@define-color scrollbar_button_hover_gradient_b #F8F7F6;
+@define-color scrollbar_button_hover_gradient_c #F2F1F0;
+@define-color scrollbar_button_hover_gradient_d #E6E5E4;
+
+@define-color scrollbar_button_active_gradient_a #E3E1DF;
+@define-color scrollbar_button_active_gradient_b #DBD9D7;
+@define-color scrollbar_button_active_gradient_c #D5D3D1;
+@define-color scrollbar_button_active_gradient_d #CCCAC7;
 
 @define-color switch_slider_color #eeeeec;
 @define-color switch_trough_active_color @theme_base_color;
