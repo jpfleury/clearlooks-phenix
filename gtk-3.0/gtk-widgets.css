@@ -1209,7 +1209,7 @@ GtkLinkButton.button *:active {
     background-clip: border-box;
     background-color: @theme_base_color;
 
-    -GtkNotebook-tab-overlap: 8;
+    -GtkNotebook-tab-overlap: 2;
     -GtkNotebook-tab-curvature: 3;
     /* FIXME - the gap should be applied only to top or bottom tabs */
     -GtkNotebook-initial-gap: 8;
