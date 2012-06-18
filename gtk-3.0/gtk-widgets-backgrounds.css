@@ -7,10 +7,12 @@
 .toolbar GtkComboBox .button,
 .toolbar GtkComboBox .button:focus {
     background-image: -gtk-gradient (linear,
-				     left top, left bottom,
-                                     from (@button_gradient_color_a),
-                                     color-stop (0.4, @button_gradient_color_b),
-                                     to (@button_gradient_color_c));
+                      left top,
+                      left bottom,
+                      from (@button_gradient_color_a),
+                      color-stop (0.50, @button_gradient_color_b),
+                      color-stop (0.50, @button_gradient_color_c),
+                      to (@button_gradient_color_d));
 
     background-color: transparent;
 }
@@ -27,11 +29,19 @@
 .trough,
 .trough.highlight,
 .trough row,
-.trough row:hover {
-    background-image: -gtk-gradient (linear,
-    				     left top, left bottom,
-                                     from (@borders),
-				     to (shade(@theme_bg_color, 0.95)));
+.trough row:hover,
+/* Primary and inline toolbars pushed button background */
+.primary-toolbar .button:active,
+.primary-toolbar .button:active:hover,
+.inline-toolbar .button:active,
+.inline-toolbar .button:active:hover {
+    background-image: linear-gradient(to bottom,
+                                      @button_active_gradient_color_a,
+                                      @button_active_gradient_color_b 3px,
+                                      @button_active_gradient_color_c 4px,
+                                      @button_active_gradient_color_d 50%,
+                                      @button_active_gradient_color_e 50%,
+                                      @button_active_gradient_color_f);
     background-color: transparent; 
 }
 
@@ -43,45 +53,29 @@
 				     to (shade(@theme_bg_color, 0.95)));
 }
 
-/* Primary and inline toolbars pushed button background */
-.primary-toolbar .button:active,
-.primary-toolbar .button:active:hover,
-.inline-toolbar .button:active,
-.inline-toolbar .button:active:hover {
-    background-image: -gtk-gradient (linear,
-    				     left top, left bottom,
-                                     from (shade(@borders, 0.95)),
-				     to (shade(@theme_bg_color, 0.88)));
-    background-color: transparent;
-}
-
 /* Prelit button background */
 .button:hover,
 .toolbar .button:hover,
 .toolbar .button.raised:hover,
 .toolbar .raised .button:hover,
-.toolbar GtkComboBox .button:hover {
-    background-color: transparent;
-    background-image: -gtk-gradient (linear,
-				     left top, left bottom,
-				     from (@button_hover_gradient_color_a),
-				     to (@button_hover_gradient_color_b));
-}
-
-/* Prelit button on primary toolbar background */
+.toolbar GtkComboBox .button:hover,
 .primary-toolbar .button:hover {
     background-color: transparent;
-    background-image: -gtk-gradient (linear,
-				     left top, left bottom,
-				     from (alpha (@toolbar_button_prelight, 0)),
-				     color-stop (0.54, @toolbar_button_prelight),
-			             to (alpha (@toolbar_button_prelight, 0)));
+    background-image: linear-gradient(to bottom,
+                                      @button_hover_gradient_color_a 50%,
+                                      @button_hover_gradient_color_b 50%,
+                                      @button_hover_gradient_color_c);
 }
 
 /* Insensitive button background */
 .button:insensitive,
 .toolbar GtkComboBox .button:insensitive {
-    background-image: none;
+    background-image: linear-gradient(to bottom,
+                                      @button_insensitive_inner_border_color 1px,
+                                      @button_insensitive_gradient_color_a 2px,
+                                      @button_insensitive_gradient_color_b 50%,
+                                      @button_insensitive_gradient_color_c 50%,
+                                      @button_insensitive_gradient_color_d);
     background-color: @insensitive_bg_color;
 }
 
@@ -90,11 +84,12 @@
 .toolbar .button:active:insensitive,
 .toolbar GtkComboBox .button:active:insensitive {
     background-color: transparent;
-    background-image: -gtk-gradient (linear,
-				     left top, left bottom,
-				     from (shade (@insensitive_bg_color, 0.95)),
-                                     color-stop (0.4, @insensitive_bg_color),
-				     to (@insensitive_bg_color)); 
+    background-image: linear-gradient(to bottom,
+                                      @button_insensitive_inner_border_color 1px,
+                                      @button_insensitive_gradient_color_a 2px,
+                                      @button_insensitive_gradient_color_b 50%,
+                                      @button_insensitive_gradient_color_c 50%,
+                                      @button_insensitive_gradient_color_d);
 }
 
 /* Unfocused window button background */

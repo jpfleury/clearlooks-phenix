@@ -744,7 +744,7 @@ GtkComboBox.combobox-entry .button {
     border-style: solid;
     border-color: transparent;
 
-    text-shadow: 0 1px @button_text_shadow;
+    text-shadow: none;
 }
 
 /* We may want a background for focused buttons, but in the meantime let's remove it too */
@@ -775,7 +775,7 @@ GtkComboBox.combobox-entry .button {
 .inline-toolbar .button *:active,
 .button *:active {
     color: @button_active_text;
-    text-shadow: 0 1px @button_active_text_shadow;
+    text-shadow: none;
 }
 
 .button *:insensitive,
@@ -805,8 +805,8 @@ GtkComboBox.combobox-entry .button {
 .toolbar .button.raised *:active,
 .toolbar .raised .button *:active,
 .inline-toolbar .button *:active {
-    icon-shadow: 0 1px @button_active_text_shadow;
-    text-shadow: 0 1px @button_active_text_shadow;
+    icon-shadow: none;
+    text-shadow: none;
 }
 
 .toolbar .button.raised *:insensitive,

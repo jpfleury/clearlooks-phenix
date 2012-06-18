@@ -14,7 +14,7 @@
    height="16px"
    id="svg33222"
    version="1.1"
-   inkscape:version="0.48.1 r9760"
+   inkscape:version="0.48.3.1 r9886"
    sodipodi:docname="primary-toolbar-generic-border.svg">
   <defs
      id="defs33224">
@@ -59,16 +59,6 @@
          offset="1"
          id="stop3849" />
     </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient3845"
-       id="linearGradient3851"
-       x1="8.0000019"
-       y1="1.5371597"
-       x2="8.000001"
-       y2="13.462841"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.86666667,0,0,0.92857148,1.0666667,1.0357143)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3826"
@@ -152,16 +142,6 @@
          offset="1"
          style="stop-color:#ffffff;stop-opacity:0.3137255;" />
     </linearGradient>
-    <linearGradient
-       y2="13.462841"
-       x2="8.000001"
-       y1="1.5371597"
-       x1="8.0000019"
-       gradientTransform="matrix(0.86666667,0,0,0.92857148,1.0666667,1.0357141)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient3799"
-       xlink:href="#linearGradient3826-9"
-       inkscape:collect="always" />
   </defs>
   <sodipodi:namedview
      id="base"
@@ -171,16 +151,16 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="12.169367"
-     inkscape:cx="15.77914"
+     inkscape:cx="-1.7238246"
      inkscape:cy="-2.0466558"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:grid-bbox="true"
      inkscape:document-units="px"
-     inkscape:window-width="1366"
-     inkscape:window-height="710"
+     inkscape:window-width="1280"
+     inkscape:window-height="951"
      inkscape:window-x="0"
-     inkscape:window-y="26"
+     inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:snap-nodes="false"
      inkscape:snap-bbox="true"
@@ -219,15 +199,6 @@
        height="14.499999"
        width="14.499999"
        id="rect17861-9-2"
-       style="color:#000000;fill:none;stroke:url(#linearGradient3799);stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <rect
-       ry="2.5"
-       rx="2.5"
-       y="1.5"
-       x="1.5"
-       height="13"
-       width="13"
-       id="rect17861"
-       style="color:#000000;fill:none;stroke:url(#linearGradient3851);stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="color:#000000;fill:none;stroke:#888582;stroke-width:1.50000000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
   </g>
 </svg>

@@ -48,19 +48,31 @@
 @define-color sidebar_bg shade (@theme_bg_color, 1.025);
 @define-color sidebar_bg_unfocused mix(@sidebar_bg, @theme_unfocused_base_color, 0.5);
 
-@define-color button_gradient_color_a shade(@theme_bg_color, 1.05);
-@define-color button_gradient_color_b @theme_bg_color;
-@define-color button_gradient_color_c shade(@theme_bg_color, 0.92);
+@define-color button_gradient_color_a #FEFEFE;
+@define-color button_gradient_color_b #FBFBFB;
+@define-color button_gradient_color_c #F5F5F4;
+@define-color button_gradient_color_d #E8E7E6;
 @define-color borders #a4a09d;
 
-@define-color button_active_gradient_color_a #a2a9a2;
-@define-color button_active_gradient_color_b shade (@button_active_gradient_color_a, 0.83);
-@define-color button_active_text @theme_base_color;
-@define-color button_active_text_shadow alpha(black, 0.4);
+@define-color button_active_gradient_color_a #CCC9C7;
+@define-color button_active_gradient_color_b #D7D4D2;
+@define-color button_active_gradient_color_c #D9D7D5;
+@define-color button_active_gradient_color_d #CFCDCB;
+@define-color button_active_gradient_color_e #CAC8C5;
+@define-color button_active_gradient_color_f #C0BDBA;
+
+@define-color button_active_text @theme_fg_color;
 @define-color button_text_shadow alpha(white, 0.4);
 
-@define-color button_hover_gradient_color_a @theme_base_color;
-@define-color button_hover_gradient_color_b shade (@button_gradient_color_a, 0.94);
+@define-color button_hover_gradient_color_a #ffffff;
+@define-color button_hover_gradient_color_b #fafafa;
+@define-color button_hover_gradient_color_c #ededed;
+
+@define-color button_insensitive_inner_border_color #F9F9F8;
+@define-color button_insensitive_gradient_color_a #F5F5F4;
+@define-color button_insensitive_gradient_color_b #F0EFEE;
+@define-color button_insensitive_gradient_color_c #EAE9E8;
+@define-color button_insensitive_gradient_color_d #E4E3E2;
 
 @define-color insensitive_bg_color #f4f4f2;
 @define-color insensitive_fg_color #a7aba7;
