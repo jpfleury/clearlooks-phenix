@@ -698,6 +698,7 @@ GtkScale.trough:insensitive:backdrop {
     border-width: 1px;
     border-color: @borders;
     border-style: solid;
+    border-radius: 3px;
     background-color: @theme_base_color;
     padding: 0;
 }
