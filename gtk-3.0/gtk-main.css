@@ -152,7 +152,7 @@
 
 @define-color entry_inset alpha(black, 0.1);
 
-@define-color internal_element_color #888a85;
+@define-color internal_element_color @theme_text_color;
 @define-color internal_element_prelight @theme_text_color;
 @define-color internal_element_insensitive mix(@internal_element_color, @theme_base_color, 0.7);
 
