@@ -14,8 +14,8 @@
    width="16px"
    version="1.1"
    id="svg2"
-   inkscape:version="0.48.2 r9819"
-   sodipodi:docname="generic-border-focused-alt.svg">
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="tooltip-generic-border-focused.svg">
   <defs
      id="defs12">
     <linearGradient
@@ -64,7 +64,7 @@
      id="namedview10"
      showgrid="false"
      inkscape:zoom="17.625"
-     inkscape:cx="8.567376"
+     inkscape:cx="-3.6312056"
      inkscape:cy="8"
      inkscape:window-x="0"
      inkscape:window-y="26"
@@ -78,7 +78,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -90,5 +90,5 @@
      height="14.999999"
      width="15"
      id="rect17861"
-     style="color:#000000;fill:none;stroke:#729fcf;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+     style="color:#000000;fill:none;stroke:#4b6e99;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
 </svg>
