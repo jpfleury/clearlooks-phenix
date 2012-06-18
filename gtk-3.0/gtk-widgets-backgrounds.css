@@ -26,10 +26,6 @@
 .toolbar .raised .button:active,
 .toolbar .button.raised:active:hover,
 .toolbar .raised .button:active:hover,
-.trough,
-.trough.highlight,
-.trough row,
-.trough row:hover,
 /* Primary and inline toolbars pushed button background */
 .primary-toolbar .button:active,
 .primary-toolbar .button:active:hover,
@@ -45,12 +41,20 @@
     background-color: transparent; 
 }
 
+.trough,
+.trough.highlight,
+.trough row,
+.trough row:hover {
+    background-image: linear-gradient(to bottom,
+                                      @trough_bg_color_a,
+                                      @trough_bg_color_b 4px);
+}
+
 /* Flipped pushed button background for vertical progressbar through and the like */
 .trough.vertical {
-    background-image: -gtk-gradient (linear,
-    				     left top, right top,
-                                     from (@borders),
-				     to (shade(@theme_bg_color, 0.95)));
+    background-image: linear-gradient(to right,
+                                      @trough_bg_color_a,
+                                      @trough_bg_color_b 4px);
 }
 
 /* Prelit button background */

@@ -78,8 +78,8 @@
 @define-color insensitive_fg_color #a7aba7;
 @define-color insensitive_borders shade (@internal_element_color, 1.37);
 
-@define-color trough_bg_color_a #bcbcb7;
-@define-color trough_bg_color_b #e0e0dd;
+@define-color trough_bg_color_a #C1BFBD;
+@define-color trough_bg_color_b #D6D4D2;
 
 @define-color scrollbar_trough shade(@theme_bg_color, 0.9);
 @define-color scrollbar_trough_border #A19D9A;
@@ -136,10 +136,15 @@
 
 @define-color progressbar_background_a #76b0ec;
 @define-color progressbar_background_b #1f72c6;
-@define-color progressbar_pattern #2a79cb;
+@define-color progressbar_pattern #6587B2;
 @define-color progressbar_border @progressbar_pattern;
 @define-color progressbar_unfocused_background @theme_base_color;
 @define-color progressbar_unfocused_border @unfocused_borders;
+
+@define-color progressbar_gradient_a #A4C2E8;
+@define-color progressbar_gradient_b #98B8E2;
+@define-color progressbar_gradient_c #92B4DF;
+@define-color progressbar_gradient_d #84AAD8;
 
 @define-color entry_text_color @theme_text_color;
 @define-color entry_background_a shade(@theme_base_color, 0.94);
