@@ -170,40 +170,13 @@ column-header.button:active:hover,
 column-header .button:active:hover
 column-header.button:active:focus,
 column-header .button:active:focus {
-    border-image: -gtk-gradient (linear,
-                                 left top, left bottom,
-                                 from (@borders),
-                                 to (@theme_base_color)) 0 1 0 0;
-    border-width: 0 1px 0 0;
+    border-image: none;
+    border-width: 1px;
     border-radius: 0;
     border-style: solid;
-    border-color: transparent;
+    border-color: @column_header_border_a @column_header_border_b
+                  @column_header_border_c @column_header_border_a;
 
-}
-
-column-header.button:backdrop,
-column-header .button:backdrop {
-    border-image: -gtk-gradient (linear,
-                                 left top, left bottom,
-                                 from (@unfocused_borders),
-                                 to (@theme_unfocused_base_color)) 0 1 0 0;
-    border-width: 0 1px 0 0;
-    border-radius: 0;
-    border-style: solid;
-    border-color: transparent;
-}
-
-column-header.button:insensitive,
-column-header .button:insensitive {
-    border-image: -gtk-gradient (linear,
-                                 left top, left bottom,
-                                 from (@insensitive_borders),
-                                 to (@insensitive_bg_color)) 0 1 0 0;
-
-    border-width: 0 1px 0 0;
-    border-radius: 0;
-    border-style: solid;
-    border-color: transparent;
 }
 
 column-header.button:last-child,
@@ -216,11 +189,7 @@ column-header.button:last-child:active:hover,
 column-header:last-child .button:active:hover,
 column-header.button:last-child:active:focus,
 column-header:last-child .button:active:focus {
-    border-image: none;
-    border-width: 0;
-    border-radius: 0;
-    border-style: solid;
-    border-color: transparent;
+    border-right: none;
 }
 
 /* unfocused window: generic element borders */

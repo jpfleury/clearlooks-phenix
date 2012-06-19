@@ -2416,11 +2416,17 @@ column-header .button:hover,
 column-header.button:focus:hover,
 column-header .button:focus:hover {
     background-color: @theme_base_color;
-    background-image: none;
+    background-image: -gtk-gradient (linear,
+				     left top,
+				     left bottom,
+				     from (@column_header_button_gradient_a),
+				     color-stop (0.50, @column_header_button_gradient_b),
+				     color-stop (0.50, @column_header_button_gradient_c),
+				     to (@column_header_button_gradient_d));
     padding: 0 4px;
     text-shadow: none;
     icon-shadow: none;
-    font-weight: bold; /* Not sure about this one */
+    font-weight: normal;
 }
 
 column-header.button:backdrop,

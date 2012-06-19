@@ -146,6 +146,15 @@
 @define-color progressbar_gradient_c #92B4DF;
 @define-color progressbar_gradient_d #84AAD8;
 
+@define-color column_header_border_a @theme_base_color;
+@define-color column_header_border_b #C4C2BF;
+@define-color column_header_border_c #A9A5A2;
+
+@define-color column_header_button_gradient_a #F9F9F8;
+@define-color column_header_button_gradient_b #F2F1F0;
+@define-color column_header_button_gradient_c #ECEBEA;
+@define-color column_header_button_gradient_d #E4E3E2;
+
 @define-color entry_text_color @theme_text_color;
 @define-color entry_background_a shade(@theme_base_color, 0.94);
 @define-color entry_background_b @theme_base_color;
