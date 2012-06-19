@@ -104,13 +104,13 @@ GtkLabel:insensitive {
  ************/
 .tooltip {
     padding: 4px;
-    border-style: none;
-    border-radius: 5px;
-
-    background-color: alpha(@theme_tooltip_bg_color, 0.90);
+    border-style: solid;
+    border-width: 1px;
+    border-color: @theme_tooltip_border_color;
+    border-radius: 0px;
+    background-color: @theme_tooltip_bg_color;
     color: @theme_tooltip_fg_color;
-
-    text-shadow: 1px 1px black;
+    text-shadow: none;
 }
 
 .tooltip * {

@@ -70,5 +70,6 @@
 /************
  * Tooltips *
  ************/
-@define-color theme_tooltip_bg_color #212526;
-@define-color theme_tooltip_fg_color #ffffff;
+@define-color theme_tooltip_bg_color #F5F5B5;
+@define-color theme_tooltip_fg_color @theme_fg_color;
+@define-color theme_tooltip_border_color #BABA45;
