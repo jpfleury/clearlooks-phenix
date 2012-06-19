@@ -163,8 +163,8 @@
 @define-color column_header_button_gradient_d #E4E3E2;
 
 @define-color entry_text_color @theme_text_color;
-@define-color entry_background_a shade(@theme_base_color, 0.94);
-@define-color entry_background_b @theme_base_color;
+@define-color entry_inner_border_color #E4E3E3;
+@define-color entry_background @theme_base_color;
 
 @define-color entry_inset alpha(black, 0.1);
 

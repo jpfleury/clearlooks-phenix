@@ -137,11 +137,9 @@ GtkComboBox.combobox-entry .button:insensitive:backdrop {
 
 /* Entry background */
 .entry {
-
-    background-image: -gtk-gradient(linear,
-                                    left top, left bottom,
-                                    from(@entry_background_a),
-                                    to(@entry_background_b));
+    background-image: linear-gradient(to bottom,
+                                      @entry_inner_border_color 1px,
+                                      @entry_background 2px);
     box-shadow: inset 0 1px @entry_inset, inset 0 2px alpha(@entry_inset, 0.4);
 }
 
@@ -156,11 +154,8 @@ column-header.button:active:hover:focus,
 column-header .button:active:hover:focus,
 column-header.button:active:focus,
 column-header .button:active:focus {
-    background-color: transparent;
-    background-image: -gtk-gradient(linear,
-                                    left top, left bottom,
-                                    from(shade(@entry_background_a, 0.9)),
-                                    to(@entry_background_b));
+    background-color: @entry_background;
+    background-image: none;
     box-shadow: inset 0 1px @entry_inset, inset 0 2px alpha(@entry_inset, 0.4);
 }
 
