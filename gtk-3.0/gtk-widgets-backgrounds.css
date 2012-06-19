@@ -5,7 +5,9 @@
 .toolbar .button.raised:focus,
 .toolbar .raised .button:focus,
 .toolbar GtkComboBox .button,
-.toolbar GtkComboBox .button:focus {
+.toolbar GtkComboBox .button:focus
+GtkComboBox.combobox-entry .button,
+.primary-toolbar GtkComboBox.combobox-entry .button {
     background-image: -gtk-gradient (linear,
                       left top,
                       left bottom,
@@ -26,6 +28,8 @@
 .toolbar .raised .button:active,
 .toolbar .button.raised:active:hover,
 .toolbar .raised .button:active:hover,
+.primary-toolbar GtkComboBox.combobox-entry .button:active,
+GtkComboBox.combobox-entry .button:active,
 /* Primary and inline toolbars pushed button background */
 .primary-toolbar .button:active,
 .primary-toolbar .button:active:hover,
@@ -63,7 +67,9 @@
 .toolbar .button.raised:hover,
 .toolbar .raised .button:hover,
 .toolbar GtkComboBox .button:hover,
-.primary-toolbar .button:hover {
+.primary-toolbar .button:hover,
+GtkComboBox.combobox-entry .button:hover,
+.primary-toolbar GtkComboBox.combobox-entry .button:hover {
     background-color: transparent;
     background-image: linear-gradient(to bottom,
                                       @button_hover_gradient_color_a 50%,
@@ -73,7 +79,8 @@
 
 /* Insensitive button background */
 .button:insensitive,
-.toolbar GtkComboBox .button:insensitive {
+.toolbar GtkComboBox .button:insensitive,
+GtkComboBox.combobox-entry .button:insensitive {
     background-image: linear-gradient(to bottom,
                                       @button_insensitive_inner_border_color 1px,
                                       @button_insensitive_gradient_color_a 2px,
@@ -101,7 +108,8 @@
 .toolbar .button.raised:backdrop,
 .toolbar .raised .button:backdrop,
 .toolbar .button:backdrop:hover,
-.primary-toolbar .raised .button:backdrop:hover {
+.primary-toolbar .raised .button:backdrop:hover,
+GtkComboBox.combobox-entry .button:backdrop {
     background-image: none;
     background-color: @unfocused_button_background;
 }
@@ -115,7 +123,8 @@
 }
 
 /* Unfocused window insensitive button background */
-.button:insensitive:backdrop {
+.button:insensitive:backdrop,
+GtkComboBox.combobox-entry .button:insensitive:backdrop {
     background-image: none;
     background-color: @unfocused_insensitive_bg_color;
 }
@@ -126,11 +135,7 @@
 }
 
 /* Entry background */
-.entry,
-GtkComboBox.combobox-entry .button,
-GtkComboBox.combobox-entry .button:hover,
-.primary-toolbar GtkComboBox.combobox-entry .button,
-.primary-toolbar GtkComboBox.combobox-entry .button:hover {
+.entry {
 
     background-image: -gtk-gradient(linear,
                                     left top, left bottom,
@@ -140,9 +145,6 @@ GtkComboBox.combobox-entry .button:hover,
 }
 
 /* Entry pushed button background */
-.primary-toolbar GtkComboBox.combobox-entry .button:active,
-/* .primary-toolbar GtkComboBox.combobox-entry .button:hover:active,*/
-GtkComboBox.combobox-entry .button:active,
 .spinbutton .button:active,
 .spinbutton .button:active:hover,
 column-header.button:active,
@@ -162,8 +164,7 @@ column-header .button:active:focus {
 }
 
 /* Insensitive entry background */
-.entry:insensitive,
-GtkComboBox.combobox-entry .button:insensitive {
+.entry:insensitive {
     background-color: @insensitive_bg_color;
     background-image: none;
     box-shadow: none;
@@ -171,7 +172,6 @@ GtkComboBox.combobox-entry .button:insensitive {
 
 /* Unfocused windows entry background */
 .entry:backdrop,
-GtkComboBox.combobox-entry .button:backdrop,
 column-header.button:backdrop,
 column-header .button:backdrop,
 column-header.button:insensitive:backdrop,
@@ -182,8 +182,7 @@ column-header .button:insensitive:backdrop {
 }
 
 /* Unfocused windows insensitive entry background */
-.entry:insensitive:backdrop,
-GtkComboBox.combobox-entry .button:insensitive:backdrop {
+.entry:insensitive:backdrop {
     background-image: none;
     background-color: @unfocused_insensitive_bg_color;
 }

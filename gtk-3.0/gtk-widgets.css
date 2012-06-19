@@ -1415,6 +1415,10 @@ GtkComboBox.combobox-entry .button:last-child {
     border-left-width: 0;
 }
 
+GtkComboBox.combobox-entry .button:last-child {
+    border-image-width: 3px 3px 4px 2px;
+}
+
 .primary-toolbar GtkComboBox.combobox-entry .entry:first-child,
 .primary-toolbar GtkComboBox.combobox-entry .button:first-child {
     border-image-width: 4px 0 4px 4px;
@@ -1721,10 +1725,6 @@ GtkTreeMenu.menu {
 
 GtkTreeMenu .menuitem {
     padding: 2px;
-
-    border-style: solid;
-    border-width: 1px 0;
-    border-color: @menu_combobox_border;
 }
 
 GtkTreeMenu .menuitem * {
@@ -1816,11 +1816,22 @@ GtkTreeMenu .menuitem * {
     border-radius: 0;
 }
 
+GtkTreeMenu .menuitem:hover,
 .menu .menuitem:active,
 .menu .menuitem:hover {
-    background-color: @theme_selected_bg_color;
+    border-style: solid;
+    border-width: 1px;
+    border-color: @menubar_menuitem_hover_border_color;
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      left bottom,
+                      from (@menubar_menuitem_hover_gradient_a),
+                      color-stop (0.50, @menubar_menuitem_hover_gradient_b),
+                      color-stop (0.50, @menubar_menuitem_hover_gradient_c),
+                      to (@menubar_menuitem_hover_gradient_d));
 }
 
+GtkTreeMenu .menuitem *:hover,
 .menu .menuitem:active,
 .menu .menuitem *:active,
 .menu .menuitem:hover,
