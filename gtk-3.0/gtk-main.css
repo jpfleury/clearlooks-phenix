@@ -68,6 +68,13 @@
 @define-color button_hover_gradient_color_b #fafafa;
 @define-color button_hover_gradient_color_c #ededed;
 
+@define-color button_active_insensitive_gradient_color_a #E9E8E6;
+@define-color button_active_insensitive_gradient_color_b #F2F1F0;
+@define-color button_active_insensitive_gradient_color_c #F4F4F3;
+@define-color button_active_insensitive_gradient_color_d #F0EFEE;
+@define-color button_active_insensitive_gradient_color_e #EAE9E8;
+@define-color button_active_insensitive_gradient_color_f #E4E3E2;
+
 @define-color button_insensitive_inner_border_color #F9F9F8;
 @define-color button_insensitive_gradient_color_a #F5F5F4;
 @define-color button_insensitive_gradient_color_b #F0EFEE;
