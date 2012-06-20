@@ -204,10 +204,10 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
  *********/
 
 .pane-separator {
-	background-image: url("assets/pane-separator-grip.svg");
+	background-image: url("assets/pane-separator-grip-horz.png");
 }
 
 .pane-separator.vertical {
-	background-image: url("assets/pane-separator-grip-vertical.svg");
+	background-image: url("assets/pane-separator-grip-vert.png");
 }
 
