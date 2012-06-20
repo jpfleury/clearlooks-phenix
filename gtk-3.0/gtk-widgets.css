@@ -183,11 +183,6 @@ GtkTreeView.separator,
 	background-color: @theme_bg_color;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url("assets/pane-separator-grip.svg");
-}
-
-.pane-separator.vertical {
-	background-image: url("assets/pane-separator-grip-vertical.svg");
 }
 
 .notebook .pane-separator,
@@ -1577,46 +1572,6 @@ GtkTreeMenu .menuitem *:hover,
 .menuitem.radio:active {
 	background-color: transparent;
 }
-
-.menuitem.check:active {
-	background-image: url("assets/menuitem-checkbox-checked.png");
-}
-
-.menuitem.check:active:hover {
-	background-image: url("assets/menuitem-checkbox-checked-selected.png");
-}
-
-.menuitem.check:active:insensitive {
-	background-image: url("assets/menuitem-checkbox-checked-insensitive.png");
-}
-
-.menuitem.check:inconsistent,
-.menuitem.radio:inconsistent {
-	background-image: url("assets/menuitem-checkbox-mixed.png");
-}
-
-.menuitem.check:inconsistent:insensitive,
-.menuitem.radio:inconsistent:insensitive {
-	background-image: url("assets/menuitem-checkbox-mixed-insensitive.png");
-}
-
-.menuitem.check:inconsistent:hover,
-.menuitem.radio:inconsistent:hover {
-	background-image: url("assets/menuitem-checkbox-mixed-selected.png");
-}
-
-.menuitem.radio:active {
-	background-image: url("assets/menuitem-radio-checked.png");
-}
-
-.menuitem.radio:active:hover {
-	background-image: url("assets/menuitem-radio-checked-selected.png");
-}
-
-.menuitem.radio:active:insensitive {
-	background-image: url("assets/menuitem-radio-checked-insensitive.png");
-}
-
 
 /***************
  * Menu Button *
