@@ -20,8 +20,8 @@ GtkComboBox.combobox-entry .button,
 }
 
 /* Pushed button background */
-.button:active, 
-.button:active:hover, 
+.button:active,
+.button:active:hover,
 .toolbar .button:active,
 .toolbar .button:active:hover,
 .toolbar .button.raised:active,

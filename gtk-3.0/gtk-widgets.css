@@ -41,7 +41,7 @@
     -adwaita-focus-border-radius: 2;
     -adwaita-focus-border-dashes: 1;
     -GtkWindow-resize-grip-width: 0;
-    -GtkWindow-resize-grip-height: 0;   
+    -GtkWindow-resize-grip-height: 0;
 }
 
 /***************
@@ -585,7 +585,7 @@ GtkScrolledWindow.frame {
     padding: 0;
 }
 
-/* avoid double borders when a viewport is 
+/* avoid double borders when a viewport is
  * packed into a GtkScrolledWindow */
 GtkScrolledWindow GtkViewport.frame {
     border-style: none;
@@ -625,7 +625,7 @@ GtkComboBox.combobox-entry .button {
 .primary-toolbar .button {
     border-image: none;
 
-    /* setting border-style: none; here would override the border-width values 
+    /* setting border-style: none; here would override the border-width values
      * we set in gtk-widget-borders.css to zero.
      */
     border-style: solid;
@@ -721,7 +721,7 @@ GtkComboBox.combobox-entry .button {
 .toolbar .raised.linked .button:insensitive:last-child,
 .inline-toolbar.toolbar .button:insensitive:last-child,
 .inline-toolbar.toolbar GtkToolButton:last-child .button:insensitive {
-    box-shadow: none; 
+    box-shadow: none;
 }
 
 /* Middle button */
@@ -967,7 +967,7 @@ GtkLinkButton.button *:active {
     text-shadow: none;
 }
 
-.button .separator { 
+.button .separator {
     color: shade(@internal_element_color, 1.30);
 }
 
@@ -1104,9 +1104,9 @@ GtkLinkButton.button *:active {
     box-shadow: 0 1 inset alpha(black, 0.05); /* FIXME*/
     color:  @theme_base_color; /* FIXME*/
     icon-shadow: 0 1 alpha(black, 0.25); /* FIXME*/
-    border-color: alpha(black, 0.27) 
-                  alpha(black, 0.13) 
-                  alpha(black, 0.13) 
+    border-color: alpha(black, 0.27)
+                  alpha(black, 0.13)
+                  alpha(black, 0.13)
                   alpha(black, 0.13); /* FIXME*/
 }
 
@@ -1182,7 +1182,7 @@ GtkComboBox.combobox-entry .button:last-child,
 GtkComboBox.combobox-entry .button:hover:last-child,
 GtkComboBox.combobox-entry .button:active:last-child,
 GtkComboBox.combobox-entry .button:hover:active:last-child {
-    box-shadow: 1 0 inset @inset_dark_color, 
+    box-shadow: 1 0 inset @inset_dark_color,
                 0 1 inset @entry_inset,
                 0 2 inset alpha(@entry_inset, 0.4);
 }
@@ -1191,7 +1191,7 @@ GtkComboBox.combobox-entry .button:first-child,
 GtkComboBox.combobox-entry .button:hover:first-child,
 GtkComboBox.combobox-entry .button:active:first-child,
 GtkComboBox.combobox-entry .button:hover:active:first-child {
-    box-shadow: -1 0 inset @inset_dark_color, 
+    box-shadow: -1 0 inset @inset_dark_color,
                 0 1 inset @entry_inset,
                 0 2 inset alpha(@entry_inset, 0.4);
 }
@@ -2458,3 +2458,4 @@ GsmFailWhaleDialog .button:active:focus {
     border-color: @borders;
     border-width: 1px;
 }
+

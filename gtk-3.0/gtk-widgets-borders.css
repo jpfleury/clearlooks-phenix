@@ -33,7 +33,7 @@ GtkComboBox.combobox-entry .button:insensitive,
 GtkComboBox.combobox-entry .entry:focus,
 .button:focus:active,
 .button.default:active,
-GtkSwitch.trough:active { 
+GtkSwitch.trough:active {
     border-image: url("borders/button-border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
     border-radius: 3px;
     border-width: 1px 1px 2px 1px;
@@ -54,7 +54,7 @@ GtkSwitch.trough:active {
 
 /* focused button borders */
 .button:focus,
-.button.default { 
+.button.default {
     border-image: url("borders/button-border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
     border-radius: 3px;
     border-width: 1px 1px 2px 1px;
@@ -120,7 +120,7 @@ GtkSwitch.trough:active {
 .primary-toolbar .raised .button.default:active,
 .inline-toolbar.toolbar .button:focus:active,
 .inline-toolbar.toolbar .button.default:active,
-.primary-toolbar GtkComboBox .button:active:focus { 
+.primary-toolbar GtkComboBox .button:active:focus {
     border-image: url("borders/button-border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
     border-radius: 3px;
     border-width: 2px;
@@ -152,7 +152,7 @@ GtkSwitch.trough:active {
 .primary-toolbar .raised .button.default,
 .inline-toolbar.toolbar .button:focus,
 .inline-toolbar.toolbar .button.default,
-.primary-toolbar GtkComboBox .button:focus { 
+.primary-toolbar GtkComboBox .button:focus {
     border-image: url("borders/primary-toolbar-button-border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
     border-radius: 3px;
     border-width: 2px;
