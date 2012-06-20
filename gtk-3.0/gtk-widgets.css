@@ -133,7 +133,7 @@ GtkLabel:insensitive {
     border-radius: 3px;
     border-width: 1px;
     border-style: solid;
-    box-shadow: inset 1px 1px white, -1px -1px white;
+    box-shadow: 1 1 inset white, -1 -1 white;
 }
 
 .floating-bar.top {
@@ -264,9 +264,9 @@ GtkTreeView.separator:backdrop,
 }
 
 .entry:focus {
-    box-shadow: inset 1px 2px alpha(@theme_selected_bg_color, 0.1),
-                inset 1px 1px alpha(@theme_selected_bg_color, 0.1),
-                inset -1px -1px alpha(@theme_selected_bg_color, 0.2);
+    box-shadow: 1 2 inset alpha(@theme_selected_bg_color, 0.1),
+                1 1 inset alpha(@theme_selected_bg_color, 0.1),
+                -1 -1 inset alpha(@theme_selected_bg_color, 0.2);
 }
 
 .entry.progressbar {
@@ -324,11 +324,11 @@ GtkTreeView.separator:backdrop,
     border-radius: 0;
     border-style: none;
     border-image: none;
-    box-shadow: inset 1px 0 @inset_dark_color;
+    box-shadow: 1 0 inset @inset_dark_color;
 }
 
 .spinbutton .button:backdrop {
-    box-shadow: inset 1px 0 @unfocused_entry_separators;
+    box-shadow: 1 0 inset @unfocused_entry_separators;
     box-shadow: none;
 }
 
@@ -364,17 +364,17 @@ GtkTreeView.separator:backdrop,
 /* Add back the glowy effect from the entry covered by the pushed button background*/
 .spinbutton .button:active,
 .spinbutton .button:active:focus {
-    box-shadow: inset 1px 0 @inset_dark_color, inset 0 1px alpha(@theme_selected_bg_color, 0.2), inset 0 -1px alpha(@theme_selected_bg_color, 0.2);
+    box-shadow: 1 0 inset @inset_dark_color, 0 1 inset alpha(@theme_selected_bg_color, 0.2), 0 -1 inset alpha(@theme_selected_bg_color, 0.2);
 }
 
 .spinbutton .button:first-child:active,
 .spinbutton .button:first-child:active:focus {
-    box-shadow: inset 1px 1px alpha(@theme_selected_bg_color, 0.2), inset 0 -1px alpha(@theme_selected_bg_color, 0.2);
+    box-shadow: 1 1 inset alpha(@theme_selected_bg_color, 0.2), 0 -1 inset alpha(@theme_selected_bg_color, 0.2);
 }
 
 .spinbutton .button:last-child:active,
 .spinbutton .button:last-child:active:focus {
-    box-shadow: inset 1px 0 @inset_dark_color, inset 0 1px alpha(@theme_selected_bg_color, 0.2), inset -1px -1px alpha(@theme_selected_bg_color, 0.2);
+    box-shadow: 1 0 inset @inset_dark_color, 0 1 inset alpha(@theme_selected_bg_color, 0.2), -1 -1 inset alpha(@theme_selected_bg_color, 0.2);
 }
 
 /*****************
@@ -386,7 +386,7 @@ GtkColorSwatch:selected {
     border-style: solid;
     border-radius: 1px;
     border-color: alpha(black, 0.3);
-    box-shadow: inset 0 2px alpha(black, 0.07), inset 1px 1px alpha(black, 0.07);
+    box-shadow: 0 2 inset alpha(black, 0.07), 1 1 inset alpha(black, 0.07);
 
     background-color: transparent;
     background-clip: border-box;
@@ -666,11 +666,11 @@ GtkScale.mark {
 }
 
 GtkScale.trough.vertical {
-    box-shadow: inset -1px 0 @theme_bg_color;
+    box-shadow: -1 0 inset @theme_bg_color;
 }
 
 GtkScale.trough {
-    box-shadow: inset 0 -1px @theme_bg_color;
+    box-shadow: 0 -1 inset @theme_bg_color;
 }
 
 /**********
@@ -751,7 +751,7 @@ GtkComboBox.combobox-entry .button {
     border-width: 2px;
     border-color: transparent;
 
-    text-shadow: 0 1px @primary_toolbar_button_text_shadow;
+    text-shadow: 0 1 @primary_toolbar_button_text_shadow;
 }
 
 .primary-toolbar .button *:active,
@@ -781,8 +781,8 @@ GtkComboBox.combobox-entry .button {
 .toolbar .button.raised *,
 .toolbar .raised .button *,
 .inline-toolbar .button * {
-    icon-shadow: 0 1px @button_text_shadow;
-    text-shadow: 0 1px @button_text_shadow;
+    icon-shadow: 0 1 @button_text_shadow;
+    text-shadow: 0 1 @button_text_shadow;
 }
 
 .toolbar .button.raised *:active,
@@ -814,7 +814,7 @@ GtkComboBox.combobox-entry .button {
 .toolbar .raised.linked .button,
 .inline-toolbar.toolbar .button,
 .inline-toolbar.toolbar GtkToolButton .button {
-    box-shadow: inset 1px 0 @inset_light_color, inset -1px 0 @inset_dark_color;
+    box-shadow: 1 0 inset @inset_light_color, -1 0 inset @inset_dark_color;
 }
 
 .linked .button:first-child,
@@ -822,7 +822,7 @@ GtkComboBox.combobox-entry .button {
 .toolbar .raised.linked .button:first-child,
 .inline-toolbar.toolbar .button:first-child,
 .inline-toolbar.toolbar GtkToolButton:first-child .button {
-    box-shadow: inset -1px 0 @inset_dark_color;
+    box-shadow: -1 0 inset @inset_dark_color;
 }
 
 .linked .button:last-child,
@@ -830,7 +830,7 @@ GtkComboBox.combobox-entry .button {
 .toolbar .raised.linked .button:last-child,
 .inline-toolbar.toolbar .button:last-child,
 .inline-toolbar.toolbar GtkToolButton:last-child .button {
-    box-shadow: inset 1px 0 @inset_light_color;
+    box-shadow: 1 0 inset @inset_light_color;
 }
 
 .linked .button:active,
@@ -838,7 +838,7 @@ GtkComboBox.combobox-entry .button {
 .toolbar .raised.linked .button:active,
 .inline-toolbar.toolbar .button:active,
 .inline-toolbar.toolbar GtkToolButton .button:active {
-    box-shadow: inset 1px 0 @inset_dark_color;
+    box-shadow: 1 0 inset @inset_dark_color;
 }
 
 .linked .button:insensitive,
@@ -846,7 +846,7 @@ GtkComboBox.combobox-entry .button {
 .toolbar .raised.linked .button:insensitive,
 .inline-toolbar.toolbar .button:insensitive,
 .inline-toolbar.toolbar GtkToolButton .button:insensitive {
-    box-shadow: inset -1px 0 @inset_dark_color;
+    box-shadow: -1 0 inset @inset_dark_color;
 }
 
 .linked .button:backdrop,
@@ -854,7 +854,7 @@ GtkComboBox.combobox-entry .button {
 .toolbar .raised.linked .button:backdrop,
 .inline-toolbar.toolbar .button:backdrop,
 .inline-toolbar.toolbar GtkToolButton .button:backdrop {
-    box-shadow: inset -1px 0 @unfocused_borders;
+    box-shadow: -1 0 inset @unfocused_borders;
 }
 
 .linked .button:insensitive:backdrop,
@@ -862,7 +862,7 @@ GtkComboBox.combobox-entry .button {
 .toolbar .raised.linked .button:insensitive:backdrop,
 .inline-toolbar.toolbar .button:insensitive:backdrop,
 .inline-toolbar.toolbar GtkToolButton .button:insensitive:backdrop {
-    box-shadow: inset -1px 0 @unfocused_insensitive_borders;
+    box-shadow: -1 0 inset @unfocused_insensitive_borders;
 }
 
 /* remove box shadow from last-child and only-child */
@@ -1009,31 +1009,31 @@ GtkComboBox.combobox-entry .button {
 
 /* Linked button shadows (vertical) */
 .linked.vertical .button {
-    box-shadow: inset 0 1px @inset_light_color, inset 0 -1px @inset_dark_color;
+    box-shadow: 0 1 inset @inset_light_color, 0 -1 inset @inset_dark_color;
 }
 
 .linked.vertical .button:first-child {
-    box-shadow: inset 0 -1px @inset_dark_color;
+    box-shadow: 0 -1 inset @inset_dark_color;
 }
 
 .linked.vertical .button:last-child {
-    box-shadow: inset 0 -1px @inset_light_color;
+    box-shadow: 0 -1 inset @inset_light_color;
 }
 
 .linked.vertical .button:active {
-    box-shadow: inset 0 1px @inset_dark_color, inset 0 -1px @inset_dark_color;
+    box-shadow: 0 1 inset @inset_dark_color, 0 -1 inset @inset_dark_color;
 }
 
 .linked.vertical .button:insensitive {
-    box-shadow: inset 0 -1px @inset_dark_color;
+    box-shadow: 0 -1 inset @inset_dark_color;
 }
 
 .linked.vertical .button:backdrop {
-    box-shadow: inset 0 -1px @unfocused_borders;
+    box-shadow: 0 -1 inset @unfocused_borders;
 }
 
 .linked.vertical .button:insensitive:backdrop {
-    box-shadow: inset 0 -1px @unfocused_insensitive_borders;
+    box-shadow: 0 -1 inset @unfocused_insensitive_borders;
 }
 
 .linked.vertical .button:only-child,
@@ -1326,7 +1326,7 @@ GtkLinkButton.button *:active {
     border-width: 1px;
     padding: 0;
 
-    icon-shadow: 0 1px alpha(white, 0.5); /* FIXME*/
+    icon-shadow: 0 1 alpha(white, 0.5); /* FIXME*/
 }
 
 .notebook tab .button GtkImage:hover {
@@ -1337,9 +1337,9 @@ GtkLinkButton.button *:active {
 .notebook tab .button GtkImage:active,
 .notebook tab .button GtkImage:active:hover {
     background-color: alpha(black, 0.08); /* FIXME*/
-    box-shadow: inset 0 1px alpha(black, 0.05); /* FIXME*/
+    box-shadow: 0 1 inset alpha(black, 0.05); /* FIXME*/
     color:  @theme_base_color; /* FIXME*/
-    icon-shadow: 0 1px alpha(black, 0.25); /* FIXME*/
+    icon-shadow: 0 1 alpha(black, 0.25); /* FIXME*/
     border-color: alpha(black, 0.27) 
                   alpha(black, 0.13) 
                   alpha(black, 0.13) 
@@ -1364,7 +1364,7 @@ GtkComboBox {
     -GtkComboBox-arrow-scaling: 0.5;
     -GtkComboBox-shadow-type: none;
 
-    text-shadow: 0 1px @button_text_shadow;
+    text-shadow: 0 1 @button_text_shadow;
 }
 
 GtkComboBox *:backdrop {
@@ -1420,41 +1420,41 @@ GtkComboBox.combobox-entry .button:last-child {
 }
 
 GtkComboBox.combobox-entry .entry:focus:first-child {
-    box-shadow: inset 1px 2px alpha(@theme_selected_bg_color, 0.1),
-                inset 1px 1px alpha(@theme_selected_bg_color, 0.1),
-                inset 0 -1px alpha(@theme_selected_bg_color, 0.2);
+    box-shadow: 1 2 inset alpha(@theme_selected_bg_color, 0.1),
+                1 1 inset alpha(@theme_selected_bg_color, 0.1),
+                0 -1 inset alpha(@theme_selected_bg_color, 0.2);
 }
 
 GtkComboBox.combobox-entry .entry:focus:last-child {
-    box-shadow: inset -1px 2px alpha(@theme_selected_bg_color, 0.1),
-                inset -1px 1px alpha(@theme_selected_bg_color, 0.1),
-                inset 0 -1px alpha(@theme_selected_bg_color, 0.2);
+    box-shadow: -1 2 inset alpha(@theme_selected_bg_color, 0.1),
+                -1 1 inset alpha(@theme_selected_bg_color, 0.1),
+                0 -1 inset alpha(@theme_selected_bg_color, 0.2);
 }
 
 GtkComboBox.combobox-entry .button:last-child,
 GtkComboBox.combobox-entry .button:hover:last-child,
 GtkComboBox.combobox-entry .button:active:last-child,
 GtkComboBox.combobox-entry .button:hover:active:last-child {
-    box-shadow: inset 1px 0 @inset_dark_color, 
-                inset 0 1px @entry_inset,
-                inset 0 2px alpha(@entry_inset, 0.4);
+    box-shadow: 1 0 inset @inset_dark_color, 
+                0 1 inset @entry_inset,
+                0 2 inset alpha(@entry_inset, 0.4);
 }
 
 GtkComboBox.combobox-entry .button:first-child,
 GtkComboBox.combobox-entry .button:hover:first-child,
 GtkComboBox.combobox-entry .button:active:first-child,
 GtkComboBox.combobox-entry .button:hover:active:first-child {
-    box-shadow: inset -1px 0 @inset_dark_color, 
-                inset 0 1px @entry_inset,
-                inset 0 2px alpha(@entry_inset, 0.4);
+    box-shadow: -1 0 inset @inset_dark_color, 
+                0 1 inset @entry_inset,
+                0 2 inset alpha(@entry_inset, 0.4);
 }
 
 GtkComboBox.combobox-entry .button:insensitive:first-child {
-    box-shadow: inset -1px 0 @inset_dark_color;
+    box-shadow: -1 0 inset @inset_dark_color;
 }
 
 GtkComboBox.combobox-entry .button:insensitive:last-child {
-    box-shadow: inset 1px 0 @inset_dark_color;
+    box-shadow: 1 0 inset @inset_dark_color;
 }
 
 GtkComboBox.combobox-entry .button:backdrop:first-child,
@@ -1989,8 +1989,8 @@ GtkCheckButton:selected:focus {
 
     -GtkWidget-window-dragging: true;
     -GtkToolbar-button-relief: normal;
-    box-shadow: inset 0 3px alpha(black, 0.02), inset 0 2px alpha(black, 0.02), inset 0 1px alpha(black, 0.02);
-    text-shadow: 0 1px @primary_toolbar_button_text_shadow;
+    box-shadow: 0 3 inset alpha(black, 0.02), 0 2 inset alpha(black, 0.02), 0 1 inset alpha(black, 0.02);
+    text-shadow: 0 1 @primary_toolbar_button_text_shadow;
 }
 
 .primary-toolbar .toolbar:insensitive,
@@ -2101,7 +2101,7 @@ GtkCheckButton:selected:focus {
     color: @osd_fg;
     background-color: @osd_bg;
 
-    text-shadow: 0 1px @osd_text_shadow;
+    text-shadow: 0 1 @osd_text_shadow;
 }
 
 .osd.toolbar {
@@ -2133,9 +2133,9 @@ GtkCheckButton:selected:focus {
 
     color: @osd_button_fg;
 
-    text-shadow: 0 -1px @osd_button_shadow;
-    icon-shadow: 0 -1px @osd_button_shadow;
-    box-shadow: inset -1px 0 @osd_button_inset;
+    text-shadow: 0 -1 @osd_button_shadow;
+    icon-shadow: 0 -1 @osd_button_shadow;
+    box-shadow: -1 0 inset @osd_button_inset;
 }
 
 .osd .button,
@@ -2147,7 +2147,7 @@ GtkCheckButton:selected:focus {
 .osd .button:nth-child(first) {
     border-radius: 4px 0 0 4px;
     border-left-width: 1px;
-    box-shadow: inset -1px 0 @osd_button_inset;
+    box-shadow: -1 0 inset @osd_button_inset;
 }
 
 .osd .button:nth-child(last) {
@@ -2273,7 +2273,7 @@ GtkSwitch.slider {
     border-style: solid;
     border-color: @switch_slider_border_color;
 
-    box-shadow: inset 0 -1px alpha(white, 0.9), inset 0 1px @theme_base_color, inset 0 2px alpha(@borders, 0.15);
+    box-shadow: 0 -1 inset alpha(white, 0.9), 0 1 inset @theme_base_color, 0 2 inset alpha(@borders, 0.15);
 
     padding: 0px 0px 1px 0px;
 
@@ -2653,19 +2653,19 @@ GtkInfoBar .button:active:backdrop,
 
 
 .info {
-    text-shadow: 0 1px @info_text_shadow;
+    text-shadow: 0 1 @info_text_shadow;
 }
 
 .warning {
-    text-shadow: 0 1px @warning_text_shadow;
+    text-shadow: 0 1 @warning_text_shadow;
 }
 
 .question {
-    text-shadow: 0 1px @question_text_shadow;
+    text-shadow: 0 1 @question_text_shadow;
 }
 
 .error {
-    text-shadow: 0 1px @error_text_shadow;
+    text-shadow: 0 1 @error_text_shadow;
 }
 
 GtkInfoBar:backdrop,
@@ -2753,7 +2753,7 @@ PanelApplet > GtkMenuBar.menubar {
 
 .gnome-panel-menu-bar.menubar .menuitem *:hover,
 PanelApplet > GtkMenuBar.menubar .menuitem *:hover {
-    text-shadow: 0 1px @os_chrome_bg_color;
+    text-shadow: 0 1 @os_chrome_bg_color;
 }
 
 .gnome-panel-menu-bar.menubar .menu,
@@ -2810,7 +2810,7 @@ PanelApplet *:hover {
 PanelApplet *:active,
 PanelApplet *:hover:active {
     color: @os_chrome_selected_fg_color;
-    text-shadow: 0 1px @os_chrome_bg_color;
+    text-shadow: 0 1 @os_chrome_bg_color;
 }
 
 WnckPager {

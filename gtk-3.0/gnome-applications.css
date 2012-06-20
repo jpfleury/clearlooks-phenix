@@ -54,7 +54,7 @@ TerminalWindow GtkNotebook.notebook {
 
 .nautilus-desktop.nautilus-canvas-item {
     color: @theme_bg_color;
-    text-shadow: 1px 1px black;
+    text-shadow: 1 1 black;
 }
 
 .nautilus-desktop.nautilus-canvas-item:active {
@@ -84,7 +84,7 @@ NautilusQueryEditor.info {
 .nautilus-cluebar-label {
     font: bold;
     color: @theme_base_color;
-    text-shadow: 0 1px alpha(black, 0.15);
+    text-shadow: 0 1 alpha(black, 0.15);
 }
 
 .nautilus-cluebar-label:backdrop {
@@ -294,8 +294,8 @@ GtkIconView.documents-main-view.check:active {
 }
 
 .documents-selection-mode.toolbar .button * {
-    text-shadow: 0 1px shade(@documents_selection_toolbar_border, 0.90);
-    icon-shadow: 0 1px shade(@documents_selection_toolbar_border, 0.90);
+    text-shadow: 0 1 shade(@documents_selection_toolbar_border, 0.90);
+    icon-shadow: 0 1 shade(@documents_selection_toolbar_border, 0.90);
 }
 
 .documents-selection-mode.toolbar .button:hover {
@@ -387,7 +387,7 @@ GtkIconView.documents-main-view.check:active {
                                      from(#aeaea4),
                                      color-stop(0.18, #d1d1cb),
                                      to(#d8d8d3));
-    text-shadow: 0 1px @primary_toolbar_button_text_shadow;
+    text-shadow: 0 1 @primary_toolbar_button_text_shadow;
 }
 
 /* epiphany */
@@ -404,9 +404,9 @@ EphyToolbar .entry:backdrop {
 }
 
 EphyToolbar .entry:focus {
-    box-shadow: inset 1px 2px alpha(@theme_selected_bg_color, 0.1),
-                inset 1px 1px alpha(@theme_selected_bg_color, 0.1),
-                inset 0 -1px alpha(@theme_selected_bg_color, 0.2);
+    box-shadow: 1 2 inset alpha(@theme_selected_bg_color, 0.1),
+                1 1 inset alpha(@theme_selected_bg_color, 0.1),
+                0 -1 inset alpha(@theme_selected_bg_color, 0.2);
 }
 
 EphyToolbar .location-entry .button {
@@ -431,9 +431,9 @@ EphyToolbar .location-entry .button:focus {
                                     left top, left bottom,
                                     from(@entry_background_a),
                                     to(@entry_background_b));
-    box-shadow: inset 1px 0 @inset_dark_color,
-                inset 0 1px @entry_inset,
-                inset 0 2px alpha(@entry_inset, 0.4);
+    box-shadow: 1 0 inset @inset_dark_color,
+                0 1 inset @entry_inset,
+                0 2 inset alpha(@entry_inset, 0.4);
 }
 
 EphyToolbar .location-entry .button:active,
@@ -442,9 +442,9 @@ EphyToolbar .location-entry .button:active:hover {
                                     left top, left bottom,
                                     from(shade(@entry_background_a, 0.9)),
                                     to(@entry_background_b));
-    box-shadow: inset 1px 0 @inset_dark_color,
-                inset 0 1px @entry_inset, 
-                inset 0 2px alpha(@entry_inset, 0.4);
+    box-shadow: 1 0 inset @inset_dark_color,
+                0 1 inset @entry_inset, 
+                0 2 inset alpha(@entry_inset, 0.4);
 }
 
 EphyToolbar .location-entry .button:hover,
