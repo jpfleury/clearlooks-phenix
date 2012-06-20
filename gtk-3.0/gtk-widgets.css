@@ -2285,28 +2285,37 @@ GtkSwitch.slider {
     border-width: 1px;
     border-radius: 2px;
     border-style: solid;
-    border-color: mix (@borders, @theme_text_color, 0.4);
+    border-color: @switch_slider_border_color;
 
     box-shadow: inset 0 -1px alpha(white, 0.9), inset 0 1px @theme_base_color, inset 0 2px alpha(@borders, 0.15);
 
-    padding: 2px 2px 3px 2px;
+    padding: 0px 0px 1px 0px;
 
-    background-image: url("assets/switch-slider-grip.svg"),
-                      -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (@theme_base_color),
-                                     to (@switch_slider_color));
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      left bottom,
+                      from (@switch_slider_gradient_a),
+                      color-stop (0.50, @switch_slider_gradient_b),
+                      color-stop (0.50, @switch_slider_gradient_c),
+                      to (@switch_slider_gradient_d));
 
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .primary-toolbar GtkSwitch.slider {
-    padding: 3px;
+    padding: 1px;
 }
 
 GtkSwitch.slider:insensitive {
-    background-image: none;
+    background-image: -gtk-gradient (linear,
+                      left top,
+                      left bottom,
+                      from (@switch_slider_insensitive_gradient_a),
+                      color-stop (0.50, @switch_slider_insensitive_gradient_b),
+                      color-stop (0.50, @switch_slider_insensitive_gradient_c),
+                      to (@switch_slider_insensitive_gradient_d));
+    padding: 0px;
 
     border-color: @insensitive_boder_color;
 

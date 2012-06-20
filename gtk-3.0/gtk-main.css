@@ -137,9 +137,20 @@
 @define-color scrollbar_button_active_gradient_d #CCCAC7;
 
 @define-color switch_slider_color #eeeeec;
+@define-color switch_slider_border_color @progressbar_border;
 @define-color switch_trough_active_color @theme_base_color;
-@define-color switch_trough_active_bg_a #509ae7;
-@define-color switch_trough_active_bg_b #a5d0ff;
+@define-color switch_trough_active_bg_a #4b6e99;
+@define-color switch_trough_active_bg_b #84A9D8;
+
+@define-color switch_slider_gradient_a @scrollbar_slider_gradient_a;
+@define-color switch_slider_gradient_b @scrollbar_slider_gradient_b;
+@define-color switch_slider_gradient_c @scrollbar_slider_gradient_c;
+@define-color switch_slider_gradient_d @scrollbar_slider_gradient_d;
+
+@define-color switch_slider_insensitive_gradient_a @button_insensitive_gradient_color_a;
+@define-color switch_slider_insensitive_gradient_b @button_insensitive_gradient_color_b;
+@define-color switch_slider_insensitive_gradient_c @button_insensitive_gradient_color_c;
+@define-color switch_slider_insensitive_gradient_d @button_insensitive_gradient_color_d;
 
 @define-color progressbar_background_a #76b0ec;
 @define-color progressbar_background_b #1f72c6;
