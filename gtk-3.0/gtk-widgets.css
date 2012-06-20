@@ -1413,6 +1413,11 @@ GtkTreeMenu .menuitem *:hover,
 	border-style: none;
 }
 
+.check row:selected:insensitive,
+.check row:selected:focus:insensitive {
+	background-color: transparent;
+}
+
 GtkCheckButton:hover,
 GtkCheckButton:active:hover,
 GtkCheckButton:selected,
@@ -2019,6 +2024,14 @@ GtkInfoBar:last-child,
 .dim-label:selected,
 .dim-label:selected:focus {
 	color: mix (@theme_selected_fg_color, @theme_base_color, 0.50);
+}
+
+/***************
+ * Resize grip *
+ ***************/
+
+.grip {
+	background-color: transparent;
 }
 
 /**********************
