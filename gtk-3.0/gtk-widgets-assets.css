@@ -215,7 +215,7 @@ GtkScale.slider.horizontal {
 
 GtkScale.slider:backdrop,
 GtkScale.slider.horizontal:backdrop {
-    background-image: url("assets/scale-slider-horz-backdrop.png");
+    background-image: url("assets/scale-slider-horz-insensitive.png");
 }
 
 GtkScale.slider:insensitive,
@@ -225,7 +225,7 @@ GtkScale.slider.horizontal:insensitive {
 
 GtkScale.slider:insensitive:backdrop,
 GtkScale.slider.horizontal:insensitive:backdrop {
-    background-image: url("assets/scale-slider-horz-backdrop-insensitive.png");
+    background-image: url("assets/scale-slider-horz-insensitive.png");
 }
 
 
@@ -234,7 +234,7 @@ GtkScale.slider.vertical {
 }
 
 GtkScale.slider.vertical:backdrop {
-    background-image: url("assets/scale-slider-vert-backdrop.png");
+    background-image: url("assets/scale-slider-vert-insensitive.png");
 }
 
 GtkScale.slider.vertical:insensitive {
@@ -242,7 +242,7 @@ GtkScale.slider.vertical:insensitive {
 }
 
 GtkScale.slider.vertical:insensitive:backdrop {
-    background-image: url("assets/scale-slider-vert-backdrop-insensitive.png");
+    background-image: url("assets/scale-slider-vert-insensitive.png");
 }
 
 GtkScale.scale-has-marks-above.slider.horizontal {

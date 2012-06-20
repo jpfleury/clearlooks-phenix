@@ -205,30 +205,3 @@ column-header .button:insensitive:backdrop {
     background-color: @unfocused_dark_bg;
 }
 
-/* Active switch background*/
-GtkSwitch.trough:active,
-GtkScale.progressbar {
-    background-color: transparent;
-    background-image: -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (@switch_trough_active_bg_a),
-                                     to (@switch_trough_active_bg_b));
-}
-
-GtkSwitch.trough:backdrop {
-    background-color: @theme_unfocused_bg_color; /* FIXME */
-    background-image: none;
-}
-
-GtkSwitch.trough:active:backdrop {
-    background-color: @unfocused_borders;
-    background-image: none;
-}
-
-GtkScale.progressbar.vertical {
-    background-color: transparent;
-    background-image: -gtk-gradient (linear,
-                                     left top, right top,
-                                     from (@switch_trough_active_bg_a),
-                                     to (@switch_trough_active_bg_b));
-}

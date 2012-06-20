@@ -601,16 +601,14 @@ GtkProgressBar.vertical:backdrop,
  * GtkScale *
  ************/
 GtkScale {
-    -GtkScale-slider-length: 16;
-    -GtkRange-slider-width: 20;
+    -GtkScale-slider-length: 21;
+    -GtkRange-slider-width: 13;
     -GtkRange-trough-border: 0;
 }
 
 GtkScale.slider,
 GtkScale.slider:hover,
-GtkScale.slider:insensitive,
-GtkScale.slider:backdrop,
-GtkScale.slider:insensitive:backdrop {
+GtkScale.slider:insensitive {
     border-radius: 0;
     border-style: none;
 
@@ -630,35 +628,37 @@ GtkScale.trough.vertical {
 GtkScale.trough,
 GtkScale.trough.highlight,
 GtkScale.trough.vertical,
-GtkScale.trough:backdrop {
+GtkScale.trough:insensitive {
     border-width: 1px;
     border-image: none;
     border-style: solid;
+    border-radius: 0px;
+    background-image: none;
 }
 
 GtkScale.trough,
-GtkScale.trough.highlight,
 GtkScale.trough.vertical {
-    border-color: @borders;
+    border-color: @scale_trough_border_color;
+    background-color: @scale_trough_background_color;
 }
 
-GtkScale.trough:backdrop {
-    border-color: @unfocused_borders;
+GtkScale.trough.highlight {
+    border-color: @scale_trough_highlight_border_color;
+    background-color: @scale_trough_highlight_background_color;
 }
 
 GtkScale.trough:insensitive {
-    background-color: @insensitive_bg_color;
-    border-color: @insensitive_borders;
-    box-shadow: none;
-    background-image: none;
+    border-color: @scale_trough_insensitive_border_color;
+    background-color: @scale_trough_insensitive_background_color;
+}
+
+GtkScale.trough.highlight:insensitive {
+    border-color: @scale_trough_highlight_insensitive_border_color;
+    background-color: @scale_trough_highlight_insensitive_background_color;
 }
 
 GtkScale.progressbar {
     background-color: @scale_progress_fill;
-}
-
-GtkScale.progressbar:backdrop {
-    background-color: @unfocused_borders;
 }
 
 GtkScale.mark {
@@ -671,20 +671,6 @@ GtkScale.trough.vertical {
 
 GtkScale.trough {
     box-shadow: inset 0 -1px @theme_bg_color;
-}
-
-GtkScale.trough:backdrop {
-    box-shadow: none;
-    border-color: @unfocused_borders;
-    background-color: @unfocused_dark_bg;
-    background-image: none;
-}
-
-GtkScale.trough:insensitive:backdrop {
-    background-color: @unfocused_insensitive_bg_color;
-    border-color: @unfocused_insensitive_borders;
-    box-shadow: none;
-    background-image: none;
 }
 
 /**********
