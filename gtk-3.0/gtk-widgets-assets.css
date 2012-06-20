@@ -3,194 +3,194 @@
  ***************/
 
 .grip {
-    background-color: transparent;
-    background-image: url("assets/resize-grip.svg");
+	background-color: transparent;
+	background-image: url("assets/resize-grip.svg");
 }
 
 /*************************
  * Check and Radio items *
  *************************/
 
-/* draw regular check and radio items using our SVG assets */
 .check {
-    background-image: url("assets/checkbox-unchecked.png");
+	background-image: url("assets/checkbox-unchecked.png");
 }
 
 .check row:selected,
 .check row:selected:focus {
-    background-image: url("assets/checkbox-unchecked-alt.png");
+	background-image: url("assets/checkbox-unchecked-alt.png");
 }
 
 .check:insensitive {
-    background-image: url("assets/checkbox-unchecked-insensitive.png");
+	background-image: url("assets/checkbox-unchecked-insensitive.png");
 }
 
 .check row:selected:insensitive,
 .check row:selected:focus:insensitive {
-    background-color: transparent;
-    background-image: url("assets/checkbox-unchecked-insensitive-alt.png");
+	background-color: transparent;
+	background-image: url("assets/checkbox-unchecked-insensitive-alt.png");
 }
 
 .check:active {
-    background-image: url("assets/checkbox-checked.png");
+	background-image: url("assets/checkbox-checked.png");
 }
 
 .check row:selected:active,
 .check row:selected:focus:active {
-    background-image: url("assets/checkbox-checked-alt.png");
+	background-image: url("assets/checkbox-checked-alt.png");
 }
 
 .check:active:insensitive {
-    background-image: url("assets/checkbox-checked-insensitive.png");
+	background-image: url("assets/checkbox-checked-insensitive.png");
 }
 
 .check row:selected:active:insensitive,
 .check row:selected:focus:active:insensitive {
-    background-image: url("assets/checkbox-checked-insensitive-alt.png");
+	background-image: url("assets/checkbox-checked-insensitive-alt.png");
 }
 
 .check:inconsistent {
-    background-image: url("assets/checkbox-mixed.png");
+	background-image: url("assets/checkbox-mixed.png");
 }
 
 .check row:selected:inconsistent,
 .check row:selected:focus:inconsistent {
-    background-image: url("assets/checkbox-mixed-alt.png");
+	background-image: url("assets/checkbox-mixed-alt.png");
 }
 
 .check:inconsistent:insensitive {
-    background-image: url("assets/checkbox-mixed-insensitive.png");
+	background-image: url("assets/checkbox-mixed-insensitive.png");
 }
 
 .check row:selected:inconsistent:insensitive,
 .check row:selected:focus:inconsistent:insensitive {
-    background-image: url("assets/checkbox-mixed-insensitive-alt.png");
+	background-image: url("assets/checkbox-mixed-insensitive-alt.png");
 }
 
 .radio {
-    background-image: url("assets/radio-unchecked.png");
+	background-image: url("assets/radio-unchecked.png");
 }
 
 .radio row:selected,
 .radio row:selected:focus {
-    background-image: url("assets/radio-unchecked-alt.png");
+	background-image: url("assets/radio-unchecked-alt.png");
 }
 
 .radio:insensitive {
-    background-image: url("assets/radio-unchecked-insensitive.png");
+	background-image: url("assets/radio-unchecked-insensitive.png");
 }
 
 .radio row:selected:insensitive,
 .radio row:selected:focus:insensitive {
-    background-image: url("assets/radio-unchecked-insensitive-alt.png");
+	background-image: url("assets/radio-unchecked-insensitive-alt.png");
 }
 
 .radio:active {
-    background-image: url("assets/radio-checked.png");
+	background-image: url("assets/radio-checked.png");
 }
 
 .radio row:selected:active,
 .radio row:selected:focus:active {
-    background-image: url("assets/radio-checked-alt.png");
+	background-image: url("assets/radio-checked-alt.png");
 }
 
 .radio:active:insensitive {
-    background-image: url("assets/radio-checked-insensitive.png");
+	background-image: url("assets/radio-checked-insensitive.png");
 }
 
 .radio row:selected:active:insensitive,
 .radio row:selected:focus:active:insensitive {
-    background-image: url("assets/radio-checked-insensitive-alt.png");
+	background-image: url("assets/radio-checked-insensitive-alt.png");
 }
 
 .radio:inconsistent {
-    background-image: url("assets/radio-mixed.png");
+	background-image: url("assets/radio-mixed.png");
 }
 
 .radio row:selected:inconsistent,
 .radio row:selected:focus:inconsistent {
-    background-image: url("assets/radio-mixed-alt.png");
+	background-image: url("assets/radio-mixed-alt.png");
 }
 
 .radio:inconsistent:insensitive {
-    background-image: url("assets/radio-mixed-insensitive.png");
+	background-image: url("assets/radio-mixed-insensitive.png");
 }
 
 .radio row:selected:inconsistent:insensitive,
 .radio row:selected:focus:inconsistent:insensitive {
-    background-image: url("assets/radio-mixed-insensitive-alt.png");
+	background-image: url("assets/radio-mixed-insensitive-alt.png");
 }
 
 .sidebar .radio:active,
 .sidebar .radio:active:focus,
 .sidebar .radio:active:hover {
-    background-image: url("assets/sidebar-radio-checked.svg");
+	background-image: url("assets/sidebar-radio-checked.svg");
 }
 
 .sidebar .radio:hover {
-    background-image: url("assets/sidebar-radio-prelight.svg");
+	background-image: url("assets/sidebar-radio-prelight.svg");
 }
 
 .sidebar .radio:active:selected,
 .sidebar .radio:active:selected:focus {
-    background-image: url("assets/sidebar-radio-selected.svg");
+	background-image: url("assets/sidebar-radio-selected.svg");
 }
 
 .sidebar .radio:selected:hover,
 .sidebar .radio:selected:focus {
-    background-image: url("assets/sidebar-radio-selected-prelight.svg");
+	background-image: url("assets/sidebar-radio-selected-prelight.svg");
 }
 
 /*********************
  * GtkScale's slider *
  *********************/
+ 
 GtkScale.slider,
 GtkScale.slider.horizontal {
-    background-image: url("assets/scale-slider-horz.png");
+	background-image: url("assets/scale-slider-horz.png");
 }
 
 GtkScale.slider:insensitive,
 GtkScale.slider.horizontal:insensitive {
-    background-image: url("assets/scale-slider-horz-insensitive.png");
+	background-image: url("assets/scale-slider-horz-insensitive.png");
 }
 
 GtkScale.slider.vertical {
-    background-image: url("assets/scale-slider-vert.png");
+	background-image: url("assets/scale-slider-vert.png");
 }
 
 GtkScale.slider.vertical:insensitive {
-    background-image: url("assets/scale-slider-vert-insensitive.png");
+	background-image: url("assets/scale-slider-vert-insensitive.png");
 }
 
 GtkScale.scale-has-marks-above.slider.horizontal {
-    background-image: url("assets/scale-slider-up.png");
+	background-image: url("assets/scale-slider-up.png");
 }
 
 GtkScale.scale-has-marks-above.slider.horizontal:insensitive {
-    background-image: url("assets/scale-slider-up-insensitive.png");
+	background-image: url("assets/scale-slider-up-insensitive.png");
 }
 
 GtkScale.scale-has-marks-above.slider.vertical {
-    background-image: url("assets/scale-slider-left.png");
+	background-image: url("assets/scale-slider-left.png");
 }
 
 GtkScale.scale-has-marks-above.slider.vertical:insensitive {
-    background-image: url("assets/scale-slider-left-insensitive.png");
+	background-image: url("assets/scale-slider-left-insensitive.png");
 }
 
 GtkScale.scale-has-marks-below.slider.horizontal {
-    background-image: url("assets/scale-slider-down.png");
+	background-image: url("assets/scale-slider-down.png");
 }
 
 GtkScale.scale-has-marks-below.slider.horizontal:insensitive {
-    background-image: url("assets/scale-slider-down-insensitive.png");
+	background-image: url("assets/scale-slider-down-insensitive.png");
 }
 
 GtkScale.scale-has-marks-below.slider.vertical {
-    background-image: url("assets/scale-slider-right.png");
+	background-image: url("assets/scale-slider-right.png");
 }
 
 GtkScale.scale-has-marks-below.slider.vertical:insensitive {
-    background-image: url("assets/scale-slider-right-insensitive.png");
+	background-image: url("assets/scale-slider-right-insensitive.png");
 }
 

@@ -8,15 +8,14 @@
 .toolbar GtkComboBox .button:focus
 GtkComboBox.combobox-entry .button,
 .primary-toolbar GtkComboBox.combobox-entry .button {
-    background-image: -gtk-gradient (linear,
-                      left top,
-                      left bottom,
-                      from (@button_gradient_color_a),
-                      color-stop (0.50, @button_gradient_color_b),
-                      color-stop (0.50, @button_gradient_color_c),
-                      to (@button_gradient_color_d));
-
-    background-color: transparent;
+	background-image: -gtk-gradient (linear,
+	                  left top,
+	                  left bottom,
+	                  from (@button_gradient_color_a),
+	                  color-stop (0.50, @button_gradient_color_b),
+	                  color-stop (0.50, @button_gradient_color_c),
+	                  to (@button_gradient_color_d));
+	background-color: transparent;
 }
 
 /* Pushed button background */
@@ -30,35 +29,34 @@ GtkComboBox.combobox-entry .button,
 .toolbar .raised .button:active:hover,
 .primary-toolbar GtkComboBox.combobox-entry .button:active,
 GtkComboBox.combobox-entry .button:active,
-/* Primary and inline toolbars pushed button background */
 .primary-toolbar .button:active,
 .primary-toolbar .button:active:hover,
 .inline-toolbar .button:active,
 .inline-toolbar .button:active:hover {
-    background-image: linear-gradient(to bottom,
-                                      @button_active_gradient_color_a,
-                                      @button_active_gradient_color_b 3px,
-                                      @button_active_gradient_color_c 4px,
-                                      @button_active_gradient_color_d 50%,
-                                      @button_active_gradient_color_e 50%,
-                                      @button_active_gradient_color_f);
-    background-color: transparent;
+	background-image: linear-gradient(to bottom,
+	                  @button_active_gradient_color_a,
+	                  @button_active_gradient_color_b 3px,
+	                  @button_active_gradient_color_c 4px,
+	                  @button_active_gradient_color_d 50%,
+	                  @button_active_gradient_color_e 50%,
+	                  @button_active_gradient_color_f);
+	background-color: transparent;
 }
 
 .trough,
 .trough.highlight,
 .trough row,
 .trough row:hover {
-    background-image: linear-gradient(to bottom,
-                                      @trough_bg_color_a,
-                                      @trough_bg_color_b 4px);
+	background-image: linear-gradient(to bottom,
+	                  @trough_bg_color_a,
+	                  @trough_bg_color_b 4px);
 }
 
 /* Flipped pushed button background for vertical progressbar through and the like */
 .trough.vertical {
-    background-image: linear-gradient(to right,
-                                      @trough_bg_color_a,
-                                      @trough_bg_color_b 4px);
+	background-image: linear-gradient(to right,
+	                  @trough_bg_color_a,
+	                  @trough_bg_color_b 4px);
 }
 
 /* Prelit button background */
@@ -70,46 +68,46 @@ GtkComboBox.combobox-entry .button:active,
 .primary-toolbar .button:hover,
 GtkComboBox.combobox-entry .button:hover,
 .primary-toolbar GtkComboBox.combobox-entry .button:hover {
-    background-color: transparent;
-    background-image: linear-gradient(to bottom,
-                                      @button_hover_gradient_color_a 50%,
-                                      @button_hover_gradient_color_b 50%,
-                                      @button_hover_gradient_color_c);
+	background-color: transparent;
+	background-image: linear-gradient(to bottom,
+	                  @button_hover_gradient_color_a 50%,
+	                  @button_hover_gradient_color_b 50%,
+	                  @button_hover_gradient_color_c);
 }
 
 /* Insensitive button background */
 .button:insensitive,
 .toolbar GtkComboBox .button:insensitive,
 GtkComboBox.combobox-entry .button:insensitive {
-    background-image: linear-gradient(to bottom,
-                                      @button_insensitive_inner_border_color 1px,
-                                      @button_insensitive_gradient_color_a 2px,
-                                      @button_insensitive_gradient_color_b 50%,
-                                      @button_insensitive_gradient_color_c 50%,
-                                      @button_insensitive_gradient_color_d);
-    background-color: @insensitive_bg_color;
+	background-image: linear-gradient(to bottom,
+	                  @button_insensitive_inner_border_color 1px,
+	                  @button_insensitive_gradient_color_a 2px,
+	                  @button_insensitive_gradient_color_b 50%,
+	                  @button_insensitive_gradient_color_c 50%,
+	                  @button_insensitive_gradient_color_d);
+	background-color: @insensitive_bg_color;
 }
 
 /* Pushed + Insensitive button background */
 .button:active:insensitive,
 .toolbar .button:active:insensitive,
 .toolbar GtkComboBox .button:active:insensitive {
-    background-image: linear-gradient(to bottom,
-                                      @button_active_insensitive_gradient_color_a,
-                                      @button_active_insensitive_gradient_color_b 3px,
-                                      @button_active_insensitive_gradient_color_c 4px,
-                                      @button_active_insensitive_gradient_color_d 50%,
-                                      @button_active_insensitive_gradient_color_e 50%,
-                                      @button_active_insensitive_gradient_color_f);
-    background-color: transparent;
+	background-image: linear-gradient(to bottom,
+	                  @button_active_insensitive_gradient_color_a,
+	                  @button_active_insensitive_gradient_color_b 3px,
+	                  @button_active_insensitive_gradient_color_c 4px,
+	                  @button_active_insensitive_gradient_color_d 50%,
+	                  @button_active_insensitive_gradient_color_e 50%,
+	                  @button_active_insensitive_gradient_color_f);
+	background-color: transparent;
 }
 
 /* Entry background */
 .entry {
-    background-image: linear-gradient(to bottom,
-                                      @entry_inner_border_color 1px,
-                                      @entry_background 2px);
-    box-shadow: 0 1 inset @entry_inset, 0 2 inset alpha(@entry_inset, 0.4);
+	background-image: linear-gradient(to bottom,
+	                  @entry_inner_border_color 1px,
+	                  @entry_background 2px);
+	box-shadow: 0 1 inset @entry_inset, 0 2 inset alpha(@entry_inset, 0.4);
 }
 
 /* Entry pushed button background */
@@ -123,28 +121,28 @@ column-header.button:active:hover:focus,
 column-header .button:active:hover:focus,
 column-header.button:active:focus,
 column-header .button:active:focus {
-    background-color: @entry_background;
-    background-image: none;
-    box-shadow: 0 1 inset @entry_inset, 0 2 inset alpha(@entry_inset, 0.4);
+	background-color: @entry_background;
+	background-image: none;
+	box-shadow: 0 1 inset @entry_inset, 0 2 inset alpha(@entry_inset, 0.4);
 }
 
 /* Insensitive entry background */
 .entry:insensitive {
-    background-color: @insensitive_bg_color;
-    background-image: none;
-    box-shadow: none;
+	background-color: @insensitive_bg_color;
+	background-image: none;
+	box-shadow: none;
 }
 
 /* Primary and inline toolbars background */
 .primary-toolbar .toolbar,
 .primary-toolbar.toolbar,
 .inline-toolbar.toolbar  {
-    background-color: transparent;
-    background-image: linear-gradient(to bottom,
-                                      @toolbar_second_border_color 1px,
-                                      @toolbar_gradient_a 2px,
-                                      @toolbar_gradient_b 50%,
-                                      @toolbar_gradient_c 50%,
-                                      @toolbar_gradient_d);
+	background-color: transparent;
+	background-image: linear-gradient(to bottom,
+	                  @toolbar_second_border_color 1px,
+	                  @toolbar_gradient_a 2px,
+	                  @toolbar_gradient_b 50%,
+	                  @toolbar_gradient_c 50%,
+	                  @toolbar_gradient_d);
 }
 

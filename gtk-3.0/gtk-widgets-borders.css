@@ -1,5 +1,3 @@
-/* Borders */
-
 /* generic element borders */
 .entry,
 GtkComboBox.combobox-entry .entry,
@@ -8,11 +6,11 @@ GtkComboBox.combobox-entry .button,
 .trough,
 .trough.highlight,
 GtkSwitch.trough {
-    border-image: url("borders/generic-border.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
-    border-radius: 3px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+	border-image: url("borders/generic-border.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-radius: 3px;
+	border-width: 1px 1px 2px 1px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 GtkSwitch.trough:insensitive,
@@ -21,11 +19,11 @@ GtkComboBox.combobox-entry .button:insensitive,
 .entry:insensitive,
 .button:insensitive,
 .trough row {
-    border-image: url("borders/generic-border-alt.svg") 3 / 3px repeat;
-    border-radius: 3px;
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
+	border-image: url("borders/generic-border-alt.svg") 3 / 3px repeat;
+	border-radius: 3px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 /* focused element borders */
@@ -34,50 +32,50 @@ GtkComboBox.combobox-entry .entry:focus,
 .button:focus:active,
 .button.default:active,
 GtkSwitch.trough:active {
-    border-image: url("borders/button-border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
-    border-radius: 3px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+	border-image: url("borders/button-border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-radius: 3px;
+	border-width: 1px 1px 2px 1px;
+	border-style: solid;
+	border-color: transparent;
 
 }
 
 /* generic button borders */
 .button {
-    border-image: url("borders/button-border.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
-    border-radius: 3px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+	border-image: url("borders/button-border.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-radius: 3px;
+	border-width: 1px 1px 2px 1px;
+	border-style: solid;
+	border-color: transparent;
 
 }
 
 /* focused button borders */
 .button:focus,
 .button.default {
-    border-image: url("borders/button-border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
-    border-radius: 3px;
-    border-width: 1px 1px 2px 1px;
-    border-style: solid;
-    border-color: transparent;
+	border-image: url("borders/button-border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-radius: 3px;
+	border-width: 1px 1px 2px 1px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 /* tooltip elements borders */
 .tooltip .entry,
 .tooltip .button {
-    border-image: url("borders/tooltip-generic-border.svg") 3 / 3px repeat;
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
+	border-image: url("borders/tooltip-generic-border.svg") 3 / 3px repeat;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 /* tooltip focused elements borders */
 .tooltip .entry:focus,
 .tooltip .button:focus {
-    border-image: url("borders/tooltip-generic-border-focused.svg") 3 / 3px repeat;
-    border-width: 1px;
-    border-style: solid;
-    border-color: transparent;
+	border-image: url("borders/tooltip-generic-border-focused.svg") 3 / 3px repeat;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 /* primary toolbar - generic element borders */
@@ -97,16 +95,16 @@ GtkSwitch.trough:active {
 .primary-toolbar GtkSwitch.trough:insensitive,
 .primary-toolbar GtkComboBox .button:active,
 .primary-toolbar GtkComboBox .button:insensitive {
-    border-image: url("borders/generic-border.svg") 4 / 4px repeat;
-    border-radius: 3px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: transparent;
+	border-image: url("borders/generic-border.svg") 4 / 4px repeat;
+	border-radius: 3px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 .primary-toolbar .entry,
 .primary-toolbar GtkComboBox.combobox-entry .entry {
-    border-width: 1px 2px 2px;
+	border-width: 1px 2px 2px;
 }
 
 /* primary toolbar - focused element borders */
@@ -121,16 +119,16 @@ GtkSwitch.trough:active {
 .inline-toolbar.toolbar .button:focus:active,
 .inline-toolbar.toolbar .button.default:active,
 .primary-toolbar GtkComboBox .button:active:focus {
-    border-image: url("borders/button-border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
-    border-radius: 3px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: transparent;
+	border-image: url("borders/button-border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-radius: 3px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 .primary-toolbar .entry:focus,
 .primary-toolbar GtkComboBox.combobox-entry .entry:focus {
-    border-width: 1px 2px 2px;
+	border-width: 1px 2px 2px;
 }
 
 /* primary toolbar - generic button borders */
@@ -138,11 +136,11 @@ GtkSwitch.trough:active {
 .primary-toolbar .raised .button,
 .inline-toolbar.toolbar .button,
 .primary-toolbar GtkComboBox .button {
-    border-image: url("borders/primary-toolbar-button-border.svg") 4 / 4px repeat;
-    border-radius: 3px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: transparent;
+	border-image: url("borders/primary-toolbar-button-border.svg") 4 / 4px repeat;
+	border-radius: 3px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 /* primary toolbar - focused button borders */
@@ -153,20 +151,20 @@ GtkSwitch.trough:active {
 .inline-toolbar.toolbar .button:focus,
 .inline-toolbar.toolbar .button.default,
 .primary-toolbar GtkComboBox .button:focus {
-    border-image: url("borders/primary-toolbar-button-border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
-    border-radius: 3px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: transparent;
+	border-image: url("borders/primary-toolbar-button-border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-radius: 3px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 /* primary toolbar - hover button borders */
 .primary-toolbar .button:hover {
-    border-image: url("borders/primary-toolbar-button-border-hover.svg") 4 / 4px repeat;
-    border-radius: 3px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: transparent;
+	border-image: url("borders/primary-toolbar-button-border-hover.svg") 4 / 4px repeat;
+	border-radius: 3px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: transparent;
 }
 
 /* column-headers borders */
@@ -180,12 +178,12 @@ column-header.button:active:hover,
 column-header .button:active:hover
 column-header.button:active:focus,
 column-header .button:active:focus {
-    border-image: none;
-    border-width: 1px;
-    border-radius: 0;
-    border-style: solid;
-    border-color: @column_header_border_a @column_header_border_b
-                  @column_header_border_c @column_header_border_a;
+	border-image: none;
+	border-width: 1px;
+	border-radius: 0;
+	border-style: solid;
+	border-color: @column_header_border_a @column_header_border_b
+	              @column_header_border_c @column_header_border_a;
 
 }
 
@@ -199,6 +197,6 @@ column-header.button:last-child:active:hover,
 column-header:last-child .button:active:hover,
 column-header.button:last-child:active:focus,
 column-header:last-child .button:active:focus {
-    border-right: none;
+	border-right: none;
 }
 
