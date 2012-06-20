@@ -107,7 +107,6 @@ GtkComboBox.combobox-entry .button:insensitive {
 	background-image: linear-gradient(to bottom,
 	                  @entry_inner_border_color 1px,
 	                  @entry_background 2px);
-	box-shadow: 0 1 inset @entry_inset, 0 2 inset alpha(@entry_inset, 0.4);
 }
 
 /* Entry pushed button background */
@@ -123,14 +122,12 @@ column-header.button:active:focus,
 column-header .button:active:focus {
 	background-color: @entry_background;
 	background-image: none;
-	box-shadow: 0 1 inset @entry_inset, 0 2 inset alpha(@entry_inset, 0.4);
 }
 
 /* Insensitive entry background */
 .entry:insensitive {
 	background-color: @insensitive_bg_color;
 	background-image: none;
-	box-shadow: none;
 }
 
 /* Primary and inline toolbars background */
