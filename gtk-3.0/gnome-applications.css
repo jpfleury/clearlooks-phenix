@@ -87,12 +87,6 @@ NautilusQueryEditor.info {
     text-shadow: 0 1 alpha(black, 0.15);
 }
 
-.nautilus-cluebar-label:backdrop {
-    font: bold;
-    color: @theme_unfocused_fg_color;
-    text-shadow: none;
-}
-
 NautilusLocationEntry.entry {
     padding-left: 4px;
     padding-right: 4px;
@@ -134,15 +128,6 @@ NautilusWindow > GtkGrid > .pane-separator:hover {
     color: shade (@theme_bg_color, 0.9);
 }
 
-NautilusWindow > GtkGrid > .pane-separator:backdrop,
-NautilusWindow > GtkGrid > .pane-separator:hover:backdrop {
-    border-width: 1px 1px 0 0;
-    border-style: solid;
-    border-color: @unfocused_borders;
-    background-color: @sidebar_bg_unfocused;
-    color: shade (@theme_bg_color, 0.9);
-}
-
 NautilusNotebook.notebook {
     border-right-width: 0;
     border-left-width: 0;
@@ -171,10 +156,6 @@ GeditPanel .toolbar {
 
 GeditDocumentsPanel .view {
     background-color: @sidebar_bg;
-}
-
-GeditDocumentsPanel .view:backdrop {
-    background-color: @sidebar_bg_unfocused;
 }
 
 GeditPanel .notebook {
@@ -393,8 +374,7 @@ GtkIconView.documents-main-view.check:active {
 /* epiphany */
 
 EphyToolbar .entry,
-EphyToolbar .entry:focus,
-EphyToolbar .entry:backdrop {
+EphyToolbar .entry:focus {
     border-image-width: 3px 0 4px 3px;
     border-width: 1px 0 2px 1px;
     border-bottom-right-radius: 0;
@@ -452,16 +432,6 @@ EphyToolbar .location-entry .button:focus,
 EphyToolbar .location-entry .button:active,
 EphyToolbar .location-entry .button *:active {
     color: @theme_text_color;
-}
-
-EphyToolbar .location-entry .button:backdrop,
-EphyToolbar .location-entry .button:hover:backdrop {
-    background-image: none;
-    background-color: @theme_unfocused_base_color;
-    box-shadow: none;
-    border-image: url("borders/generic-border-unfocused.svg") 3 3 4 3 / 3px 3px 4px 0 stretch;
-    border-radius: 3px;
-    border-width: 1px 1px 2px 0;
 }
 
 EphyNotebook.notebook {

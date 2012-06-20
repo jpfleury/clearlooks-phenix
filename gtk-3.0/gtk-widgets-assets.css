@@ -31,17 +31,6 @@
     background-image: url("assets/checkbox-unchecked-insensitive-alt.png");
 }
 
-.check:backdrop,
-.check row:selected:backdrop {
-    background-image: url("assets/checkbox-unchecked-backdrop.png");
-}
-
-.check:insensitive:backdrop,
-.check row:selected:insensitive:backdrop {
-    background-image: url("assets/checkbox-unchecked-backdrop-insensitive.png");
-}
-
-
 .check:active {
     background-image: url("assets/checkbox-checked.png");
 }
@@ -60,17 +49,6 @@
     background-image: url("assets/checkbox-checked-insensitive-alt.png");
 }
 
-.check:active:backdrop,
-.check row:selected:active:backdrop {
-    background-image: url("assets/checkbox-checked-backdrop.png");
-}
-
-.check:active:insensitive:backdrop,
-.check row:selected:active:insensitive:backdrop {
-    background-image: url("assets/checkbox-checked-backdrop-insensitive.png");
-}
-
-
 .check:inconsistent {
     background-image: url("assets/checkbox-mixed.png");
 }
@@ -87,16 +65,6 @@
 .check row:selected:inconsistent:insensitive,
 .check row:selected:focus:inconsistent:insensitive {
     background-image: url("assets/checkbox-mixed-insensitive-alt.png");
-}
-
-.check:inconsistent:backdrop,
-.check row:selected:inconsistent:backdrop {
-    background-image: url("assets/checkbox-mixed-backdrop.png");
-}
-
-.check:inconsistent:insensitive:backdrop,
-.check row:selected:inconsistent:insensitive:backdrop {
-    background-image: url("assets/checkbox-mixed-backdrop-insensitive.png");
 }
 
 .radio {
@@ -117,17 +85,6 @@
     background-image: url("assets/radio-unchecked-insensitive-alt.png");
 }
 
-.radio:backdrop,
-.radio row:selected:backdrop {
-    background-image: url("assets/radio-unchecked-backdrop.png");
-}
-
-.radio:insensitive:backdrop,
-.radio row:selected:insensitive:backdrop {
-    background-image: url("assets/radio-unchecked-backdrop-insensitive.png");
-}
-
-
 .radio:active {
     background-image: url("assets/radio-checked.png");
 }
@@ -146,17 +103,6 @@
     background-image: url("assets/radio-checked-insensitive-alt.png");
 }
 
-.radio:active:backdrop,
-.radio row:selected:active:backdrop {
-    background-image: url("assets/radio-checked-backdrop.png");
-}
-
-.radio:active:insensitive:backdrop,
-.radio row:selected:active:insensitive:backdrop {
-    background-image: url("assets/radio-checked-backdrop-insensitive.png");
-}
-
-
 .radio:inconsistent {
     background-image: url("assets/radio-mixed.png");
 }
@@ -173,16 +119,6 @@
 .radio row:selected:inconsistent:insensitive,
 .radio row:selected:focus:inconsistent:insensitive {
     background-image: url("assets/radio-mixed-insensitive-alt.png");
-}
-
-.radio:inconsistent:backdrop,
-.radio row:selected:inconsistent:backdrop {
-    background-image: url("assets/radio-mixed-backdrop.png");
-}
-
-.radio:inconsistent:insensitive:backdrop,
-.radio row:selected:inconsistent:insensitive:backdrop {
-    background-image: url("assets/radio-mixed-backdrop-insensitive.png");
 }
 
 .sidebar .radio:active,
@@ -213,35 +149,16 @@ GtkScale.slider.horizontal {
     background-image: url("assets/scale-slider-horz.png");
 }
 
-GtkScale.slider:backdrop,
-GtkScale.slider.horizontal:backdrop {
-    background-image: url("assets/scale-slider-horz-insensitive.png");
-}
-
 GtkScale.slider:insensitive,
 GtkScale.slider.horizontal:insensitive {
     background-image: url("assets/scale-slider-horz-insensitive.png");
 }
 
-GtkScale.slider:insensitive:backdrop,
-GtkScale.slider.horizontal:insensitive:backdrop {
-    background-image: url("assets/scale-slider-horz-insensitive.png");
-}
-
-
 GtkScale.slider.vertical {
     background-image: url("assets/scale-slider-vert.png");
 }
 
-GtkScale.slider.vertical:backdrop {
-    background-image: url("assets/scale-slider-vert-insensitive.png");
-}
-
 GtkScale.slider.vertical:insensitive {
-    background-image: url("assets/scale-slider-vert-insensitive.png");
-}
-
-GtkScale.slider.vertical:insensitive:backdrop {
     background-image: url("assets/scale-slider-vert-insensitive.png");
 }
 
@@ -253,28 +170,12 @@ GtkScale.scale-has-marks-above.slider.horizontal:insensitive {
     background-image: url("assets/scale-slider-up-insensitive.png");
 }
 
-GtkScale.scale-has-marks-above.slider.horizontal:backdrop {
-    background-image: url("assets/scale-slider-up-backdrop.png");
-}
-
-GtkScale.scale-has-marks-above.slider.horizontal:backdrop:insensitive {
-    background-image: url("assets/scale-slider-up-backdrop-insensitive.png");
-}
-
 GtkScale.scale-has-marks-above.slider.vertical {
     background-image: url("assets/scale-slider-left.png");
 }
 
 GtkScale.scale-has-marks-above.slider.vertical:insensitive {
     background-image: url("assets/scale-slider-left-insensitive.png");
-}
-
-GtkScale.scale-has-marks-above.slider.vertical:backdrop {
-    background-image: url("assets/scale-slider-left-backdrop.png");
-}
-
-GtkScale.scale-has-marks-above.slider.vertical:backdrop:insensitive {
-    background-image: url("assets/scale-slider-left-backdrop-insensitive.png");
 }
 
 GtkScale.scale-has-marks-below.slider.horizontal {
@@ -285,27 +186,11 @@ GtkScale.scale-has-marks-below.slider.horizontal:insensitive {
     background-image: url("assets/scale-slider-down-insensitive.png");
 }
 
-GtkScale.scale-has-marks-below.slider.horizontal:backdrop {
-    background-image: url("assets/scale-slider-down-backdrop.png");
-}
-
-GtkScale.scale-has-marks-below.slider.horizontal:backdrop:insensitive {
-    background-image: url("assets/scale-slider-down-backdrop-insensitive.png");
-}
-
 GtkScale.scale-has-marks-below.slider.vertical {
     background-image: url("assets/scale-slider-right.png");
 }
 
 GtkScale.scale-has-marks-below.slider.vertical:insensitive {
     background-image: url("assets/scale-slider-right-insensitive.png");
-}
-
-GtkScale.scale-has-marks-below.slider.vertical:backdrop {
-    background-image: url("assets/scale-slider-right-backdrop.png");
-}
-
-GtkScale.scale-has-marks-below.slider.vertical:backdrop:insensitive {
-    background-image: url("assets/scale-slider-right-backdrop-insensitive.png");
 }
 

@@ -8,19 +8,6 @@
 
 @define-color placeholder_text_color shade(@text_color, 3.5);
 
-@define-color theme_unfocused_base_color shade(@insensitive_bg_color, 1.015); /* I don't want the same color, hope not to hurt usability to much here */
-@define-color theme_unfocused_text_color mix(@theme_unfocused_fg_color, @theme_text_color, 0.5); /* Need something darker here to have stuff nicelly readable*/
-@define-color theme_unfocused_fg_color #a7aba7;
-@define-color theme_unfocused_bg_color @theme_bg_color;
-@define-color theme_unfocused_selected_bg_color shade(@theme_unfocused_bg_color, 0.95);
-@define-color theme_unfocused_selected_fg_color @theme_fg_color;
-@define-color unfocused_button_background @theme_unfocused_bg_color;
-@define-color unfocused_borders @borders;
-@define-color unfocused_insensitive_borders mix(@theme_unfocused_bg_color, @unfocused_borders, 0.5);
-@define-color unfocused_insensitive_fg_color mix(@theme_unfocused_bg_color, @theme_unfocused_fg_color, 0.5);
-@define-color unfocused_insensitive_bg_color mix(@theme_unfocused_bg_color, @theme_unfocused_base_color, 0.5);
-@define-color unfocused_dark_bg mix(@theme_unfocused_bg_color, @unfocused_borders, 0.3);
-
 @define-color menubar_gradient_a #ecebea;
 @define-color menubar_gradient_b #e8e7e6;
 @define-color menubar_gradient_c #e4e3e2;
@@ -46,7 +33,6 @@
 @define-color inactive_frame_color #c7ccc1;
 
 @define-color sidebar_bg shade (@theme_bg_color, 1.025);
-@define-color sidebar_bg_unfocused mix(@sidebar_bg, @theme_unfocused_base_color, 0.5);
 
 @define-color button_gradient_color_a #FEFEFE;
 @define-color button_gradient_color_b #FBFBFB;
@@ -93,7 +79,6 @@
 @define-color scrollbar_trough_gradient_a #CECBC9;
 @define-color scrollbar_trough_gradient_b #D6D4D2;
 @define-color scrollbar_trough_insensitive shade(@theme_bg_color, 0.9);
-@define-color scrollbar_trough_unfocused shade(@theme_unfocused_bg_color, 0.9);
 
 @define-color scrollbar_slider mix(@scrollbar_trough, @theme_fg_color, 0.35);
 @define-color scrollbar_slider_gradient_a #A2C1E7;
@@ -115,7 +100,6 @@
 
 @define-color scrollbar_slider_active @theme_selected_bg_color;
 @define-color scrollbar_slider_insensitive alpha(black, 0); /* FIXME should be transparent */
-@define-color scrollbar_slider_unfocused @theme_unfocused_bg_color;
 
 @define-color scrollbar_button_color @theme_fg_color;
 @define-color scrollbar_button_insensitive_color #A9A5A2;
@@ -164,8 +148,6 @@
 @define-color progressbar_background_b #1f72c6;
 @define-color progressbar_pattern #6587B2;
 @define-color progressbar_border @progressbar_pattern;
-@define-color progressbar_unfocused_background @theme_base_color;
-@define-color progressbar_unfocused_border @unfocused_borders;
 
 @define-color progressbar_gradient_a #A4C2E8;
 @define-color progressbar_gradient_b #98B8E2;
@@ -231,7 +213,6 @@
  * WM *
  ******/
 @define-color wm_title @theme_fg_color;
-@define-color wm_unfocused_title @theme_unfocused_fg_color;
 @define-color wm_highlight #ffffff;
 @define-color wm_title_highlight_dark alpha(#ffffff, 0.0);
 @define-color wm_title_highlight #ffffff;

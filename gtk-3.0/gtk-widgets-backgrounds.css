@@ -104,37 +104,6 @@ GtkComboBox.combobox-entry .button:insensitive {
     background-color: transparent;
 }
 
-/* Unfocused window button background */
-.button:backdrop,
-.toolbar .button.raised:backdrop,
-.toolbar .raised .button:backdrop,
-.toolbar .button:backdrop:hover,
-.primary-toolbar .raised .button:backdrop:hover,
-GtkComboBox.combobox-entry .button:backdrop {
-    background-image: none;
-    background-color: @unfocused_button_background;
-}
-
-/* Unfocused window pushed button background */
-.button:active:backdrop,
-.toolbar .button:active:backdrop,
-.toolbar .button:active:hover:backdrop {
-    background-image: none;
-    background-color: @unfocused_borders;
-}
-
-/* Unfocused window insensitive button background */
-.button:insensitive:backdrop,
-GtkComboBox.combobox-entry .button:insensitive:backdrop {
-    background-image: none;
-    background-color: @unfocused_insensitive_bg_color;
-}
-
-.button:insensitive:active:backdrop {
-    background-image: none;
-    background-color: mix(@unfocused_insensitive_bg_color, @unfocused_borders, 0.5);
-}
-
 /* Entry background */
 .entry {
     background-image: linear-gradient(to bottom,
@@ -166,24 +135,6 @@ column-header .button:active:focus {
     box-shadow: none;
 }
 
-/* Unfocused windows entry background */
-.entry:backdrop,
-column-header.button:backdrop,
-column-header .button:backdrop,
-column-header.button:insensitive:backdrop,
-column-header .button:insensitive:backdrop {
-    background-image: none;
-    background-color: @theme_unfocused_base_color;
-    box-shadow: none;
-}
-
-/* Unfocused windows insensitive entry background */
-.entry:insensitive:backdrop {
-    background-image: none;
-    background-color: @unfocused_insensitive_bg_color;
-}
-
-
 /* Primary and inline toolbars background */
 .primary-toolbar .toolbar,
 .primary-toolbar.toolbar,
@@ -195,13 +146,5 @@ column-header .button:insensitive:backdrop {
                                       @toolbar_gradient_b 50%,
                                       @toolbar_gradient_c 50%,
                                       @toolbar_gradient_d);
-}
-
-/* Unfocused window primary and inline toolbars background */
-.primary-toolbar .toolbar:backdrop,
-.primary-toolbar.toolbar:backdrop,
-.inline-toolbar.toolbar:backdrop  {
-    background-image: none;
-    background-color: @unfocused_dark_bg;
 }
 
