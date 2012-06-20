@@ -1013,12 +1013,12 @@ GtkComboBox .button *:hover {
 
 .scrollbar.vertical {
 	engine: unico;
-	-unico-centroid-texture: url("assets/slider-vertical-grip.png");
+	-unico-centroid-texture: url("assets/slider-vert-grip.png");
 }
 
 .scrollbar.horizontal {
 	engine: unico;
-	-unico-centroid-texture: url("assets/slider-horizontal-grip.png");
+	-unico-centroid-texture: url("assets/slider-horz-grip.png");
 }
 
 .scrollbars-junction, /* the small square between scrollbars!!! */

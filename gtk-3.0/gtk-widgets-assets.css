@@ -10,112 +10,76 @@
  * Check and Radio items *
  *************************/
 
-.check {
+.check,
+.check row:selected,
+.check row:selected:focus {
 	background-image: url("assets/checkbox-unchecked.png");
 }
 
-.check row:selected,
-.check row:selected:focus {
-	background-image: url("assets/checkbox-unchecked-alt.png");
-}
-
-.check:insensitive {
+.check:insensitive,
+.check row:selected:insensitive,
+.check row:selected:focus:insensitive {
 	background-image: url("assets/checkbox-unchecked-insensitive.png");
 }
 
-.check row:selected:insensitive,
-.check row:selected:focus:insensitive {
-	background-image: url("assets/checkbox-unchecked-insensitive-alt.png");
-}
-
-.check:active {
+.check:active,
+.check row:selected:active,
+.check row:selected:focus:active {
 	background-image: url("assets/checkbox-checked.png");
 }
 
-.check row:selected:active,
-.check row:selected:focus:active {
-	background-image: url("assets/checkbox-checked-alt.png");
-}
-
-.check:active:insensitive {
+.check:active:insensitive,
+.check row:selected:active:insensitive,
+.check row:selected:focus:active:insensitive {
 	background-image: url("assets/checkbox-checked-insensitive.png");
 }
 
-.check row:selected:active:insensitive,
-.check row:selected:focus:active:insensitive {
-	background-image: url("assets/checkbox-checked-insensitive-alt.png");
-}
-
-.check:inconsistent {
+.check:inconsistent,
+.check row:selected:inconsistent,
+.check row:selected:focus:inconsistent {
 	background-image: url("assets/checkbox-mixed.png");
 }
 
-.check row:selected:inconsistent,
-.check row:selected:focus:inconsistent {
-	background-image: url("assets/checkbox-mixed-alt.png");
-}
-
-.check:inconsistent:insensitive {
+.check:inconsistent:insensitive,
+.check row:selected:inconsistent:insensitive,
+.check row:selected:focus:inconsistent:insensitive {
 	background-image: url("assets/checkbox-mixed-insensitive.png");
 }
 
-.check row:selected:inconsistent:insensitive,
-.check row:selected:focus:inconsistent:insensitive {
-	background-image: url("assets/checkbox-mixed-insensitive-alt.png");
-}
-
-.radio {
+.radio,
+.radio row:selected,
+.radio row:selected:focus {
 	background-image: url("assets/radio-unchecked.png");
 }
 
-.radio row:selected,
-.radio row:selected:focus {
-	background-image: url("assets/radio-unchecked-alt.png");
-}
-
-.radio:insensitive {
+.radio:insensitive,
+.radio row:selected:insensitive,
+.radio row:selected:focus:insensitive {
 	background-image: url("assets/radio-unchecked-insensitive.png");
 }
 
-.radio row:selected:insensitive,
-.radio row:selected:focus:insensitive {
-	background-image: url("assets/radio-unchecked-insensitive-alt.png");
-}
-
-.radio:active {
+.radio:active,
+.radio row:selected:active,
+.radio row:selected:focus:active {
 	background-image: url("assets/radio-checked.png");
 }
 
-.radio row:selected:active,
-.radio row:selected:focus:active {
-	background-image: url("assets/radio-checked-alt.png");
-}
-
-.radio:active:insensitive {
+.radio:active:insensitive,
+.radio row:selected:active:insensitive,
+.radio row:selected:focus:active:insensitive {
 	background-image: url("assets/radio-checked-insensitive.png");
 }
 
-.radio row:selected:active:insensitive,
-.radio row:selected:focus:active:insensitive {
-	background-image: url("assets/radio-checked-insensitive-alt.png");
-}
-
-.radio:inconsistent {
+.radio:inconsistent,
+.radio row:selected:inconsistent,
+.radio row:selected:focus:inconsistent {
 	background-image: url("assets/radio-mixed.png");
 }
 
-.radio row:selected:inconsistent,
-.radio row:selected:focus:inconsistent {
-	background-image: url("assets/radio-mixed-alt.png");
-}
-
-.radio:inconsistent:insensitive {
-	background-image: url("assets/radio-mixed-insensitive.png");
-}
-
+.radio:inconsistent:insensitive,
 .radio row:selected:inconsistent:insensitive,
 .radio row:selected:focus:inconsistent:insensitive {
-	background-image: url("assets/radio-mixed-insensitive-alt.png");
+	background-image: url("assets/radio-mixed-insensitive.png");
 }
 
 .sidebar .radio:active,
