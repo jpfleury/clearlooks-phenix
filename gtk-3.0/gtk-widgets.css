@@ -460,44 +460,94 @@ GtkScale.slider:insensitive {
 	background-color: transparent;
 }
 
-GtkScale.trough {
-	margin: 8px 0;
-}
-
-GtkScale.trough.vertical {
-	margin: 0 8px;
-}
-
 GtkScale.trough,
 GtkScale.trough.highlight,
 GtkScale.trough.vertical,
 GtkScale.trough:insensitive {
-	border-width: 1px;
 	border-image: none;
 	border-style: solid;
-	border-radius: 0px;
-	background-image: none;
+	border-width: 0px 1px;
+	border-radius: 1px;
+	background-color: transparent;
 }
 
-GtkScale.trough,
-GtkScale.trough.vertical {
+GtkScale.trough {
+	margin: 8px 0;
 	border-color: @scale_trough_border_color;
-	background-color: @scale_trough_background_color;
+	background-image: linear-gradient(to bottom,
+	                  @scale_trough_border_color,
+	                  @scale_trough_gradient_a,
+	                  @scale_trough_gradient_b,
+	                  @scale_trough_gradient_c,
+	                  @scale_trough_border_color);
+}
+
+GtkScale.trough.vertical {
+	margin: 0 8px;
+	border-width: 1px 0px;
+	background-image: linear-gradient(to right,
+	                  @scale_trough_border_color,
+	                  @scale_trough_gradient_a,
+	                  @scale_trough_gradient_b,
+	                  @scale_trough_gradient_c,
+	                  @scale_trough_border_color);
 }
 
 GtkScale.trough.highlight {
 	border-color: @scale_trough_highlight_border_color;
-	background-color: @scale_trough_highlight_background_color;
+	background-image: linear-gradient(to bottom,
+	                  @scale_trough_highlight_border_color,
+	                  @scale_trough_highlight_gradient_a,
+	                  @scale_trough_highlight_gradient_b,
+	                  @scale_trough_highlight_gradient_c,
+	                  @scale_trough_highlight_border_color);
+}
+
+GtkScale.trough.vertical.highlight {
+	background-image: linear-gradient(to right,
+	                  @scale_trough_highlight_border_color,
+	                  @scale_trough_highlight_gradient_a,
+	                  @scale_trough_highlight_gradient_b,
+	                  @scale_trough_highlight_gradient_c,
+	                  @scale_trough_highlight_border_color);
 }
 
 GtkScale.trough:insensitive {
 	border-color: @scale_trough_insensitive_border_color;
-	background-color: @scale_trough_insensitive_background_color;
+	background-image: linear-gradient(to bottom,
+	                  @scale_trough_insensitive_border_color,
+	                  @scale_trough_insensitive_gradient_a,
+	                  @scale_trough_insensitive_gradient_b,
+	                  @scale_trough_insensitive_gradient_c,
+	                  @scale_trough_insensitive_border_color);
+}
+
+GtkScale.trough.vertical:insensitive {
+	background-image: linear-gradient(to right,
+	                  @scale_trough_insensitive_border_color,
+	                  @scale_trough_insensitive_gradient_a,
+	                  @scale_trough_insensitive_gradient_b,
+	                  @scale_trough_insensitive_gradient_c,
+	                  @scale_trough_insensitive_border_color);
 }
 
 GtkScale.trough.highlight:insensitive {
 	border-color: @scale_trough_highlight_insensitive_border_color;
-	background-color: @scale_trough_highlight_insensitive_background_color;
+	background-image: linear-gradient(to bottom,
+	                  @scale_trough_highlight_insensitive_border_color,
+	                  @scale_trough_highlight_insensitive_gradient_a,
+	                  @scale_trough_highlight_insensitive_gradient_b,
+	                  @scale_trough_highlight_insensitive_gradient_c,
+	                  @scale_trough_highlight_insensitive_border_color);
+}
+
+GtkScale.trough.vertical.highlight:insensitive {
+	background-image: linear-gradient(to right,
+	                  @scale_trough_highlight_insensitive_border_color,
+	                  @scale_trough_highlight_insensitive_gradient_a,
+	                  @scale_trough_highlight_insensitive_gradient_b,
+	                  @scale_trough_highlight_insensitive_gradient_c,
+	                  @scale_trough_highlight_insensitive_border_color);
 }
 
 GtkScale.progressbar {
