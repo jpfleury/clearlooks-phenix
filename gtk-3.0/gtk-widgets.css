@@ -23,7 +23,7 @@
 	-GtkMenu-vertical-padding: 0;
 
 	-GtkWidget-link-color: @link_color;
-	-GtkWidget-visited-link-color: @link_color;
+	-GtkWidget-visited-link-color: @visited_link_color;
 	-GtkIMHtml-hyperlink-color: @link_color;
 	-GtkHTML-link-color: @link_color;
 
