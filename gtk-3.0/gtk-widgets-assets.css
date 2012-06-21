@@ -111,6 +111,11 @@ GtkScale.slider.horizontal {
 	background-image: url("assets/scale-slider-horz.png");
 }
 
+GtkScale.slider:hover,
+GtkScale.slider.horizontal:hover {
+	background-image: url("assets/scale-slider-horz-hover.png");
+}
+
 GtkScale.slider:insensitive,
 GtkScale.slider.horizontal:insensitive {
 	background-image: url("assets/scale-slider-horz-insensitive.png");
@@ -118,6 +123,10 @@ GtkScale.slider.horizontal:insensitive {
 
 GtkScale.slider.vertical {
 	background-image: url("assets/scale-slider-vert.png");
+}
+
+GtkScale.slider.vertical:hover {
+	background-image: url("assets/scale-slider-vert-hover.png");
 }
 
 GtkScale.slider.vertical:insensitive {
@@ -128,12 +137,20 @@ GtkScale.scale-has-marks-above.slider.horizontal {
 	background-image: url("assets/scale-slider-horz.png");
 }
 
+GtkScale.scale-has-marks-above.slider.horizontal:hover {
+	background-image: url("assets/scale-slider-horz-hover.png");
+}
+
 GtkScale.scale-has-marks-above.slider.horizontal:insensitive {
 	background-image: url("assets/scale-slider-horz-insensitive.png");
 }
 
 GtkScale.scale-has-marks-above.slider.vertical {
 	background-image: url("assets/scale-slider-vert.png");
+}
+
+GtkScale.scale-has-marks-above.slider.vertical:hover {
+	background-image: url("assets/scale-slider-vert-hover.png");
 }
 
 GtkScale.scale-has-marks-above.slider.vertical:insensitive {
@@ -144,12 +161,20 @@ GtkScale.scale-has-marks-below.slider.horizontal {
 	background-image: url("assets/scale-slider-horz.png");
 }
 
+GtkScale.scale-has-marks-below.slider.horizontal:hover {
+	background-image: url("assets/scale-slider-horz-hover.png");
+}
+
 GtkScale.scale-has-marks-below.slider.horizontal:insensitive {
 	background-image: url("assets/scale-slider-horz-insensitive.png");
 }
 
 GtkScale.scale-has-marks-below.slider.vertical {
 	background-image: url("assets/scale-slider-vert.png");
+}
+
+GtkScale.scale-has-marks-below.slider.vertical:hover {
+	background-image: url("assets/scale-slider-vert-hover.png");
 }
 
 GtkScale.scale-has-marks-below.slider.vertical:insensitive {
