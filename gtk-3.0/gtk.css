@@ -132,6 +132,9 @@
 @define-color switch_slider_insensitive_gradient_d @button_insensitive_gradient_color_d;
 
 @define-color switch_trough_active_color @theme_base_color;
+@define-color switch_trough_active_bg_a #4b6e99;
+@define-color switch_trough_active_bg_b #c8daef;
+
 @define-color scale_trough_border_color #878481;
 @define-color scale_trough_highlight_border_color #364B66;
 @define-color scale_trough_insensitive_border_color #BFBBB7;

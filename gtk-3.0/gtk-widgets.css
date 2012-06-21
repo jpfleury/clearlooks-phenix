@@ -1875,6 +1875,13 @@ GtkSwitch.trough:active {
 	color: @switch_trough_active_color;
 }
 
+GtkSwitch.trough:active {
+	background-image: -gtk-gradient (linear,
+	                  left top, left bottom,
+	                  from (@switch_trough_active_bg_a),
+	                  to (@switch_trough_active_bg_b));
+}
+
 GtkSwitch.trough:insensitive {
 	background-image: none;
 	background-color: @insensitive_bg_color;
