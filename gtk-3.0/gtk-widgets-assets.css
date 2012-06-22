@@ -222,42 +222,51 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
  *********/
 
 .menuitem.check:active {
-	background-image: url("assets/menuitem-checkbox-checked.png") no-repeat;
+	background-image: url("assets/menuitem-checkbox-checked.png");
+	background-repeat: no-repeat;
 }
 
 .menuitem.check:active:hover {
-	background-image: url("assets/menuitem-checkbox-checked-selected.png") no-repeat;
+	background-image: url("assets/menuitem-checkbox-checked-selected.png");
+	background-repeat: no-repeat;
 }
 
 .menuitem.check:active:insensitive {
-	background-image: url("assets/menuitem-checkbox-checked-insensitive.png") no-repeat;
+	background-image: url("assets/menuitem-checkbox-checked-insensitive.png");
+	background-repeat: no-repeat;
 }
 
 .menuitem.check:inconsistent,
 .menuitem.radio:inconsistent {
-	background-image: url("assets/menuitem-checkbox-mixed.png") no-repeat;
+	background-image: url("assets/menuitem-checkbox-mixed.png");
+	background-repeat: no-repeat;
 }
 
 .menuitem.check:inconsistent:insensitive,
 .menuitem.radio:inconsistent:insensitive {
-	background-image: url("assets/menuitem-checkbox-mixed-insensitive.png") no-repeat;
+	background-image: url("assets/menuitem-checkbox-mixed-insensitive.png");
+	background-repeat: no-repeat;
 }
 
 .menuitem.check:inconsistent:hover,
 .menuitem.radio:inconsistent:hover {
-	background-image: url("assets/menuitem-checkbox-mixed-selected.png") no-repeat;
+	background-image: url("assets/menuitem-checkbox-mixed-selected.png");
+	background-repeat: no-repeat;
 }
 
 .menuitem.radio:active {
-	background-image: url("assets/menuitem-radio-checked.png") no-repeat;
+	background-image: url("assets/menuitem-radio-checked.png");
+	background-repeat: no-repeat;
 }
 
 .menuitem.radio:active:hover {
-	background-image: url("assets/menuitem-radio-checked-selected.png") no-repeat;
+	background-image: url("assets/menuitem-radio-checked-selected.png");
+	background-repeat: no-repeat;
 }
 
 .menuitem.radio:active:insensitive {
-	background-image: url("assets/menuitem-radio-checked-insensitive.png") no-repeat;
+	background-image: url("assets/menuitem-radio-checked-insensitive.png");
+	background-repeat: no-repeat;
 }
 
 /*********
