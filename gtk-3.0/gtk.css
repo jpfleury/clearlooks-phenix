@@ -7,6 +7,8 @@
 
 @define-color placeholder_text_color shade(@text_color, 3.5);
 
+@define-color focus-border-color #869BB7;
+
 @define-color menubar_gradient_a #ecebea;
 @define-color menubar_gradient_b #e8e7e6;
 @define-color menubar_gradient_c #e4e3e2;

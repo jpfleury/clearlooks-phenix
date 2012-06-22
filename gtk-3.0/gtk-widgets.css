@@ -31,7 +31,7 @@
 
 	-GtkWidget-focus-padding: 2;
 	-GtkWidget-focus-line-width: 1;
-	-adwaita-focus-border-color: alpha(@theme_text_color, 0.3);
+	-adwaita-focus-border-color: @focus-border-color;
 	-adwaita-focus-border-radius: 2;
 	-adwaita-focus-border-dashes: 1;
 	-GtkWindow-resize-grip-width: 11;
