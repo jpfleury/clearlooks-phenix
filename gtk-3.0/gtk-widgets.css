@@ -2049,13 +2049,20 @@ row:insensitive {
 	border-width: 0;
 }
 
+row:selected,
 row:selected:focus {
 	border-width: 0;
-	background-color: @theme_selected_bg_color;
 }
 
-row:selected {
-	border-width: 0;
+row:selected:focus,
+.cell:selected {
+	background-image: -gtk-gradient (linear,
+	                  left top,
+	                  left bottom,
+	                  from (@menubar_menuitem_hover_gradient_a),
+	                  color-stop (0.50, @menubar_menuitem_hover_gradient_b),
+	                  color-stop (0.50, @menubar_menuitem_hover_gradient_c),
+	                  to (@menubar_menuitem_hover_gradient_d));
 }
 
 .cell {
@@ -2065,7 +2072,6 @@ row:selected {
 }
 
 .cell:selected {
-	background-color: @theme_selected_bg_color;
 	color: @theme_selected_fg_color;
 }
 
