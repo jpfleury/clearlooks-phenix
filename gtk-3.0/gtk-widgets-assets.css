@@ -16,6 +16,12 @@
 	background-image: url("assets/checkbox-unchecked.png");
 }
 
+.check:hover,
+.check row:selected:hover,
+.check row:selected:focus:hover {
+	background-image: url("assets/checkbox-unchecked-hover.png");
+}
+
 .check:insensitive,
 .check row:selected:insensitive,
 .check row:selected:focus:insensitive {
@@ -26,6 +32,12 @@
 .check row:selected:active,
 .check row:selected:focus:active {
 	background-image: url("assets/checkbox-checked.png");
+}
+
+.check:active:hover,
+.check row:selected:active:hover,
+.check row:selected:focus:active:hover {
+	background-image: url("assets/checkbox-checked-hover.png");
 }
 
 .check:active:insensitive,
@@ -40,6 +52,12 @@
 	background-image: url("assets/checkbox-mixed.png");
 }
 
+.check:inconsistent:hover,
+.check row:selected:inconsistent:hover,
+.check row:selected:focus:inconsistent:hover {
+	background-image: url("assets/checkbox-mixed-hover.png");
+}
+
 .check:inconsistent:insensitive,
 .check row:selected:inconsistent:insensitive,
 .check row:selected:focus:inconsistent:insensitive {
@@ -50,6 +68,12 @@
 .radio row:selected,
 .radio row:selected:focus {
 	background-image: url("assets/radio-unchecked.png");
+}
+
+.radio:hover,
+.radio row:selected:hover,
+.radio row:selected:focus:hover {
+	background-image: url("assets/radio-unchecked-hover.png");
 }
 
 .radio:insensitive,
@@ -64,6 +88,12 @@
 	background-image: url("assets/radio-checked.png");
 }
 
+.radio:active:hover,
+.radio row:selected:active:hover,
+.radio row:selected:focus:active:hover {
+	background-image: url("assets/radio-checked-hover.png");
+}
+
 .radio:active:insensitive,
 .radio row:selected:active:insensitive,
 .radio row:selected:focus:active:insensitive {
@@ -74,6 +104,12 @@
 .radio row:selected:inconsistent,
 .radio row:selected:focus:inconsistent {
 	background-image: url("assets/radio-mixed.png");
+}
+
+.radio:inconsistent:hover,
+.radio row:selected:inconsistent:hover,
+.radio row:selected:focus:inconsistent:hover {
+	background-image: url("assets/radio-mixed-hover.png");
 }
 
 .radio:inconsistent:insensitive,
