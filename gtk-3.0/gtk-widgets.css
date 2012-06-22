@@ -243,49 +243,6 @@ GtkTreeView.separator,
 }
 
 /*****************
- * GtkSpinButton *
- *****************/
-
-.spinbutton .button,
-.spinbutton .button:focus {
-	color: @internal_element_color;
-	padding: 2px 6px;
-	border-width: 0;
-	border-radius: 0;
-	border-style: none;
-	border-image: none;
-}
-
-.spinbutton .button {
-	background-color: transparent;
-	background-image: none;
-}
-
-.spinbutton .button:insensitive {
-	color: @internal_element_insensitive;
-}
-
-.spinbutton .button:active,
-.spinbutton .button:active:focus,
-.spinbutton .button:hover {
-	color: @internal_element_prelight;
-}
-
-.spinbutton .button:active,
-.spinbutton .button:active:hover {
-	background-color: @entry_background;
-	background-image: none;
-}
-
-.spinbutton .button:first-child {
-	border-radius: 2px 0 0 2px;
-}
-
-.spinbutton .button:last-child {
-	border-radius: 0 2px 2px 0;
-}
-
-/*****************
  * Color Chooser *
  *****************/
 
@@ -634,7 +591,7 @@ GtkComboBox.combobox-entry .button {
 .primary-toolbar .button {
 	border-image: none;
 	border-style: solid;
-	border-width: 2px;
+	border-width: 1px 1px 2px 1px;
 	border-color: transparent;
 }
 
@@ -811,7 +768,7 @@ GtkComboBox.combobox-entry .button {
 .inline-toolbar.toolbar GtkToolButton:first-child .button:focus,
 .inline-toolbar.toolbar GtkToolButton:first-child .button:focus:active,
 .inline-toolbar.toolbar GtkToolButton:first-child .button:insensitive {
-	border-left-width: 2px;
+	border-left-width: 1px;
 	border-right-width: 0;
 	border-image-width: 4px 0 4px 4px;
 	border-bottom-right-radius: 0;
@@ -840,7 +797,7 @@ GtkComboBox.combobox-entry .button {
 .inline-toolbar.toolbar GtkToolButton:last-child .button:focus:active,
 .inline-toolbar.toolbar GtkToolButton:last-child .button:insensitive {
 	border-left-width: 0;
-	border-right-width: 2px;
+	border-right-width: 1px;
 	border-image-width: 4px 4px 4px 0;
 	border-bottom-left-radius: 0;
 	border-top-left-radius: 0;
@@ -857,8 +814,8 @@ GtkComboBox.combobox-entry .button {
 .inline-toolbar.toolbar GtkToolButton:only-child .button:focus,
 .inline-toolbar.toolbar GtkToolButton:only-child .button:focus:active,
 .inline-toolbar.toolbar GtkToolButton:only-child .button:insensitive {
-	border-right-width: 2px;
-	border-left-width: 2px;
+	border-right-width: 1px;
+	border-left-width: 1px;
 	border-image-width: 4px;
 	border-radius: 3px;
 }
@@ -867,12 +824,50 @@ GtkComboBox.combobox-entry .button {
 	color: shade(@internal_element_color, 1.30);
 }
 
+/*****************
+ * GtkSpinButton *
+ *****************/
+
+.spinbutton .button,
+.spinbutton .button:focus {
+	color: @internal_element_color;
+	padding: 2px 6px;
+	border-width: 0 0 0 1px;
+	border-radius: 0;
+	border-style: solid;
+	border-color: @spinbutton_border_color;
+	border-image: none;
+}
+
+.spinbutton .button {
+	background-color: transparent;
+}
+
+.spinbutton .button:insensitive {
+	color: @internal_element_insensitive;
+}
+
+.spinbutton .button:active,
+.spinbutton .button:active:focus,
+.spinbutton .button:hover {
+	color: @internal_element_prelight;
+}
+
+.spinbutton .button:first-child {
+	border-radius: 2px 0 0 2px;
+}
+
+.spinbutton .button:last-child {
+	border-radius: 0 2px 2px 0;
+}
+
 /***********
  * Button background *
  ***********/
 
 /* Button background */
 .button,
+.spinbutton .button,
 .toolbar .button.raised,
 .toolbar .raised .button,
 .toolbar .button.raised:focus,
@@ -894,6 +889,8 @@ GtkComboBox.combobox-entry .button,
 /* Pushed button background */
 .button:active,
 .button:active:hover,
+.spinbutton .button:active,
+.spinbutton .button:active:hover,
 .toolbar .button:active,
 .toolbar .button:active:hover,
 .toolbar .button.raised:active,
@@ -934,6 +931,7 @@ GtkComboBox.combobox-entry .button:active,
 
 /* Prelit button background */
 .button:hover,
+.spinbutton .button:hover,
 .toolbar .button:hover,
 .toolbar .button.raised:hover,
 .toolbar .raised .button:hover,
@@ -1910,10 +1908,6 @@ GtkSwitch.slider {
 	background-position: center;
 }
 
-.primary-toolbar GtkSwitch.slider {
-	padding: 1px;
-}
-
 GtkSwitch.slider:insensitive {
 	background-image: -gtk-gradient (linear,
 	                  left top,
@@ -1922,7 +1916,6 @@ GtkSwitch.slider:insensitive {
 	                  color-stop (0.50, @switch_slider_insensitive_gradient_b),
 	                  color-stop (0.50, @switch_slider_insensitive_gradient_c),
 	                  to (@switch_slider_insensitive_gradient_d));
-	padding: 0px;
 	border-color: @insensitive_boder_color;
 }
 

@@ -120,6 +120,8 @@
 @define-color scrollbar_button_active_gradient_c #D5D3D1;
 @define-color scrollbar_button_active_gradient_d #CCCAC7;
 
+@define-color spinbutton_border_color @borders;
+
 @define-color switch_slider_color #eeeeec;
 @define-color switch_slider_border_color @progressbar_border;
 
