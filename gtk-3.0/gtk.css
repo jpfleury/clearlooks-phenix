@@ -189,12 +189,17 @@
 
 @define-color scale_progress_fill #2c85e2;
 
-@define-color notebook_active_tab_border #4b6e99;
+@define-color notebook_background_color #f2f1f0;
+
+@define-color notebook_active_tab_border_gradient_a #4b6e99;
+@define-color notebook_active_tab_border_gradient_b @borders;
+
 @define-color notebook_selected_tab_strip_gradient_a #B3CDED;
 @define-color notebook_selected_tab_strip_gradient_b #95B6E0;
-@define-color notebook_selected_tab_strip_border_color #7992B1;
+@define-color notebook_selected_tab_strip_border_bottom_color #7992B1;
 @define-color notebook_selected_tab_gradient_a #FEFEFE;
 @define-color notebook_selected_tab_gradient_b #F2F1F0;
+@define-color notebook_selected_tab_border_bottom_color @borders;
 
 @define-color notebook_tab_inner_border_color #F5F5F4;
 @define-color notebook_tab_gradient_a #E7E6E4;

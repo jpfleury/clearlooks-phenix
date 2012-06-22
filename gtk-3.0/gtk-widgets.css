@@ -986,7 +986,7 @@ GtkComboBox.combobox-entry .button:insensitive {
 	border-style: solid;
 	border-width: 1px;
 	background-clip: border-box;
-	background-color: @theme_base_color;
+	background-color: @notebook_background_color;
 	-GtkNotebook-tab-overlap: 2;
 	-GtkNotebook-tab-curvature: 3;
 	-GtkNotebook-initial-gap: 0;
@@ -998,29 +998,35 @@ GtkComboBox.combobox-entry .button:insensitive {
 
 .notebook tab {
 	padding: 3px;
+	border-radius: 3px;
 	border-style: solid;
 	/* we draw our own custom border here for now */
 	border-width: 0;
+}
+
+.notebook tab,
+.notebook tab.left,
+.notebook tab.right {
 	background-image: linear-gradient(to bottom,
 	                  @notebook_tab_inner_border_color 1px,
 	                  @notebook_tab_gradient_a 2px,
 	                  @notebook_tab_gradient_b 50%,
 	                  @notebook_tab_gradient_c 50%,
 	                  @notebook_tab_gradient_d);
-	-adwaita-focus-border-radius: 2;
 }
 
 .notebook tab:active {
 	-adwaita-border-gradient: -gtk-gradient (linear,
 	                          left top, left bottom,
-	                          from (@notebook_active_tab_border),
-	                          to (@borders));
+	                          from (@notebook_active_tab_border_gradient_a),
+	                          to (@notebook_active_tab_border_gradient_b));
 	background-image: linear-gradient(to bottom,
 	                  @notebook_selected_tab_strip_gradient_a,
 	                  @notebook_selected_tab_strip_gradient_b 3px,
-	                  @notebook_selected_tab_strip_border_color 4px,
+	                  @notebook_selected_tab_strip_border_bottom_color 4px,
 	                  @notebook_selected_tab_gradient_a 5px,
-	                  @notebook_selected_tab_gradient_b);
+	                  @notebook_selected_tab_gradient_b 95%,
+	                  @notebook_selected_tab_border_bottom_color);
 }
 
 .notebook tab.top {
@@ -1028,7 +1034,7 @@ GtkComboBox.combobox-entry .button:insensitive {
 }
 
 .notebook tab.top:active {
-	padding: 7px 2px 0;
+	padding-top: 7px;
 }
 
 .notebook tab.bottom {
@@ -1036,38 +1042,37 @@ GtkComboBox.combobox-entry .button:insensitive {
 }
 
 .notebook tab.bottom:active {
-	padding: 0 2px 7px;
-}
-
-.notebook tab.left,
-.notebook tab.right {
-	background-image: none;
-	background-color: @theme_bg_color;
-	padding: 3px;
+	padding-bottom: 7px;
 }
 
 .notebook tab.left {
+	padding: 2px 0 2px 4px;
 	border-width: 1px 0 1px 1px;
 }
 
+.notebook tab.left:active {
+	padding-left: 7px;
+	border-left-color: @notebook_active_tab_border_gradient_a;
+}
+
 .notebook tab.right {
+	padding: 2px 4px 2px 0;
 	border-width: 1px 1px 1px 0;
+}
+
+.notebook tab.right:active {
+	padding-right: 7px;
+	border-right-color: @notebook_active_tab_border_gradient_a;
 }
 
 .notebook tab.left:active,
 .notebook tab.right:active {
-	background-image: none;
-	background-color: @theme_base_color;
-}
-
-.notebook tab.left:active {
-	padding: 3px 3px 3px 5px;
-	border-radius: 3px 0 0 3px;
-}
-
-.notebook tab.right:active {
-	padding: 3px 5px 3px 3px;
-	border-radius: 0 3px 3px 0;
+	background-image: linear-gradient(to bottom,
+	                  @notebook_selected_tab_strip_gradient_a,
+	                  @notebook_selected_tab_strip_gradient_b 3px,
+	                  @notebook_selected_tab_strip_border_bottom_color 4px,
+	                  @notebook_selected_tab_gradient_a 4px,
+	                  @notebook_selected_tab_gradient_b);
 }
 
 /* close button styling */
