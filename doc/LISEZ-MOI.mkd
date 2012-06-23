@@ -42,15 +42,25 @@ S'assurer que le paquet `gnome-themes-standard` est installé. Ça devrait être
 
 ### Bureau géré par Nautilus
 
-Par défaut, le texte des icônes sur un bureau géré par Nautilus est noir. Pour afficher le texte en blanc, ouvrir le fichier `gtk-3.0/gtk.css` dans un éditeur de texte, trouver la ligne suivante (à la fin du fichier):
+Par défaut, le texte des icônes sur un bureau géré par Nautilus est noir. Pour afficher le texte en blanc, ouvrir le fichier `gtk-3.0/applications.css` dans un éditeur de texte, trouver le code relatif à Nautilus:
 
-    /*@import url("apps/nautilus.css");*/
+	/* Nautilus */
+	
+	/*
+	CODE
+	CSS
+	COMMENTÉ
+	*/
 
-et la décommenter, ce qui donne:
+et le décommenter, ce qui donne:
 
-    @import url("apps/nautilus.css");
+	/* Nautilus */
+	
+	CODE
+	CSS
+	DÉCOMMENTÉ
 
-Pour avoir une couleur personnalisée, modifier la couleur directement dans le fichier `gtk-3.0/apps/nautilus.css`.
+Pour avoir une couleur personnalisée, modifier la couleur directement dans le fichier `gtk-3.0/applications.css`.
 
 ### Emplacement des boutons de fenêtres
 
