@@ -331,8 +331,7 @@
  * Imports *
  ************/
 
-@import url("gtk-widgets-borders.css");
-@import url("gtk-widgets-assets.css");
 @import url("gtk-widgets.css");
+@import url("gtk-widgets-img.css");
 @import url("applications.css");
 
