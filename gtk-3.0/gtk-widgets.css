@@ -168,24 +168,13 @@ GtkTreeView.separator,
 	color: shade(@borders, 1.30);
 }
 
-.pane-separator {
-	color: shade (@inactive_frame_color, 0.80);
-}
-
+.pane-separator,
 .pane-separator:hover,
 .pane-separator:selected {
-	color: @theme_text_color;
-}
-
-.pane-separator {
+	color: @theme_bg_color;
 	background-color: @theme_bg_color;
 	background-repeat: no-repeat;
 	background-position: center;
-}
-
-.notebook .pane-separator,
-.notebook .pane-separator:hover {
-	background-color: @theme_base_color;
 }
 
 /****************
