@@ -312,8 +312,8 @@ GtkColorChooserWidget #add-color-button:hover {
 .color-active-badge.color-light:hover,
 .color-active-badge.color-dark,
 .color-active-badge.color-dark:hover {
-	border-color: #444444;
-	color: #444444;
+	border-color: @color_active_badge_border_color;
+	color: @color_active_badge_color;
 }
 
 GtkColorEditor GtkColorSwatch {

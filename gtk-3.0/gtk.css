@@ -230,6 +230,8 @@
 @define-color inset_light_color alpha(white, 0.45);
 @define-color inset_dark_color @inset_light_color;
 
+@define-color color_active_badge_border_color #444444;
+@define-color color_active_badge_color @color_active_badge_border_color;
 /******
  * WM *
  ******/
