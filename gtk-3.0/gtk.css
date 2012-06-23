@@ -228,7 +228,7 @@
 @define-color expander_row_selected_color #acccee;
 
 @define-color inset_light_color alpha(white, 0.45);
-@define-color inset_dark_color alpha(black, 0.07);
+@define-color inset_dark_color @inset_light_color;
 
 /******
  * WM *
@@ -236,7 +236,7 @@
 
 @define-color wm_title @theme_fg_color;
 @define-color wm_highlight #ffffff;
-@define-color wm_title_highlight_dark alpha(#ffffff, 0.0);
+@define-color wm_title_highlight_dark @wm_title_highlight;
 @define-color wm_title_highlight #ffffff;
 
 @define-color wm_bg_a shade (@bg_color, 1.1);

@@ -250,13 +250,8 @@ GtkColorSwatch:selected:hover {
 	border-color: alpha(black, 0.45);
 }
 
+GtkColorSwatch.color-light:hover,
 GtkColorSwatch.color-dark:hover {
-	background-image: linear-gradient(to bottom,
-	                  alpha(white, 0) 40%,
-	                  alpha(white, 0.3));
-}
-
-GtkColorSwatch.color-light:hover {
 	background-image: linear-gradient(to top,
 	                  alpha(black, 0) 40%,
 	                  alpha(black, 0.1));
@@ -314,15 +309,11 @@ GtkColorChooserWidget #add-color-button:hover {
 }
 
 .color-active-badge.color-light,
-.color-active-badge.color-light:hover {
-	border-color: #444444;
-	color: #444444;
-}
-
+.color-active-badge.color-light:hover,
 .color-active-badge.color-dark,
 .color-active-badge.color-dark:hover {
-	border-color: #cccccc;
-	color: #cccccc;
+	border-color: #444444;
+	color: #444444;
 }
 
 GtkColorEditor GtkColorSwatch {
