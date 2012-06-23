@@ -160,6 +160,8 @@
 @define-color scale_trough_highlight_insensitive_gradient_b #B0C9E8;
 @define-color scale_trough_highlight_insensitive_gradient_c #A6C0E3;
 
+@define-color scale_mark_color @borders;
+
 @define-color progressbar_background_a #76b0ec;
 @define-color progressbar_background_b #1f72c6;
 @define-color progressbar_pattern #6587B2;
