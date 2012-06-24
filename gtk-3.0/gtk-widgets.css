@@ -13,8 +13,8 @@
 	-GtkCheckButton-indicator-size: 16;
 	-GtkCheckMenuItem-indicator-size: 12;
 
-	-GtkScrolledWindow-scrollbar-spacing: 0;
-	-GtkScrolledWindow-scrollbars-within-bevel: 1;
+	-GtkScrolledWindow-scrollbar-spacing: 3;
+	-GtkScrolledWindow-scrollbars-within-bevel: 0;
 
 	-GtkToolItemGroup-expander-size: 11;
 	-GtkExpander-expander-size: 11;
