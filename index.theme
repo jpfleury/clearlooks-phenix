@@ -1,9 +1,10 @@
 [X-GNOME-Metatheme]
-Name=Clearwaita
+Name=Clearlooks-Phenix
+Name[fr]=Clearlooks-Phénix
 Type=X-GNOME-Metatheme
 Encoding=UTF-8
-GtkTheme=Clearwaita
-MetacityTheme=Clearwaita
+GtkTheme=Clearlooks-Phenix
+MetacityTheme=Clearlooks-Phenix
 IconTheme=gnome
 CursorTheme=Adwaita
 CursorSize=24

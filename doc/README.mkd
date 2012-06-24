@@ -1,38 +1,36 @@
-<p lang="fr"><strong><a hreflang="fr" href="http://www.jpfleury.net/logiciels/clearwaita.php">Lire cette page en français.</a></strong></p>
+<p lang="fr"><strong><a hreflang="fr" href="http://www.jpfleury.net/logiciels/clearlooks-phenix.php">Lire cette page en français.</a></strong></p>
 
 ## Overview
 
-**Clearwaita = Clearlooks + Adwaita**
-
-Clearwaita is a GTK2/GTK3 theme. Files for GTK3 are a modified version of Adwaita, the default Gnome 3 theme, to make it visually close to Clearlooks. Files for GTK2 come from the unmodified Clearlooks theme.
+The Clearlooks-Phenix project (formerly known as Clearwaita) aims at creating a GK3 port of Clearlooks, the default theme for Gnome 2. Files for GTK3 correspond to significant changes of Adwaita, the default Gnome 3 theme. Files for GTK2 come from the unmodified Clearlooks theme.
 
 Also, files for Metacity, Openbox and Xfwm4 window managers are included.
 
 Here are two screenshots (click to download the original image):
 
-<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png" alt="Screenshot of a Gnome 3 desktop (fallback mode) with Clearwaita theme" width="684" height="482" /></a>
+<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png" alt="Screenshot of a Gnome 3 desktop (fallback mode) with the Clearlooks-Phenix theme" width="684" height="482" /></a>
 
-<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png" alt="Screenshot of gedit 3 with Clearwaita theme" width="684" height="565" /></a>
+<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png" alt="Screenshot of gedit 3 with the Clearlooks-Phenix theme" width="684" height="565" /></a>
 
 ## Requirements
 
-The package `gnome-themes-standard` must be installed. It should be the case on Gnome 3, but not on Xfce.
+Packages `gnome-themes-standard` and `gtk3-engines-unico` must be installed.
 
 ## Installation
 
-- [Download the archive of the latest version.](http://jpfleury.indefero.net/p/clearwaita/source/download/master/)
+- [Download the archive of the latest version.](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/)
 
 - Extract the archive.
 
-- Rename the extracted folder to `Clearwaita`.
+- Rename the extracted folder to `Clearlooks-Phenix`.
 
-- Copy the folder `Clearwaita` in one of the following two locations:
+- Copy the folder `Clearlooks-Phenix` in one of the following two locations:
 
 	- `~/.themes/` for the current user;
 	
 	- `/usr/share/themes/` for all users, including style for programs ran with root privileges (e.g. Synaptic).
 
-- Then, choose Clearwaita theme:
+- Then, choose Clearlooks-Phenix theme:
 
 	- on Gnome: with [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool);
 	
@@ -80,10 +78,10 @@ Last version: 1.0 (2012-05-07)
 
 Git is used for revision control. [Repository can be browsed online or cloned.][git]
 
-Clearwaita has an [issue tracker], on which bug reports and feature requests can be submitted.
+Clearlooks-Phenix has an [issue tracker], on which bug reports and feature requests can be submitted.
 
-[git]: http://jpfleury.indefero.net/p/clearwaita/source/tree/master/
-[issue tracker]: http://jpfleury.indefero.net/p/clearwaita/issues/
+[git]: http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/
+[issue tracker]: http://jpfleury.indefero.net/p/clearlooks-phenix/issues/
 
 ## License
 
