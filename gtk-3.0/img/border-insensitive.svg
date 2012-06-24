@@ -14,7 +14,7 @@
    id="svg33222"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="border-insensitive2.svg">
+   sodipodi:docname="border-insensitive.svg">
   <defs
      id="defs33224" />
   <sodipodi:namedview
@@ -25,7 +25,7 @@
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
      inkscape:zoom="16"
-     inkscape:cx="-11.50355"
+     inkscape:cx="-3.4249403"
      inkscape:cy="-0.54712037"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -78,6 +78,6 @@
        height="13.999999"
        width="15"
        id="rect17861"
-       style="color:#000000;fill:none;stroke:#afaca9;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       style="color:#000000;fill:none;stroke:#a9a5a2;stroke-width:1;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
   </g>
 </svg>

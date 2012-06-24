@@ -211,8 +211,9 @@ GtkTreeView.separator,
 
 /* Insensitive entry background */
 .entry:insensitive {
-	background-color: @insensitive_bg_color;
-	background-image: none;
+	background-image: linear-gradient(to bottom,
+	                  @entry_insensitive_inner_border_color 2px,
+	                  @entry_insensitive_bg_color 3px);
 }
 
 /*******************

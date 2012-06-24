@@ -10,12 +10,12 @@
 @define-color theme_selected_bg_color #86abd9;
 @define-color theme_selected_fg_color @theme_base_color;
 
-@define-color insensitive_bg_color #f4f4f2;
-@define-color insensitive_fg_color #a7aba7;
+@define-color insensitive_bg_color @theme_bg_color;
+@define-color insensitive_fg_color #a9a5a2;
 
 @define-color internal_element_color @theme_fg_color;
 @define-color internal_element_hover_color @theme_fg_color;
-@define-color internal_element_insensitive_color #a9a5a2;
+@define-color internal_element_insensitive_color @insensitive_fg_color;
 
 /***********
  * tooltip *
@@ -285,8 +285,14 @@
  *********/
 
 @define-color entry_text_color @theme_fg_color;
+
 @define-color entry_inner_border_color #e4e3e3;
 @define-color entry_bg_color @theme_base_color;
+
+/* insensitive */
+
+@define-color entry_insensitive_inner_border_color #e6e4e3;
+@define-color entry_insensitive_bg_color @insensitive_bg_color;
 
 /************
  * notebook *
