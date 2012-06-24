@@ -1542,7 +1542,7 @@ GtkAssistant .sidebar {
  *************/
 
 GtkSwitch {
-	font: bold condensed 10;
+	color: @switch_color;
 }
 
 GtkScale.progressbar,

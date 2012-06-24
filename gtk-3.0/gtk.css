@@ -210,6 +210,8 @@
  * switch *
  **********/
 
+@define-color switch_color #6d6a68;
+
 @define-color switch_slider_border_color @progressbar_border_color;
 
 @define-color switch_slider_gradient_a @scrollbar_slider_gradient_a;
