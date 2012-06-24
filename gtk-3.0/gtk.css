@@ -337,35 +337,9 @@
  * osd *
  *******/
 
-@define-color osd_base #212526;
-@define-color osd_highlight #ffffff;
-@define-color osd_lowlight #525252;
-
-@define-color osd_bg alpha(@osd_base, 0.80);
-@define-color osd_fg #ededed;
-
-@define-color osd_active_fg shade(@osd_fg, 1.10);
-
-@define-color osd_toolbar_bg_a alpha(@osd_base, 0.80);
-@define-color osd_toolbar_bg_b alpha(#101010, 0.80);
-@define-color osd_toolbar_bg_c alpha(shade(@osd_base, 1.02), 0.80);
-
-@define-color osd_button_bg_a alpha(@osd_highlight, 0.16);
-@define-color osd_button_bg_b alpha(@osd_lowlight, 0.05);
-@define-color osd_button_bg_c alpha(@osd_highlight, 0.12);
-
-@define-color osd_button_bg_hover_a alpha(@osd_highlight, 0.28);
-@define-color osd_button_bg_hover_b alpha(@osd_lowlight, 0.14);
-@define-color osd_button_bg_hover_c alpha(@osd_highlight, 0.14);
-
-@define-color osd_button_bg_active_a alpha(@osd_lowlight, 0.18);
-@define-color osd_button_bg_active_b alpha(@osd_highlight, 0.23);
-@define-color osd_button_bg_active_c alpha(@osd_lowlight, 0.17);
-
-@define-color osd_button_border alpha(@osd_highlight, 0.40);
-@define-color osd_button_fg shade(@osd_fg, 0.80);
-
-@define-color osd_trough_bg alpha(@osd_button_fg, 0.10);
+@define-color osd_bg_color @theme_tooltip_bg_color;
+@define-color osd_fg_color @theme_tooltip_fg_color;
+@define-color osd_border_color @theme_tooltip_border_color;
 
 /*********************
  * Error/Warning/... *
