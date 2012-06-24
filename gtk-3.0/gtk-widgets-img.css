@@ -239,50 +239,54 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
  * Menus *
  *********/
 
-.menuitem.check:active {
+.menu .menuitem.check {
+	background-image: none;
+}
+
+.menu .menuitem.check:active {
 	background-image: url("img/menuitem-checkbox-checked.png");
 	background-repeat: no-repeat;
 }
 
-.menuitem.check:active:hover {
+.menu .menuitem.check:active:hover {
 	background-image: url("img/menuitem-checkbox-checked-selected.png");
 	background-repeat: no-repeat;
 }
 
-.menuitem.check:active:insensitive {
+.menu .menuitem.check:active:insensitive {
 	background-image: url("img/menuitem-checkbox-checked-insensitive.png");
 	background-repeat: no-repeat;
 }
 
-.menuitem.check:inconsistent,
-.menuitem.radio:inconsistent {
+.menu .menuitem.check:inconsistent,
+.menu .menuitem.radio:inconsistent {
 	background-image: url("img/menuitem-checkbox-mixed.png");
 	background-repeat: no-repeat;
 }
 
-.menuitem.check:inconsistent:insensitive,
-.menuitem.radio:inconsistent:insensitive {
+.menu .menuitem.check:inconsistent:insensitive,
+.menu .menuitem.radio:inconsistent:insensitive {
 	background-image: url("img/menuitem-checkbox-mixed-insensitive.png");
 	background-repeat: no-repeat;
 }
 
-.menuitem.check:inconsistent:hover,
-.menuitem.radio:inconsistent:hover {
+.menu .menuitem.check:inconsistent:hover,
+.menu .menuitem.radio:inconsistent:hover {
 	background-image: url("img/menuitem-checkbox-mixed-selected.png");
 	background-repeat: no-repeat;
 }
 
-.menuitem.radio:active {
+.menu .menuitem.radio:active {
 	background-image: url("img/menuitem-radio-checked.png");
 	background-repeat: no-repeat;
 }
 
-.menuitem.radio:active:hover {
+.menu .menuitem.radio:active:hover {
 	background-image: url("img/menuitem-radio-checked-selected.png");
 	background-repeat: no-repeat;
 }
 
-.menuitem.radio:active:insensitive {
+.menu .menuitem.radio:active:insensitive {
 	background-image: url("img/menuitem-radio-checked-insensitive.png");
 	background-repeat: no-repeat;
 }
