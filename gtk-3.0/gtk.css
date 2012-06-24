@@ -385,7 +385,7 @@
 @define-color question_bg_color #8aadd4;
 @define-color question_fg_color @theme_base_color;
 
-@define-color error_bg_color #8a3636;
+@define-color error_bg_color #9b3636;
 @define-color error_fg_color @theme_base_color;
 
 /*****************

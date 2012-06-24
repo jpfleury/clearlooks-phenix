@@ -13,3 +13,9 @@
 }
 */
 
+/* gedit */
+
+GeditFloatingSlider .entry.not-found {
+	border-image: url("img/border-error.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+}
+
