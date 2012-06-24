@@ -205,9 +205,15 @@ GtkTreeView.separator,
 
 /* Entry background */
 .entry {
+	background-color: @entry_bg_color;
 	background-image: linear-gradient(to bottom,
 	                  @entry_inner_border_color 1px,
 	                  @entry_bg_color 2px);
+}
+
+/* Focused entry background */
+.entry:focus {
+	background-image: none;
 }
 
 /* Insensitive entry background */
