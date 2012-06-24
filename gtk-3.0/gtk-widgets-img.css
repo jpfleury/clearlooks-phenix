@@ -10,6 +10,18 @@
 	background-image: url("img/resize-grip.png");
 }
 
+/***************
+ * Scrollbar *
+ ***************/
+
+.scrollbar.vertical {
+	-unico-centroid-texture: url("img/slider-vert-grip.png");
+}
+
+.scrollbar.horizontal {
+	-unico-centroid-texture: url("img/slider-horz-grip.png");
+}
+
 /*************************
  * Check and Radio items *
  *************************/
@@ -418,8 +430,8 @@ column-header .button:active:focus {
 	border-width: 1px;
 	border-radius: 0;
 	border-style: solid;
-	border-color: @column_header_border_a @column_header_border_b
-	              @column_header_border_c @column_header_border_a;
+	border-color: @column_header_border_top_color @column_header_border_right_color
+	              @column_header_border_bottom_color @column_header_border_left_color;
 
 }
 

@@ -31,7 +31,7 @@
 
 	-GtkWidget-focus-padding: 2;
 	-GtkWidget-focus-line-width: 1;
-	-adwaita-focus-border-color: @focus-border-color;
+	-adwaita-focus-border-color: @focus_border_color;
 	-adwaita-focus-border-radius: 2;
 	-adwaita-focus-border-dashes: 1;
 	-GtkWindow-resize-grip-width: 11;
@@ -59,7 +59,7 @@ GtkWindow {
 *:insensitive {
 	background-color: @insensitive_bg_color;
 	color: @insensitive_fg_color;
-	border-color: @insensitive_borders;
+	border-color: @insensitive_border_color;
 }
 
 GtkImage,
@@ -100,7 +100,7 @@ GtkLabel:insensitive {
 	                  @theme_base_color 20%,
 	                  shade(@theme_base_color, 0.9));
 	background-color: @theme_base_color;
-	border-color: @borders;
+	border-color: @border_color;
 	border-radius: 3px;
 	border-width: 1px;
 	border-style: solid;
@@ -165,7 +165,7 @@ GtkTreeView.view.separator,
 GtkTreeView.separator,
 .separator,
 .separator:hover {
-	color: shade(@borders, 1.30);
+	color: shade(@border_color, 1.30);
 }
 
 .pane-separator,
@@ -206,7 +206,7 @@ GtkTreeView.separator,
 .entry {
 	background-image: linear-gradient(to bottom,
 	                  @entry_inner_border_color 1px,
-	                  @entry_background 2px);
+	                  @entry_bg_color 2px);
 }
 
 /* Insensitive entry background */
@@ -224,7 +224,7 @@ GtkTreeView.separator,
 }
 
 .image:hover {
-	color: @internal_element_prelight;
+	color: @internal_element_hover_color;
 }
 
 .image:selected {
@@ -290,14 +290,14 @@ GtkColorSwatch.bottom {
 
 GtkColorChooserWidget #add-color-button {
 	background-clip: padding-box;
-	border-color: mix(@borders, @theme_bg_color, 0.3);
-	background-color: mix(@borders, @theme_bg_color, 0.3);
+	border-color: mix(@border_color, @theme_bg_color, 0.3);
+	background-color: mix(@border_color, @theme_bg_color, 0.3);
 	color: @theme_base_color;
 }
 
 GtkColorChooserWidget #add-color-button:hover {
-	border-color: @borders;
-	background-color: @borders;
+	border-color: @border_color;
+	background-color: @border_color;
 	color: @theme_base_color;
 }
 
@@ -355,18 +355,18 @@ GtkProgressBar {
 	border-radius: 3px;
 	border-width: 1px;
 	border-style: solid;
-	border-color: @progressbar_border;
+	border-color: @progressbar_border_color;
 	-adwaita-progressbar-pattern: -gtk-gradient (linear,
 	                              left top, right bottom,
-	                              from (alpha (@progressbar_pattern, 0.00)),
-	                              color-stop (0.49, alpha (@progressbar_pattern, 0.00)),
-	                              color-stop (0.50, alpha (@progressbar_pattern, 0.10)),
-	                              to (alpha (@progressbar_pattern, 0.10)));
+	                              from (alpha (@progressbar_pattern_color, 0.00)),
+	                              color-stop (0.49, alpha (@progressbar_pattern_color, 0.00)),
+	                              color-stop (0.50, alpha (@progressbar_pattern_color, 0.10)),
+	                              to (alpha (@progressbar_pattern_color, 0.10)));
 }
 
 .progressbar row:selected,
 .progressbar row:selected:focus {
-	border-color: shade(@progressbar_border, 0.85);
+	border-color: shade(@progressbar_border_color, 0.85);
 }
 
 .progressbar.vertical {
@@ -379,10 +379,10 @@ GtkProgressBar {
 	                  to (@progressbar_gradient_d));
 	-adwaita-progressbar-pattern: -gtk-gradient (linear,
 	                              left bottom, right top,
-	                              from (alpha (@progressbar_pattern, 0.00)),
-	                              color-stop (0.49, alpha (@progressbar_pattern, 0.00)),
-	                              color-stop (0.50, alpha (@progressbar_pattern, 0.10)),
-	                              to (alpha (@progressbar_pattern, 0.10)));
+	                              from (alpha (@progressbar_pattern_color, 0.00)),
+	                              color-stop (0.49, alpha (@progressbar_pattern_color, 0.00)),
+	                              color-stop (0.50, alpha (@progressbar_pattern_color, 0.10)),
+	                              to (alpha (@progressbar_pattern_color, 0.10)));
 }
 
 /* for progressbars in cell renderers */
@@ -507,7 +507,7 @@ GtkScale.trough.vertical.highlight:insensitive {
 }
 
 GtkScale.progressbar {
-	background-color: @scale_progress_fill;
+	background-color: @scale_progressbar_bg_color;
 }
 
 GtkScale.mark {
@@ -520,7 +520,7 @@ GtkScale.mark {
 
 .frame {
 	border-width: 1px;
-	border-color: @borders;
+	border-color: @border_color;
 	border-style: solid;
 	border-radius: 3px;
 	background-color: @theme_base_color;
@@ -529,7 +529,7 @@ GtkScale.mark {
 
 GtkScrolledWindow.frame {
 	border-style: solid;
-	border-color: @borders;
+	border-color: @border_color;
 	border-width: 1px;
 	border-radius: 2px;
 	padding: 0;
@@ -556,7 +556,7 @@ GtkComboBox.combobox-entry .button {
 	-GtkButton-interior-focus: true;
 	-GtkButton-default-border: 0;
 	-GtkButton-inner-boder: 3;
-	color: @theme_text_color;
+	color: @theme_fg_color;
 	border-style: solid;
 	border-color: transparent;
 }
@@ -578,7 +578,7 @@ GtkComboBox.combobox-entry .button {
 .primary-toolbar .button *:active,
 .inline-toolbar .button *:active,
 .button *:active {
-	color: @button_active_text;
+	color: @button_active_text_color;
 }
 
 .button *:insensitive,
@@ -824,13 +824,13 @@ GtkComboBox.combobox-entry .button {
 }
 
 .spinbutton .button:insensitive {
-	color: @internal_element_insensitive;
+	color: @internal_element_insensitive_color;
 }
 
 .spinbutton .button:active,
 .spinbutton .button:active:focus,
 .spinbutton .button:hover {
-	color: @internal_element_prelight;
+	color: @internal_element_hover_color;
 }
 
 .spinbutton .button:first-child {
@@ -859,10 +859,10 @@ GtkComboBox.combobox-entry .button,
 	background-image: -gtk-gradient (linear,
 	                  left top,
 	                  left bottom,
-	                  from (@button_gradient_color_a),
-	                  color-stop (0.50, @button_gradient_color_b),
-	                  color-stop (0.50, @button_gradient_color_c),
-	                  to (@button_gradient_color_d));
+	                  from (@button_gradient_a),
+	                  color-stop (0.50, @button_gradient_b),
+	                  color-stop (0.50, @button_gradient_c),
+	                  to (@button_gradient_d));
 	background-color: transparent;
 }
 
@@ -884,12 +884,12 @@ GtkComboBox.combobox-entry .button:active,
 .inline-toolbar .button:active,
 .inline-toolbar .button:active:hover {
 	background-image: linear-gradient(to bottom,
-	                  @button_active_gradient_color_a,
-	                  @button_active_gradient_color_b 3px,
-	                  @button_active_gradient_color_c 4px,
-	                  @button_active_gradient_color_d 50%,
-	                  @button_active_gradient_color_e 50%,
-	                  @button_active_gradient_color_f);
+	                  @button_active_gradient_a,
+	                  @button_active_gradient_b 3px,
+	                  @button_active_gradient_c 4px,
+	                  @button_active_gradient_d 50%,
+	                  @button_active_gradient_e 50%,
+	                  @button_active_gradient_f);
 	background-color: transparent;
 }
 
@@ -921,9 +921,9 @@ GtkComboBox.combobox-entry .button:hover,
 .primary-toolbar GtkComboBox.combobox-entry .button:hover {
 	background-color: transparent;
 	background-image: linear-gradient(to bottom,
-	                  @button_hover_gradient_color_a 50%,
-	                  @button_hover_gradient_color_b 50%,
-	                  @button_hover_gradient_color_c);
+	                  @button_hover_gradient_a 50%,
+	                  @button_hover_gradient_b 50%,
+	                  @button_hover_gradient_c);
 }
 
 /* Insensitive button background */
@@ -932,10 +932,10 @@ GtkComboBox.combobox-entry .button:hover,
 GtkComboBox.combobox-entry .button:insensitive {
 	background-image: linear-gradient(to bottom,
 	                  @button_insensitive_inner_border_color 1px,
-	                  @button_insensitive_gradient_color_a 2px,
-	                  @button_insensitive_gradient_color_b 50%,
-	                  @button_insensitive_gradient_color_c 50%,
-	                  @button_insensitive_gradient_color_d);
+	                  @button_insensitive_gradient_a 2px,
+	                  @button_insensitive_gradient_b 50%,
+	                  @button_insensitive_gradient_c 50%,
+	                  @button_insensitive_gradient_d);
 	background-color: @insensitive_bg_color;
 }
 
@@ -944,12 +944,12 @@ GtkComboBox.combobox-entry .button:insensitive {
 .toolbar .button:active:insensitive,
 .toolbar GtkComboBox .button:active:insensitive {
 	background-image: linear-gradient(to bottom,
-	                  @button_active_insensitive_gradient_color_a,
-	                  @button_active_insensitive_gradient_color_b 3px,
-	                  @button_active_insensitive_gradient_color_c 4px,
-	                  @button_active_insensitive_gradient_color_d 50%,
-	                  @button_active_insensitive_gradient_color_e 50%,
-	                  @button_active_insensitive_gradient_color_f);
+	                  @button_active_insensitive_gradient_a,
+	                  @button_active_insensitive_gradient_b 3px,
+	                  @button_active_insensitive_gradient_c 4px,
+	                  @button_active_insensitive_gradient_d 50%,
+	                  @button_active_insensitive_gradient_e 50%,
+	                  @button_active_insensitive_gradient_f);
 	background-color: transparent;
 }
 
@@ -960,11 +960,11 @@ GtkComboBox.combobox-entry .button:insensitive {
 
 .notebook {
 	padding: 0;
-	border-color: @borders;
+	border-color: @border_color;
 	border-style: solid;
 	border-width: 1px;
 	background-clip: border-box;
-	background-color: @notebook_background_color;
+	background-color: @notebook_bg_color;
 	-GtkNotebook-tab-overlap: 2;
 	-GtkNotebook-tab-curvature: 3;
 	-GtkNotebook-initial-gap: 0;
@@ -999,12 +999,12 @@ GtkComboBox.combobox-entry .button:insensitive {
 	                          from (@notebook_active_tab_border_gradient_a),
 	                          to (@notebook_active_tab_border_gradient_b));
 	background-image: linear-gradient(to bottom,
-	                  @notebook_selected_tab_strip_gradient_a,
-	                  @notebook_selected_tab_strip_gradient_b 3px,
-	                  @notebook_selected_tab_strip_border_bottom_color 4px,
-	                  @notebook_selected_tab_gradient_a 5px,
-	                  @notebook_selected_tab_gradient_b 95%,
-	                  @notebook_selected_tab_border_bottom_color);
+	                  @notebook_active_tab_strip_gradient_a,
+	                  @notebook_active_tab_strip_gradient_b 3px,
+	                  @notebook_active_tab_strip_border_bottom_color 4px,
+	                  @notebook_active_tab_gradient_a 5px,
+	                  @notebook_active_tab_gradient_b 95%,
+	                  @notebook_active_tab_border_bottom_color);
 }
 
 .notebook tab.top {
@@ -1046,11 +1046,11 @@ GtkComboBox.combobox-entry .button:insensitive {
 .notebook tab.left:active,
 .notebook tab.right:active {
 	background-image: linear-gradient(to bottom,
-	                  @notebook_selected_tab_strip_gradient_a,
-	                  @notebook_selected_tab_strip_gradient_b 3px,
-	                  @notebook_selected_tab_strip_border_bottom_color 4px,
-	                  @notebook_selected_tab_gradient_a 4px,
-	                  @notebook_selected_tab_gradient_b);
+	                  @notebook_active_tab_strip_gradient_a,
+	                  @notebook_active_tab_strip_gradient_b 3px,
+	                  @notebook_active_tab_strip_border_bottom_color 4px,
+	                  @notebook_active_tab_gradient_a 4px,
+	                  @notebook_active_tab_gradient_b);
 }
 
 /* close button styling */
@@ -1142,7 +1142,7 @@ GtkComboBox.combobox-entry .button:last-child {
 
 GtkComboBox.combobox-entry .button *:active,
 GtkComboBox.combobox-entry .button *:active:hover {
-	color: @theme_text_color;
+	color: @theme_fg_color;
 }
 
 GtkComboBox .button {
@@ -1150,7 +1150,7 @@ GtkComboBox .button {
 }
 
 GtkComboBox .button *:hover {
-	color: @theme_text_color;
+	color: @theme_fg_color;
 }
 
 /**************
@@ -1173,19 +1173,20 @@ GtkComboBox .button *:hover {
 
 .scrollbar.vertical {
 	engine: unico;
-	-unico-centroid-texture: url("assets/slider-vert-grip.png");
 }
 
 .scrollbar.horizontal {
 	engine: unico;
-	-unico-centroid-texture: url("assets/slider-horz-grip.png");
 }
 
-.scrollbars-junction, /* the small square between scrollbars!!! */
-.scrollbar.trough {
+.scrollbars-junction {
 	background-image: none;
-	background-color: @scrollbar_trough;
-	border-color: @scrollbar_trough_border;
+	background-color: @scrollbars_junction_bg_color;
+}
+
+.scrollbars-junction,
+.scrollbar.trough {
+	border-color: @scrollbar_trough_border_color;
 	border-radius: 0;
 	border-image: none;
 }
@@ -1317,7 +1318,6 @@ GtkComboBox .button *:hover {
 .scrollbar.slider {
 	-unico-inner-stroke-width: 1px;
 	background-image: none;
-	background-color: @scrollbar_slider;
 	border-radius: 0;
 	border-style: solid;
 	border-image: none;
@@ -1329,10 +1329,10 @@ GtkComboBox .button *:hover {
 	-unico-inner-stroke-gradient: -gtk-gradient (linear,
 	                  left top,
 	                  left bottom,
-	                  from (@scrollbar_slider_inner_gradient_a),
-	                  color-stop (0.50, @scrollbar_slider_inner_gradient_b),
-	                  color-stop (0.50, @scrollbar_slider_inner_gradient_c),
-	                  to (@scrollbar_slider_inner_gradient_d));
+	                  from (@scrollbar_slider_inner_border_gradient_a),
+	                  color-stop (0.50, @scrollbar_slider_inner_border_gradient_b),
+	                  color-stop (0.50, @scrollbar_slider_inner_border_gradient_c),
+	                  to (@scrollbar_slider_inner_border_gradient_d));
 	background-image: -gtk-gradient (linear,
 	                  left top,
 	                  left bottom,
@@ -1346,10 +1346,10 @@ GtkComboBox .button *:hover {
 	-unico-inner-stroke-gradient: -gtk-gradient (linear,
 	                  left top,
 	                  right top,
-	                  from (@scrollbar_slider_inner_gradient_a),
-	                  color-stop (0.50, @scrollbar_slider_inner_gradient_b),
-	                  color-stop (0.50, @scrollbar_slider_inner_gradient_c),
-	                  to (@scrollbar_slider_inner_gradient_d));
+	                  from (@scrollbar_slider_inner_border_gradient_a),
+	                  color-stop (0.50, @scrollbar_slider_inner_border_gradient_b),
+	                  color-stop (0.50, @scrollbar_slider_inner_border_gradient_c),
+	                  to (@scrollbar_slider_inner_border_gradient_d));
 	background-image: -gtk-gradient (linear,
 	                  left top,
 	                  right top,
@@ -1393,7 +1393,7 @@ GtkTreeMenu .menuitem {
 }
 
 GtkTreeMenu .menuitem * {
-	color: @theme_text_color;
+	color: @theme_fg_color;
 }
 
 .menu {
@@ -1417,7 +1417,7 @@ GtkTreeMenu .menuitem * {
 .menu.button:hover {
 	background-image: none;
 	background-color: @theme_base_color;
-	color: @theme_text_color;
+	color: @theme_fg_color;
 
 	border-image: none;
 	border-style: none;
@@ -1525,7 +1525,7 @@ GtkTreeMenu .menuitem *:hover,
 }
 
 .menuitem.separator {
-	color: @menu_separator;
+	color: @menu_separator_color;
 
 	-GtkMenuItem-horizontal-padding: 0;
 }
@@ -1551,13 +1551,13 @@ GtkTreeMenu .menuitem *:hover,
 
 .button.menuitem.menubar:active,
 .button.menuitem.menubar *:active {
-	color: @theme_text_color;
+	color: @theme_fg_color;
 	background-image: none;
 	background-color: @menu_bg_color;
 	border-radius: 5px 5px 0 0;
 	border-image: none;
 	border-width: 1px 1px 0 1px;
-	border-color: shade(@borders, 1.30);
+	border-color: shade(@border_color, 1.30);
 	border-style: solid;
 }
 
@@ -1626,8 +1626,8 @@ GtkCheckButton:selected:focus {
 	border-width: 1px 0 1px 0;
 	border-radius: 0;
 	border-style: solid;
-	border-top-color: @toolbar_border_top;
-	border-bottom-color: @toolbar_border_bottom;
+	border-top-color: @toolbar_border_top_color;
+	border-bottom-color: @toolbar_border_bottom_color;
 	-GtkWidget-window-dragging: true;
 	-GtkToolbar-button-relief: normal;
 }
@@ -1651,7 +1651,7 @@ GtkCheckButton:selected:focus {
 	border-style: solid;
 	border-color: shade(@internal_element_color, 1.10);
 	border-image: none;
-	color: @theme_text_color;
+	color: @theme_fg_color;
 }
 
 /*******************
@@ -1677,7 +1677,7 @@ GtkCheckButton:selected:focus {
 .inline-toolbar.toolbar  {
 	background-color: transparent;
 	background-image: linear-gradient(to bottom,
-	                  @toolbar_second_border_color 1px,
+	                  @toolbar_inner_border_color 1px,
 	                  @toolbar_gradient_a 2px,
 	                  @toolbar_gradient_b 50%,
 	                  @toolbar_gradient_c 50%,
@@ -1690,7 +1690,7 @@ GtkCheckButton:selected:focus {
 
 .sidebar,
 .sidebar .view {
-	background-color: @sidebar_bg;
+	background-color: @sidebar_bg_color;
 }
 
 .sidebar .scrollbar.trough {
@@ -1701,11 +1701,11 @@ GtkCheckButton:selected:focus {
 }
 
 .sidebar .scrollbar.trough {
-	background-color: shade(@sidebar_bg, 0.8);
+	background-color: shade(@sidebar_bg_color, 0.8);
 }
 
 .sidebar .scrollbar.slider {
-	background-color: @sidebar_bg;
+	background-color: @sidebar_bg_color;
 }
 
 .sidebar .scrollbar.slider:hover {
@@ -1839,7 +1839,7 @@ GtkAssistant .sidebar {
 	border-width: 1px;
 	border-radius: 2px;
 	border-style: solid;
-	border-color: @inactive_frame_color;
+	border-color: @gtkassistant_sidebar_border_color;
 	color: mix (@theme_fg_color, @theme_bg_color, 0.40);
 	background-color: shade (@theme_bg_color, 0.97);
 	/* shall we make it like sidebars in general? */
@@ -1861,8 +1861,8 @@ GtkSwitch.trough:active {
 GtkSwitch.trough:active {
 	background-image: -gtk-gradient (linear,
 	                  left top, left bottom,
-	                  from (@switch_trough_active_bg_a),
-	                  to (@switch_trough_active_bg_b));
+	                  from (@switch_trough_active_gradient_a),
+	                  to (@switch_trough_active_gradient_b));
 }
 
 GtkSwitch.trough:insensitive {
@@ -1910,7 +1910,7 @@ GtkTreeView {
 	-GtkWidget-focus-padding: 1;
 	-adwaita-focus-border-radius: 2;
 	-adwaita-focus-border-dashes: 1;
-	-adwaita-focus-border-color: alpha(@theme_text_color, 0.6);
+	-adwaita-focus-border-color: alpha(@theme_fg_color, 0.6);
 }
 
 GtkTreeView.dnd {
@@ -1943,7 +1943,7 @@ GtkIconView.view.cell:selected:focus {
 .view,
 GtkTreeView {
 	background-color: @theme_base_color;
-	color: @theme_text_color;
+	color: @theme_fg_color;
 }
 
 .view:selected,
@@ -2006,7 +2006,7 @@ column-header.button *:active,
 column-header .button *:active,
 column-header.button *:active:hover,
 column-header .button *:active:hover {
-	color: @internal_element_prelight;
+	color: @internal_element_hover_color;
 }
 
 column-header.button:active,
@@ -2017,7 +2017,7 @@ column-header.button:active:hover:focus,
 column-header .button:active:hover:focus,
 column-header.button:active:focus,
 column-header .button:active:focus {
-	background-color: @entry_background;
+	background-color: @entry_bg_color;
 	background-image: none;
 }
 
@@ -2046,7 +2046,7 @@ row:selected:focus,
 }
 
 .cell {
-	color: @theme_text_color;
+	color: @theme_fg_color;
 	padding: 2px;
 	border-width: 0;
 }
@@ -2167,7 +2167,7 @@ GtkInfoBar .button:active:focus,
 .error .button:focus,
 .error .button:active:focus {
 	border-image: none;
-	border-color: shade(@borders, 0.9);
+	border-color: shade(@border_color, 0.9);
 	border-style: solid;
 	border-width: 1px;
 }
@@ -2315,7 +2315,7 @@ GsmFailWhaleDialog .button:focus,
 GsmFailWhaleDialog .button:active,
 GsmFailWhaleDialog .button:active:focus {
 	border-image: none;
-	border-color: @borders;
+	border-color: @border_color;
 	border-width: 1px;
 }
 
