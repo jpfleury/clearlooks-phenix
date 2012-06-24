@@ -1173,14 +1173,6 @@ GtkComboBox .button *:hover {
 	-GtkRange-trough-under-steppers: 0;
 }
 
-.scrollbar.vertical {
-	engine: unico;
-}
-
-.scrollbar.horizontal {
-	engine: unico;
-}
-
 .scrollbars-junction {
 	background-image: none;
 	background-color: @scrollbars_junction_bg_color;

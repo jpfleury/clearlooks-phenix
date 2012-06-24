@@ -15,10 +15,12 @@
  ***************/
 
 .scrollbar.vertical {
+	engine: unico;
 	-unico-centroid-texture: url("img/slider-vert-grip.png");
 }
 
 .scrollbar.horizontal {
+	engine: unico;
 	-unico-centroid-texture: url("img/slider-horz-grip.png");
 }
 
