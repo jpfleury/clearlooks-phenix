@@ -59,6 +59,7 @@ GtkWindow {
 *:insensitive {
 	background-color: @insensitive_bg_color;
 	color: @insensitive_fg_color;
+	text-shadow: 1 1 @insensitive_text_shadow_color;
 	border-color: @insensitive_border_color;
 }
 

@@ -12,6 +12,7 @@
 
 @define-color insensitive_bg_color @theme_bg_color;
 @define-color insensitive_fg_color #a9a5a2;
+@define-color insensitive_text_shadow_color @theme_base_color;
 
 @define-color internal_element_color @theme_fg_color;
 @define-color internal_element_hover_color @theme_fg_color;
