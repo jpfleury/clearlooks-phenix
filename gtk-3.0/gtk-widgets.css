@@ -1471,7 +1471,7 @@ GtkTreeMenu .menuitem * {
 }
 
 .menu .menuitem {
-	-GtkMenuItem-arrow-scaling: 0.4;
+	-GtkMenuItem-arrow-scaling: 0.5;
 	padding: 4px;
 }
 
