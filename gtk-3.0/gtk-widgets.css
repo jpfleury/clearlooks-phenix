@@ -411,6 +411,11 @@ GtkProgressBar {
  ************/
 
 GtkScale {
+	engine: unico;
+	-unico-focus-border-color: transparent;
+	-unico-focus-border-radius: 2;
+	-unico-focus-fill-color: transparent;
+	-unico-focus-outer-stroke-color: transparent;
 	-GtkScale-slider-length: 21;
 	-GtkRange-slider-width: 13;
 	-GtkRange-trough-border: 0;
@@ -428,90 +433,41 @@ GtkScale.trough,
 GtkScale.trough.highlight,
 GtkScale.trough.vertical,
 GtkScale.trough:insensitive {
+	-unico-outer-stroke-width: 1px;
+	-unico-outer-stroke-top-color: @scale_trough_outer_border_top_color;
+	-unico-outer-stroke-right-color: @scale_trough_outer_border_right_color;
+	-unico-outer-stroke-bottom-color: @scale_trough_outer_border_bottom_color;
+	-unico-outer-stroke-left-color: @scale_trough_outer_border_left_color;
 	border-image: none;
 	border-style: solid;
-	border-width: 0px 1px;
+	border-width: 1px;
 	border-radius: 1px;
-	background-color: transparent;
+	background-image: none;
 }
 
 GtkScale.trough {
 	margin: 8px 0;
 	border-color: @scale_trough_border_color;
-	background-image: linear-gradient(to bottom,
-	                  @scale_trough_border_color,
-	                  @scale_trough_gradient_a,
-	                  @scale_trough_gradient_b,
-	                  @scale_trough_gradient_c,
-	                  @scale_trough_border_color);
+	background-color: @scale_trough_bg_color;
 }
 
 GtkScale.trough.vertical {
 	margin: 0 8px;
-	border-width: 1px 0px;
-	background-image: linear-gradient(to right,
-	                  @scale_trough_border_color,
-	                  @scale_trough_gradient_a,
-	                  @scale_trough_gradient_b,
-	                  @scale_trough_gradient_c,
-	                  @scale_trough_border_color);
 }
 
 GtkScale.trough.highlight {
 	border-color: @scale_trough_highlight_border_color;
-	background-image: linear-gradient(to bottom,
-	                  @scale_trough_highlight_border_color,
-	                  @scale_trough_highlight_gradient_a,
-	                  @scale_trough_highlight_gradient_b,
-	                  @scale_trough_highlight_gradient_c,
-	                  @scale_trough_highlight_border_color);
-}
-
-GtkScale.trough.vertical.highlight {
-	background-image: linear-gradient(to right,
-	                  @scale_trough_highlight_border_color,
-	                  @scale_trough_highlight_gradient_a,
-	                  @scale_trough_highlight_gradient_b,
-	                  @scale_trough_highlight_gradient_c,
-	                  @scale_trough_highlight_border_color);
+	background-color: @scale_trough_highlight_bg_color;
 }
 
 GtkScale.trough:insensitive {
 	border-color: @scale_trough_insensitive_border_color;
-	background-image: linear-gradient(to bottom,
-	                  @scale_trough_insensitive_border_color,
-	                  @scale_trough_insensitive_gradient_a,
-	                  @scale_trough_insensitive_gradient_b,
-	                  @scale_trough_insensitive_gradient_c,
-	                  @scale_trough_insensitive_border_color);
-}
-
-GtkScale.trough.vertical:insensitive {
-	background-image: linear-gradient(to right,
-	                  @scale_trough_insensitive_border_color,
-	                  @scale_trough_insensitive_gradient_a,
-	                  @scale_trough_insensitive_gradient_b,
-	                  @scale_trough_insensitive_gradient_c,
-	                  @scale_trough_insensitive_border_color);
+	background-color: @scale_trough_insensitive_highlight_bg_color;
 }
 
 GtkScale.trough.highlight:insensitive {
 	border-color: @scale_trough_highlight_insensitive_border_color;
-	background-image: linear-gradient(to bottom,
-	                  @scale_trough_highlight_insensitive_border_color,
-	                  @scale_trough_highlight_insensitive_gradient_a,
-	                  @scale_trough_highlight_insensitive_gradient_b,
-	                  @scale_trough_highlight_insensitive_gradient_c,
-	                  @scale_trough_highlight_insensitive_border_color);
-}
-
-GtkScale.trough.vertical.highlight:insensitive {
-	background-image: linear-gradient(to right,
-	                  @scale_trough_highlight_insensitive_border_color,
-	                  @scale_trough_highlight_insensitive_gradient_a,
-	                  @scale_trough_highlight_insensitive_gradient_b,
-	                  @scale_trough_highlight_insensitive_gradient_c,
-	                  @scale_trough_highlight_insensitive_border_color);
+	background-color: @scale_trough_highlight_insensitive_bg_color;
 }
 
 GtkScale.progressbar {

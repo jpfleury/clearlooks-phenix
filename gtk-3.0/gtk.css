@@ -239,35 +239,29 @@
 
 @define-color scale_mark_color @border_color;
 @define-color scale_progressbar_bg_color @scale_trough_highlight_gradient_b;
-@define-color scale_trough_border_color #878481;
 
-@define-color scale_trough_gradient_a #d3d0ce;
-@define-color scale_trough_gradient_b #d6d4d2;
-@define-color scale_trough_gradient_c #dad8d6;
+@define-color scale_trough_outer_border_top_color #e0dedd;
+@define-color scale_trough_outer_border_right_color #fbfbfa;
+@define-color scale_trough_outer_border_bottom_color @scale_trough_outer_border_right_color;
+@define-color scale_trough_outer_border_left_color @scale_trough_outer_border_top_color;
+
+@define-color scale_trough_border_color #878481;
+@define-color scale_trough_bg_color #d6d4d2;
 
 /* trough highlight */
 
-@define-color scale_trough_highlight_border_color #364b66;
-
-@define-color scale_trough_highlight_gradient_a #99b9e1;
-@define-color scale_trough_highlight_gradient_b #90b2dd;
-@define-color scale_trough_highlight_gradient_c #87abd8;
+@define-color scale_trough_highlight_border_color #597ca7;
+@define-color scale_trough_highlight_bg_color #90b2dd;
 
 /* trough insensitive */
 
 @define-color scale_trough_insensitive_border_color @insensitive_border_color;
-
-@define-color scale_trough_insensitive_gradient_a #e6e2e0;
-@define-color scale_trough_insensitive_gradient_b #e8e5e3;
-@define-color scale_trough_insensitive_gradient_c #ebe8e6;
+@define-color scale_trough_insensitive_bg_color #e8e5e3;
 
 /* trough highlight insensitive */
 
-@define-color scale_trough_highlight_insensitive_border_color #5b7da6;
-
-@define-color scale_trough_highlight_insensitive_gradient_a #b1c8e6;
-@define-color scale_trough_highlight_insensitive_gradient_b #b0c9e8;
-@define-color scale_trough_highlight_insensitive_gradient_c #a6c0e3;
+@define-color scale_trough_highlight_insensitive_border_color #83a3ca;
+@define-color scale_trough_highlight_insensitive_bg_color #e1ecfa;
 
 /*****************
  * column-header *
