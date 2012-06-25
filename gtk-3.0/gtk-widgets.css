@@ -519,7 +519,7 @@ GtkComboBox.combobox-entry .button {
 	-GtkButton-image-spacing: 4;
 	-GtkButton-interior-focus: true;
 	-GtkButton-default-border: 0;
-	-GtkButton-inner-boder: 3;
+	-GtkButton-inner-border: 3;
 	color: @theme_fg_color;
 	border-style: solid;
 	border-color: transparent;
@@ -1544,7 +1544,7 @@ GtkSwitch.slider:insensitive {
 	                  color-stop (0.50, @switch_slider_insensitive_gradient_b),
 	                  color-stop (0.50, @switch_slider_insensitive_gradient_c),
 	                  to (@switch_slider_insensitive_gradient_d));
-	border-color: @insensitive_boder_color;
+	border-color: @insensitive_border_color;
 }
 
 GtkSwitch.slider:insensitive {
