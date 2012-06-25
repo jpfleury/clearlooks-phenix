@@ -1,9 +1,16 @@
-[X-GNOME-Metatheme]
-Name=Clearwaita
+[Desktop Entry]
 Type=X-GNOME-Metatheme
+Name=Clearlooks-Phenix
+Name[fr]=Clearlooks-Phénix
+Comment=GTK3 port of Clearlooks
+Comment[fr]=Version GTK3 de Clearlooks
 Encoding=UTF-8
-GtkTheme=Clearwaita
-MetacityTheme=Clearwaita
+
+[X-GNOME-Metatheme]
+GtkTheme=Clearlooks-Phenix
+MetacityTheme=Clearlooks-Phenix
 IconTheme=gnome
-CursorTheme=Adwaita
-CursorSize=24
+CursorTheme=DMZ-White
+CursorSize=16
+ButtonLayout=:minimize,maximize,close
+

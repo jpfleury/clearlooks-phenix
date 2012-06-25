@@ -1,165 +1,380 @@
-/* Default color scheme */
-@define-color base_color #ffffff;
-@define-color bg_color #ededed;
-@define-color tooltip_bg_color #F5F5B5;
-@define-color selected_bg_color #7fa5d5;
-@define-color text_color #000000;
-@define-color fg_color #000000;
-@define-color tooltip_fg_color #000000;
-@define-color selected_fg_color #ffffff;
+/***********
+ * general *
+ ***********/
 
-/* Colormap actually used by the theme, to be overridden in other css files */
-@define-color theme_base_color @base_color;
-@define-color theme_text_color #000000;
-@define-color theme_bg_color @bg_color;
+@define-color theme_base_color #ffffff;
+
+@define-color theme_bg_color #edeceb;
 @define-color theme_fg_color #000000;
-@define-color theme_tooltip_bg_color @tooltip_bg_color;
-@define-color theme_tooltip_fg_color @tooltip_fg_color;
-@define-color theme_selected_bg_color @selected_bg_color;
-@define-color theme_selected_fg_color @selected_fg_color;
 
-@define-color menu_bg_color shade (@theme_bg_color, 1.1);
-@define-color menu_fg_color @theme_fg_color;
-@define-color menu_controls_color shade (@theme_fg_color, 0.9);
-@define-color menu_combobox_border #3277bf;
-@define-color menu_separator mix (@menu_fg_color, @menu_bg_color, 0.9);
+@define-color theme_selected_bg_color #86abd9;
+@define-color theme_selected_fg_color @theme_base_color;
 
-@define-color link_color #4a90d9;
-@define-color frame_color #8a9580;
-@define-color inactive_frame_color #8C8A87;
-@define-color warning_color #f57900;
-@define-color error_color #cc0000;
-@define-color success_color #4e9a06;
+@define-color insensitive_bg_color @theme_bg_color;
+@define-color insensitive_fg_color #a9a5a2;
+@define-color insensitive_text_shadow_color @theme_base_color;
 
-@define-color info_fg_color rgb (181, 171, 156);
-@define-color info_bg_color rgb (252, 252, 189);
-@define-color warning_fg_color rgb (173, 120, 41);
-@define-color warning_bg_color rgb (250, 173, 61);
-@define-color question_fg_color rgb (97, 122, 214);
-@define-color question_bg_color rgb (138, 173, 212);
-@define-color error_fg_color rgb (166, 38, 38);
-@define-color error_bg_color rgb (237, 54, 54);
+@define-color internal_element_color @theme_fg_color;
+@define-color internal_element_hover_color @theme_fg_color;
+@define-color internal_element_insensitive_color @insensitive_fg_color;
 
-@define-color keyboard_focus_border_a #a2c9f1;
-@define-color keyboard_focus_border_b #6794cf;
+/***********
+ * tooltip *
+ ***********/
 
-@define-color os_chrome_bg_color black;
-@define-color os_chrome_fg_color black;
-@define-color os_chrome_selected_bg_color #333;
-@define-color os_chrome_selected_fg_color white;
+@define-color theme_tooltip_bg_color #f5f5b5;
+@define-color theme_tooltip_fg_color @theme_fg_color;
+@define-color theme_tooltip_border_color #baba45;
 
-@define-color chrome_bg_color #1e1a17;
-@define-color chrome_fg_color #ffffff;
+/**********
+ * border *
+ **********/
 
-@define-color focused_entry_border #4B6E99;
-@define-color focused_entry_inset #C3D4EA;
+@define-color border_color #a4a09d;
+@define-color focus_border_color #869bb7;
+@define-color insensitive_border_color #bfbbb7;
 
-@define-color button_gradient_color_a #ffffff;
-@define-color button_gradient_color_b #fbfbfb;
-@define-color button_gradient_color_c #f5f5f5;
-@define-color button_gradient_color_d #e8e8e8;
-@define-color button_border #a7aba7;
+/*************
+ * à classer *
+ *************/
 
-@define-color button_active_gradient_color_a #ccc9c7;
-@define-color button_active_gradient_color_b #d7d5d3;
-@define-color button_active_gradient_color_c #d5d3d1;
-@define-color button_active_gradient_color_d #d0cecc;
-@define-color button_active_gradient_color_e #cbc9c6;
-@define-color button_active_gradient_color_f #c0bdba;
-
-@define-color button_hover_gradient_color_a #ffffff;
-@define-color button_hover_gradient_color_b #ffffff;
-@define-color button_hover_gradient_color_c #fafafa;
-@define-color button_hover_gradient_color_d #ededed;
-
-@define-color button_raised_gradient_color_a @button_gradient_color_a;
-@define-color button_raised_gradient_color_b @button_gradient_color_b;
-@define-color button_raised_linked_shadow alpha(@theme_base_color, 0.70);
-
-@define-color button_raised_active_gradient_color_a @button_active_gradient_color_a;
-@define-color button_raised_active_gradient_color_b alpha(@button_active_gradient_color_b, 0.13);
-
-@define-color insensitive_bg_color #f4f4f2;
-@define-color insensitive_fg_color #a7aba7;
-@define-color insensitive_border_color shade (@internal_element_color, 1.37);
-
-@define-color trough_bg_color_a #E7E5E4;
-@define-color trough_bg_color_b #F0EFEE;
-
-@define-color active_switch_bg_color_a #79A0D1;
-@define-color active_switch_bg_color_b #99BAE3;
-
-@define-color switch_slider_color #eeeeec;
-@define-color switch_slider_border #2a79cb;
-
-@define-color progressbar_background_a #76b0ec;
-@define-color progressbar_background_b #1f72c6;
-@define-color progressbar_pattern #2F5473;
-
-@define-color entry_text_color @theme_text_color;
-
-@define-color entry_background_a #e1e1e1;
-@define-color entry_background_b #f8f8f8;
-@define-color entry_background_c #fafafa;
-@define-color entry_background_d @theme_base_color;
-
-@define-color internal_element_color #888a85;
-@define-color internal_element_prelight @theme_text_color;
-@define-color internal_element_insensitive shade (@internal_element_color, 1.6);
-
-@define-color scale_fill @insensitive_border_color;
-@define-color scale_border_a @internal_element_color;
-@define-color scale_border_b shade (@internal_element_color, 1.25);
-@define-color scale_progress_fill #2c85e2;
-@define-color scale_progress_border_a #1864b2;
-@define-color scale_progress_border_b #3e90e5;
-
-@define-color highlighted_border #8a8f8a;
-
-@define-color notebook_border #a6a6a6;
-@define-color notebook_active_tab_border @notebook_border;
-@define-color notebook_selected_tab_color @theme_selected_bg_color;
-
-@define-color notebook_tab_gradient_a @theme_base_color;
-@define-color notebook_tab_gradient_b @switch_slider_color;
-
-@define-color toolbar_gradient_base #F5F5F4;
-@define-color toolbar_gradient_step1 #F0EFEE;
-@define-color toolbar_gradient_step2 #edeceb;
-@define-color toolbar_gradient_final #E7E5E4;
-
-@define-color toolbar_border_top #C4C2BF;
-@define-color toolbar_border_bottom #C4C2BF;
-
-@define-color toolbar_active_button_color #909081;
-
-@define-color primary_toolbar_entry_bg @theme_base_color;
-@define-color primary_toolbar_entry_fg @theme_text_color;
-
-@define-color treeview_focus_border @progressbar_border;
-
+@define-color trough_bg_color_a #c1bfbd;
+@define-color trough_bg_color_b #d6d4d2;
+@define-color treeview_focus_border #2a79cb;
 @define-color expander_row_selected_color #acccee;
+@define-color color_active_badge_border_color #444444;
+@define-color color_active_badge_color @color_active_badge_border_color;
 
-@define-color wm_highlight #ffffff;
-@define-color wm_title_highlight #ffffff;
+/***********
+ * menubar *
+ ***********/
 
-@define-color wm_bg_a shade (@bg_color, 1.1);
-@define-color wm_bg_b @bg_color;
+@define-color menubar_gradient_a #ecebea;
+@define-color menubar_gradient_b #e8e7e6;
+@define-color menubar_gradient_c #e4e3e2;
 
-@define-color wm_button_bg_a shade (@bg_color, 1.0);
-@define-color wm_button_bg_b shade (@bg_color, 0.85);
-@define-color wm_button_bg_c shade (@bg_color, 0.8);
-@define-color wm_button_bg_d shade (@bg_color, 0.9);
+/* hover */
 
-@define-color wm_button_bg_hover_a shade (@wm_button_bg_a, 1.1);
-@define-color wm_button_bg_hover_b shade (@wm_button_bg_b, 1.1);
-@define-color wm_button_bg_hover_c shade (@wm_button_bg_c, 1.1);
-@define-color wm_button_bg_hover_d shade (@wm_button_bg_d, 1.1);
+@define-color menubar_menuitem_hover_color @theme_base_color;
+@define-color menubar_menuitem_hover_border_color #4b6e99;
 
-@define-color wm_button_bg_active_a shade (@bg_color, 0.7);
-@define-color wm_button_bg_active_b shade (@bg_color, 0.9);
-@define-color wm_button_bg_active_c shade (@bg_color, 0.9);
+@define-color menubar_menuitem_hover_gradient_a #a4c2e8;
+@define-color menubar_menuitem_hover_gradient_b #97b8e2;
+@define-color menubar_menuitem_hover_gradient_c #91b3de;
+@define-color menubar_menuitem_hover_gradient_d #84aad8;
 
+/********
+ * menu *
+ ********/
+
+@define-color menu_bg_color @theme_base_color;
+@define-color menu_fg_color @theme_fg_color;
+
+/* Exemple: flèche d'un sous-menu */
+@define-color menu_controls_color @theme_fg_color;
+
+@define-color menu_border_color #aaaaaa;
+@define-color menu_separator_color @menu_border_color;
+
+/***********
+ * sidebar *
+ ***********/
+
+@define-color sidebar_bg_color @theme_base_color;
+@define-color gtkassistant_sidebar_border_color @border_color;
+
+/**********
+ * button *
+ **********/
+
+@define-color button_gradient_a #fefefe;
+@define-color button_gradient_b #fbfbfb;
+@define-color button_gradient_c #f5f5f4;
+@define-color button_gradient_d #e8e7e6;
+
+/* hover */
+
+@define-color button_hover_gradient_a #ffffff;
+@define-color button_hover_gradient_b #fafafa;
+@define-color button_hover_gradient_c #ededed;
+
+/* active */
+
+@define-color button_active_text_color @theme_fg_color;
+
+@define-color button_active_gradient_a #ccc9c7;
+@define-color button_active_gradient_b #d7d4d2;
+@define-color button_active_gradient_c #d9d7d5;
+@define-color button_active_gradient_d #cfcdcb;
+@define-color button_active_gradient_e #cac8c5;
+@define-color button_active_gradient_f #c0bdba;
+
+/* insensitive */
+
+@define-color button_insensitive_inner_border_color #f9f9f8;
+
+@define-color button_insensitive_gradient_a #f5f5f4;
+@define-color button_insensitive_gradient_b #f0efee;
+@define-color button_insensitive_gradient_c #eae9e8;
+@define-color button_insensitive_gradient_d #e4e3e2;
+
+/* active insensitive */
+
+@define-color button_active_insensitive_gradient_a #e9e8e6;
+@define-color button_active_insensitive_gradient_b #f2f1f0;
+@define-color button_active_insensitive_gradient_c #f4f4f3;
+@define-color button_active_insensitive_gradient_d #f0efee;
+@define-color button_active_insensitive_gradient_e #eae9e8;
+@define-color button_active_insensitive_gradient_f #e4e3e2;
+
+/*************
+ * scrollbar *
+ *************/
+
+/* junction */
+
+@define-color scrollbars_junction_bg_color @theme_bg_color;
+
+/* trough */
+
+@define-color scrollbar_trough_border_color #a19d9a;
+
+@define-color scrollbar_trough_gradient_a #cecbc9;
+@define-color scrollbar_trough_gradient_b #d6d4d2;
+
+/* slider */
+
+@define-color scrollbar_slider_gradient_a #a2c1e7;
+@define-color scrollbar_slider_gradient_b #98b9e2;
+@define-color scrollbar_slider_gradient_c #90b3de;
+@define-color scrollbar_slider_gradient_d #84a9d8;
+
+@define-color scrollbar_slider_border_color #5e7ea5;
+
+@define-color scrollbar_slider_inner_border_gradient_a #b0cbec;
+@define-color scrollbar_slider_inner_border_gradient_b #a7c3e7;
+@define-color scrollbar_slider_inner_border_gradient_c #a0bee4;
+@define-color scrollbar_slider_inner_border_gradient_d #96b6df;
+
+/* slider hover */
+
+@define-color scrollbar_slider_hover_gradient_a #adc9eb;
+@define-color scrollbar_slider_hover_gradient_b #a2c1e6;
+@define-color scrollbar_slider_hover_gradient_c #9abbe3;
+@define-color scrollbar_slider_hover_gradient_d #8db1dd;
+
+/* button */
+
+@define-color scrollbar_button_color @theme_fg_color;
+@define-color scrollbar_button_insensitive_color @internal_element_insensitive_color;
+@define-color scrollbar_button_border_color #868482;
+
+@define-color scrollbar_button_gradient_a #fdfdfd;
+@define-color scrollbar_button_gradient_b #f2f1f0;
+@define-color scrollbar_button_gradient_c #ebeae9;
+@define-color scrollbar_button_gradient_d #e2e0df;
+
+/* button hover */
+
+@define-color scrollbar_button_hover_gradient_a #fefefe;
+@define-color scrollbar_button_hover_gradient_b #f8f7f6;
+@define-color scrollbar_button_hover_gradient_c #f2f1f0;
+@define-color scrollbar_button_hover_gradient_d #e6e5e4;
+
+/* button active */
+
+@define-color scrollbar_button_active_gradient_a #e3e1df;
+@define-color scrollbar_button_active_gradient_b #dbd9d7;
+@define-color scrollbar_button_active_gradient_c #d5d3d1;
+@define-color scrollbar_button_active_gradient_d #cccac7;
+
+/**************
+ * spinbutton *
+ **************/
+
+@define-color spinbutton_border_color @border_color;
+
+/***************
+ * progressbar *
+ ***************/
+
+@define-color progressbar_border_color #6587b2;
+@define-color progressbar_pattern_color @progressbar_border_color;
+
+@define-color progressbar_gradient_a @menubar_menuitem_hover_gradient_a;
+@define-color progressbar_gradient_b @menubar_menuitem_hover_gradient_b;
+@define-color progressbar_gradient_c @menubar_menuitem_hover_gradient_c;
+@define-color progressbar_gradient_d @menubar_menuitem_hover_gradient_d;
+
+/**********
+ * switch *
+ **********/
+
+@define-color switch_color #6d6a68;
+
+@define-color switch_slider_border_color @progressbar_border_color;
+
+@define-color switch_slider_gradient_a @scrollbar_slider_gradient_a;
+@define-color switch_slider_gradient_b @scrollbar_slider_gradient_b;
+@define-color switch_slider_gradient_c @scrollbar_slider_gradient_c;
+@define-color switch_slider_gradient_d @scrollbar_slider_gradient_d;
+
+/* active */
+
+@define-color switch_trough_active_color @theme_base_color;
+
+@define-color switch_trough_active_gradient_a @menubar_menuitem_hover_border_color;
+@define-color switch_trough_active_gradient_b #c8daef;
+
+/* insensitive */
+
+@define-color switch_slider_insensitive_gradient_a @button_insensitive_gradient_a;
+@define-color switch_slider_insensitive_gradient_b @button_insensitive_gradient_b;
+@define-color switch_slider_insensitive_gradient_c @button_insensitive_gradient_c;
+@define-color switch_slider_insensitive_gradient_d @button_insensitive_gradient_d;
+
+/*********
+ * scale *
+ *********/
+
+@define-color scale_mark_color @border_color;
+@define-color scale_progressbar_bg_color @scale_trough_highlight_gradient_b;
+
+@define-color scale_trough_outer_border_top_color #e0dedd;
+@define-color scale_trough_outer_border_right_color #fbfbfa;
+@define-color scale_trough_outer_border_bottom_color @scale_trough_outer_border_right_color;
+@define-color scale_trough_outer_border_left_color @scale_trough_outer_border_top_color;
+
+@define-color scale_trough_border_color #878481;
+@define-color scale_trough_bg_color #d6d4d2;
+
+/* trough highlight */
+
+@define-color scale_trough_highlight_border_color #597ca7;
+@define-color scale_trough_highlight_bg_color #90b2dd;
+
+/* trough insensitive */
+
+@define-color scale_trough_insensitive_border_color @insensitive_border_color;
+@define-color scale_trough_insensitive_bg_color #e8e5e3;
+
+/* trough highlight insensitive */
+
+@define-color scale_trough_highlight_insensitive_border_color #83a3ca;
+@define-color scale_trough_highlight_insensitive_bg_color #e1ecfa;
+
+/*****************
+ * column-header *
+ *****************/
+
+@define-color column_header_border_top_color @theme_base_color;
+@define-color column_header_border_right_color #c4c2bf;
+@define-color column_header_border_bottom_color #a9a5a2;
+@define-color column_header_border_left_color @column_header_border_top_color;
+
+@define-color column_header_button_gradient_a #f9f9f8;
+@define-color column_header_button_gradient_b #f2f1f0;
+@define-color column_header_button_gradient_c #ecebea;
+@define-color column_header_button_gradient_d #e4e3e2;
+
+/*********
+ * entry *
+ *********/
+
+@define-color entry_text_color @theme_fg_color;
+
+@define-color entry_inner_border_color #e4e3e3;
+@define-color entry_bg_color @theme_base_color;
+
+/* insensitive */
+
+@define-color entry_insensitive_inner_border_color #e6e4e3;
+@define-color entry_insensitive_bg_color @insensitive_bg_color;
+
+/************
+ * notebook *
+ ************/
+
+@define-color notebook_bg_color #f2f1f0;
+
+@define-color notebook_tab_inner_border_color #f5f5f4;
+
+@define-color notebook_tab_gradient_a #e7e6e4;
+@define-color notebook_tab_gradient_b #dbd9d7;
+@define-color notebook_tab_gradient_c #d6d4d2;
+@define-color notebook_tab_gradient_d #cdcbc8;
+
+/* active tab */
+
+@define-color notebook_active_tab_border_gradient_a @menubar_menuitem_hover_border_color;
+@define-color notebook_active_tab_border_gradient_b @border_color;
+
+@define-color notebook_active_tab_strip_gradient_a #b3cded;
+@define-color notebook_active_tab_strip_gradient_b #95b6e0;
+@define-color notebook_active_tab_strip_border_bottom_color #7992b1;
+@define-color notebook_active_tab_gradient_a #fefefe;
+@define-color notebook_active_tab_gradient_b @notebook_bg_color;
+@define-color notebook_active_tab_border_bottom_color @border_color;
+
+/***********
+ * toolbar *
+ ***********/
+
+@define-color toolbar_border_top_color #c4c2bf;
+@define-color toolbar_inner_border_color #ffffff;
+@define-color toolbar_border_bottom_color @toolbar_border_top_color;
+
+@define-color toolbar_gradient_a #f5f5f4;
+@define-color toolbar_gradient_b #f0efee;
+@define-color toolbar_gradient_c #ecebea;
+@define-color toolbar_gradient_d #e7e5e4;
+
+/*******
+ * osd *
+ *******/
+
+@define-color osd_bg_color @theme_tooltip_bg_color;
+@define-color osd_fg_color @theme_tooltip_fg_color;
+@define-color osd_border_color @theme_tooltip_border_color;
+
+/*********************
+ * Error/Warning/... *
+ *********************/
+
+@define-color link_color #0000ee;
+@define-color visited_link_color #551a8b;
+
+@define-color error_color #cc0000;
+
+@define-color info_bg_color @theme_tooltip_bg_color;
+@define-color info_fg_color @theme_fg_color;
+
+@define-color warning_bg_color #faad3d;
+@define-color warning_fg_color @theme_fg_color;
+
+@define-color question_bg_color #8aadd4;
+@define-color question_fg_color @theme_base_color;
+
+@define-color error_bg_color #9b3636;
+@define-color error_fg_color @theme_base_color;
+
+/*****************
+ * fallback mode *
+ *****************/
+
+@define-color os_chrome_bg_color @theme_bg_color;
+@define-color os_chrome_fg_color @theme_fg_color;
+
+/* gnome-panel */
+
+@define-color applet_frame_bg_color #d4d4d4;
+@define-color pager_bg_color #e6e6e6;
+
+/***********
+ * imports *
+ ***********/
+
+@import url("gtk-widgets-img.css");
 @import url("gtk-widgets.css");
-@import url("gtk-widgets-assets.css");
-/*@import url("apps/nautilus.css");*/
+@import url("applications.css");
+

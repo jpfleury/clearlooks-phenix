@@ -1,38 +1,40 @@
-<p lang="en"><strong><a hreflang="en" href="http://www.jpfleury.net/en/software/clearwaita.php">Read this page in English.</a></strong></p>
+<p lang="en"><strong><a hreflang="en" href="http://www.jpfleury.net/en/software/clearlooks-phenix.php">Read this page in English.</a></strong></p>
 
 ## À propos
 
-**Clearwaita = Clearlooks + Adwaita**
-
-Clearwaita est un thème GTK2/GTK3. Les fichiers pour GTK3 correspondent à une modification d'Adwaita, le thème par défaut de Gnome 3, pour en faire un thème proche visuellement de Clearlooks. Les fichiers pour GTK2 sont une copie non modifiée du thème Clearlooks original.
+Le projet Clearlooks-Phénix (anciennement nommé Clearwaita) a pour but de créer une version GTK3 de Clearlooks, thème par défaut de Gnome 2. Les fichiers pour GTK3 correspondent à une modification en profondeur d'Adwaita, le thème par défaut de Gnome 3. Les fichiers pour GTK2 sont une copie non modifiée du thème Clearlooks original.
 
 Aussi, des fichiers pour les gestionnaires de fenêtres Metacity, Openbox et Xfwm4 sont inclus.
 
 Voici deux captures d'écran (cliquer pour télécharger l'image au format original):
 
-<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png" alt="Capture d'écran du bureau sous Gnome 3 (mode fallback) avec le thème Clearwaita" width="684" height="482" /></a>
+<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png" alt="Capture d'écran du bureau sous Gnome 3 (mode fallback) avec le thème Clearlooks-Phénix" width="684" height="482" /></a>
 
-<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png" alt="Capture d'écran de gedit 3 avec le thème Clearwaita" width="684" height="565" /></a>
+<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png" alt="Capture d'écran de gedit 3 avec le thème Clearlooks-Phénix" width="684" height="565" /></a>
 
 ## Dépendances
 
-S'assurer que le paquet `gnome-themes-standard` est installé. Ça devrait être le cas sous Gnome 3, mais pas sous Xfce.
+S'assurer que les paquets `gnome-themes-standard` et `gtk3-engines-unico` sont installés.
 
 ## Installation
 
-- [Télécharger l'archive de la dernière version.](http://jpfleury.indefero.net/p/clearwaita/source/download/master/)
+- Télécharger l'archive de la version correspondant à votre situation:
+
+	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/1.0.1/);
+	
+	- pour GTK 3.4 et versions suivantes: [télécharger Clearlooks-Phénix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/).
 
 - Extraire l'archive.
 
-- Renommer le dossier extrait en `Clearwaita`.
+- Renommer le dossier extrait en `Clearlooks-Phenix`.
 
-- Copier le dossier `Clearwaita` dans un des deux emplacements suivants:
+- Copier le dossier `Clearlooks-Phenix` dans un des deux emplacements suivants:
 
 	- `~/.themes/` pour l'utilisateur courant;
 	
 	- `/usr/share/themes/` pour tous les utilisateurs, incluant le style des logiciels lancés en tant que superutilisateur (par exemple Synaptic).
 
-- Ensuite, choisir le thème Clearwaita:
+- Ensuite, choisir le thème Clearlooks-Phénix:
 
 	- sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool);
 	
@@ -40,15 +42,37 @@ S'assurer que le paquet `gnome-themes-standard` est installé. Ça devrait être
 
 ## Configuration
 
-Par défaut, le texte des icônes sur un bureau géré par Nautilus est noir. Pour afficher le texte en blanc, ouvrir le fichier `gtk-3.0/gtk.css` dans un éditeur de texte, trouver la ligne suivante (à la fin du fichier):
+### Bureau géré par Nautilus
 
-    /*@import url("apps/nautilus.css");*/
+Par défaut, le texte des icônes sur un bureau géré par Nautilus est noir. Pour afficher le texte en blanc, ouvrir le fichier `gtk-3.0/applications.css` dans un éditeur de texte, trouver le code relatif à Nautilus:
 
-et la décommenter, ce qui donne:
+	/************
+	 * Nautilus *
+	 ************/
+	
+	/*
+	CODE
+	CSS
+	COMMENTÉ
+	*/
 
-    @import url("apps/nautilus.css");
+et le décommenter, ce qui donne:
 
-Pour avoir une couleur personnalisée, modifier la couleur directement dans le fichier `gtk-3.0/apps/nautilus.css`.
+	/************
+	 * Nautilus *
+	 ************/
+	
+	CODE
+	CSS
+	DÉCOMMENTÉ
+
+Pour avoir une couleur personnalisée, modifier la couleur directement dans le fichier `gtk-3.0/applications.css`.
+
+### Emplacement des boutons de fenêtres
+
+Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtres se trouvent à gauche, mais que vous les voulez à droite, lancez la commande suivante dans une console:
+
+	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
 
 ## Icônes et arrière-plan
 
@@ -58,14 +82,14 @@ L'arrière-plan est une légère modification d'une [image de volvoguy](http://w
 
 ## Développement
 
-Dernière version: 1.0.1 (2012-06-10)
+Dernière version: 2.0 (2012-06-25)
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
 
-Clearwaita dispose également d'un [système de suivi], sur lequel les rapports de bogues et les suggestions peuvent être soumis.
+Clearlooks-Phénix dispose également d'un [système de suivi], sur lequel les rapports de bogues et les suggestions peuvent être soumis.
 
-[git]: http://jpfleury.indefero.net/p/clearwaita/source/tree/master/
-[système de suivi]: http://jpfleury.indefero.net/p/clearwaita/issues/
+[git]: http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/
+[système de suivi]: http://jpfleury.indefero.net/p/clearlooks-phenix/issues/
 
 ## Licence
 

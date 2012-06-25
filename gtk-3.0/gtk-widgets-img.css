@@ -1,0 +1,586 @@
+/**********
+ * Assets *
+ **********/
+
+/***************
+ * Resize grip *
+ ***************/
+
+.grip {
+	background-image: url("img/resize-grip.png");
+}
+
+/***************
+ * Scrollbar *
+ ***************/
+
+.scrollbar.vertical {
+	engine: unico;
+	-unico-centroid-texture: url("img/slider-vert-grip.png");
+}
+
+.scrollbar.horizontal {
+	engine: unico;
+	-unico-centroid-texture: url("img/slider-horz-grip.png");
+}
+
+/*************************
+ * Check and Radio items *
+ *************************/
+
+.check,
+.check row:selected,
+.check row:selected:focus {
+	background-image: url("img/checkbox-unchecked.png");
+}
+
+.check:hover,
+.check row:selected:hover,
+.check row:selected:focus:hover {
+	background-image: url("img/checkbox-unchecked-hover.png");
+}
+
+.check:insensitive,
+.check row:selected:insensitive,
+.check row:selected:focus:insensitive {
+	background-image: url("img/checkbox-unchecked-insensitive.png");
+}
+
+.check:active,
+.check row:selected:active,
+.check row:selected:focus:active {
+	background-image: url("img/checkbox-checked.png");
+}
+
+.check:active:hover,
+.check row:selected:active:hover,
+.check row:selected:focus:active:hover {
+	background-image: url("img/checkbox-checked-hover.png");
+}
+
+.check:active:insensitive,
+.check row:selected:active:insensitive,
+.check row:selected:focus:active:insensitive {
+	background-image: url("img/checkbox-checked-insensitive.png");
+}
+
+.check:inconsistent,
+.check row:selected:inconsistent,
+.check row:selected:focus:inconsistent {
+	background-image: url("img/checkbox-mixed.png");
+}
+
+.check:inconsistent:hover,
+.check row:selected:inconsistent:hover,
+.check row:selected:focus:inconsistent:hover {
+	background-image: url("img/checkbox-mixed-hover.png");
+}
+
+.check:inconsistent:insensitive,
+.check row:selected:inconsistent:insensitive,
+.check row:selected:focus:inconsistent:insensitive {
+	background-image: url("img/checkbox-mixed-insensitive.png");
+}
+
+.radio,
+.radio row:selected,
+.radio row:selected:focus {
+	background-image: url("img/radio-unchecked.png");
+}
+
+.radio:hover,
+.radio row:selected:hover,
+.radio row:selected:focus:hover {
+	background-image: url("img/radio-unchecked-hover.png");
+}
+
+.radio:insensitive,
+.radio row:selected:insensitive,
+.radio row:selected:focus:insensitive {
+	background-image: url("img/radio-unchecked-insensitive.png");
+}
+
+.radio:active,
+.radio row:selected:active,
+.radio row:selected:focus:active {
+	background-image: url("img/radio-checked.png");
+}
+
+.radio:active:hover,
+.radio row:selected:active:hover,
+.radio row:selected:focus:active:hover {
+	background-image: url("img/radio-checked-hover.png");
+}
+
+.radio:active:insensitive,
+.radio row:selected:active:insensitive,
+.radio row:selected:focus:active:insensitive {
+	background-image: url("img/radio-checked-insensitive.png");
+}
+
+.radio:inconsistent,
+.radio row:selected:inconsistent,
+.radio row:selected:focus:inconsistent {
+	background-image: url("img/radio-mixed.png");
+}
+
+.radio:inconsistent:hover,
+.radio row:selected:inconsistent:hover,
+.radio row:selected:focus:inconsistent:hover {
+	background-image: url("img/radio-mixed-hover.png");
+}
+
+.radio:inconsistent:insensitive,
+.radio row:selected:inconsistent:insensitive,
+.radio row:selected:focus:inconsistent:insensitive {
+	background-image: url("img/radio-mixed-insensitive.png");
+}
+
+.sidebar .radio:active,
+.sidebar .radio:active:focus,
+.sidebar .radio:active:hover {
+	background-image: url("img/sidebar-radio-checked.svg");
+}
+
+.sidebar .radio:hover {
+	background-image: url("img/sidebar-radio-prelight.svg");
+}
+
+.sidebar .radio:active:selected,
+.sidebar .radio:active:selected:focus {
+	background-image: url("img/sidebar-radio-selected.svg");
+}
+
+.sidebar .radio:selected:hover,
+.sidebar .radio:selected:focus {
+	background-image: url("img/sidebar-radio-selected-prelight.svg");
+}
+
+/*********************
+ * GtkScale's slider *
+ *********************/
+ 
+GtkScale.slider,
+GtkScale.slider.horizontal {
+	background-image: url("img/scale-slider-horz.png");
+}
+
+GtkScale.slider:hover,
+GtkScale.slider.horizontal:hover {
+	background-image: url("img/scale-slider-horz-hover.png");
+}
+
+GtkScale.slider:insensitive,
+GtkScale.slider.horizontal:insensitive {
+	background-image: url("img/scale-slider-horz-insensitive.png");
+}
+
+GtkScale.slider.vertical {
+	background-image: url("img/scale-slider-vert.png");
+}
+
+GtkScale.slider.vertical:hover {
+	background-image: url("img/scale-slider-vert-hover.png");
+}
+
+GtkScale.slider.vertical:insensitive {
+	background-image: url("img/scale-slider-vert-insensitive.png");
+}
+
+GtkScale.scale-has-marks-above.slider.horizontal {
+	background-image: url("img/scale-slider-horz.png");
+}
+
+GtkScale.scale-has-marks-above.slider.horizontal:hover {
+	background-image: url("img/scale-slider-horz-hover.png");
+}
+
+GtkScale.scale-has-marks-above.slider.horizontal:insensitive {
+	background-image: url("img/scale-slider-horz-insensitive.png");
+}
+
+GtkScale.scale-has-marks-above.slider.vertical {
+	background-image: url("img/scale-slider-vert.png");
+}
+
+GtkScale.scale-has-marks-above.slider.vertical:hover {
+	background-image: url("img/scale-slider-vert-hover.png");
+}
+
+GtkScale.scale-has-marks-above.slider.vertical:insensitive {
+	background-image: url("img/scale-slider-vert-insensitive.png");
+}
+
+GtkScale.scale-has-marks-below.slider.horizontal {
+	background-image: url("img/scale-slider-horz.png");
+}
+
+GtkScale.scale-has-marks-below.slider.horizontal:hover {
+	background-image: url("img/scale-slider-horz-hover.png");
+}
+
+GtkScale.scale-has-marks-below.slider.horizontal:insensitive {
+	background-image: url("img/scale-slider-horz-insensitive.png");
+}
+
+GtkScale.scale-has-marks-below.slider.vertical {
+	background-image: url("img/scale-slider-vert.png");
+}
+
+GtkScale.scale-has-marks-below.slider.vertical:hover {
+	background-image: url("img/scale-slider-vert-hover.png");
+}
+
+GtkScale.scale-has-marks-below.slider.vertical:insensitive {
+	background-image: url("img/scale-slider-vert-insensitive.png");
+}
+
+/*********
+ * Menus *
+ *********/
+
+.menu .menuitem.check {
+	background-image: none;
+}
+
+.menu .menuitem.check:active {
+	background-image: url("img/menuitem-checkbox-checked.png");
+	background-repeat: no-repeat;
+}
+
+.menu .menuitem.check:active:hover {
+	background-image: url("img/menuitem-checkbox-checked-selected.png");
+	background-repeat: no-repeat;
+}
+
+.menu .menuitem.check:active:insensitive {
+	background-image: url("img/menuitem-checkbox-checked-insensitive.png");
+	background-repeat: no-repeat;
+}
+
+.menu .menuitem.check:inconsistent,
+.menu .menuitem.radio:inconsistent {
+	background-image: url("img/menuitem-checkbox-mixed.png");
+	background-repeat: no-repeat;
+}
+
+.menu .menuitem.check:inconsistent:insensitive,
+.menu .menuitem.radio:inconsistent:insensitive {
+	background-image: url("img/menuitem-checkbox-mixed-insensitive.png");
+	background-repeat: no-repeat;
+}
+
+.menu .menuitem.check:inconsistent:hover,
+.menu .menuitem.radio:inconsistent:hover {
+	background-image: url("img/menuitem-checkbox-mixed-selected.png");
+	background-repeat: no-repeat;
+}
+
+.menu .menuitem.radio:active {
+	background-image: url("img/menuitem-radio-checked.png");
+	background-repeat: no-repeat;
+}
+
+.menu .menuitem.radio:active:hover {
+	background-image: url("img/menuitem-radio-checked-selected.png");
+	background-repeat: no-repeat;
+}
+
+.menu .menuitem.radio:active:insensitive {
+	background-image: url("img/menuitem-radio-checked-insensitive.png");
+	background-repeat: no-repeat;
+}
+
+/*********
+ * Panes *
+ *********/
+
+.pane-separator {
+	background-image: url("img/pane-separator-grip-horz.png");
+}
+
+.pane-separator.vertical {
+	background-image: url("img/pane-separator-grip-vert.png");
+}
+
+/***********
+ * Borders *
+ ***********/
+
+/* generic element borders */
+.entry,
+GtkComboBox.combobox-entry .entry,
+GtkComboBox.combobox-entry .button,
+.button:active,
+.trough,
+.trough.highlight,
+GtkSwitch.trough,
+/* generic button borders */
+.button,
+.primary-toolbar .button.raised,
+.primary-toolbar .raised .button,
+.primary-toolbar GtkComboBox .button,
+/* primary toolbar - generic element borders */
+.primary-toolbar .entry,
+.primary-toolbar GtkComboBox.combobox-entry .entry,
+.primary-toolbar GtkComboBox.combobox-entry .button,
+.primary-toolbar .button:active,
+.primary-toolbar .button.raised:active,
+.primary-toolbar .raised .button:active,
+.primary-toolbar .button.raised:insensitive,
+.primary-toolbar .raised .button:insensitive,
+.primary-toolbar GtkSwitch.trough,
+.primary-toolbar GtkSwitch.trough:insensitive,
+.primary-toolbar GtkComboBox .button:active,
+.primary-toolbar GtkComboBox .button:insensitive,
+/* primary toolbar - hover button borders */
+.primary-toolbar .button:hover {
+	border-image: url("img/border.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-radius: 3px;
+	border-width: 1px 1px 2px 1px;
+	border-style: solid;
+	border-color: transparent;
+}
+
+.primary-toolbar .entry,
+.primary-toolbar GtkComboBox.combobox-entry .entry {
+	border-width: 1px 2px 2px;
+}
+
+.primary-toolbar .entry:focus,
+.primary-toolbar GtkComboBox.combobox-entry .entry:focus {
+	border-width: 1px 2px 2px;
+}
+
+/* linked buttons */
+/* Middle button */
+.linked .entry,
+.linked .button,
+.linked .button:active,
+.linked .button:active:hover,
+.linked .button:focus,
+.linked .button:focus:active,
+.linked .button:insensitive,
+/* Leftmost button */
+.linked .entry:first-child,
+.linked .button:first-child,
+.linked .button:active:first-child,
+.linked .button:active:hover:first-child,
+.linked .button:focus:first-child,
+.linked .button:focus:active:first-child,
+.linked .button:insensitive:first-child,
+/* Rightmost button */
+.linked .entry:last-child,
+.linked .button:last-child,
+.linked .button:active:last-child,
+.linked .button:active:hover:last-child,
+.linked .button:focus:last-child,
+.linked .button:focus:active:last-child,
+.linked .button:insensitive:last-child,
+/* Linked single button */
+.linked .entry:only-child,
+.linked .button:only-child,
+.linked .button:active:only-child,
+.linked .button:active:hover:only-child,
+.linked .button:focus:only-child,
+.linked .button:focus:active:only-child,
+.linked .button:insensitive:only-child,
+/* Middle button (vertical) */
+.linked.vertical .entry,
+.linked.vertical .button,
+.linked.vertical .button:active,
+.linked.vertical .button:active:hover,
+.linked.vertical .button:focus,
+.linked.vertical .button:focus:active,
+.linked.vertical .button:insensitive,
+/* Top button (vertical) */
+.linked.vertical .entry:first-child,
+.linked.vertical .button:first-child,
+.linked.vertical .button:active:first-child,
+.linked.vertical .button:active:hover:first-child,
+.linked.vertical .button:focus:first-child,
+.linked.vertical .button:focus:active:first-child,
+.linked.vertical .button:insensitive:first-child,
+/* Bottom button (vertical) */
+.linked.vertical .entry:last-child,
+.linked.vertical .button:last-child,
+.linked.vertical .button:active:last-child,
+.linked.vertical .button:active:hover:last-child,
+.linked.vertical .button:focus:last-child,
+.linked.vertical .button:focus:active:last-child,
+.linked.vertical .button:insensitive:last-child,
+/* Linked single button (vertical) */
+.linked.vertical .entry:only-child,
+.linked.vertical .button:only-child,
+.linked.vertical .button:active:only-child,
+.linked.vertical .button:active:hover:only-child,
+.linked.vertical .button:focus:only-child,
+.linked.vertical .button:focus:active:only-child,
+.linked.vertical .button:insensitive:only-child,
+/* Linked buttons on primary toolbars */
+/* Middle button */
+.primary-toolbar .button.raised.linked,
+.primary-toolbar .button.raised.linked:active,
+.primary-toolbar .button.raised.linked:focus,
+.primary-toolbar .button.raised.linked:focus:active,
+.primary-toolbar .button.raised.linked:insensitive,
+.primary-toolbar .raised.linked .button,
+.primary-toolbar .raised.linked .button:active,
+.primary-toolbar .raised.linked .button:focus,
+.primary-toolbar .raised.linked .button:focus:active,
+.primary-toolbar .raised.linked .button:insensitive,
+.inline-toolbar.toolbar .button,
+.inline-toolbar.toolbar .button:active,
+.inline-toolbar.toolbar .button:focus,
+.inline-toolbar.toolbar .button:focus:active,
+.inline-toolbar.toolbar .button:insensitive,
+.inline-toolbar.toolbar GtkToolButton .button,
+.inline-toolbar.toolbar GtkToolButton .button:active,
+.inline-toolbar.toolbar GtkToolButton .button:focus,
+.inline-toolbar.toolbar GtkToolButton .button:focus:active,
+.inline-toolbar.toolbar GtkToolButton .button:insensitive,
+/* Leftmost button */
+.primary-toolbar .button.raised.linked:first-child,
+.primary-toolbar .button.raised.linked:active:first-child,
+.primary-toolbar .button.raised.linked:focus:first-child,
+.primary-toolbar .button.raised.linked:focus:active:first-child,
+.primary-toolbar .button.raised.linked:insensitive:first-child,
+.primary-toolbar .raised.linked .button:first-child,
+.primary-toolbar .raised.linked .button:active:first-child,
+.primary-toolbar .raised.linked .button:focus:first-child,
+.primary-toolbar .raised.linked .button:focus:active:first-child,
+.primary-toolbar .raised.linked .button:insensitive:first-child,
+.inline-toolbar.toolbar .button:first-child,
+.inline-toolbar.toolbar .button:active:first-child,
+.inline-toolbar.toolbar .button:focus:first-child,
+.inline-toolbar.toolbar .button:focus:active:first-child,
+.inline-toolbar.toolbar .button:insensitive:first-child,
+.inline-toolbar.toolbar GtkToolButton:first-child .button,
+.inline-toolbar.toolbar GtkToolButton:first-child .button:active,
+.inline-toolbar.toolbar GtkToolButton:first-child .button:focus,
+.inline-toolbar.toolbar GtkToolButton:first-child .button:focus:active,
+.inline-toolbar.toolbar GtkToolButton:first-child .button:insensitive,
+/* Rightmost button */
+.primary-toolbar .button.raised.linked:last-child,
+.primary-toolbar .button.raised.linked:active:last-child,
+.primary-toolbar .button.raised.linked:focus:last-child,
+.primary-toolbar .button.raised.linked:focus:active:last-child,
+.primary-toolbar .button.raised.linked:insensitive:last-child,
+.primary-toolbar .raised.linked .button:last-child,
+.primary-toolbar .raised.linked .button:active:last-child,
+.primary-toolbar .raised.linked .button:focus:last-child,
+.primary-toolbar .raised.linked .button:focus:active:last-child,
+.primary-toolbar .raised.linked .button:insensitive:last-child,
+.inline-toolbar.toolbar .button:last-child,
+.inline-toolbar.toolbar .button:active:last-child,
+.inline-toolbar.toolbar .button:focus:last-child,
+.inline-toolbar.toolbar .button:focus:active:last-child,
+.inline-toolbar.toolbar .button:insensitive:last-child,
+.inline-toolbar.toolbar GtkToolButton:last-child .button,
+.inline-toolbar.toolbar GtkToolButton:last-child .button:active,
+.inline-toolbar.toolbar GtkToolButton:last-child .button:focus,
+.inline-toolbar.toolbar GtkToolButton:last-child .button:focus:active,
+.inline-toolbar.toolbar GtkToolButton:last-child .button:insensitive,
+/* Single button */
+.inline-toolbar.toolbar .button:only-child,
+.inline-toolbar.toolbar .button:active:only-child,
+.inline-toolbar.toolbar .button:focus:only-child,
+.inline-toolbar.toolbar .button:focus:active:only-child,
+.inline-toolbar.toolbar .button:insensitive:only-child,
+.inline-toolbar.toolbar GtkToolButton:only-child .button,
+.inline-toolbar.toolbar GtkToolButton:only-child .button:active,
+.inline-toolbar.toolbar GtkToolButton:only-child .button:focus,
+.inline-toolbar.toolbar GtkToolButton:only-child .button:focus:active,
+.inline-toolbar.toolbar GtkToolButton:only-child .button:insensitive {
+	border-image: url("img/border-inline-button.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-radius: 3px;
+	border-width: 1px 1px 2px 1px;
+	border-style: solid;
+	border-color: transparent;
+}
+
+/* generic insensitive element borders */
+GtkSwitch.trough:insensitive,
+GtkComboBox.combobox-entry .entry:insensitive,
+GtkComboBox.combobox-entry .button:insensitive,
+.entry:insensitive,
+.button:insensitive,
+.trough row {
+	border-image: url("img/border-insensitive.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-radius: 3px;
+	border-width: 1px 1px 2px 1px;
+	border-style: solid;
+	border-color: transparent;
+}
+
+/* focused element borders */
+.entry:focus,
+GtkComboBox.combobox-entry .entry:focus,
+.button:focus:active,
+.button.default:active,
+/* focused button borders */
+.button:focus,
+.button.default,
+.primary-toolbar .entry:focus,
+.primary-toolbar .button:active:focus,
+.primary-toolbar GtkComboBox.combobox-entry .entry:focus,
+.primary-toolbar GtkComboBox.combobox-entry .button:focus,
+.primary-toolbar .button.raised:focus:active,
+.primary-toolbar .raised .button:focus:active,
+.primary-toolbar .button.raised.default:active,
+.primary-toolbar .raised .button.default:active,
+.primary-toolbar GtkComboBox .button:active:focus,
+.primary-toolbar .button.raised:focus,
+.primary-toolbar .button.raised.default,
+.primary-toolbar .raised .button:focus,
+.primary-toolbar .raised .button.default,
+.primary-toolbar GtkComboBox .button:focus {
+	border-image: url("img/border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-radius: 3px;
+	border-width: 1px 1px 2px 1px;
+	border-style: solid;
+	border-color: transparent;
+}
+
+/* focused switch trough borders */
+GtkSwitch.trough:active {
+	border-image: url("img/border-focused-switch.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-radius: 3px;
+	border-width: 1px 1px 2px 1px;
+	border-style: solid;
+	border-color: transparent;
+}
+
+/* column-headers borders */
+column-header.button,
+column-header .button,
+column-header.button:focus,
+column-header .button:focus,
+column-header.button:active,
+column-header .button:active,
+column-header.button:active:hover,
+column-header .button:active:hover
+column-header.button:active:focus,
+column-header .button:active:focus {
+	border-image: none;
+	border-width: 1px;
+	border-radius: 0;
+	border-style: solid;
+	border-color: @column_header_border_top_color @column_header_border_right_color
+	              @column_header_border_bottom_color @column_header_border_left_color;
+
+}
+
+column-header.button:last-child,
+column-header:last-child .button,
+column-header.button:last-child:focus,
+column-header:last-child .button:focus,
+column-header.button:last-child:active,
+column-header:last-child .button:active,
+column-header.button:last-child:active:hover,
+column-header:last-child .button:active:hover,
+column-header.button:last-child:active:focus,
+column-header:last-child .button:active:focus {
+	border-right: none;
+}
+
