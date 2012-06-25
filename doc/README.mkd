@@ -42,7 +42,9 @@ Packages `gnome-themes-standard` and `gtk3-engines-unico` must be installed.
 
 By default, the font color on a desktop managed by Nautilus is black. To set it to white, open the file `gtk-3.0/applications.css` with a text editor, find the code relative to Nautilus:
 
-	/* Nautilus */
+	/************
+	 * Nautilus *
+	 ************/
 	
 	/*
 	COMMENTED
@@ -52,7 +54,9 @@ By default, the font color on a desktop managed by Nautilus is black. To set it 
 
 and uncomment it, as follows:
 
-	/* Nautilus */
+	/************
+	 * Nautilus *
+	 ************/
 	
 	UNCOMMENTED
 	CSS

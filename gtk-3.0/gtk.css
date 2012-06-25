@@ -365,8 +365,10 @@
 @define-color os_chrome_bg_color @theme_bg_color;
 @define-color os_chrome_fg_color @theme_fg_color;
 
-@define-color os_chrome_selected_bg_color @theme_selected_bg_color;
-@define-color os_chrome_selected_fg_color @theme_selected_fg_color;
+/* gnome-panel */
+
+@define-color applet_frame_bg_color #d4d4d4;
+@define-color pager_bg_color #e6e6e6;
 
 /***********
  * imports *

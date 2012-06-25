@@ -1,4 +1,6 @@
-/* Nautilus */
+/************
+ * Nautilus *
+ ************/
 
 /*
 .nautilus-desktop.nautilus-canvas-item {
@@ -13,9 +15,57 @@
 }
 */
 
-/* gedit */
+/*********
+ * gedit *
+ *********/
 
 GeditFloatingSlider .entry.not-found:focus {
 	border-image: url("img/border-error.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+}
+
+/***************
+ * gnome-panel *
+ ***************/
+
+PanelToplevel {
+/*	padding-top: 2px;*/
+}
+
+.gnome-panel-menu-bar,
+PanelApplet > GtkMenuBar.menubar,
+PanelToplevel,
+PanelWidget,
+PanelApplet {
+	background-color: @os_chrome_bg_color;
+	background-image: none;
+	color: @os_chrome_fg_color;
+}
+
+PanelAppletFrame {
+	background-color: @applet_frame_bg_color;
+	background-image: none;
+	color: @os_chrome_fg_color;
+}
+
+PanelApplet .button,
+PanelApplet .button:active,
+PanelApplet .button:hover,
+PanelApplet .button:hover:active {
+	border-image: url("img/border-gnome-panel-button.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+}
+
+WnckPager {
+	background-color: @pager_bg_color;
+}
+
+NaTrayApplet {
+	-NaTrayApplet-icon-padding: 7;
+	-NaTrayApplet-icon-size: 22;
+}
+
+GsmFailWhaleDialog {
+	background-color: @os_chrome_bg_color;
+	background-image: none;
+	color: @os_chrome_fg_color;
 }
 
