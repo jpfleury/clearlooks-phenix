@@ -18,7 +18,11 @@ Packages `gnome-themes-standard` and `gtk3-engines-unico` must be installed.
 
 ## Installation
 
-- [Download the archive of the latest version.](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/)
+- Download the appropriate version according to your situation:
+
+	- for GTK 3.0 and 3.2: [download Clearlooks-Phenix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/1.0.1/);
+	
+	- for GTK 3.4 and newer: [download Clearlooks-Phenix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/).
 
 - Extract the archive.
 
