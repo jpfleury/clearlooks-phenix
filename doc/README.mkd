@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Clearlooks-Phenix project (formerly known as Clearwaita) aims at creating a GK3 port of Clearlooks, the default theme for Gnome 2. Files for GTK3 correspond to significant changes of Adwaita, the default Gnome 3 theme. Files for GTK2 come from the unmodified Clearlooks theme.
+The Clearlooks-Phenix project (formerly known as Clearwaita) aims at creating a GTK3 port of Clearlooks, the default theme for Gnome 2. Files for GTK3 correspond to significant changes of Adwaita, the default Gnome 3 theme. Files for GTK2 come from the unmodified Clearlooks theme.
 
 Also, files for Metacity, Openbox and Xfwm4 window managers are included.
 
