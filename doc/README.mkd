@@ -90,7 +90,7 @@ The wallpaper is a slightly modified version of an [image from volvoguy](http://
 
 ## Development
 
-Last version: 2.0.2 (2012-06-25)
+Last version: 2.0.3 (2012-06-25)
 
 Git is used for revision control. [Repository can be browsed online or cloned.][git]
 
