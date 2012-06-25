@@ -20,7 +20,7 @@ S'assurer que les paquets `gnome-themes-standard` et `gtk3-engines-unico` sont i
 
 - Télécharger l'archive de la version correspondant à votre situation:
 
-	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/1.0.1/);
+	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/1.0.1/);
 	
 	- pour GTK 3.4 et versions suivantes: [télécharger Clearlooks-Phénix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/).
 
@@ -82,7 +82,7 @@ L'arrière-plan est une légère modification d'une [image de volvoguy](http://w
 
 ## Développement
 
-Dernière version: 2.0 (2012-06-25)
+Dernière version: 2.0.1 (2012-06-25)
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
 
