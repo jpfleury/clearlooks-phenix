@@ -20,7 +20,7 @@ S'assurer que les paquets `gnome-themes-standard` et `gtk3-engines-unico` sont i
 
 - Télécharger l'archive de la version correspondant à votre situation:
 
-	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/1.0.1/);
+	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/1.0.1/);
 	
 	- pour GTK 3.4 et versions suivantes: [télécharger Clearlooks-Phénix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/).
 
