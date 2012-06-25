@@ -14,7 +14,9 @@ Voici deux captures d'écran (cliquer pour télécharger l'image au format origi
 
 ## Dépendances
 
-S'assurer que les paquets `gnome-themes-standard` et `gtk3-engines-unico` sont installés.
+- Dépendances de Clearlooks-Phénix 1: paquet `gnome-themes-standard`.
+
+- Dépendances de Clearlooks-Phénix 2: paquets `gnome-themes-standard` et `gtk3-engines-unico`.
 
 ## Installation
 
@@ -23,6 +25,12 @@ S'assurer que les paquets `gnome-themes-standard` et `gtk3-engines-unico` sont i
 	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/1.0.1/);
 	
 	- pour GTK 3.4 et versions suivantes: [télécharger Clearlooks-Phénix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/).
+	
+	Pour connaître sa version de GTK:
+	
+	- vous pouvez vérifier dans votre gestionnaire de paquets la version du paquet `libgtk-3-0`;
+	
+	- si vous avez un logiciel de Gnome (gedit, Nautilus, File Roller, Evince, etc.) sur votre système, vous pouvez ouvrir ce dernier et visiter l'élément de menu *Aide > À propos*. Par exemple, si votre version de gedit est 3.2.3, alors vous avez GTK 3.2.
 
 - Extraire l'archive.
 
@@ -82,7 +90,7 @@ L'arrière-plan est une légère modification d'une [image de volvoguy](http://w
 
 ## Développement
 
-Dernière version: 2.0.1 (2012-06-25)
+Dernière version: 2.0.2 (2012-06-25)
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
 
