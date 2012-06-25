@@ -34,17 +34,6 @@
 @define-color focus_border_color #869bb7;
 @define-color insensitive_border_color #bfbbb7;
 
-/*************
- * à classer *
- *************/
-
-@define-color trough_bg_color_a #c1bfbd;
-@define-color trough_bg_color_b #d6d4d2;
-@define-color treeview_focus_border #2a79cb;
-@define-color expander_row_selected_color #acccee;
-@define-color color_active_badge_border_color #444444;
-@define-color color_active_badge_color @color_active_badge_border_color;
-
 /***********
  * menubar *
  ***********/
@@ -328,6 +317,26 @@
 @define-color toolbar_gradient_b #f0efee;
 @define-color toolbar_gradient_c #ecebea;
 @define-color toolbar_gradient_d #e7e5e4;
+
+/**********
+ * trough *
+ **********/
+
+@define-color trough_gradient_a #c1bfbd;
+@define-color trough_gradient_b #d6d4d2;
+
+/*****************
+ * color chooser *
+ *****************/
+
+@define-color color_swatch_border_color @border_color;
+@define-color color_swatch_hover_border_color @menubar_menuitem_hover_border_color;
+
+@define-color color_active_badge_light_border_color #000000;
+@define-color color_active_badge_light_color @color_active_badge_border_color;
+
+@define-color color_active_badge_dark_border_color #ffffff;
+@define-color color_active_badge_dark_color @color_active_badge_border_color;
 
 /*******
  * osd *
