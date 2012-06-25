@@ -14,7 +14,9 @@ Here are two screenshots (click to download the original image):
 
 ## Requirements
 
-Packages `gnome-themes-standard` and `gtk3-engines-unico` must be installed.
+- Requirements for Clearlooks-Phenix 1: package `gnome-themes-standard`.
+
+- Requirements for Clearlooks-Phenix 2: packages `gnome-themes-standard` and `gtk3-engines-unico`.
 
 ## Installation
 
@@ -23,6 +25,12 @@ Packages `gnome-themes-standard` and `gtk3-engines-unico` must be installed.
 	- for GTK 3.0 and 3.2: [download Clearlooks-Phenix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/1.0.1/);
 	
 	- for GTK 3.4 and newer: [download Clearlooks-Phenix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/).
+
+	To find your GTK version:
+	
+	- you can check in your package manager the version of the package `libgtk-3-0`;
+	
+	- if you use a Gnome application (gedit, Nautilus, File Roller, Evince, etc.), you can open it and go to *Help > About*. For example, if you have gedit 3.2.3, then you have GTK 3.2.
 
 - Extract the archive.
 
