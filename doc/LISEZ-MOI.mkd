@@ -6,11 +6,13 @@ Le projet Clearlooks-Phénix (anciennement nommé Clearwaita) a pour but de cré
 
 Aussi, des fichiers pour les gestionnaires de fenêtres Metacity, Openbox et Xfwm4 sont inclus.
 
-Voici deux captures d'écran (cliquer pour télécharger l'image au format original):
+Voici deux captures d'écran (s'il y a lieu, cliquer pour télécharger l'image au format original):
 
-<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png" alt="Capture d'écran du bureau sous Gnome 3 (mode fallback) avec le thème Clearlooks-Phénix" width="684" height="482" /></a>
+<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png" alt="Capture d'écran du bureau sous Gnome 3 (mode fallback) avec le thème Clearlooks-Phénix" width="658" height="493" /></a>
 
-<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png" alt="Capture d'écran de gedit 3 avec le thème Clearlooks-Phénix" width="684" height="565" /></a>
+<img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png" alt="Capture d'écran de gedit 3 avec le thème Clearlooks-Phénix" width="658" height="529" />
+
+<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple3.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple3.png" alt="Capture d'écran de GTK+ Widget Factory avec le thème Clearlooks-Phénix" width="658" height="435" /></a>
 
 ## Dépendances
 
@@ -90,7 +92,7 @@ L'arrière-plan est une légère modification d'une [image de volvoguy](http://w
 
 ## Développement
 
-Dernière version: 2.0.3 (2012-06-25)
+Dernière version: 2.0.4 (2012-06-25)
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
 
