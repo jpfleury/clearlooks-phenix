@@ -27,10 +27,6 @@ GeditFloatingSlider .entry.not-found:focus {
  * gnome-panel *
  ***************/
 
-PanelToplevel {
-/*	padding-top: 2px;*/
-}
-
 .gnome-panel-menu-bar,
 PanelApplet > GtkMenuBar.menubar,
 PanelToplevel,
@@ -51,7 +47,7 @@ PanelApplet .button,
 PanelApplet .button:active,
 PanelApplet .button:hover,
 PanelApplet .button:hover:active {
-	border-image: url("img/border-gnome-panel-button.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-image: url("img/border-gnome-panel-button.svg") 3 / 3 repeat;
 }
 
 WnckPager {
