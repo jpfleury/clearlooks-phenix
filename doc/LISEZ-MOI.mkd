@@ -92,7 +92,7 @@ L'arrière-plan est une légère modification d'une [image de volvoguy](http://w
 
 ## Développement
 
-Dernière version: 2.0.3 (2012-06-25)
+Dernière version: 2.0.4 (2012-06-25)
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
 
