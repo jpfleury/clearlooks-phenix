@@ -6,11 +6,13 @@ The Clearlooks-Phenix project (formerly known as Clearwaita) aims at creating a 
 
 Also, files for Metacity, Openbox and Xfwm4 window managers are included.
 
-Here are two screenshots (click to download the original image):
+Here are two screenshots (if applicable, click to download the original image):
 
-<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png" alt="Screenshot of a Gnome 3 desktop (fallback mode) with the Clearlooks-Phenix theme" width="684" height="482" /></a>
+<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png" alt="Screenshot of a Gnome 3 desktop (fallback mode) with the Clearlooks-Phenix theme" width="658" height="493" /></a>
 
-<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png" alt="Screenshot of gedit 3 with the Clearlooks-Phenix theme" width="684" height="565" /></a>
+<img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png" alt="Screenshot of gedit 3 with the Clearlooks-Phenix theme" width="658" height="529" />
+
+<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple3.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple3.png" alt="Screenshot of GTK+ Widget Factory with the Clearlooks-Phenix theme" width="658" height="435" /></a>
 
 ## Requirements
 
