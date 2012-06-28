@@ -84,11 +84,11 @@ Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtre
 
 	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
 
-## Icônes et arrière-plan
+### Arrière-plan et icônes
 
-Sur les captures d'écran, le thème d'icônes utilisé est Mist, installé avec le paquet [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes).
+L'arrière-plan utilisé dans la capture d'écran du bureau de Gnome est disponible dans le dossier `wallpapers`.
 
-L'arrière-plan est une légère modification d'une [image de volvoguy](http://www.volvoguy.net/ubuntu/).
+Le thème d'icônes utilisé est Mist, installé avec le paquet [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes).
 
 ## Développement
 
@@ -131,4 +131,6 @@ ce programme; si ce n'est pas le cas, consultez
 - Fichier `openbox-3/themerc`, provenant du paquet [`openbox`](http://packages.ubuntu.com/oneiric/openbox), sous licence GPL.
 
 - Thème [Clearlooks XFWM4](http://xfce-look.org/content/show.php/Clearlooks+for+XFWM4?content=137055), sous licence GPL.
+
+- Fichiers dans `wallpapers`, basés sur une [image de volvoguy](http://gnome-look.org/content/show.php?content=22210), sous licence GPL.
 

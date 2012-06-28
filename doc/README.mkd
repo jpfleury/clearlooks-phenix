@@ -84,11 +84,11 @@ If after installing or updating Ubuntu, the window buttons are on the left side,
 
 	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
 
-## Icons and wallpaper
+### Wallpaper and icons
 
-On screenshots, the icon theme used is Mist, installed with the package [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes).
+The wallpaper used for the Gnome 3 desktop screenshot is available in the folder `wallpapers`.
 
-The wallpaper is a slightly modified version of an [image from volvoguy](http://www.volvoguy.net/ubuntu/).
+The icon theme used is Mist, installed with the package [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes).
 
 ## Development
 
@@ -130,4 +130,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - File `openbox-3/themerc`, from the package [`openbox`](http://packages.ubuntu.com/oneiric/openbox), under GPL.
 
 - [Clearlooks XFWM4](http://xfce-look.org/content/show.php/Clearlooks+for+XFWM4?content=137055) theme, under GPL.
+
+- Files in `wallpapers`, based on an [image from volvoguy](http://gnome-look.org/content/show.php?content=22210), under GPL.
 

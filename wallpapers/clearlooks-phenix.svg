@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1600.0000pt"
+   height="1200.0000pt"
+   id="svg1"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   sodipodi:docbase="/home/aaron"
+   sodipodi:docname="swirls_perso2.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <defs
+     id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 750 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="2000 : 750 : 1"
+       inkscape:persp3d-origin="1000 : 500 : 1"
+       id="perspective57" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#4b79cc"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0000000"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7925"
+     inkscape:cx="1089.5985"
+     inkscape:cy="600"
+     inkscape:current-layer="svg1"
+     inkscape:window-width="1280"
+     inkscape:window-height="894"
+     inkscape:window-x="0"
+     inkscape:window-y="52"
+     showgrid="false" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="fill:#ffffff;fill-opacity:0.12549020;fill-rule:evenodd;stroke:none;stroke-width:0.25000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.25098041;opacity:1.0000000;color:#000000;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4.0000000;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:block;"
+     d="M 300.56250 1014.6250 C 175.42090 1014.9473 71.231387 1030.7777 -0.0000000 1045.8125 L 0.0000000 1500.0000 L 1680.9062 1500.0000 C 1507.2127 1417.1118 1048.1490 1200.0107 793.37500 1099.3750 C 614.74724 1034.3119 444.08946 1014.2553 300.56250 1014.6250 z "
+     id="path1133" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1" />
+  <path
+     style="fill:#000000;fill-opacity:0.12549020;fill-rule:evenodd;stroke:none;stroke-width:0.25000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;"
+     d="M 2000.0000 271.50000 C 1772.2953 313.56298 1419.7081 387.13414 942.21875 485.40625 C 564.03603 563.24007 202.65075 454.45754 -0.0000000 393.09375 L 0.0000000 777.75000 C 432.08187 828.82999 759.43439 744.58373 970.81250 675.09375 C 1305.8380 564.95503 1745.4944 336.76441 2000.0000 317.46875 L 2000.0000 271.50000 z "
+     id="path1118" />
+  <path
+     style="fill:#ffffff;fill-opacity:0.12549020;fill-rule:evenodd;stroke:none;stroke-width:0.25000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:0.25098041;"
+     d="M 844.56250 0.0000000 C 995.09961 65.709582 1281.9626 220.58175 1487.3750 514.18750 C 1674.7084 781.95212 1878.5992 932.93236 2000.0000 1006.6562 L 2000.0000 0.0000000 L 844.56250 0.0000000 z "
+     id="path1132" />
+  <path
+     style="fill:#000000;fill-opacity:0.12549020;fill-rule:evenodd;stroke:none;stroke-width:0.25000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000;opacity:1.0000000;color:#000000;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4.0000000;stroke-dasharray:none;stroke-dashoffset:0;visibility:visible;display:block;"
+     d="M 2000.0000 1056.9688 C 1926.1506 1148.4155 1713.8076 1361.8095 1256.1250 1500.0000 L 2000.0000 1500.0000 L 2000.0000 1056.9688 z "
+     id="path1134" />
+</svg>
