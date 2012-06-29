@@ -102,7 +102,7 @@ Le thème d'icônes utilisé est Mist, installé avec le paquet [`gnome-themes`]
 
 ## Développement
 
-Dernière version: 2.0.5 (2012-06-26)
+Dernière version: 2.0.6 (2012-06-29)
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
 
