@@ -22,6 +22,12 @@ Here are two screenshots (if applicable, click to download the original image):
 
 ## Installation
 
+### Arch Linux
+
+An [AUR package](https://aur.archlinux.org/packages.php?ID=60380) was submitted and is maintained by eworm.
+
+### Manually
+
 - Download the appropriate version according to your situation:
 
 	- for GTK 3.0 and 3.2: [download Clearlooks-Phenix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/1.0.1/);
@@ -78,21 +84,25 @@ and uncomment it, as follows:
 
 To get a custom color, change the color directly in the file `gtk-3.0/applications.css`.
 
+### Button border color
+
+Button borders come from SVG files. [Inkscape](http://inkscape.org/) can be used to modify them. For more details, see the screencast [Utiliser Inkscape pour modifier la couleur de la bordure d'un bouton](http://www.youtube.com/watch?v=DWJHDS5hQsw).
+
 ### Window buttons layout
 
 If after installing or updating Ubuntu, the window buttons are on the left side, but you want them to the right, run the following command in a terminal:
 
 	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
 
-## Icons and wallpaper
+### Wallpaper and icons
 
-On screenshots, the icon theme used is Mist, installed with the package [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes).
+The wallpaper used for the Gnome 3 desktop screenshot is available in the folder `wallpapers`.
 
-The wallpaper is a slightly modified version of an [image from volvoguy](http://www.volvoguy.net/ubuntu/).
+The icon theme used is Mist, installed with the package [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes).
 
 ## Development
 
-Last version: 2.0.5 (2012-06-26)
+Last version: 2.0.6 (2012-06-29)
 
 Git is used for revision control. [Repository can be browsed online or cloned.][git]
 
@@ -130,4 +140,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 - File `openbox-3/themerc`, from the package [`openbox`](http://packages.ubuntu.com/oneiric/openbox), under GPL.
 
 - [Clearlooks XFWM4](http://xfce-look.org/content/show.php/Clearlooks+for+XFWM4?content=137055) theme, under GPL.
+
+- Files in `wallpapers`, based on an [image from volvoguy](http://gnome-look.org/content/show.php?content=22210), under GPL.
 

@@ -22,6 +22,12 @@ Voici deux captures d'écran (s'il y a lieu, cliquer pour télécharger l'image 
 
 ## Installation
 
+### Arch Linux
+
+Un [paquet AUR](https://aur.archlinux.org/packages.php?ID=60380) s été soumis et est maintenu par eworm.
+
+### Manuellement
+
 - Télécharger l'archive de la version correspondant à votre situation:
 
 	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/1.0.1/);
@@ -78,21 +84,25 @@ et le décommenter, ce qui donne:
 
 Pour avoir une couleur personnalisée, modifier la couleur directement dans le fichier `gtk-3.0/applications.css`.
 
+### Couleur de la bordure des boutons
+
+La bordure des boutons provient de fichiers au format SVG, qui peuvent être modifiés avec [Inkscape](http://inkscape.org/). Pour plus de détails, voir la capture vidéo [Utiliser Inkscape pour modifier la couleur de la bordure d'un bouton](http://www.youtube.com/watch?v=DWJHDS5hQsw).
+
 ### Emplacement des boutons de fenêtres
 
 Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtres se trouvent à gauche, mais que vous les voulez à droite, lancez la commande suivante dans une console:
 
 	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
 
-## Icônes et arrière-plan
+### Arrière-plan et icônes
 
-Sur les captures d'écran, le thème d'icônes utilisé est Mist, installé avec le paquet [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes).
+L'arrière-plan utilisé dans la capture d'écran du bureau de Gnome est disponible dans le dossier `wallpapers`.
 
-L'arrière-plan est une légère modification d'une [image de volvoguy](http://www.volvoguy.net/ubuntu/).
+Le thème d'icônes utilisé est Mist, installé avec le paquet [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes).
 
 ## Développement
 
-Dernière version: 2.0.5 (2012-06-26)
+Dernière version: 2.0.6 (2012-06-29)
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
 
@@ -131,4 +141,6 @@ ce programme; si ce n'est pas le cas, consultez
 - Fichier `openbox-3/themerc`, provenant du paquet [`openbox`](http://packages.ubuntu.com/oneiric/openbox), sous licence GPL.
 
 - Thème [Clearlooks XFWM4](http://xfce-look.org/content/show.php/Clearlooks+for+XFWM4?content=137055), sous licence GPL.
+
+- Fichiers dans `wallpapers`, basés sur une [image de volvoguy](http://gnome-look.org/content/show.php?content=22210), sous licence GPL.
 
