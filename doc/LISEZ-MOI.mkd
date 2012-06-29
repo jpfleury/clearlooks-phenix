@@ -22,6 +22,12 @@ Voici deux captures d'écran (s'il y a lieu, cliquer pour télécharger l'image 
 
 ## Installation
 
+### Arch Linux
+
+Un [paquet AUR](https://aur.archlinux.org/packages.php?ID=60380) s été soumis et est maintenu par eworm.
+
+### Manuellement
+
 - Télécharger l'archive de la version correspondant à votre situation:
 
 	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/1.0.1/);
