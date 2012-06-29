@@ -15,6 +15,10 @@
 }
 */
 
+.nautilus-desktop .entry {
+	background-image: none;
+}
+
 /*********
  * gedit *
  *********/
