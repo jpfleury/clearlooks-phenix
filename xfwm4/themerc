@@ -9,6 +9,6 @@ button_layout=O|HMC
 button_offset=2
 button_spacing=2
 full_width_title=true
-maximized_offset=4
+maximized_offset=0
 title_vertical_offset_active=1
 title_vertical_offset_inactive=1
