@@ -240,7 +240,18 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
  *********/
 
 .menu .menuitem.check {
-	background-image: none;
+	background-image: url("img/menuitem-checkbox.png");
+	background-repeat: no-repeat;
+}
+
+.menu .menuitem.check:hover {
+	background-image: url("img/menuitem-checkbox-hover.png");
+	background-repeat: no-repeat;
+}
+
+.menu .menuitem.check:insensitive {
+	background-image: url("img/menuitem-checkbox-insensitive.png");
+	background-repeat: no-repeat;
 }
 
 .menu .menuitem.check:active {
@@ -249,7 +260,7 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
 }
 
 .menu .menuitem.check:active:hover {
-	background-image: url("img/menuitem-checkbox-checked-selected.png");
+	background-image: url("img/menuitem-checkbox-checked-hover.png");
 	background-repeat: no-repeat;
 }
 
@@ -264,15 +275,30 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
 	background-repeat: no-repeat;
 }
 
+.menu .menuitem.check:inconsistent:hover,
+.menu .menuitem.radio:inconsistent:hover {
+	background-image: url("img/menuitem-checkbox-mixed-hover.png");
+	background-repeat: no-repeat;
+}
+
 .menu .menuitem.check:inconsistent:insensitive,
 .menu .menuitem.radio:inconsistent:insensitive {
 	background-image: url("img/menuitem-checkbox-mixed-insensitive.png");
 	background-repeat: no-repeat;
 }
 
-.menu .menuitem.check:inconsistent:hover,
-.menu .menuitem.radio:inconsistent:hover {
-	background-image: url("img/menuitem-checkbox-mixed-selected.png");
+.menu .menuitem.radio {
+	background-image: url("img/menuitem-radio.png");
+	background-repeat: no-repeat;
+}
+
+.menu .menuitem.radio:hover {
+	background-image: url("img/menuitem-radio-hover.png");
+	background-repeat: no-repeat;
+}
+
+.menu .menuitem.radio:insensitive {
+	background-image: url("img/menuitem-radio-insensitive.png");
 	background-repeat: no-repeat;
 }
 
@@ -282,7 +308,7 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
 }
 
 .menu .menuitem.radio:active:hover {
-	background-image: url("img/menuitem-radio-checked-selected.png");
+	background-image: url("img/menuitem-radio-checked-hover.png");
 	background-repeat: no-repeat;
 }
 
