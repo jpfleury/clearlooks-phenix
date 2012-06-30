@@ -472,7 +472,7 @@ GtkComboBox.combobox-entry .button {
 	-GtkButton-interior-focus: true;
 	-GtkButton-default-border: 0;
 	-GtkButton-inner-border: 3;
-	color: @theme_fg_color;
+	color: @theme_text_color;
 	border-style: solid;
 	border-color: transparent;
 }
@@ -846,7 +846,7 @@ GtkComboBox.combobox-entry .button:last-child {
 
 GtkComboBox.combobox-entry .button *:active,
 GtkComboBox.combobox-entry .button *:active:hover {
-	color: @theme_fg_color;
+	color: @theme_text_color;
 }
 
 GtkComboBox .button {
@@ -854,7 +854,7 @@ GtkComboBox .button {
 }
 
 GtkComboBox .button *:hover {
-	color: @theme_fg_color;
+	color: @theme_text_color;
 }
 
 /**************
@@ -1089,7 +1089,7 @@ GtkTreeMenu .menuitem {
 }
 
 GtkTreeMenu .menuitem * {
-	color: @theme_fg_color;
+	color: @theme_text_color;
 }
 
 .menu {
@@ -1113,7 +1113,7 @@ GtkTreeMenu .menuitem * {
 .menu.button:hover {
 	background-image: none;
 	background-color: @theme_base_color;
-	color: @theme_fg_color;
+	color: @theme_text_color;
 
 	border-image: none;
 	border-style: none;
@@ -1247,7 +1247,7 @@ GtkTreeMenu .menuitem *:hover,
 
 .button.menuitem.menubar:active,
 .button.menuitem.menubar *:active {
-	color: @theme_fg_color;
+	color: @theme_text_color;
 	background-image: none;
 	background-color: @menu_bg_color;
 	border-radius: 5px 5px 0 0;
@@ -1347,7 +1347,7 @@ GtkCheckButton:selected:focus {
 	border-style: solid;
 	border-color: shade(@internal_element_color, 1.10);
 	border-image: none;
-	color: @theme_fg_color;
+	color: @theme_text_color;
 }
 
 /*******************
@@ -1512,7 +1512,7 @@ GtkTreeView {
 	-GtkWidget-focus-padding: 1;
 	-adwaita-focus-border-radius: 2;
 	-adwaita-focus-border-dashes: 1;
-	-adwaita-focus-border-color: alpha(@theme_fg_color, 0.6);
+	-adwaita-focus-border-color: @gtktreeview_focus_border_color;
 }
 
 GtkTreeView.dnd {
@@ -1545,7 +1545,7 @@ GtkIconView.view.cell:selected:focus {
 .view,
 GtkTreeView {
 	background-color: @theme_base_color;
-	color: @theme_fg_color;
+	color: @theme_text_color;
 }
 
 .view:selected,
@@ -1648,7 +1648,7 @@ row:selected:focus,
 }
 
 .cell {
-	color: @theme_fg_color;
+	color: @theme_text_color;
 	padding: 2px;
 	border-width: 0;
 }
