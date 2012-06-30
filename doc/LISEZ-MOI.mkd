@@ -2,11 +2,9 @@
 
 ## À propos
 
-Le projet Clearlooks-Phénix (anciennement nommé Clearwaita) a pour but de créer une version GTK3 de Clearlooks, thème par défaut de Gnome 2. Les fichiers pour GTK3 correspondent à une modification en profondeur d'Adwaita, le thème par défaut de Gnome 3. Les fichiers pour GTK2 proviennent du thème Clearlooks original.
+Le projet Clearlooks-Phénix (anciennement nommé Clearwaita) a pour but de créer une version GTK3 de Clearlooks, thème par défaut de Gnome 2. Un style est également inclus pour GTK2, Unity et les gestionnaires de fenêtres Metacity, Openbox et Xfwm4.
 
-Aussi, des fichiers pour les gestionnaires de fenêtres Metacity, Openbox et Xfwm4 sont inclus.
-
-Voici deux captures d'écran (s'il y a lieu, cliquer pour télécharger l'image au format original):
+Voici quelques captures d'écran (s'il y a lieu, cliquer pour télécharger l'image au format original):
 
 <a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png" alt="Capture d'écran du bureau sous Gnome 3 (mode fallback) avec le thème Clearlooks-Phénix" width="658" height="493" /></a>
 
@@ -16,15 +14,19 @@ Voici deux captures d'écran (s'il y a lieu, cliquer pour télécharger l'image 
 
 ## Dépendances
 
-- Dépendances de Clearlooks-Phénix 1: paquet `gnome-themes-standard`.
+- Dépendances de Clearlooks-Phénix 1: paquets `gtk2-engines` et `gnome-themes-standard`.
 
-- Dépendances de Clearlooks-Phénix 2: paquets `gnome-themes-standard` et `gtk3-engines-unico`.
+- Dépendances de Clearlooks-Phénix 2: paquets `gtk2-engines`, `gnome-themes-standard` et `gtk3-engines-unico`.
 
 ## Installation
 
 ### Arch Linux
 
-Un [paquet AUR](https://aur.archlinux.org/packages.php?ID=60380) s été soumis et est maintenu par eworm.
+Un [paquet AUR](https://aur.archlinux.org/packages.php?ID=60380) est maintenu par eworm.
+
+### Debian
+
+Le paquet [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlooks-phenix-theme) peut être installé sous Debian unstable.
 
 ### Manuellement
 
@@ -52,11 +54,33 @@ Un [paquet AUR](https://aur.archlinux.org/packages.php?ID=60380) s été soumis 
 
 - Ensuite, choisir le thème Clearlooks-Phénix:
 
-	- sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool);
+	- sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), en paramétrant *Theme > Window theme* et *Theme > GTK+ theme*;
 	
-	- sous Xfce: en allant dans *Paramètres > Apparence* du menu principal pour le thème GTK, et dans *Paramètres > Gestionnaire de fenêtres* pour le thème de Xfwm4.
+	- sous Xfce: en allant dans *Paramètres > Apparence > Style* du menu principal pour le thème GTK, et dans *Paramètres > Gestionnaire de fenêtres > Style* pour le thème de Xfwm4.
 
 ## Configuration
+
+### Arrière-plan et icônes
+
+L'arrière-plan utilisé dans la capture d'écran du bureau de Gnome est disponible dans le dossier `wallpapers`.
+
+Le thème d'icônes utilisé est Mist, installé avec le paquet [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes), sous licence LGPL. Cependant, ce paquet n'est plus disponible pour les dernières versions d'Ubuntu. Voici une méthode simple pour installer Mist:
+
+- [Télécharger l'archive du thème d'icônes Mist.](http://www.jpfleury.net/site/fichiers/Mist.tar)
+
+- Extraire l'archive.
+
+- Copier le dossier `Mist` dans un des deux emplacements suivants:
+
+	- `~/.icons/` pour l'utilisateur courant;
+	
+	- `/usr/share/icons/` pour tous les utilisateurs.
+
+- Ensuite, choisir le thème d'icônes Mist:
+
+	- sous Gnome: avec le logiciel gnome-tweak-tool en paramétrant *Theme > Icon theme*;
+	
+	- sous Xfce: en allant dans *Paramètres > Apparence > Icônes* du menu principal.
 
 ### Bureau géré par Nautilus
 
@@ -93,12 +117,6 @@ La bordure des boutons provient de fichiers au format SVG, qui peuvent être mod
 Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtres se trouvent à gauche, mais que vous les voulez à droite, lancez la commande suivante dans une console:
 
 	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
-
-### Arrière-plan et icônes
-
-L'arrière-plan utilisé dans la capture d'écran du bureau de Gnome est disponible dans le dossier `wallpapers`.
-
-Le thème d'icônes utilisé est Mist, installé avec le paquet [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes).
 
 ## Développement
 

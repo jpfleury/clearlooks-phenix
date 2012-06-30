@@ -2,11 +2,9 @@
 
 ## Overview
 
-The Clearlooks-Phenix project (formerly known as Clearwaita) aims at creating a GTK3 port of Clearlooks, the default theme for Gnome 2. Files for GTK3 correspond to significant changes of Adwaita, the default Gnome 3 theme. Files for GTK2 come from the Clearlooks theme.
+The Clearlooks-Phenix project (formerly known as Clearwaita) aims at creating a GTK3 port of Clearlooks, the default theme for Gnome 2. Style is included for GTK2, Unity and for Metacity, Openbox and Xfwm4 window managers.
 
-Also, files for Metacity, Openbox and Xfwm4 window managers are included.
-
-Here are two screenshots (if applicable, click to download the original image):
+Here are screenshots (if applicable, click to download the original image):
 
 <a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png" alt="Screenshot of a Gnome 3 desktop (fallback mode) with the Clearlooks-Phenix theme" width="658" height="493" /></a>
 
@@ -16,15 +14,19 @@ Here are two screenshots (if applicable, click to download the original image):
 
 ## Requirements
 
-- Requirements for Clearlooks-Phenix 1: package `gnome-themes-standard`.
+- Requirements for Clearlooks-Phenix 1: packages `gtk2-engines` and `gnome-themes-standard`.
 
-- Requirements for Clearlooks-Phenix 2: packages `gnome-themes-standard` and `gtk3-engines-unico`.
+- Requirements for Clearlooks-Phenix 2: packages `gtk2-engines`, `gnome-themes-standard` and `gtk3-engines-unico`.
 
 ## Installation
 
 ### Arch Linux
 
-An [AUR package](https://aur.archlinux.org/packages.php?ID=60380) was submitted and is maintained by eworm.
+An [AUR package](https://aur.archlinux.org/packages.php?ID=60380) is maintained by eworm.
+
+### Debian
+
+The package [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlooks-phenix-theme) can be installed on Debian unstable.
 
 ### Manually
 
@@ -52,11 +54,33 @@ An [AUR package](https://aur.archlinux.org/packages.php?ID=60380) was submitted 
 
 - Then, choose Clearlooks-Phenix theme:
 
-	- on Gnome: with [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool);
+	- on Gnome: with [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), by setting *Theme > Window theme* and *Theme > GTK+ theme*;
 	
-	- on Xfce: by going to *Settings > Appearence* in the main menu for the GTK theme, and to *Settings > Window Manager* for the Xfwm4 theme.
+	- on Xfce: by going to *Settings > Appearence > Style* in the main menu for the GTK theme, and to *Settings > Window Manager > Style* for the Xfwm4 theme.
 
 ## Configuration
+
+### Wallpaper and icons
+
+The wallpaper used for the Gnome 3 desktop screenshot is available in the folder `wallpapers`.
+
+The icon theme used is Mist, installed with the package [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes), under LGPL. However, this package is no longer available with last Ubuntu versions. Here's an easy way to install Mist:
+
+- [Download the archive of the Mist icon theme.](http://www.jpfleury.net/site/fichiers/Mist.tar)
+
+- Extract the archive.
+
+- Copy the folder `Mist` in one of the following two locations:
+
+	- `~/.icons/` for the current user;
+	
+	- `/usr/share/icons/` for all users.
+
+- Then, choose Mist:
+
+	- on Gnome: with gnome-tweak-tool by setting *Theme > Icon theme*;
+	
+	- on Xfce: by going to *Settings > Appearence > Icons* in the main menu.
 
 ### Desktop managed by Nautilus
 
@@ -93,12 +117,6 @@ Button borders come from SVG files. [Inkscape](http://inkscape.org/) can be used
 If after installing or updating Ubuntu, the window buttons are on the left side, but you want them to the right, run the following command in a terminal:
 
 	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
-
-### Wallpaper and icons
-
-The wallpaper used for the Gnome 3 desktop screenshot is available in the folder `wallpapers`.
-
-The icon theme used is Mist, installed with the package [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes).
 
 ## Development
 
