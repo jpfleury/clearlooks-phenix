@@ -1,7 +1,7 @@
 
 # Please keep this gtkrc in sync with the other ones from Clearlooks based themes.
 
-gtk-color-scheme = "base_color:#ffffff\nfg_color:#000000\ntooltip_fg_color:#000000\nselected_bg_color:#86ABD9\nselected_fg_color:#ffffff\ntext_color:#1A1A1A\nbg_color:#EDECEB\ntooltip_bg_color:#F5F5B5\nlink_color:#0000ee\nvisited_link_color:#551a8b"
+gtk-color-scheme = "base_color:#ffffff\nfg_color:#000000\ntooltip_fg_color:#000000\nselected_bg_color:#86abd9\nselected_fg_color:#ffffff\ntext_color:#1a1a1a\nbg_color:#edeceb\ntooltip_bg_color:#f5f5b5\nlink_color:#0000ee\nvisited_link_color:#551a8b"
 
 style "default" {
 	xthickness = 1
@@ -335,14 +335,14 @@ style "evo_new_button_workaround" {
 style "chrome_gtk_frame"
 {
 	ChromeGtkFrame::frame-color = @selected_bg_color
-	ChromeGtkFrame::inactive-frame-color = "#DEDCDA"
+	ChromeGtkFrame::inactive-frame-color = "#dedcda"
 	ChromeGtkFrame::frame-gradient-size = 16
 	ChromeGtkFrame::frame-gradient-color = shade (0.95,@selected_bg_color)
-	ChromeGtkFrame::inactive-frame-gradient-color = shade (0.95,"#DEDCDA")
-	ChromeGtkFrame::incognito-frame-color = "#4B6E99"
-	ChromeGtkFrame::incognito-inactive-frame-color = "#E3E2E0"
-	ChromeGtkFrame::incognito-frame-gradient-color = shade (0.95,"#4B6E99")
-	ChromeGtkFrame::incognito-inactive-frame-gradient-color = shade (0.95,"#E3E2E0")
+	ChromeGtkFrame::inactive-frame-gradient-color = shade (0.95,"#dedcda")
+	ChromeGtkFrame::incognito-frame-color = "#4b6e99"
+	ChromeGtkFrame::incognito-inactive-frame-color = "#e3e2e0"
+	ChromeGtkFrame::incognito-frame-gradient-color = shade (0.95,"#4b6e99")
+	ChromeGtkFrame::incognito-inactive-frame-gradient-color = shade (0.95,"#e3e2e0")
 	ChromeGtkFrame::scrollbar-trough-color = shade (0.9, @bg_color)
 	ChromeGtkFrame::scrollbar-slider-prelight-color = shade (1.05, @selected_bg_color)
 	ChromeGtkFrame::scrollbar-slider-normal-color = @selected_bg_color
