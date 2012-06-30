@@ -60,11 +60,13 @@ Le paquet [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlooks-
 
 ## Configuration
 
-### Arrière-plan et icônes
+### Arrière-plan
 
 L'arrière-plan utilisé dans la capture d'écran du bureau de Gnome est disponible dans le dossier `wallpapers`.
 
-Le thème d'icônes utilisé est Mist, installé avec le paquet [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes), sous licence LGPL. Cependant, ce paquet n'est plus disponible pour les dernières versions d'Ubuntu. Voici une méthode simple pour installer Mist:
+### Icônes
+
+Le thème d'icônes utilisé dans la même capture d'écran est Mist, installé avec le paquet [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes), sous licence LGPL. Cependant, ce paquet n'est plus disponible pour les dernières versions d'Ubuntu. Voici une méthode simple pour installer Mist:
 
 - [Télécharger l'archive du thème d'icônes Mist.](http://www.jpfleury.net/site/fichiers/Mist.tar)
 
@@ -81,6 +83,16 @@ Le thème d'icônes utilisé est Mist, installé avec le paquet [`gnome-themes`]
 	- sous Gnome: avec le logiciel gnome-tweak-tool en paramétrant *Theme > Icon theme*;
 	
 	- sous Xfce: en allant dans *Paramètres > Apparence > Icônes* du menu principal.
+
+Aussi, des jeux de couleurs ont été réalisés par DDZ pour s'agencer avec Clearlooks-Phénix:
+
+- [Gnome-Colors-Clearlooks](http://opendesktop.org/content/show.php?content=151907), jeu de couleurs pour le thème d'icônes Gnome-Colors;
+
+- [Humanities-Clearlooks](http://opendesktop.org/content/show.php?content=151908), jeu de couleurs pour le thème d'icônes Humanities.
+
+- [KDE3-Clearlooks-Colors](http://opendesktop.org/content/show.php?content=151994), jeu de couleurs pour KDE 3.
+
+- [KDE4-Clearlooks-Colors](http://opendesktop.org/content/show.php?content=151993), jeu de couleurs pour KDE 4.
 
 ### Bureau géré par Nautilus
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Clearlooks-Phenix project (formerly known as Clearwaita) aims at creating a GTK3 port of Clearlooks, the default theme for Gnome 2. Style is included for GTK2, Unity and for Metacity, Openbox and Xfwm4 window managers.
+The Clearlooks-Phenix project (formerly known as Clearwaita) aims at creating a GTK3 port of Clearlooks, the default theme for Gnome 2. Style is also included for GTK2, Unity and for Metacity, Openbox and Xfwm4 window managers.
 
 Here are screenshots (if applicable, click to download the original image):
 
@@ -60,11 +60,13 @@ The package [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlook
 
 ## Configuration
 
-### Wallpaper and icons
+### Wallpaper
 
 The wallpaper used for the Gnome 3 desktop screenshot is available in the folder `wallpapers`.
 
-The icon theme used is Mist, installed with the package [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes), under LGPL. However, this package is no longer available with last Ubuntu versions. Here's an easy way to install Mist:
+### Icons
+
+The icon theme used for the same screenshot is Mist, installed with the package [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes), under LGPL. However, this package is no longer available with last Ubuntu versions. Here's an easy way to install Mist:
 
 - [Download the archive of the Mist icon theme.](http://www.jpfleury.net/site/fichiers/Mist.tar)
 
@@ -81,6 +83,16 @@ The icon theme used is Mist, installed with the package [`gnome-themes`](http://
 	- on Gnome: with gnome-tweak-tool by setting *Theme > Icon theme*;
 	
 	- on Xfce: by going to *Settings > Appearence > Icons* in the main menu.
+
+Also, color schemes were made by DDZ to fit with Clearlooks-Phenix:
+
+- [Gnome-Colors-Clearlooks](http://opendesktop.org/content/show.php?content=151907), color scheme for the icon theme Gnome-Colors;
+
+- [Humanities-Clearlooks](http://opendesktop.org/content/show.php?content=151908), color scheme for the icon theme Humanities.
+
+- [KDE3-Clearlooks-Colors](http://opendesktop.org/content/show.php?content=151994), color scheme for KDE 3.
+
+- [KDE4-Clearlooks-Colors](http://opendesktop.org/content/show.php?content=151993), color scheme for KDE 4.
 
 ### Desktop managed by Nautilus
 
