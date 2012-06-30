@@ -70,3 +70,10 @@ GsmFailWhaleDialog {
 	color: @os_chrome_fg_color;
 }
 
+/* gnome-terminal */
+
+TerminalScreen {
+	background-color: @theme_base_color;
+	color: @theme_fg_color;
+}
+
