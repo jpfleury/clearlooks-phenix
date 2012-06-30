@@ -346,26 +346,30 @@
 @define-color osd_fg_color @theme_tooltip_fg_color;
 @define-color osd_border_color @theme_tooltip_border_color;
 
-/*********************
- * Error/Warning/... *
- *********************/
+/********
+ * link *
+ ********/
 
 @define-color link_color #0000ee;
 @define-color visited_link_color #551a8b;
 
-@define-color error_color #cc0000;
+/*******************************
+ * info/question/error/warning *
+ *******************************/
 
 @define-color info_bg_color @theme_tooltip_bg_color;
 @define-color info_fg_color @theme_fg_color;
 
-@define-color warning_bg_color #faad3d;
-@define-color warning_fg_color @theme_fg_color;
-
 @define-color question_bg_color #8aadd4;
 @define-color question_fg_color @theme_base_color;
 
+@define-color error_color #cc0000;
+
 @define-color error_bg_color #9b3636;
 @define-color error_fg_color @theme_base_color;
+
+@define-color warning_bg_color #faad3d;
+@define-color warning_fg_color @theme_fg_color;
 
 /*****************
  * fallback mode *
