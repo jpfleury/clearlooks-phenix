@@ -332,6 +332,21 @@ style "evo_new_button_workaround" {
 	}
 }
 
+style "chrome_gtk_frame"
+{
+	ChromeGtkFrame::frame-color = @selected_bg_color
+	ChromeGtkFrame::inactive-frame-color = "#DEDCDA"
+	ChromeGtkFrame::frame-gradient-size = 16
+	ChromeGtkFrame::frame-gradient-color = shade (0.95,@selected_bg_color)
+	ChromeGtkFrame::inactive-frame-gradient-color = shade (0.95,"#DEDCDA")
+	ChromeGtkFrame::incognito-frame-color = "#4B6E99"
+	ChromeGtkFrame::incognito-inactive-frame-color = "#E3E2E0"
+	ChromeGtkFrame::incognito-frame-gradient-color = shade (0.95,"#4B6E99")
+	ChromeGtkFrame::incognito-inactive-frame-gradient-color = shade (0.95,"#E3E2E0")
+	ChromeGtkFrame::scrollbar-trough-color = shade (0.9, @bg_color)
+	ChromeGtkFrame::scrollbar-slider-prelight-color = shade (1.05, @selected_bg_color)
+	ChromeGtkFrame::scrollbar-slider-normal-color = @selected_bg_color
+}
 
 ###############################################################################
 # The following part of the gtkrc applies the different styles to the widgets.
@@ -427,3 +442,6 @@ widget_class "*<EelEditableLabel>" style "fg_is_text_color_workaround"
 
 # See the documentation of the style.
 widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" style "evo_new_button_workaround"
+
+class "ChromeGtkFrame" style "chrome_gtk_frame"
+
