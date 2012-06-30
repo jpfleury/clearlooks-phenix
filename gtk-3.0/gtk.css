@@ -14,8 +14,10 @@
 @define-color insensitive_fg_color #a9a5a2;
 @define-color insensitive_text_shadow_color @theme_base_color;
 
-@define-color internal_element_color @theme_fg_color;
-@define-color internal_element_hover_color @theme_fg_color;
+@define-color theme_text_color #1a1a1a;
+
+@define-color internal_element_color @theme_text_color;
+@define-color internal_element_hover_color @theme_text_color;
 @define-color internal_element_insensitive_color @insensitive_fg_color;
 
 /***********
@@ -71,6 +73,12 @@
 
 @define-color sidebar_bg_color @theme_base_color;
 @define-color gtkassistant_sidebar_border_color @border_color;
+
+/*************
+ * tree view *
+ *************/
+
+@define-color gtktreeview_focus_border_color @focus_border_color;
 
 /**********
  * button *
@@ -270,7 +278,7 @@
  * entry *
  *********/
 
-@define-color entry_text_color @theme_fg_color;
+@define-color entry_text_color @theme_text_color;
 
 @define-color entry_inner_border_color #e4e3e3;
 @define-color entry_bg_color @theme_base_color;
