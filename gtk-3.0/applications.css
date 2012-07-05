@@ -28,6 +28,44 @@ GeditFloatingSlider .entry.not-found:focus {
 	border-image: url("img/border-error.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
 }
 
+/*******************
+ * gnome-documents *
+ *******************/
+
+.documents-scrolledwin.frame {
+	border-width: 1px 0 0 0;
+	border-radius: 0;
+}
+
+.documents-main-view.view {
+	background-color: @theme_base_color;
+}
+
+GtkIconView.documents-main-view.check {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: @theme_base_color;
+}
+
+.documents-selection-mode.toolbar {
+	border-width: 0;
+}
+
+.documents-selection-mode.toolbar .dim-label {
+	color: @theme_fg_color;
+}
+
+.documents-icon-bg {
+	background-color: @switch_trough_active_gradient_a;
+	border-radius: 3px;
+	color: @theme_base_color;
+}
+
+.documents-collection-icon {
+	background-color: @theme_bg_color;
+	border-radius: 3px;
+}
+
 /***************
  * gnome-panel *
  ***************/
