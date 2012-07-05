@@ -136,26 +136,6 @@
 	background-image: url("img/radio-mixed-insensitive.png");
 }
 
-.sidebar .radio:active,
-.sidebar .radio:active:focus,
-.sidebar .radio:active:hover {
-	background-image: url("img/sidebar-radio-checked.svg");
-}
-
-.sidebar .radio:hover {
-	background-image: url("img/sidebar-radio-prelight.svg");
-}
-
-.sidebar .radio:active:selected,
-.sidebar .radio:active:selected:focus {
-	background-image: url("img/sidebar-radio-selected.svg");
-}
-
-.sidebar .radio:selected:hover,
-.sidebar .radio:selected:focus {
-	background-image: url("img/sidebar-radio-selected-prelight.svg");
-}
-
 /*********************
  * GtkScale's slider *
  *********************/
