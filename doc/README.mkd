@@ -14,9 +14,9 @@ Here are screenshots (if applicable, click to download the original image):
 
 ## Requirements
 
-- Requirements for Clearlooks-Phenix 1: packages `gtk2-engines` and `gnome-themes-standard`.
+- Requirements for Clearlooks-Phenix 1: packages `gtk2-engines` (if GTK2 applications are used) and `gnome-themes-standard`.
 
-- Requirements for Clearlooks-Phenix 2: packages `gtk2-engines`, `gnome-themes-standard` and `gtk3-engines-unico`.
+- Requirements for Clearlooks-Phenix 2: packages `gtk2-engines` (if GTK2 applications are used), `gnome-themes-standard` and `gtk3-engines-unico`.
 
 ## Installation
 
@@ -27,6 +27,10 @@ An [AUR package](https://aur.archlinux.org/packages.php?ID=60380) is maintained 
 ### Debian
 
 The package [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlooks-phenix-theme) can be installed on Debian unstable.
+
+### Ubuntu
+
+The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlooks-phenix-theme) can be installed on Ubuntu 12.10.
 
 ### Manually
 
@@ -136,10 +140,11 @@ Last version: 2.0.9 (2012-07-05)
 
 Git is used for revision control. [Repository can be browsed online or cloned.][git]
 
-Clearlooks-Phenix has an [issue tracker], on which bug reports and feature requests can be submitted.
+Clearlooks-Phenix has an [issue tracker], on which bug reports and feature requests can be submitted. Comments can also be posted on the webpage [Clearlooks-Phenix on GNOME-Look.org][gnome-look].
 
 [git]: http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/
 [issue tracker]: http://jpfleury.indefero.net/p/clearlooks-phenix/issues/
+[gnome-look]: http://gnome-look.org/content/show.php?content=145210
 
 ## License
 
