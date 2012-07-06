@@ -14,9 +14,9 @@ Voici quelques captures d'écran (s'il y a lieu, cliquer pour télécharger l'im
 
 ## Dépendances
 
-- Dépendances de Clearlooks-Phénix 1: paquets `gtk2-engines` et `gnome-themes-standard`.
+- Dépendances de Clearlooks-Phénix 1: paquets `gtk2-engines` (si des logiciels GTK2 sont utilisés) et `gnome-themes-standard`.
 
-- Dépendances de Clearlooks-Phénix 2: paquets `gtk2-engines`, `gnome-themes-standard` et `gtk3-engines-unico`.
+- Dépendances de Clearlooks-Phénix 2: paquets `gtk2-engines` (si des logiciels GTK2 sont utilisés), `gnome-themes-standard` et `gtk3-engines-unico`.
 
 ## Installation
 
@@ -27,6 +27,10 @@ Un [paquet AUR](https://aur.archlinux.org/packages.php?ID=60380) est maintenu pa
 ### Debian
 
 Le paquet [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlooks-phenix-theme) peut être installé sous Debian unstable.
+
+### Ubuntu
+
+Le paquet [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlooks-phenix-theme) peut être installé sous Ubuntu 12.10.
 
 ### Manuellement
 
@@ -132,14 +136,15 @@ Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtre
 
 ## Développement
 
-Dernière version: 2.0.9 (2012-07-05)
+Dernière version: 2.0.10 (2012-07-06)
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
 
-Clearlooks-Phénix dispose également d'un [système de suivi], sur lequel les rapports de bogues et les suggestions peuvent être soumis.
+Clearlooks-Phénix dispose également d'un [système de suivi], sur lequel les rapports de bogues et les suggestions peuvent être soumis. Des commentaires peuvent également être postés sur la page de [Clearlooks-Phénix sur GNOME-Look.org][gnome-look].
 
 [git]: http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/
 [système de suivi]: http://jpfleury.indefero.net/p/clearlooks-phenix/issues/
+[gnome-look]: http://gnome-look.org/content/show.php?content=145210
 
 ## Licence
 
