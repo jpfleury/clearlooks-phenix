@@ -124,9 +124,11 @@ and uncomment it, as follows:
 
 To get a custom color, change the color directly in the file `gtk-3.0/applications.css`.
 
-### Button border color
+### Color variants
 
-Button borders come from SVG files. [Inkscape](http://inkscape.org/) can be used to modify them. For more details, see the screencast [Utiliser Inkscape pour modifier la couleur de la bordure d'un bouton](http://www.youtube.com/watch?v=DWJHDS5hQsw).
+It's very easy to create color variants of the GTK3 theme. Only a few color declarations must be changed in the first section of the file `gtk-3.0/gtk.css`.
+
+About button borders, they come from SVG files. [Inkscape](http://inkscape.org/) can be used to modify them. For more details, see the screencast [Utiliser Inkscape pour modifier la couleur de la bordure d'un bouton](http://www.youtube.com/watch?v=DWJHDS5hQsw).
 
 ### Window buttons layout
 
