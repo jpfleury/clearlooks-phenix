@@ -869,7 +869,7 @@ GtkComboBox .button *:hover {
 	-GtkRange-trough-border: 0;
 	-GtkScrollbar-has-backward-stepper: true;
 	-GtkScrollbar-has-forward-stepper: true;
-	-GtkRange-arrow-scaling: 0.444;
+	-GtkRange-arrow-scaling: 0.4;
 	-GtkRange-slider-width: 15;
 	-GtkRange-stepper-size: 15px;
 	-GtkScrollbar-min-slider-length: 30;
@@ -908,7 +908,6 @@ GtkComboBox .button *:hover {
 }
 
 .scrollbar.button {
-	engine: adwaita;
 	border-width: 1px;
 	border-image: none;
 	border-color: @scrollbar_button_border_color;
@@ -1014,7 +1013,7 @@ GtkComboBox .button *:hover {
 }
 
 .scrollbar.slider {
-	-unico-inner-stroke-width: 1px;
+	background-color: @scrollbar_slider_bg_color;
 	background-image: none;
 	border-radius: 0;
 	border-style: solid;
@@ -1023,58 +1022,8 @@ GtkComboBox .button *:hover {
 	border-width: 1px;
 }
 
-.scrollbar.slider.horizontal {
-	-unico-inner-stroke-gradient: -gtk-gradient (linear,
-	                  left top,
-	                  left bottom,
-	                  from (@scrollbar_slider_inner_border_gradient_a),
-	                  color-stop (0.50, @scrollbar_slider_inner_border_gradient_b),
-	                  color-stop (0.50, @scrollbar_slider_inner_border_gradient_c),
-	                  to (@scrollbar_slider_inner_border_gradient_d));
-	background-image: -gtk-gradient (linear,
-	                  left top,
-	                  left bottom,
-	                  from (@scrollbar_slider_gradient_a),
-	                  color-stop (0.50, @scrollbar_slider_gradient_b),
-	                  color-stop (0.50, @scrollbar_slider_gradient_c),
-	                  to (@scrollbar_slider_gradient_d));
-}
-
-.scrollbar.slider.vertical {
-	-unico-inner-stroke-gradient: -gtk-gradient (linear,
-	                  left top,
-	                  right top,
-	                  from (@scrollbar_slider_inner_border_gradient_a),
-	                  color-stop (0.50, @scrollbar_slider_inner_border_gradient_b),
-	                  color-stop (0.50, @scrollbar_slider_inner_border_gradient_c),
-	                  to (@scrollbar_slider_inner_border_gradient_d));
-	background-image: -gtk-gradient (linear,
-	                  left top,
-	                  right top,
-	                  from (@scrollbar_slider_gradient_a),
-	                  color-stop (0.50, @scrollbar_slider_gradient_b),
-	                  color-stop (0.50, @scrollbar_slider_gradient_c),
-	                  to (@scrollbar_slider_gradient_d));
-}
-
-.scrollbar.slider.horizontal:hover {
-	background-image: -gtk-gradient (linear,
-	                  left top,
-	                  left bottom,
-	                  from (@scrollbar_slider_hover_gradient_a),
-	                  color-stop (0.50, @scrollbar_slider_hover_gradient_b),
-	                  color-stop (0.50, @scrollbar_slider_hover_gradient_c),
-	                  to (@scrollbar_slider_hover_gradient_d));
-}
-
-.scrollbar.slider.vertical:hover {
-	background-image: -gtk-gradient (linear,
-	                  left top,
-	                  right top,
-	                  from (@scrollbar_slider_hover_gradient_a),
-	                  color-stop (0.50, @scrollbar_slider_hover_gradient_b),
-	                  color-stop (0.50, @scrollbar_slider_hover_gradient_c),
-	                  to (@scrollbar_slider_hover_gradient_d));
+.scrollbar.slider:hover {
+	background-color: @scrollbar_slider_hover_bg_color;
 }
 
 /*********

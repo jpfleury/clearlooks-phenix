@@ -291,21 +291,22 @@
 
 /* slider */
 
-@define-color scrollbar_slider_gradient_a shade(@core_color_a, 0.99);
+@define-color scrollbar_slider_bg_color shade(@core_color_a, 0.99);
+
+@define-color scrollbar_slider_gradient_a @scrollbar_slider_bg_color;
 @define-color scrollbar_slider_gradient_b shade(@core_color_a, 0.96);
 @define-color scrollbar_slider_gradient_c shade(@core_color_a, 0.92);
 @define-color scrollbar_slider_gradient_d shade(@core_color_a, 0.88);
 
 @define-color scrollbar_slider_border_color mix(#000000, shade(@core_color_a, 0.72), 0.95);
 
-@define-color scrollbar_slider_inner_border_gradient_a shade(@core_color_a, 1.04);
-@define-color scrollbar_slider_inner_border_gradient_b shade(@core_color_a, 1.01);
-@define-color scrollbar_slider_inner_border_gradient_c shade(@core_color_a, 0.98);
-@define-color scrollbar_slider_inner_border_gradient_d shade(@core_color_a, 0.95);
+@define-color scrollbar_slider_inner_border_color shade(@core_color_a, 1.04);
 
 /* slider hover */
 
-@define-color scrollbar_slider_hover_gradient_a shade(@core_color_a, 1.03);
+@define-color scrollbar_slider_hover_bg_color shade(@core_color_a, 1.03);
+
+@define-color scrollbar_slider_hover_gradient_a @scrollbar_slider_hover_bg_color;
 @define-color scrollbar_slider_hover_gradient_b shade(@core_color_a, 0.99);
 @define-color scrollbar_slider_hover_gradient_c shade(@core_color_a, 0.96);
 @define-color scrollbar_slider_hover_gradient_d shade(@core_color_a, 0.91);
