@@ -1132,7 +1132,7 @@ GtkTreeMenu .menuitem * {
 	border-style: none;
 	padding: 4px;
 	-GtkWidget-window-dragging: true;
-	-GtkMenuBar-internal-padding: 0;
+	-GtkMenuBar-internal-padding: 1;
 	background-image: -gtk-gradient (linear,
 	                  left top,
 	                  left bottom,
