@@ -18,6 +18,8 @@ Voici quelques captures d'écran (s'il y a lieu, cliquer pour télécharger l'im
 
 - Dépendances de Clearlooks-Phénix 2: paquets `gtk2-engines` (si des logiciels GTK2 sont utilisés), `gnome-themes-standard` et `gtk3-engines-unico`.
 
+- Dépendances de Clearlooks-Phénix 3: paquet `gtk2-engines` (si des logiciels GTK2 sont utilisés).
+
 ## Installation
 
 ### Arch Linux
@@ -36,9 +38,11 @@ Le paquet [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlo
 
 - Télécharger l'archive de la version correspondant à votre situation:
 
-	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/1.0.1/);
+	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/v1/);
 	
-	- pour GTK 3.4 et versions suivantes: [télécharger Clearlooks-Phénix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/).
+	- pour GTK 3.4: [télécharger Clearlooks-Phénix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/v2/).
+	
+	- pour GTK 3.6 et versions suivantes: [télécharger Clearlooks-Phénix 3](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/).
 	
 	Pour connaître sa version de GTK:
 	
