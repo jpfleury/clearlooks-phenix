@@ -678,13 +678,12 @@ GtkComboBox.combobox-entry .button:insensitive {
 	padding: 3px;
 	border-radius: 3px;
 	border-style: solid;
-	/* we draw our own custom border here for now */
-	border-width: 0;
+	border-width: 1px;
 }
 
-.notebook tab,
-.notebook tab.left,
-.notebook tab.right {
+.notebook tab.top {
+	padding: 4px 2px 0 2px;
+	border-width: 1px 1px 0px;
 	background-image: linear-gradient(to bottom,
 	                  @notebook_tab_inner_border_color 1px,
 	                  @notebook_tab_gradient_a 2px,
@@ -693,59 +692,76 @@ GtkComboBox.combobox-entry .button:insensitive {
 	                  @notebook_tab_gradient_d);
 }
 
-.notebook tab:active {
-	-adwaita-border-gradient: -gtk-gradient (linear,
-	                          left top, left bottom,
-	                          from (@notebook_active_tab_border_gradient_a),
-	                          to (@notebook_active_tab_border_gradient_b));
-	background-image: linear-gradient(to bottom,
-	                  @notebook_active_tab_strip_gradient_a,
-	                  @notebook_active_tab_strip_gradient_b 3px,
-	                  @notebook_active_tab_strip_border_bottom_color 4px,
-	                  @notebook_active_tab_gradient_a 5px,
-	                  @notebook_active_tab_gradient_b 95%,
-	                  @notebook_active_tab_border_bottom_color);
-}
-
-.notebook tab.top {
-	padding: 4px 2px 0;
-}
-
-.notebook tab.top:active {
-	padding-top: 7px;
+.notebook tab.right {
+	padding: 2px 4px 2px 0;
+	border-width: 1px 1px 1px 0;
+	background-image: linear-gradient(to left,
+	                  @notebook_tab_inner_border_color 1px,
+	                  @notebook_tab_gradient_a 2px,
+	                  @notebook_tab_gradient_b 50%,
+	                  @notebook_tab_gradient_c 50%,
+	                  @notebook_tab_gradient_d);
 }
 
 .notebook tab.bottom {
 	padding: 0 2px 4px;
-}
-
-.notebook tab.bottom:active {
-	padding-bottom: 7px;
+	border-width: 0px 1px 1px;
+	background-image: linear-gradient(to top,
+	                  @notebook_tab_inner_border_color 1px,
+	                  @notebook_tab_gradient_a 2px,
+	                  @notebook_tab_gradient_b 50%,
+	                  @notebook_tab_gradient_c 50%,
+	                  @notebook_tab_gradient_d);
 }
 
 .notebook tab.left {
 	padding: 2px 0 2px 4px;
 	border-width: 1px 0 1px 1px;
+	background-image: linear-gradient(to right,
+	                  @notebook_tab_inner_border_color 1px,
+	                  @notebook_tab_gradient_a 2px,
+	                  @notebook_tab_gradient_b 50%,
+	                  @notebook_tab_gradient_c 50%,
+	                  @notebook_tab_gradient_d);
 }
 
-.notebook tab.left:active {
-	padding-left: 7px;
-	border-left-color: @notebook_active_tab_border_gradient_a;
-}
-
-.notebook tab.right {
-	padding: 2px 4px 2px 0;
-	border-width: 1px 1px 1px 0;
+.notebook tab.top:active {
+	padding-top: 7px;
+	border-top-color: @notebook_active_tab_border;
+	background-image: linear-gradient(to bottom,
+	                  @notebook_active_tab_strip_gradient_a,
+	                  @notebook_active_tab_strip_gradient_b 3px,
+	                  @notebook_active_tab_strip_border_bottom_color 4px,
+	                  @notebook_active_tab_gradient_a 4px,
+	                  @notebook_active_tab_gradient_b);
 }
 
 .notebook tab.right:active {
 	padding-right: 7px;
-	border-right-color: @notebook_active_tab_border_gradient_a;
+	border-right-color: @notebook_active_tab_border;
+	background-image: linear-gradient(to left,
+	                  @notebook_active_tab_strip_gradient_a,
+	                  @notebook_active_tab_strip_gradient_b 3px,
+	                  @notebook_active_tab_strip_border_bottom_color 4px,
+	                  @notebook_active_tab_gradient_a 4px,
+	                  @notebook_active_tab_gradient_b);
 }
 
-.notebook tab.left:active,
-.notebook tab.right:active {
-	background-image: linear-gradient(to bottom,
+.notebook tab.bottom:active {
+	padding-bottom: 7px;
+	border-bottom-color: @notebook_active_tab_border;
+	background-image: linear-gradient(to top,
+	                  @notebook_active_tab_strip_gradient_a,
+	                  @notebook_active_tab_strip_gradient_b 3px,
+	                  @notebook_active_tab_strip_border_bottom_color 4px,
+	                  @notebook_active_tab_gradient_a 4px,
+	                  @notebook_active_tab_gradient_b);
+}
+
+.notebook tab.left:active {
+	padding-left: 7px;
+	border-left-color: @notebook_active_tab_border;
+	background-image: linear-gradient(to right,
 	                  @notebook_active_tab_strip_gradient_a,
 	                  @notebook_active_tab_strip_gradient_b 3px,
 	                  @notebook_active_tab_strip_border_bottom_color 4px,

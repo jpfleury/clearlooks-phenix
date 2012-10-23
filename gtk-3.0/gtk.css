@@ -221,15 +221,13 @@
 
 /* active tab */
 
-@define-color notebook_active_tab_border_gradient_a @menubar_menuitem_hover_border_color;
-@define-color notebook_active_tab_border_gradient_b @border_color;
+@define-color notebook_active_tab_border @menubar_menuitem_hover_border_color;
 
 @define-color notebook_active_tab_strip_gradient_a shade(@core_color_a, 1.05);
 @define-color notebook_active_tab_strip_gradient_b shade(@core_color_a, 0.94);
 @define-color notebook_active_tab_strip_border_bottom_color mix(#727272, shade(@core_color_a, 0.84), 0.65);
 @define-color notebook_active_tab_gradient_a shade(@core_color_b, 1.07);
 @define-color notebook_active_tab_gradient_b @notebook_bg_color;
-@define-color notebook_active_tab_border_bottom_color @border_color;
 
 /*******
  * osd *
