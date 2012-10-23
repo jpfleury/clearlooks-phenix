@@ -256,11 +256,6 @@
 @define-color scale_mark_color @border_color;
 @define-color scale_progressbar_bg_color @scale_trough_highlight_gradient_b;
 
-@define-color scale_trough_outer_border_top_color shade(@core_color_b, 0.94);
-@define-color scale_trough_outer_border_right_color shade(@core_color_b, 1.06);
-@define-color scale_trough_outer_border_bottom_color @scale_trough_outer_border_right_color;
-@define-color scale_trough_outer_border_left_color @scale_trough_outer_border_top_color;
-
 @define-color scale_trough_border_color shade(@core_color_b, 0.56);
 @define-color scale_trough_bg_color shade(@core_color_b, 0.90);
 

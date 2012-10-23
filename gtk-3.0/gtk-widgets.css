@@ -359,14 +359,9 @@ GtkProgressBar {
  ************/
 
 GtkScale {
-	engine: unico;
-	-unico-focus-border-color: transparent;
-	-unico-focus-border-radius: 2;
-	-unico-focus-fill-color: transparent;
-	-unico-focus-outer-stroke-color: transparent;
 	-GtkScale-slider-length: 21;
 	-GtkRange-slider-width: 13;
-	-GtkRange-trough-border: 0;
+	-GtkRange-trough-border: 3;
 }
 
 GtkScale.slider,
@@ -381,11 +376,6 @@ GtkScale.trough,
 GtkScale.trough.highlight,
 GtkScale.trough.vertical,
 GtkScale.trough:insensitive {
-	-unico-outer-stroke-width: 1px;
-	-unico-outer-stroke-top-color: @scale_trough_outer_border_top_color;
-	-unico-outer-stroke-right-color: @scale_trough_outer_border_right_color;
-	-unico-outer-stroke-bottom-color: @scale_trough_outer_border_bottom_color;
-	-unico-outer-stroke-left-color: @scale_trough_outer_border_left_color;
 	border-image: none;
 	border-style: solid;
 	border-width: 1px;
