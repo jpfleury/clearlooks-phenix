@@ -1425,35 +1425,17 @@ GtkSwitch.trough:insensitive {
 }
 
 GtkSwitch.slider {
+	background-color: @switch_slider_bg_color;
 	border-width: 1px;
 	border-radius: 2px;
 	border-style: solid;
 	border-color: @switch_slider_border_color;
 	padding: 0px 0px 1px 0px;
-	background-image: -gtk-gradient (linear,
-	                  left top,
-	                  left bottom,
-	                  from (@switch_slider_gradient_a),
-	                  color-stop (0.50, @switch_slider_gradient_b),
-	                  color-stop (0.50, @switch_slider_gradient_c),
-	                  to (@switch_slider_gradient_d));
-	background-repeat: no-repeat;
-	background-position: center;
 }
 
 GtkSwitch.slider:insensitive {
-	background-image: -gtk-gradient (linear,
-	                  left top,
-	                  left bottom,
-	                  from (@switch_slider_insensitive_gradient_a),
-	                  color-stop (0.50, @switch_slider_insensitive_gradient_b),
-	                  color-stop (0.50, @switch_slider_insensitive_gradient_c),
-	                  to (@switch_slider_insensitive_gradient_d));
+	background-color: @switch_slider_insensitive_bg_color;
 	border-color: @insensitive_border_color;
-}
-
-GtkSwitch.slider:insensitive {
-	border-color: mix(@insensitive_bg_color, @insensitive_fg_color, 0.5);
 }
 
 GtkTreeView {

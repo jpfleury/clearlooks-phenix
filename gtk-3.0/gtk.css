@@ -357,7 +357,9 @@
 
 @define-color switch_slider_border_color @progressbar_border_color;
 
-@define-color switch_slider_gradient_a @scrollbar_slider_gradient_a;
+@define-color switch_slider_bg_color @scrollbar_slider_bg_color;
+
+@define-color switch_slider_gradient_a @switch_slider_bg_color;
 @define-color switch_slider_gradient_b @scrollbar_slider_gradient_b;
 @define-color switch_slider_gradient_c @scrollbar_slider_gradient_c;
 @define-color switch_slider_gradient_d @scrollbar_slider_gradient_d;
@@ -371,7 +373,9 @@
 
 /* insensitive */
 
-@define-color switch_slider_insensitive_gradient_a @button_insensitive_gradient_a;
+@define-color switch_slider_insensitive_bg_color @button_insensitive_gradient_a;
+
+@define-color switch_slider_insensitive_gradient_a @switch_slider_insensitive_bg_color;
 @define-color switch_slider_insensitive_gradient_b @button_insensitive_gradient_b;
 @define-color switch_slider_insensitive_gradient_c @button_insensitive_gradient_c;
 @define-color switch_slider_insensitive_gradient_d @button_insensitive_gradient_d;

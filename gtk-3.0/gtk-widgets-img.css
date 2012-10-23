@@ -2,6 +2,30 @@
  * Assets *
  **********/
 
+/*************
+ * GtkSwitch *
+ *************/
+
+GtkSwitch.slider {
+	background-image: linear-gradient(to bottom,
+	                      alpha (@switch_slider_gradient_a, 0.5),
+	                      alpha (@switch_slider_gradient_b, 0.5) 50%,
+	                      alpha (@switch_slider_gradient_c, 0.5) 50%,
+	                      alpha (@switch_slider_gradient_d, 0.5)),
+	                  url("img/slider-horz-grip.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+GtkSwitch.slider:insensitive {
+	background-image: linear-gradient(to bottom,
+	                      alpha (@switch_slider_insensitive_gradient_a, 0.8),
+	                      alpha (@switch_slider_insensitive_gradient_b, 0.8) 50%,
+	                      alpha (@switch_slider_insensitive_gradient_c, 0.8) 50%,
+	                      alpha (@switch_slider_insensitive_gradient_d, 0.8)),
+	                  url("img/slider-horz-grip.png");
+}
+
 /***************
  * Resize grip *
  ***************/
