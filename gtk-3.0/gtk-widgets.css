@@ -298,23 +298,21 @@ GtkProgressBar {
 .progressbar row:hover,
 .progressbar row:selected,
 .progressbar row:selected:focus {
-	background-image: -gtk-gradient (linear,
-	                  left top,
-	                  left bottom,
-	                  from (@progressbar_gradient_a),
-	                  color-stop (0.50, @progressbar_gradient_b),
-	                  color-stop (0.50, @progressbar_gradient_c),
-	                  to (@progressbar_gradient_d));
+	background-color: @progressbar_bg_color;
+	background-image: linear-gradient(to bottom,
+	                      alpha (@progressbar_gradient_a, 0.7),
+	                      alpha (@progressbar_gradient_b, 0.7) 50%,
+	                      alpha (@progressbar_gradient_c, 0.7) 50%,
+	                      alpha (@progressbar_gradient_d, 0.7)),
+	                  repeating-linear-gradient(135deg,
+	                      alpha (@progressbar_pattern_color, 0.0),
+	                      alpha (@progressbar_pattern_color, 0.0) 12px,
+	                      alpha (@progressbar_pattern_color, 0.5) 12px,
+	                      alpha (@progressbar_pattern_color, 0.5) 24px);
 	border-radius: 3px;
 	border-width: 1px;
 	border-style: solid;
 	border-color: @progressbar_border_color;
-	-adwaita-progressbar-pattern: -gtk-gradient (linear,
-	                              left top, right bottom,
-	                              from (alpha (@progressbar_pattern_color, 0.00)),
-	                              color-stop (0.49, alpha (@progressbar_pattern_color, 0.00)),
-	                              color-stop (0.50, alpha (@progressbar_pattern_color, 0.10)),
-	                              to (alpha (@progressbar_pattern_color, 0.10)));
 }
 
 .progressbar row:selected,
@@ -323,19 +321,16 @@ GtkProgressBar {
 }
 
 .progressbar.vertical {
-	background-image: -gtk-gradient (linear,
-	                  left top,
-	                  right top,
-	                  from (@progressbar_gradient_a),
-	                  color-stop (0.50, @progressbar_gradient_b),
-	                  color-stop (0.50, @progressbar_gradient_c),
-	                  to (@progressbar_gradient_d));
-	-adwaita-progressbar-pattern: -gtk-gradient (linear,
-	                              left bottom, right top,
-	                              from (alpha (@progressbar_pattern_color, 0.00)),
-	                              color-stop (0.49, alpha (@progressbar_pattern_color, 0.00)),
-	                              color-stop (0.50, alpha (@progressbar_pattern_color, 0.10)),
-	                              to (alpha (@progressbar_pattern_color, 0.10)));
+	background-image: linear-gradient(to right,
+	                      alpha (@progressbar_gradient_a, 0.7),
+	                      alpha (@progressbar_gradient_b, 0.7) 50%,
+	                      alpha (@progressbar_gradient_c, 0.7) 50%,
+	                      alpha (@progressbar_gradient_d, 0.7)),
+	                  repeating-linear-gradient(45deg,
+	                      alpha (@progressbar_pattern_color, 0.0),
+	                      alpha (@progressbar_pattern_color, 0.0) 12px,
+	                      alpha (@progressbar_pattern_color, 0.5) 12px,
+	                      alpha (@progressbar_pattern_color, 0.5) 24px);
 }
 
 /* for progressbars in cell renderers */

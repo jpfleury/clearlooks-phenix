@@ -250,7 +250,9 @@
 @define-color progressbar_border_color mix(#6a6a6a, shade(@core_color_a, 0.75), 0.80);
 @define-color progressbar_pattern_color @progressbar_border_color;
 
-@define-color progressbar_gradient_a @core_color_a;
+@define-color progressbar_bg_color @core_color_a;
+
+@define-color progressbar_gradient_a @progressbar_bg_color;
 @define-color progressbar_gradient_b @menubar_menuitem_hover_gradient_b;
 @define-color progressbar_gradient_c @menubar_menuitem_hover_gradient_c;
 @define-color progressbar_gradient_d @menubar_menuitem_hover_gradient_d;
