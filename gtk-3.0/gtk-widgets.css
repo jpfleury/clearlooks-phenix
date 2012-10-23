@@ -245,7 +245,6 @@ GtkTreeView.separator,
 
 GtkColorSwatch,
 GtkColorSwatch:selected {
-	engine: unico;
 	border-width: 1px;
 	border-style: solid;
 	border-radius: 3px;
@@ -257,13 +256,10 @@ GtkColorSwatch:selected {
 GtkColorSwatch:hover,
 GtkColorSwatch:selected:hover {
 	border-color: @color_swatch_hover_border_color;
-	-unico-inner-stroke-width: 1;
-	-unico-inner-stroke-color: white;
 }
 
 GtkColorChooserWidget #add-color-button:hover,
 GtkColorChooserWidget #add-color-button:selected:hover {
-	-unico-inner-stroke-width: 0;
 }
 
 .color-active-badge,
