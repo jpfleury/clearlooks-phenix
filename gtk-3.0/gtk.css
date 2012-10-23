@@ -1,6 +1,6 @@
 /**************************************************************
  * Color declarations. This section can be modified to create *
- * color variants of the theme.                              *
+ * color variants of the theme.                               *
  **************************************************************/
 
 /****************
@@ -148,6 +148,12 @@
 @define-color entry_insensitive_inner_border_color shade(@core_color_b, 0.97);
 @define-color entry_insensitive_bg_color @insensitive_bg_color;
 
+/************
+ * expander *
+ ************/
+
+@define-color expander_row_selected_border_color mix(#acacac, shade(@core_color_a, 0.75), 0.54);
+
 /*****************
  * fallback mode *
  *****************/
@@ -221,15 +227,13 @@
 
 /* active tab */
 
-@define-color notebook_active_tab_border_gradient_a @menubar_menuitem_hover_border_color;
-@define-color notebook_active_tab_border_gradient_b @border_color;
+@define-color notebook_active_tab_border @menubar_menuitem_hover_border_color;
 
 @define-color notebook_active_tab_strip_gradient_a shade(@core_color_a, 1.05);
 @define-color notebook_active_tab_strip_gradient_b shade(@core_color_a, 0.94);
 @define-color notebook_active_tab_strip_border_bottom_color mix(#727272, shade(@core_color_a, 0.84), 0.65);
 @define-color notebook_active_tab_gradient_a shade(@core_color_b, 1.07);
 @define-color notebook_active_tab_gradient_b @notebook_bg_color;
-@define-color notebook_active_tab_border_bottom_color @border_color;
 
 /*******
  * osd *
@@ -246,7 +250,9 @@
 @define-color progressbar_border_color mix(#6a6a6a, shade(@core_color_a, 0.75), 0.80);
 @define-color progressbar_pattern_color @progressbar_border_color;
 
-@define-color progressbar_gradient_a @core_color_a;
+@define-color progressbar_bg_color @core_color_a;
+
+@define-color progressbar_gradient_a @progressbar_bg_color;
 @define-color progressbar_gradient_b @menubar_menuitem_hover_gradient_b;
 @define-color progressbar_gradient_c @menubar_menuitem_hover_gradient_c;
 @define-color progressbar_gradient_d @menubar_menuitem_hover_gradient_d;
@@ -257,11 +263,6 @@
 
 @define-color scale_mark_color @border_color;
 @define-color scale_progressbar_bg_color @scale_trough_highlight_gradient_b;
-
-@define-color scale_trough_outer_border_top_color shade(@core_color_b, 0.94);
-@define-color scale_trough_outer_border_right_color shade(@core_color_b, 1.06);
-@define-color scale_trough_outer_border_bottom_color @scale_trough_outer_border_right_color;
-@define-color scale_trough_outer_border_left_color @scale_trough_outer_border_top_color;
 
 @define-color scale_trough_border_color shade(@core_color_b, 0.56);
 @define-color scale_trough_bg_color shade(@core_color_b, 0.90);
@@ -298,21 +299,22 @@
 
 /* slider */
 
-@define-color scrollbar_slider_gradient_a shade(@core_color_a, 0.99);
+@define-color scrollbar_slider_bg_color shade(@core_color_a, 0.99);
+
+@define-color scrollbar_slider_gradient_a @scrollbar_slider_bg_color;
 @define-color scrollbar_slider_gradient_b shade(@core_color_a, 0.96);
 @define-color scrollbar_slider_gradient_c shade(@core_color_a, 0.92);
 @define-color scrollbar_slider_gradient_d shade(@core_color_a, 0.88);
 
 @define-color scrollbar_slider_border_color mix(#000000, shade(@core_color_a, 0.72), 0.95);
 
-@define-color scrollbar_slider_inner_border_gradient_a shade(@core_color_a, 1.04);
-@define-color scrollbar_slider_inner_border_gradient_b shade(@core_color_a, 1.01);
-@define-color scrollbar_slider_inner_border_gradient_c shade(@core_color_a, 0.98);
-@define-color scrollbar_slider_inner_border_gradient_d shade(@core_color_a, 0.95);
+@define-color scrollbar_slider_inner_border_color shade(@core_color_a, 1.04);
 
 /* slider hover */
 
-@define-color scrollbar_slider_hover_gradient_a shade(@core_color_a, 1.03);
+@define-color scrollbar_slider_hover_bg_color shade(@core_color_a, 1.03);
+
+@define-color scrollbar_slider_hover_gradient_a @scrollbar_slider_hover_bg_color;
 @define-color scrollbar_slider_hover_gradient_b shade(@core_color_a, 0.99);
 @define-color scrollbar_slider_hover_gradient_c shade(@core_color_a, 0.96);
 @define-color scrollbar_slider_hover_gradient_d shade(@core_color_a, 0.91);
@@ -363,7 +365,9 @@
 
 @define-color switch_slider_border_color @progressbar_border_color;
 
-@define-color switch_slider_gradient_a @scrollbar_slider_gradient_a;
+@define-color switch_slider_bg_color @scrollbar_slider_bg_color;
+
+@define-color switch_slider_gradient_a @switch_slider_bg_color;
 @define-color switch_slider_gradient_b @scrollbar_slider_gradient_b;
 @define-color switch_slider_gradient_c @scrollbar_slider_gradient_c;
 @define-color switch_slider_gradient_d @scrollbar_slider_gradient_d;
@@ -377,7 +381,9 @@
 
 /* insensitive */
 
-@define-color switch_slider_insensitive_gradient_a @button_insensitive_gradient_a;
+@define-color switch_slider_insensitive_bg_color @button_insensitive_gradient_a;
+
+@define-color switch_slider_insensitive_gradient_a @switch_slider_insensitive_bg_color;
 @define-color switch_slider_insensitive_gradient_b @button_insensitive_gradient_b;
 @define-color switch_slider_insensitive_gradient_c @button_insensitive_gradient_c;
 @define-color switch_slider_insensitive_gradient_d @button_insensitive_gradient_d;
@@ -400,12 +406,6 @@
  ***********/
 
 @define-color theme_tooltip_border_color shade(@theme_tooltip_bg_color, 0.60);
-
-/*************
- * tree view *
- *************/
-
-@define-color gtktreeview_focus_border_color @focus_border_color;
 
 /**********
  * trough *
