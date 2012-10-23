@@ -17,7 +17,7 @@
 	-GtkScrolledWindow-scrollbars-within-bevel: 0;
 
 	-GtkToolItemGroup-expander-size: 11;
-	-GtkExpander-expander-size: 11;
+	-GtkExpander-expander-size: 14;
 
 	-GtkMenu-horizontal-padding: 0;
 	-GtkMenu-vertical-padding: 0;
@@ -1664,14 +1664,13 @@ row:selected:focus,
 	border-width: 1px;
 	border-radius: 2px;
 	border-color: shade (@internal_element_color, 1.40);
-	color: @internal_element_color;
+	color: @theme_base_color;
 	background-color: @theme_base_color;
 }
 
 .expander:active {
 	border-style: solid;
 	border-width: 1px;
-	color: @internal_element_color;
 	border-color: shade (@internal_element_color, 1.40);
 	background-color: @theme_base_color;
 }
