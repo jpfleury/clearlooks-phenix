@@ -36,9 +36,9 @@ The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clear
 
 - Download the appropriate version according to your situation:
 
-	- for GTK 3.0 and 3.2: [download Clearlooks-Phenix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/1.0.1/);
+	- for GTK 3.0 and 3.2: [download Clearlooks-Phenix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/v1/);
 	
-	- for GTK 3.4 and newer: [download Clearlooks-Phenix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/).
+	- for GTK 3.4 and newer: [download Clearlooks-Phenix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/v2/).
 
 	To find your GTK version:
 	
@@ -135,8 +135,6 @@ If after installing or updating Ubuntu, the window buttons are on the left side,
 	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
 
 ## Development
-
-Last version: 2.0.10 (2012-07-06)
 
 Git is used for revision control. [Repository can be browsed online or cloned.][git]
 
