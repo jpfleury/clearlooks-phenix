@@ -1432,7 +1432,7 @@ GtkSwitch.slider:insensitive {
 
 GtkTreeView {
 	-GtkTreeView-vertical-separator: 0;
-	-GtkTreeView-expander-size: 17;
+	-GtkTreeView-expander-size: 13;
 	-GtkWidget-focus-line-width: 1;
 	-GtkWidget-focus-padding: 1;
 }
