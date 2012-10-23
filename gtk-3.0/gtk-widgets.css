@@ -287,7 +287,6 @@ GtkColorEditor GtkColorSwatch.color-dark:hover {
  * Progress bar *
  ****************/
 
-/* FIXME: this should really be a margin... */
 GtkProgressBar {
 	padding: 0 0 1px 0;
 }
@@ -763,7 +762,7 @@ GtkComboBox.combobox-entry .button:insensitive {
 
 .notebook tab .button GtkImage {
 	border-radius: 3px;
-	color: mix(@theme_fg_color, @theme_base_color, 0.6); /* FIXME*/
+	color: mix(@theme_fg_color, @theme_base_color, 0.6);
 	border-style: solid;
 	border-color: transparent;
 	border-width: 1px;
@@ -771,18 +770,18 @@ GtkComboBox.combobox-entry .button:insensitive {
 }
 
 .notebook tab .button GtkImage:hover {
-	color: @theme_fg_color; /* FIXME*/
-	border-color: alpha(black, 0.1); /* FIXME*/
+	color: @theme_fg_color;
+	border-color: alpha(black, 0.1);
 }
 
 .notebook tab .button GtkImage:active,
 .notebook tab .button GtkImage:active:hover {
-	background-color: alpha(black, 0.08); /* FIXME*/
-	color:  @theme_base_color; /* FIXME*/
+	background-color: alpha(black, 0.08);
+	color:  @theme_base_color;
 	border-color: alpha(black, 0.27)
 	              alpha(black, 0.13)
 	              alpha(black, 0.13)
-	              alpha(black, 0.13); /* FIXME*/
+	              alpha(black, 0.13);
 }
 
 /**************
@@ -1413,7 +1412,7 @@ GtkSwitch.trough:active {
 GtkSwitch.trough:insensitive {
 	background-image: none;
 	background-color: @insensitive_bg_color;
-	color: mix(@insensitive_bg_color, @insensitive_fg_color, 0.5); /* FIXME */
+	color: mix(@insensitive_bg_color, @insensitive_fg_color, 0.5);
 }
 
 GtkSwitch.slider {
