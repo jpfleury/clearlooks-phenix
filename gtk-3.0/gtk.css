@@ -148,6 +148,12 @@
 @define-color entry_insensitive_inner_border_color shade(@core_color_b, 0.97);
 @define-color entry_insensitive_bg_color @insensitive_bg_color;
 
+/************
+ * expander *
+ ************/
+
+@define-color expander_row_selected_border_color mix(#acacac, shade(@core_color_a, 0.75), 0.54);
+
 /*****************
  * fallback mode *
  *****************/
@@ -398,12 +404,6 @@
  ***********/
 
 @define-color theme_tooltip_border_color shade(@theme_tooltip_bg_color, 0.60);
-
-/*************
- * tree view *
- *************/
-
-@define-color gtktreeview_focus_border_color @focus_border_color;
 
 /**********
  * trough *

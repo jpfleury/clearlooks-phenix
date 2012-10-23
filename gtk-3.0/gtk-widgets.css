@@ -31,9 +31,6 @@
 
 	-GtkWidget-focus-padding: 2;
 	-GtkWidget-focus-line-width: 1;
-	-adwaita-focus-border-color: @focus_border_color;
-	-adwaita-focus-border-radius: 2;
-	-adwaita-focus-border-dashes: 1;
 	-GtkWindow-resize-grip-width: 11;
 	-GtkWindow-resize-grip-height: 11;
 }
@@ -1443,9 +1440,6 @@ GtkTreeView {
 	-GtkTreeView-expander-size: 17;
 	-GtkWidget-focus-line-width: 1;
 	-GtkWidget-focus-padding: 1;
-	-adwaita-focus-border-radius: 2;
-	-adwaita-focus-border-dashes: 1;
-	-adwaita-focus-border-color: @gtktreeview_focus_border_color;
 }
 
 GtkTreeView.dnd {
@@ -1467,12 +1461,6 @@ GtkIconView.view.cell:selected:focus {
 	background-color: @theme_selected_bg_color;
 	color: @theme_selected_fg_color;
 	border-radius: 4px;
-	/* FIXME: this probably needs to be better;
-	 * see https://bugzilla.gnome.org/show_bug.cgi?id=644157
-	 */
-	-adwaita-focus-border-color: @focus_border_color;
-	-adwaita-focus-border-radius: 3;
-	-adwaita-focus-border-dashes: 0;
 }
 
 .view,
@@ -1494,7 +1482,6 @@ GtkTreeView:insensitive {
 }
 
 GtkTreeView:selected:focus {
-	-adwaita-focus-border-color: mix(@theme_selected_fg_color, @theme_selected_bg_color, 0.30);
 }
 
 column-header.button,
@@ -1622,7 +1609,7 @@ row:selected:focus,
 .expander row:selected:focus {
 	border-style: solid;
 	border-width: 1px;
-	border-color: @focus_border_color;
+	border-color: @expander_row_selected_border_color;
 	color: @expander_row_selected_color;
 	background-color: @theme_selected_bg_color;
 }
