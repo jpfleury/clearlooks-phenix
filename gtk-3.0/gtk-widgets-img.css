@@ -2,6 +2,30 @@
  * Assets *
  **********/
 
+/*************
+ * GtkSwitch *
+ *************/
+
+GtkSwitch.slider {
+	background-image: linear-gradient(to bottom,
+	                      alpha (@switch_slider_gradient_a, 0.5),
+	                      alpha (@switch_slider_gradient_b, 0.5) 50%,
+	                      alpha (@switch_slider_gradient_c, 0.5) 50%,
+	                      alpha (@switch_slider_gradient_d, 0.5)),
+	                  url("img/slider-horz-grip.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+GtkSwitch.slider:insensitive {
+	background-image: linear-gradient(to bottom,
+	                      alpha (@switch_slider_insensitive_gradient_a, 0.8),
+	                      alpha (@switch_slider_insensitive_gradient_b, 0.8) 50%,
+	                      alpha (@switch_slider_insensitive_gradient_c, 0.8) 50%,
+	                      alpha (@switch_slider_insensitive_gradient_d, 0.8)),
+	                  url("img/slider-horz-grip.png");
+}
+
 /***************
  * Resize grip *
  ***************/
@@ -14,14 +38,53 @@
  * Scrollbar *
  ***************/
 
-.scrollbar.vertical {
-	engine: unico;
-	-unico-centroid-texture: url("img/slider-vert-grip.png");
+.scrollbar.slider {
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
-.scrollbar.horizontal {
-	engine: unico;
-	-unico-centroid-texture: url("img/slider-horz-grip.png");
+.scrollbar.slider.vertical {
+	background-image: linear-gradient(to right,
+	                      alpha (@scrollbar_slider_inner_border_color, 0.5),
+	                      alpha (@scrollbar_slider_gradient_a, 0.5) 1px,
+	                      alpha (@scrollbar_slider_gradient_b, 0.5) 50%,
+	                      alpha (@scrollbar_slider_gradient_c, 0.5) 50%,
+	                      alpha (@scrollbar_slider_gradient_d, 0.5) 95%,
+	                      alpha (@scrollbar_slider_inner_border_color, 0.5)),
+	                  url("img/slider-vert-grip.png");
+}
+
+.scrollbar.slider.horizontal {
+	background-image: linear-gradient(to bottom,
+	                      alpha (@scrollbar_slider_inner_border_color, 0.5),
+	                      alpha (@scrollbar_slider_gradient_a, 0.5) 1px,
+	                      alpha (@scrollbar_slider_gradient_b, 0.5) 50%,
+	                      alpha (@scrollbar_slider_gradient_c, 0.5) 50%,
+	                      alpha (@scrollbar_slider_gradient_d, 0.5) 95%,
+	                      alpha (@scrollbar_slider_inner_border_color, 0.5)),
+	                  url("img/slider-horz-grip.png");
+}
+
+.scrollbar.slider.vertical:hover {
+	background-image: linear-gradient(to right,
+	                      alpha (@scrollbar_slider_inner_border_color, 0.5),
+	                      alpha (@scrollbar_slider_hover_gradient_a, 0.5) 1px,
+	                      alpha (@scrollbar_slider_hover_gradient_b, 0.5) 50%,
+	                      alpha (@scrollbar_slider_hover_gradient_c, 0.5) 50%,
+	                      alpha (@scrollbar_slider_hover_gradient_d, 0.5) 95%,
+	                      alpha (@scrollbar_slider_inner_border_color, 0.5)),
+	                  url("img/slider-vert-grip.png");
+}
+
+.scrollbar.slider.horizontal:hover {
+	background-image: linear-gradient(to bottom,
+	                      alpha (@scrollbar_slider_inner_border_color, 0.5),
+	                      alpha (@scrollbar_slider_hover_gradient_a, 0.5) 1px,
+	                      alpha (@scrollbar_slider_hover_gradient_b, 0.5) 50%,
+	                      alpha (@scrollbar_slider_hover_gradient_c, 0.5) 50%,
+	                      alpha (@scrollbar_slider_hover_gradient_d, 0.5) 95%,
+	                      alpha (@scrollbar_slider_inner_border_color, 0.5)),
+	                  url("img/slider-horz-grip.png");
 }
 
 /*************************

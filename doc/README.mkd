@@ -18,6 +18,8 @@ Here are screenshots (if applicable, click to download the original image):
 
 - Requirements for Clearlooks-Phenix 2: packages `gtk2-engines` (if GTK2 applications are used), `gnome-themes-standard` and `gtk3-engines-unico`.
 
+- Requirements for Clearlooks-Phenix 3: package `gtk2-engines` (if GTK2 applications are used).
+
 ## Installation
 
 ### Arch Linux
@@ -36,10 +38,12 @@ The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clear
 
 - Download the appropriate version according to your situation:
 
-	- for GTK 3.0 and 3.2: [download Clearlooks-Phenix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/1.0.1/);
+	- for GTK 3.0 and 3.2: [download Clearlooks-Phenix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/v1/);
 	
-	- for GTK 3.4 and newer: [download Clearlooks-Phenix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/).
-
+	- for GTK 3.4: [download Clearlooks-Phenix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/v2/).
+	
+	- for GTK 3.6 and newer: [download Clearlooks-Phenix 3](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/).
+	
 	To find your GTK version:
 	
 	- you can check in your package manager the version of the package `libgtk-3-0`;
@@ -124,9 +128,11 @@ and uncomment it, as follows:
 
 To get a custom color, change the color directly in the file `gtk-3.0/applications.css`.
 
-### Button border color
+### Color variants
 
-Button borders come from SVG files. [Inkscape](http://inkscape.org/) can be used to modify them. For more details, see the screencast [Utiliser Inkscape pour modifier la couleur de la bordure d'un bouton](http://www.youtube.com/watch?v=DWJHDS5hQsw).
+It's very easy to create color variants of the GTK3 theme. Only a few color declarations must be changed in the first section of the file `gtk-3.0/gtk.css`.
+
+About button borders, they come from SVG files. [Inkscape](http://inkscape.org/) can be used to modify them. For more details, see the screencast [Utiliser Inkscape pour modifier la couleur de la bordure d'un bouton](http://www.youtube.com/watch?v=DWJHDS5hQsw).
 
 ### Window buttons layout
 
@@ -136,7 +142,7 @@ If after installing or updating Ubuntu, the window buttons are on the left side,
 
 ## Development
 
-Last version: 2.0.10 (2012-07-06)
+Last version: 3.0 (2012-10-23)
 
 Git is used for revision control. [Repository can be browsed online or cloned.][git]
 
