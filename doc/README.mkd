@@ -22,21 +22,15 @@ Here are screenshots (if applicable, click to download the original image):
 
 ## Installation
 
-### Arch Linux
+Regardless of the installation method chosen, the theme must be selected once the installation is complete:
 
-An [AUR package](https://aur.archlinux.org/packages.php?ID=60380) is maintained by eworm.
-
-### Debian
-
-The package [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlooks-phenix-theme) can be installed on Debian unstable.
-
-### Ubuntu
-
-The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlooks-phenix-theme) can be installed on Ubuntu 12.10 and newer.
+	- on Gnome: with [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), by setting *Theme > Window theme* and *Theme > GTK+ theme*;
+	
+	- on Xfce: by going to *Settings > Appearence > Style* in the main menu for the GTK theme, and to *Settings > Window Manager > Style* for the Xfwm4 theme.
 
 ### Manually
 
-**Manual installation ensures you have the latest version of the theme.**
+**Manual installation ensures you get the latest version of the theme.** See below for other installation methods.
 
 - Download the appropriate version according to your situation:
 
@@ -68,11 +62,21 @@ The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clear
 	
 	- `/usr/share/themes/` for all users, including style for programs ran with root privileges (e.g. Synaptic).
 
-- Then, choose Clearlooks-Phenix theme:
+### Arch Linux
 
-	- on Gnome: with [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), by setting *Theme > Window theme* and *Theme > GTK+ theme*;
-	
-	- on Xfce: by going to *Settings > Appearence > Style* in the main menu for the GTK theme, and to *Settings > Window Manager > Style* for the Xfwm4 theme.
+An [AUR package](https://aur.archlinux.org/packages.php?ID=60380) is maintained by eworm.
+
+### Debian
+
+The package [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlooks-phenix-theme) can be installed on Debian unstable.
+
+### Ubuntu
+
+The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlooks-phenix-theme) can be installed on Ubuntu 12.10 and newer.
+
+#### PPA du site NoobsLab
+
+NoobsLab provides a PPA allowing to install Clearlooks-Phenix. See the article [Install Clearlooks-Phenix GTK theme on Ubuntu 12.10/12.04/11.10/Linux Mint](http://www.noobslab.com/2012/10/install-clearlooks-phenix-gtk-theme-on.html) for more details.
 
 ## Configuration
 
