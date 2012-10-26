@@ -150,7 +150,7 @@ If after installing or updating Ubuntu, the window buttons are on the left side,
 
 ## Development
 
-Last version: 3.0 (2012-10-23)
+Last version: 3.0.1 (2012-10-26)
 
 Git is used for revision control. [Repository can be browsed online or cloned.][git]
 
