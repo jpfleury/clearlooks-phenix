@@ -101,6 +101,11 @@ PanelApplet .menu .menuitem *:selected {
 	color: @theme_selected_fg_color;
 }
 
+PanelWidget > .button
+{
+	padding: 0;
+}
+
 WnckPager {
 	background-color: @pager_bg_color;
 }
