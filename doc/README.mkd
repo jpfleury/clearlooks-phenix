@@ -32,9 +32,11 @@ The package [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlook
 
 ### Ubuntu
 
-The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlooks-phenix-theme) can be installed on Ubuntu 12.10.
+The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlooks-phenix-theme) can be installed on Ubuntu 12.10 and newer.
 
 ### Manually
+
+**Manual installation ensures you have the latest version of the theme.**
 
 - Download the appropriate version according to your situation:
 
@@ -46,9 +48,15 @@ The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clear
 	
 	To find your GTK version:
 	
-	- you can check in your package manager the version of the package `libgtk-3-0`;
+	- You can check in your package manager the version of the package `libgtk-3-0`.
 	
-	- if you use a Gnome application (gedit, Nautilus, File Roller, Evince, etc.), you can open it and go to *Help > About*. For example, if you have gedit 3.2.3, then you have GTK 3.2.
+	- If you use a Gnome application (gedit, Nautilus, File Roller, Evince, etc.), you can open it and go to *Help > About*. For example, if you have gedit 3.2.3, then you have GTK 3.2.
+	
+	- If you use Ubuntu, here's a correspondence between its versions and those of GTK (for a default installation of Ubuntu):
+	
+		- Ubuntu 11.10: GTK 3.2
+		- Ubuntu 12.04: GTK 3.4
+		- Ubuntu 12.10: GTK 3.6
 
 - Extract the archive.
 
