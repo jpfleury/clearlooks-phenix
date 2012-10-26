@@ -93,6 +93,14 @@ PanelApplet .button:hover:active {
 	border-image: url("img/border-gnome-panel-button.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
 }
 
+PanelApplet .menu .menuitem *:active {
+	color: @theme_text_color;
+}
+
+PanelApplet .menu .menuitem *:selected {
+	color: @theme_selected_fg_color;
+}
+
 WnckPager {
 	background-color: @pager_bg_color;
 }
