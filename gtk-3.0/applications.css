@@ -93,6 +93,11 @@ PanelApplet .button:hover:active {
 	border-image: url("img/border-gnome-panel-button.svg") 3 / 3 repeat;
 }
 
+PanelWidget > .button
+{
+	padding: 0;
+}
+
 WnckPager {
 	background-color: @pager_bg_color;
 }
