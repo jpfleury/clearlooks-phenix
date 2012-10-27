@@ -24,9 +24,15 @@ Voici quelques captures d'écran (s'il y a lieu, cliquer pour télécharger l'im
 
 Peu importe la méthode d'installation choisie, le thème devra être sélectionné une fois l'installation terminée:
 
-	- sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), en paramétrant *Theme > Window theme* et *Theme > GTK+ theme*;
+	- Sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), en paramétrant *Theme > Window theme* et *Theme > GTK+ theme*, ou en console:
 	
-	- sous Xfce: en allant dans *Paramètres > Apparence > Style* du menu principal pour le thème GTK, et dans *Paramètres > Gestionnaire de fenêtres > Style* pour le thème de Xfwm4.
+		dconf write /org/gnome/desktop/wm/preferences/theme \'Clearlooks-Phenix\'
+		dconf write /org/gnome/desktop/interface/gtk-theme \'Clearlooks-Phenix\'
+	
+	- Sous Xfce: en allant dans *Paramètres > Apparence > Style* du menu principal pour le thème GTK, et dans *Paramètres > Gestionnaire de fenêtres > Style* pour le thème de Xfwm4, ou en console:
+	
+		xfconf-query -s Clearlooks-Phenix -c xfwm4 -p /general/theme
+		xfconf-query -s Clearlooks-Phenix -c xsettings -p /Net/ThemeName
 
 ### Manuellement
 
