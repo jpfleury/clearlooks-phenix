@@ -320,8 +320,8 @@ GtkProgressBar {
 	                              left top, right bottom,
 	                              from (alpha (@progressbar_pattern_color, 0.00)),
 	                              color-stop (0.49, alpha (@progressbar_pattern_color, 0.00)),
-	                              color-stop (0.50, alpha (@progressbar_pattern_color, 0.10)),
-	                              to (alpha (@progressbar_pattern_color, 0.10)));
+	                              color-stop (0.50, alpha (@progressbar_pattern_color, 0.20)),
+	                              to (alpha (@progressbar_pattern_color, 0.20)));
 }
 
 .progressbar row:selected,
@@ -341,8 +341,8 @@ GtkProgressBar {
 	                              left bottom, right top,
 	                              from (alpha (@progressbar_pattern_color, 0.00)),
 	                              color-stop (0.49, alpha (@progressbar_pattern_color, 0.00)),
-	                              color-stop (0.50, alpha (@progressbar_pattern_color, 0.10)),
-	                              to (alpha (@progressbar_pattern_color, 0.10)));
+	                              color-stop (0.50, alpha (@progressbar_pattern_color, 0.20)),
+	                              to (alpha (@progressbar_pattern_color, 0.20)));
 }
 
 /* for progressbars in cell renderers */
