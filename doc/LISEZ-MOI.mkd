@@ -146,7 +146,7 @@ Pour avoir une couleur personnalisée, modifier la couleur directement dans le f
 
 Il est très facile de créer une variante de couleurs du thème GTK3. Seulement quelques déclarations de couleur doivent être modifiées dans la première section du fichier `gtk-3.0/gtk.css`.
 
-En ce qui concerne la bordure des boutons, elle provient de fichiers au format SVG, qui peuvent être modifiés avec [Inkscape](http://inkscape.org/). Pour plus de détails, voir la capture vidéo [Utiliser Inkscape pour modifier la couleur de la bordure d'un bouton](http://www.youtube.com/watch?v=DWJHDS5hQsw).
+En ce qui concerne la bordure des boutons, elle provient de fichiers au format SVG, qui peuvent être modifiés avec [Inkscape](http://inkscape.org/). Pour plus de détails, voir la capture vidéo [Utiliser Inkscape pour modifier la couleur de la bordure d'un bouton](http://www.youtube.com/watch?v=DWJHDS5hQsw). Un script Bash est également inclus avec Clearlooks-Phénix dans le but d'accélérer la modification des images SVG et PNG. Pour l'utiliser, copier le fichier `doc/images.sh.txt`, le coller à la racine du thème en cours de développement (au même emplacement que le fichier `index.theme`) et le renommer `images.sh`. Ensuite, il ne reste plus qu'à modifier les variables dans la première section du fichier selon la variante de couleurs voulue et à lancer le script dans une console (`bash images.sh`). Le paquet `imagemagick` est requis.
 
 ### Emplacement des boutons de fenêtres
 
