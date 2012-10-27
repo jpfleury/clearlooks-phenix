@@ -35,6 +35,10 @@ svgBfCouleurBordure=4b6e99
 svgBfCouleurBordureInterne=c8daef
 svgBfCouleurBordureExterneBas=ffffff
 
+# Fichier «border-focused-ptb.svg».
+svgBfCouleurBordure=869bb7
+svgBfCouleurBordureInterne=cccccc
+
 # Fichier «border-focused-switch.svg».
 svgBfScouleurBordure=4b6e99
 svgBfScouleurBordureExterneBas=ffffff
@@ -121,6 +125,11 @@ cp "$svgBf" "$dossierSauv"
 sed -i "s/#4b6e99;/#$svgBfCouleurBordure;/" "$svgBf"
 sed -i "s/#c8daef;/#$svgBfCouleurBordureInterne;/" "$svgBf"
 sed -i "s/#ffffff;/#$svgBfCouleurBordureExterneBas;/" "$svgBf"
+
+svgBf=gtk-3.0/img/border-focused-ptb.svg
+cp "$svgBf" "$dossierSauv"
+sed -i "s/#869bb7;/#$svgBfCouleurBordure;/" "$svgBf"
+sed -i "s/#cccccc;/#$svgBfCouleurBordureInterne;/" "$svgBf"
 
 svgBfS=gtk-3.0/img/border-focused-switch.svg
 cp "$svgBfS" "$dossierSauv"
