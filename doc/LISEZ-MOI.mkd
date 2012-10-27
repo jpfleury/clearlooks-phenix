@@ -22,21 +22,21 @@ Voici quelques captures d'écran (s'il y a lieu, cliquer pour télécharger l'im
 
 ## Installation
 
-### Arch Linux
+Peu importe la méthode d'installation choisie, le thème devra être sélectionné une fois l'installation terminée:
 
-Un [paquet AUR](https://aur.archlinux.org/packages.php?ID=60380) est maintenu par eworm.
-
-### Debian
-
-Le paquet [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlooks-phenix-theme) peut être installé sous Debian unstable.
-
-### Ubuntu
-
-Le paquet [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlooks-phenix-theme) peut être installé sous Ubuntu 12.10 ou toute version ultérieure.
+	- Sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), en paramétrant *Theme > Window theme* et *Theme > GTK+ theme*, ou en console:
+	
+		dconf write /org/gnome/desktop/wm/preferences/theme \'Clearlooks-Phenix\'
+		dconf write /org/gnome/desktop/interface/gtk-theme \'Clearlooks-Phenix\'
+	
+	- Sous Xfce: en allant dans *Paramètres > Apparence > Style* du menu principal pour le thème GTK, et dans *Paramètres > Gestionnaire de fenêtres > Style* pour le thème de Xfwm4, ou en console:
+	
+		xfconf-query -s Clearlooks-Phenix -c xfwm4 -p /general/theme
+		xfconf-query -s Clearlooks-Phenix -c xsettings -p /Net/ThemeName
 
 ### Manuellement
 
-**L'installation manuelle assure d'avoir un thème à jour.**
+**La méthode manuelle assure d'installer la dernière version du thème.** Voir plus bas pour d'autres méthodes d'installation.
 
 - Télécharger l'archive de la version correspondant à votre situation:
 
@@ -68,13 +68,31 @@ Le paquet [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlo
 	
 	- `/usr/share/themes/` pour tous les utilisateurs, incluant le style des logiciels lancés en tant que superutilisateur (par exemple Synaptic).
 
-- Ensuite, choisir le thème Clearlooks-Phénix:
+### Arch Linux
 
-	- sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), en paramétrant *Theme > Window theme* et *Theme > GTK+ theme*;
-	
-	- sous Xfce: en allant dans *Paramètres > Apparence > Style* du menu principal pour le thème GTK, et dans *Paramètres > Gestionnaire de fenêtres > Style* pour le thème de Xfwm4.
+Un [paquet AUR](https://aur.archlinux.org/packages.php?ID=60380) est maintenu par eworm.
+
+### Debian
+
+Le paquet [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlooks-phenix-theme) peut être installé sous Debian unstable.
+
+### Gentoo
+
+Le `ebuild` suivant peut être utilisé:
+
+	http://bbgentoo.ilb.ru/repos/bbgentoo/bbgentoo_overlay/tags/current/x11-themes/clearlooks-phenix/clearlooks-phenix-2.0.10.ebuild
+
+### Ubuntu
+
+Le paquet [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlooks-phenix-theme) peut être installé sous Ubuntu 12.10 ou toute version ultérieure.
+
+#### PPA du site NoobsLab
+
+Le site NoobsLab fournit un PPA permettant d'installer Clearlooks-Phénix. Voir l'article [Install Clearlooks-Phenix GTK theme on Ubuntu 12.10/12.04/11.10/Linux Mint](http://www.noobslab.com/2012/10/install-clearlooks-phenix-gtk-theme-on.html) pour plus de détails.
 
 ## Configuration
+
+### Sélection du thème
 
 ### Arrière-plan
 
@@ -140,7 +158,7 @@ Pour avoir une couleur personnalisée, modifier la couleur directement dans le f
 
 Il est très facile de créer une variante de couleurs du thème GTK3. Seulement quelques déclarations de couleur doivent être modifiées dans la première section du fichier `gtk-3.0/gtk.css`.
 
-En ce qui concerne la bordure des boutons, elle provient de fichiers au format SVG, qui peuvent être modifiés avec [Inkscape](http://inkscape.org/). Pour plus de détails, voir la capture vidéo [Utiliser Inkscape pour modifier la couleur de la bordure d'un bouton](http://www.youtube.com/watch?v=DWJHDS5hQsw).
+En ce qui concerne la bordure des boutons, elle provient de fichiers au format SVG, qui peuvent être modifiés avec [Inkscape](http://inkscape.org/). Pour plus de détails, voir la capture vidéo [Utiliser Inkscape pour modifier la couleur de la bordure d'un bouton](http://www.youtube.com/watch?v=DWJHDS5hQsw). Un script Bash est également inclus avec Clearlooks-Phénix dans le but d'accélérer la modification des images SVG et PNG. Pour l'utiliser, copier le fichier `doc/images.sh.txt`, le coller à la racine du thème en cours de développement (au même emplacement que le fichier `index.theme`) et le renommer `images.sh`. Ensuite, il ne reste plus qu'à modifier les variables dans la première section du fichier selon la variante de couleurs voulue et à lancer le script dans une console (`bash images.sh`). Le paquet `imagemagick` est requis.
 
 ### Emplacement des boutons de fenêtres
 
@@ -150,7 +168,7 @@ Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtre
 
 ## Développement
 
-Dernière version: 3.0.1 (2012-10-26)
+Dernière version: 3.0.2 (2012-10-27)
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
 

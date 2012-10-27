@@ -1,0 +1,156 @@
+#!/bin/bash
+
+# Script d'assistance à la modification des images du thème Clearlooks-Phénix
+# dans le but de créer une variante de couleurs.
+#
+# Placer ce script à la racine du thème (c'est-à-dire au même emplacement que
+# le fichier «index.theme»), personnaliser la section «Variables à modifier.»
+# et lancer le script dans une console:
+#
+# $ bash images.sh
+
+########################################################################
+##
+## Variables à modifier.
+##
+########################################################################
+
+# Variation de la luminosité, de la saturation et de la teinte des fichiers PNG
+# pour le style «hover». Pour plus de détails, voir le lien suivant:
+# <http://www.imagemagick.org/script/command-line-options.php#modulate>.
+pngVariation=100,100,300
+
+# Liste des fichiers SVG à modifier.
+
+# Fichier «border.svg».
+svgBcouleurBordure=918e8c
+svgBcouleurBordureExterneBas=ffffff
+
+# Fichier «border-error.svg».
+svgBeCouleurBordure=9b3636
+svgBeCouleurBordureExterneBas=ffffff
+
+# Fichier «border-focused.svg».
+svgBfCouleurBordure=4b6e99
+svgBfCouleurBordureInterne=c8daef
+svgBfCouleurBordureExterneBas=ffffff
+
+# Fichier «border-focused-ptb.svg».
+svgBfCouleurBordure=869bb7
+svgBfCouleurBordureInterne=cccccc
+
+# Fichier «border-focused-switch.svg».
+svgBfScouleurBordure=4b6e99
+svgBfScouleurBordureExterneBas=ffffff
+
+# Fichier «border-gnome-panel-button.svg».
+svgBgPbCouleurBordure=918e8c
+
+# Fichier «border-inline-button.svg».
+svgBiBcouleurBordure=918e8c
+svgBiBcouleurBordureExterneBas=ffffff
+
+# Fichier «border-insensitive.svg».
+svgBiCouleurBordure=a9a5a2
+svgBiCouleurBordureExterneBas=ffffff
+
+########################################################################
+##
+## Code principal. Ne pas modifier.
+##
+########################################################################
+
+# Dépendances.
+
+if ! type convert > /dev/null 2>&1; then
+	echo "Veuillez installer le paquet «imagemagick»" >&2
+	exit 1
+fi
+
+if ! type sed > /dev/null 2>&1; then
+	echo "Veuillez installer le paquet «sed»" >&2
+	exit 1
+fi
+
+# Dossier de sauvegarde des images originales.
+
+dossierSauv=gtk-3.0/img/orig
+i=0
+
+while ! mkdir "$dossierSauv" > /dev/null 2>&1 && ((i < 100)); do
+	((++i))
+	dossierSauv=gtk-3.0/img/orig-$i
+done
+
+if [[ ! -d $dossierSauv ]]; then
+	echo "Impossible de créer un dossier de sauvegarde pour y déplacer les images originales." >&2
+	exit 1
+fi
+
+# Modification des images PNG.
+
+png=(
+	gtk-3.0/img/checkbox-checked-hover.png
+	gtk-3.0/img/checkbox-mixed-hover.png
+	gtk-3.0/img/checkbox-unchecked-hover.png
+	gtk-3.0/img/menuitem-checkbox-checked-hover.png
+	gtk-3.0/img/menuitem-checkbox-hover.png
+	gtk-3.0/img/menuitem-checkbox-mixed-hover.png
+	gtk-3.0/img/menuitem-radio-checked-hover.png
+	gtk-3.0/img/menuitem-radio-hover.png
+	gtk-3.0/img/radio-checked-hover.png
+	gtk-3.0/img/radio-mixed-hover.png
+	gtk-3.0/img/radio-unchecked-hover.png
+)
+
+for image in "${png[@]}"; do
+	mv "$image" "$dossierSauv"
+	convert "$dossierSauv/${image##*/}" -modulate "$pngVariation" "$image"
+done
+
+# Modification des images SVG.
+
+svgB=gtk-3.0/img/border.svg
+cp "$svgB" "$dossierSauv"
+sed -i "s/#918e8c;/#$svgBcouleurBordure;/" "$svgB"
+sed -i "s/#ffffff;/#$svgBcouleurBordureExterneBas;/" "$svgB"
+
+svgBe=gtk-3.0/img/border-error.svg
+cp "$svgBe" "$dossierSauv"
+sed -i "s/#9b3636;/#$svgBeCouleurBordure;/" "$svgBe"
+sed -i "s/#ffffff;/#$svgBeCouleurBordureExterneBas;/" "$svgBe"
+
+svgBf=gtk-3.0/img/border-focused.svg
+cp "$svgBf" "$dossierSauv"
+sed -i "s/#4b6e99;/#$svgBfCouleurBordure;/" "$svgBf"
+sed -i "s/#c8daef;/#$svgBfCouleurBordureInterne;/" "$svgBf"
+sed -i "s/#ffffff;/#$svgBfCouleurBordureExterneBas;/" "$svgBf"
+
+svgBf=gtk-3.0/img/border-focused-ptb.svg
+cp "$svgBf" "$dossierSauv"
+sed -i "s/#869bb7;/#$svgBfCouleurBordure;/" "$svgBf"
+sed -i "s/#cccccc;/#$svgBfCouleurBordureInterne;/" "$svgBf"
+
+svgBfS=gtk-3.0/img/border-focused-switch.svg
+cp "$svgBfS" "$dossierSauv"
+sed -i "s/#4b6e99;/#$svgBfScouleurBordure;/" "$svgBfS"
+sed -i "s/#ffffff;/#$svgBfScouleurBordureExterneBas;/" "$svgBfS"
+
+svgBgPb=gtk-3.0/img/border-gnome-panel-button.svg
+cp "$svgBgPb" "$dossierSauv"
+sed -i "s/#918e8c;/#$svgBgPbCouleurBordure;/" "$svgBgPb"
+
+svgBiB=gtk-3.0/img/border-inline-button.svg
+cp "$svgBiB" "$dossierSauv"
+sed -i "s/#918e8c;/#$svgBiBcouleurBordure;/" "$svgBiB"
+sed -i "s/#ffffff;/#$svgBiBcouleurBordureExterneBas;/" "$svgBiB"
+
+svgBi=gtk-3.0/img/border-insensitive.svg
+cp "$svgBi" "$dossierSauv"
+sed -i "s/#a9a5a2;/#$svgBiCouleurBordure;/" "$svgBi"
+sed -i "s/#ffffff;/#$svgBiCouleurBordureExterneBas;/" "$svgBi"
+
+# Fin du script.
+
+echo "Les images ont été modifiées."
+

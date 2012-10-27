@@ -352,7 +352,7 @@ GtkProgressBar {
 GtkScale {
 	-GtkScale-slider-length: 21;
 	-GtkRange-slider-width: 13;
-	-GtkRange-trough-border: 3;
+	-GtkRange-trough-border: 4;
 }
 
 GtkScale.slider,
@@ -520,9 +520,9 @@ GtkComboBox.combobox-entry .button {
 	border-radius: 0 2px 2px 0;
 }
 
-/***********
+/*********************
  * Button background *
- ***********/
+ *********************/
 
 /* Button background */
 .button,
@@ -532,7 +532,7 @@ GtkComboBox.combobox-entry .button {
 .toolbar .button.raised:focus,
 .toolbar .raised .button:focus,
 .toolbar GtkComboBox .button,
-.toolbar GtkComboBox .button:focus
+.toolbar GtkComboBox .button:focus,
 GtkComboBox.combobox-entry .button,
 .primary-toolbar GtkComboBox.combobox-entry .button,
 GtkColorChooserWidget #add-color-button {
@@ -632,6 +632,24 @@ GtkComboBox.combobox-entry .button:insensitive {
 	                  @button_active_insensitive_gradient_e 50%,
 	                  @button_active_insensitive_gradient_f);
 	background-color: transparent;
+}
+
+/* Focused primary toolbar button background */
+.primary-toolbar .button:focus {
+	background-image: linear-gradient(to bottom,
+	                  @pt_button_focus_gradient_a,
+	                  @pt_button_focus_gradient_b 50%,
+	                  @pt_button_focus_gradient_c 50%,
+	                  @pt_button_focus_gradient_d);
+}
+
+/* Focused + prelit primary toolbar button background */
+.primary-toolbar .button:focus:hover {
+	background-image: linear-gradient(to bottom,
+	                  @pt_button_focus_hover_gradient_a,
+	                  @pt_button_focus_hover_gradient_b 50%,
+	                  @pt_button_focus_hover_gradient_c 50%,
+	                  @pt_button_focus_hover_gradient_d);
 }
 
 /*****************
