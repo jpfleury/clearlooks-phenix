@@ -70,6 +70,12 @@ Un [paquet AUR](https://aur.archlinux.org/packages.php?ID=60380) est maintenu pa
 
 Le paquet [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlooks-phenix-theme) peut être installé sous Debian unstable.
 
+### Gentoo
+
+Le `ebuild` suivant peut être utilisé:
+
+	http://bbgentoo.ilb.ru/repos/bbgentoo/bbgentoo_overlay/tags/current/x11-themes/clearlooks-phenix/clearlooks-phenix-2.0.10.ebuild
+
 ### Ubuntu
 
 Le paquet [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlooks-phenix-theme) peut être installé sous Ubuntu 12.10 ou toute version ultérieure.
