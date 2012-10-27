@@ -532,7 +532,7 @@ GtkComboBox.combobox-entry .button {
 .toolbar .button.raised:focus,
 .toolbar .raised .button:focus,
 .toolbar GtkComboBox .button,
-.toolbar GtkComboBox .button:focus
+.toolbar GtkComboBox .button:focus,
 GtkComboBox.combobox-entry .button,
 .primary-toolbar GtkComboBox.combobox-entry .button,
 GtkColorChooserWidget #add-color-button {
