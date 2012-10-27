@@ -352,7 +352,7 @@ GtkProgressBar {
 GtkScale {
 	-GtkScale-slider-length: 21;
 	-GtkRange-slider-width: 13;
-	-GtkRange-trough-border: 3;
+	-GtkRange-trough-border: 4;
 }
 
 GtkScale.slider,
