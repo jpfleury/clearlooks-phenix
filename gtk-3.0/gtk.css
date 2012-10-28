@@ -218,7 +218,7 @@
 
 /* hover */
 
-@define-color menubar_menuitem_hover_color @theme_base_color;
+@define-color menubar_menuitem_hover_color @theme_selected_fg_color;
 @define-color menubar_menuitem_hover_border_color shade(@core_color_a, 0.58);
 
 @define-color menubar_menuitem_hover_gradient_a @core_color_a;
