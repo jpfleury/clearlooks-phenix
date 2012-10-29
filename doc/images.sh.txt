@@ -72,18 +72,18 @@ if ! type sed > /dev/null 2>&1; then
 	exit 1
 fi
 
-# Dossier de sauvegarde des images originales.
+# Dossier de sauvegarde des images modifiées.
 
-dossierSauv=gtk-3.0/img/orig
+dossierSauv=gtk-3.0/img/modif
 i=0
 
 while ! mkdir "$dossierSauv" > /dev/null 2>&1 && ((i < 100)); do
 	((++i))
-	dossierSauv=gtk-3.0/img/orig-$i
+	dossierSauv=gtk-3.0/img/modif-$i
 done
 
 if [[ ! -d $dossierSauv ]]; then
-	echo "Impossible de créer un dossier de sauvegarde pour y déplacer les images originales." >&2
+	echo "Impossible de créer un dossier de sauvegarde pour y déplacer les images modifiées." >&2
 	exit 1
 fi
 
@@ -104,51 +104,50 @@ png=(
 )
 
 for image in "${png[@]}"; do
-	mv "$image" "$dossierSauv"
-	convert "$dossierSauv/${image##*/}" -modulate "$pngVariation" "$image"
+	convert "$image" -modulate "$pngVariation" "$dossierSauv/${image##*/}"
 done
 
 # Modification des images SVG.
 
 svgB=gtk-3.0/img/border.svg
 cp "$svgB" "$dossierSauv"
-sed -i "s/#918e8c;/#$svgBcouleurBordure;/" "$svgB"
-sed -i "s/#ffffff;/#$svgBcouleurBordureExterneBas;/" "$svgB"
+sed -i "s/#918e8c;/#$svgBcouleurBordure;/" "$dossierSauv/${svgB##*/}"
+sed -i "s/#ffffff;/#$svgBcouleurBordureExterneBas;/" "$dossierSauv/${svgB##*/}"
 
 svgBe=gtk-3.0/img/border-error.svg
 cp "$svgBe" "$dossierSauv"
-sed -i "s/#9b3636;/#$svgBeCouleurBordure;/" "$svgBe"
-sed -i "s/#ffffff;/#$svgBeCouleurBordureExterneBas;/" "$svgBe"
+sed -i "s/#9b3636;/#$svgBeCouleurBordure;/" "$dossierSauv/${svgBe##*/}"
+sed -i "s/#ffffff;/#$svgBeCouleurBordureExterneBas;/" "$dossierSauv/${svgBe##*/}"
 
 svgBf=gtk-3.0/img/border-focused.svg
 cp "$svgBf" "$dossierSauv"
-sed -i "s/#4b6e99;/#$svgBfCouleurBordure;/" "$svgBf"
-sed -i "s/#c8daef;/#$svgBfCouleurBordureInterne;/" "$svgBf"
-sed -i "s/#ffffff;/#$svgBfCouleurBordureExterneBas;/" "$svgBf"
+sed -i "s/#4b6e99;/#$svgBfCouleurBordure;/" "$dossierSauv/${svgBf##*/}"
+sed -i "s/#c8daef;/#$svgBfCouleurBordureInterne;/" "$dossierSauv/${svgBf##*/}"
+sed -i "s/#ffffff;/#$svgBfCouleurBordureExterneBas;/" "$dossierSauv/${svgBf##*/}"
 
-svgBf=gtk-3.0/img/border-focused-ptb.svg
-cp "$svgBf" "$dossierSauv"
-sed -i "s/#869bb7;/#$svgBfCouleurBordure;/" "$svgBf"
-sed -i "s/#cccccc;/#$svgBfCouleurBordureInterne;/" "$svgBf"
+svgBfPtb=gtk-3.0/img/border-focused-ptb.svg
+cp "$svgBfPtb" "$dossierSauv"
+sed -i "s/#869bb7;/#$svgBfCouleurBordure;/" "$dossierSauv/${svgBfPtb##*/}"
+sed -i "s/#cccccc;/#$svgBfCouleurBordureInterne;/" "$dossierSauv/${svgBfPtb##*/}"
 
 svgBfS=gtk-3.0/img/border-focused-switch.svg
 cp "$svgBfS" "$dossierSauv"
-sed -i "s/#4b6e99;/#$svgBfScouleurBordure;/" "$svgBfS"
-sed -i "s/#ffffff;/#$svgBfScouleurBordureExterneBas;/" "$svgBfS"
+sed -i "s/#4b6e99;/#$svgBfScouleurBordure;/" "$dossierSauv/${svgBfS##*/}"
+sed -i "s/#ffffff;/#$svgBfScouleurBordureExterneBas;/" "$dossierSauv/${svgBfS##*/}"
 
 svgBgPb=gtk-3.0/img/border-gnome-panel-button.svg
 cp "$svgBgPb" "$dossierSauv"
-sed -i "s/#918e8c;/#$svgBgPbCouleurBordure;/" "$svgBgPb"
+sed -i "s/#918e8c;/#$svgBgPbCouleurBordure;/" "$dossierSauv/${svgBgPb##*/}"
 
 svgBiB=gtk-3.0/img/border-inline-button.svg
 cp "$svgBiB" "$dossierSauv"
-sed -i "s/#918e8c;/#$svgBiBcouleurBordure;/" "$svgBiB"
-sed -i "s/#ffffff;/#$svgBiBcouleurBordureExterneBas;/" "$svgBiB"
+sed -i "s/#918e8c;/#$svgBiBcouleurBordure;/" "$dossierSauv/${svgBiB##*/}"
+sed -i "s/#ffffff;/#$svgBiBcouleurBordureExterneBas;/" "$dossierSauv/${svgBiB##*/}"
 
 svgBi=gtk-3.0/img/border-insensitive.svg
 cp "$svgBi" "$dossierSauv"
-sed -i "s/#a9a5a2;/#$svgBiCouleurBordure;/" "$svgBi"
-sed -i "s/#ffffff;/#$svgBiCouleurBordureExterneBas;/" "$svgBi"
+sed -i "s/#a9a5a2;/#$svgBiCouleurBordure;/" "$dossierSauv/${svgBi##*/}"
+sed -i "s/#ffffff;/#$svgBiCouleurBordureExterneBas;/" "$dossierSauv/${svgBi##*/}"
 
 # Fin du script.
 
