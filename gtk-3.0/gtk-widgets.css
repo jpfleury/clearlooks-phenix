@@ -64,13 +64,10 @@ GtkWindow {
 }
 
 GtkImage,
-GtkImage:insensitive {
-	background-color: transparent;
-}
-
+GtkImage:insensitive,
 GtkLabel,
 GtkLabel:insensitive {
-	background-color: @theme_bg_color;
+	background-color: transparent;
 }
 
 /************
