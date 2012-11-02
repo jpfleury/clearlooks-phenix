@@ -80,6 +80,14 @@ PanelApplet {
 	color: @os_chrome_fg_color;
 }
 
+.gnome-panel-menu-bar,
+PanelApplet > GtkMenuBar.menubar,
+PanelApplet > GtkMenuBar.menubar.menuitem,
+PanelMenuBar.menubar,
+PanelMenuBar.menubar.menuitem {
+	-PanelMenuBar-icon-visible: true;
+}
+
 PanelAppletFrame {
 	background-color: @applet_frame_bg_color;
 	background-image: none;
