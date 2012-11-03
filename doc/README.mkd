@@ -84,11 +84,7 @@ The following `ebuild` can be used:
 
 ### Ubuntu
 
-The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlooks-phenix-theme) can be installed on Ubuntu 12.10 and newer.
-
-#### PPA du site NoobsLab
-
-NoobsLab provides a PPA allowing to install Clearlooks-Phenix. See the article [Install Clearlooks-Phenix GTK theme on Ubuntu 12.10/12.04/11.10/Linux Mint](http://www.noobslab.com/2012/10/install-clearlooks-phenix-gtk-theme-on.html) for more details.
+The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlooks-phenix-theme) can be installed on Ubuntu 12.10 and newer. However, this package is not up-to-date, and the [PPA maintained by Andrew Shadura](https://launchpad.net/~andrewshadoura/+archive/clearlooks-phenix) can be used instead.
 
 ## Configuration
 
