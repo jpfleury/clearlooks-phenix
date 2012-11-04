@@ -24,13 +24,13 @@ Voici quelques captures d'écran (s'il y a lieu, cliquer pour télécharger l'im
 
 Peu importe la méthode d'installation choisie, le thème devra être sélectionné une fois l'installation terminée:
 
-	- Sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), en paramétrant *Theme > Window theme* et *Theme > GTK+ theme*, ou en console:
-	
+- Sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), en paramétrant *Theme > Window theme* et *Theme > GTK+ theme*, ou en console:
+
 		dconf write /org/gnome/desktop/wm/preferences/theme \'Clearlooks-Phenix\'
 		dconf write /org/gnome/desktop/interface/gtk-theme \'Clearlooks-Phenix\'
-	
-	- Sous Xfce: en allant dans *Paramètres > Apparence > Style* du menu principal pour le thème GTK, et dans *Paramètres > Gestionnaire de fenêtres > Style* pour le thème de Xfwm4, ou en console:
-	
+
+- Sous Xfce: en allant dans *Paramètres > Apparence > Style* du menu principal pour le thème GTK, et dans *Paramètres > Gestionnaire de fenêtres > Style* pour le thème de Xfwm4, ou en console:
+
 		xfconf-query -s Clearlooks-Phenix -c xfwm4 -p /general/theme
 		xfconf-query -s Clearlooks-Phenix -c xsettings -p /Net/ThemeName
 
@@ -87,8 +87,6 @@ Le `ebuild` suivant peut être utilisé:
 Le paquet [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlooks-phenix-theme) peut être installé sous Ubuntu 12.10 ou toute version ultérieure. Cependant, le paquet n'est pas à jour, et le [PPA d'Andrew Shadura](https://launchpad.net/~andrewshadoura/+archive/clearlooks-phenix) peut être utilisé à la place.
 
 ## Configuration
-
-### Sélection du thème
 
 ### Arrière-plan
 
@@ -164,7 +162,7 @@ Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtre
 
 ## Développement
 
-Dernière version: 3.0.6 (2012-11-02)
+Dernière version: 3.0.7 (2012-11-03)
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
 

@@ -24,13 +24,13 @@ Here are screenshots (if applicable, click to download the original image):
 
 Regardless of the installation method chosen, the theme must be selected once the installation is complete:
 
-	- On Gnome: with [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), by setting *Theme > Window theme* and *Theme > GTK+ theme*, or in a terminal:
-	
+- On Gnome: with [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), by setting *Theme > Window theme* and *Theme > GTK+ theme*, or in a terminal:
+
 		dconf write /org/gnome/desktop/wm/preferences/theme \'Clearlooks-Phenix\'
 		dconf write /org/gnome/desktop/interface/gtk-theme \'Clearlooks-Phenix\'
-	
-	- On Xfce: by going to *Settings > Appearence > Style* in the main menu for the GTK theme, and to *Settings > Window Manager > Style* for the Xfwm4 theme, or in a terminal:
-	
+
+- On Xfce: by going to *Settings > Appearence > Style* in the main menu for the GTK theme, and to *Settings > Window Manager > Style* for the Xfwm4 theme, or in a terminal:
+
 		xfconf-query -s Clearlooks-Phenix -c xfwm4 -p /general/theme
 		xfconf-query -s Clearlooks-Phenix -c xsettings -p /Net/ThemeName
 
@@ -162,7 +162,7 @@ If after installing or updating Ubuntu, the window buttons are on the left side,
 
 ## Development
 
-Last version: 3.0.6 (2012-11-02)
+Last version: 3.0.7 (2012-11-03)
 
 Git is used for revision control. [Repository can be browsed online or cloned.][git]
 
