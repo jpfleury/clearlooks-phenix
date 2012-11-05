@@ -58,7 +58,7 @@ The wallpaper is a slightly modified version of an [image from volvoguy](http://
 
 ## Development
 
-Last version: 1.0.2 (2012-11-03)
+Last version: 1.0.3 (2012-11-04)
 
 Git is used for revision control. [Repository can be browsed online or cloned.][git]
 
