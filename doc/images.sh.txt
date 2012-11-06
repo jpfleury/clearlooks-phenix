@@ -20,7 +20,25 @@
 # <http://www.imagemagick.org/script/command-line-options.php#modulate>.
 pngVariation=100,100,300
 
-# Liste des fichiers SVG à modifier.
+# Liste des fichiers SVG.
+
+# Fichiers SVG à modifier pour une variante de couleurs.
+
+# Fichier «border-focused.svg».
+svgBfCouleurBordure=4b6e99
+svgBfCouleurBordureInterne=c8daef
+svgBfCouleurBordureExterneBas=ffffff
+
+# Fichier «border-focused-ptb.svg».
+svgBfPtbCouleurBordure=869bb7
+svgBfPtbCouleurBordureInterne=cccccc
+
+# Fichier «border-focused-switch.svg».
+svgBfScouleurBordure=4b6e99
+svgBfScouleurBordureExterneBas=ffffff
+
+# Fichiers SVG ne devant pas nécessairement être modifiés pour une variante
+# de couleurs.
 
 # Fichier «border.svg».
 svgBcouleurBordure=918e8c
@@ -29,19 +47,6 @@ svgBcouleurBordureExterneBas=ffffff
 # Fichier «border-error.svg».
 svgBeCouleurBordure=9b3636
 svgBeCouleurBordureExterneBas=ffffff
-
-# Fichier «border-focused.svg».
-svgBfCouleurBordure=4b6e99
-svgBfCouleurBordureInterne=c8daef
-svgBfCouleurBordureExterneBas=ffffff
-
-# Fichier «border-focused-ptb.svg».
-svgBfCouleurBordure=869bb7
-svgBfCouleurBordureInterne=cccccc
-
-# Fichier «border-focused-switch.svg».
-svgBfScouleurBordure=4b6e99
-svgBfScouleurBordureExterneBas=ffffff
 
 # Fichier «border-gnome-panel-button.svg».
 svgBgPbCouleurBordure=918e8c
@@ -109,45 +114,92 @@ done
 
 # Modification des images SVG.
 
-svgB=gtk-3.0/img/border.svg
-cp "$svgB" "$dossierSauv"
-sed -i "s/#918e8c;/#$svgBcouleurBordure;/" "$dossierSauv/${svgB##*/}"
-sed -i "s/#ffffff;/#$svgBcouleurBordureExterneBas;/" "$dossierSauv/${svgB##*/}"
+couleur1=918e8c
+couleur2=ffffff
 
-svgBe=gtk-3.0/img/border-error.svg
-cp "$svgBe" "$dossierSauv"
-sed -i "s/#9b3636;/#$svgBeCouleurBordure;/" "$dossierSauv/${svgBe##*/}"
-sed -i "s/#ffffff;/#$svgBeCouleurBordureExterneBas;/" "$dossierSauv/${svgBe##*/}"
+if [[ $svgBcouleurBordure != $couleur1 \
+   || $svgBcouleurBordureExterneBas != $couleur2 ]]; then
+	fichier=gtk-3.0/img/border.svg
+	cp "$fichier" "$dossierSauv"
+	sed -i "s/#$couleur1;/#$svgBcouleurBordure;/" "$dossierSauv/${fichier##*/}"
+	sed -i "s/#$couleur2;/#$svgBcouleurBordureExterneBas;/" "$dossierSauv/${fichier##*/}"
+fi
 
-svgBf=gtk-3.0/img/border-focused.svg
-cp "$svgBf" "$dossierSauv"
-sed -i "s/#4b6e99;/#$svgBfCouleurBordure;/" "$dossierSauv/${svgBf##*/}"
-sed -i "s/#c8daef;/#$svgBfCouleurBordureInterne;/" "$dossierSauv/${svgBf##*/}"
-sed -i "s/#ffffff;/#$svgBfCouleurBordureExterneBas;/" "$dossierSauv/${svgBf##*/}"
+couleur1=9b3636
+couleur2=ffffff
 
-svgBfPtb=gtk-3.0/img/border-focused-ptb.svg
-cp "$svgBfPtb" "$dossierSauv"
-sed -i "s/#869bb7;/#$svgBfCouleurBordure;/" "$dossierSauv/${svgBfPtb##*/}"
-sed -i "s/#cccccc;/#$svgBfCouleurBordureInterne;/" "$dossierSauv/${svgBfPtb##*/}"
+if [[ $svgBeCouleurBordure != $couleur1 \
+   || $svgBeCouleurBordureExterneBas != $couleur2 ]]; then
+	fichier=gtk-3.0/img/border-error.svg
+	cp "$fichier" "$dossierSauv"
+	sed -i "s/#$couleur1;/#$svgBeCouleurBordure;/" "$dossierSauv/${fichier##*/}"
+	sed -i "s/#$couleur2;/#$svgBeCouleurBordureExterneBas;/" "$dossierSauv/${fichier##*/}"
+fi
 
-svgBfS=gtk-3.0/img/border-focused-switch.svg
-cp "$svgBfS" "$dossierSauv"
-sed -i "s/#4b6e99;/#$svgBfScouleurBordure;/" "$dossierSauv/${svgBfS##*/}"
-sed -i "s/#ffffff;/#$svgBfScouleurBordureExterneBas;/" "$dossierSauv/${svgBfS##*/}"
+couleur1=4b6e99
+couleur2=c8daef
+couleur3=ffffff
 
-svgBgPb=gtk-3.0/img/border-gnome-panel-button.svg
-cp "$svgBgPb" "$dossierSauv"
-sed -i "s/#918e8c;/#$svgBgPbCouleurBordure;/" "$dossierSauv/${svgBgPb##*/}"
+if [[ $svgBfCouleurBordure != $couleur1 || $svgBfCouleurBordureInterne != $couleur2 \
+   || $svgBfCouleurBordureExterneBas != $couleur3 ]]; then
+	fichier=gtk-3.0/img/border-focused.svg
+	cp "$fichier" "$dossierSauv"
+	sed -i "s/#$couleur1;/#$svgBfCouleurBordure;/" "$dossierSauv/${fichier##*/}"
+	sed -i "s/#$couleur2;/#$svgBfCouleurBordureInterne;/" "$dossierSauv/${fichier##*/}"
+	sed -i "s/#$couleur3;/#$svgBfCouleurBordureExterneBas;/" "$dossierSauv/${fichier##*/}"
+fi
 
-svgBiB=gtk-3.0/img/border-inline-button.svg
-cp "$svgBiB" "$dossierSauv"
-sed -i "s/#918e8c;/#$svgBiBcouleurBordure;/" "$dossierSauv/${svgBiB##*/}"
-sed -i "s/#ffffff;/#$svgBiBcouleurBordureExterneBas;/" "$dossierSauv/${svgBiB##*/}"
+couleur1=869bb7
+couleur2=cccccc
 
-svgBi=gtk-3.0/img/border-insensitive.svg
-cp "$svgBi" "$dossierSauv"
-sed -i "s/#a9a5a2;/#$svgBiCouleurBordure;/" "$dossierSauv/${svgBi##*/}"
-sed -i "s/#ffffff;/#$svgBiCouleurBordureExterneBas;/" "$dossierSauv/${svgBi##*/}"
+if [[ $svgBfPtbCouleurBordure != $couleur1 \
+   || $svgBfPtbCouleurBordureInterne != $couleur2 ]]; then
+	fichier=gtk-3.0/img/border-focused-ptb.svg
+	cp "$fichier" "$dossierSauv"
+	sed -i "s/#$couleur1;/#$svgBfPtbCouleurBordure;/" "$dossierSauv/${fichier##*/}"
+	sed -i "s/#$couleur2;/#$svgBfPtbCouleurBordureInterne;/" "$dossierSauv/${fichier##*/}"
+fi
+
+couleur1=4b6e99
+couleur2=ffffff
+
+if [[ $svgBfScouleurBordure != $couleur1 \
+   || $svgBfScouleurBordureExterneBas != $couleur2 ]]; then
+	fichier=gtk-3.0/img/border-focused-switch.svg
+	cp "$fichier" "$dossierSauv"
+	sed -i "s/#$couleur1;/#$svgBfScouleurBordure;/" "$dossierSauv/${fichier##*/}"
+	sed -i "s/#$couleur2;/#$svgBfScouleurBordureExterneBas;/" "$dossierSauv/${fichier##*/}"
+fi
+
+couleur1=918e8c
+
+if [[ $svgBgPbCouleurBordure != $couleur1 ]]; then
+	fichier=gtk-3.0/img/border-gnome-panel-button.svg
+	cp "$fichier" "$dossierSauv"
+	sed -i "s/#$couleur1;/#$svgBgPbCouleurBordure;/" "$dossierSauv/${fichier##*/}"
+fi
+
+couleur1=918e8c
+couleur2=ffffff
+
+if [[ $svgBiBcouleurBordure != $couleur1 \
+   || $svgBiBcouleurBordureExterneBas != $couleur2 ]]; then
+	fichier=gtk-3.0/img/border-inline-button.svg
+	cp "$fichier" "$dossierSauv"
+	sed -i "s/#$couleur1;/#$svgBiBcouleurBordure;/" "$dossierSauv/${fichier##*/}"
+	sed -i "s/#$couleur2;/#$svgBiBcouleurBordureExterneBas;/" "$dossierSauv/${fichier##*/}"
+fi
+
+couleur1=a9a5a2
+couleur2=ffffff
+
+if [[ $svgBiCouleurBordure != $couleur1 \
+   || $svgBiCouleurBordureExterneBas != $couleur2 ]]; then
+	fichier=gtk-3.0/img/border-insensitive.svg
+	cp "$fichier" "$dossierSauv"
+	sed -i "s/#$couleur1;/#$svgBiCouleurBordure;/" "$dossierSauv/${fichier##*/}"
+	sed -i "s/#$couleur2;/#$svgBiCouleurBordureExterneBas;/" "$dossierSauv/${fichier##*/}"
+fi
 
 # Fin du script.
 
