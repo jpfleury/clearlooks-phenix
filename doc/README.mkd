@@ -8,7 +8,7 @@ Here are screenshots (if applicable, click to download the original image):
 
 <a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png" alt="Screenshot of a Gnome 3 desktop (fallback mode) with the Clearlooks-Phenix theme" width="658" height="493" /></a>
 
-<img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png" alt="Screenshot of gedit 3 with the Clearlooks-Phenix theme" width="658" height="529" />
+<img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png" alt="Screenshot of gedit 3 with the Clearlooks-Phenix theme" width="659" height="537" />
 
 <a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple3.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple3.png" alt="Screenshot of GTK+ Widget Factory with the Clearlooks-Phenix theme" width="658" height="435" /></a>
 
