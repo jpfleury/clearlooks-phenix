@@ -8,7 +8,7 @@ Here are screenshots (if applicable, click to download the original image):
 
 <a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png" alt="Screenshot of a Gnome 3 desktop (fallback mode) with the Clearlooks-Phenix theme" width="658" height="493" /></a>
 
-<img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png" alt="Screenshot of gedit 3 with the Clearlooks-Phenix theme" width="658" height="529" />
+<img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png" alt="Screenshot of gedit 3 with the Clearlooks-Phenix theme" width="659" height="537" />
 
 <a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple3.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple3.png" alt="Screenshot of GTK+ Widget Factory with the Clearlooks-Phenix theme" width="658" height="435" /></a>
 
@@ -150,7 +150,7 @@ To get a custom color, change the color directly in the file `gtk-3.0/applicatio
 
 ### Color variants
 
-From Clearlooks-Phenix 3, it's very easy to create color variants of the GTK3 theme. Only a few color declarations must be changed in the file `gtk-3.0/gtk-variant.css`.
+From Clearlooks-Phenix 2, it's very easy to create color variants of the GTK3 theme. Only a few color declarations must be changed in the file `gtk-3.0/gtk-variant.css`.
 
 About button borders, they come from SVG files. [Inkscape](http://inkscape.org/) can be used to modify them. For more details, see the screencast [Utiliser Inkscape pour modifier la couleur de la bordure d'un bouton](http://www.youtube.com/watch?v=DWJHDS5hQsw). A Bash script is also shipped with Clearlooks-Phenix to assist the modification of SVG and PNG files. To use it, copy the file `doc/images.sh.txt`, paste it in the root folder of your development theme (same emplacement as the file `index.theme`) and rename it `images.sh`. Then, change variables in the first section of the file according to the color variant desired and run the script in a terminal (`bash images.sh`). The package `imagemagick` is required.
 
@@ -162,7 +162,7 @@ If after installing or updating Ubuntu, the window buttons are on the left side,
 
 ## Development
 
-Last version: 3.0.9 (2012-11-09)
+Last version: 3.0.10 (2012-11-09)
 
 Git is used for revision control. [Repository can be browsed online or cloned.][git]
 
