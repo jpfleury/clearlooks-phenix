@@ -150,7 +150,7 @@ To get a custom color, change the color directly in the file `gtk-3.0/applicatio
 
 ### Color variants
 
-From Clearlooks-Phenix 3, it's very easy to create color variants of the GTK3 theme. Only a few color declarations must be changed in the file `gtk-3.0/gtk-variant.css`.
+From Clearlooks-Phenix 2, it's very easy to create color variants of the GTK3 theme. Only a few color declarations must be changed in the file `gtk-3.0/gtk-variant.css`.
 
 About button borders, they come from SVG files. [Inkscape](http://inkscape.org/) can be used to modify them. For more details, see the screencast [Utiliser Inkscape pour modifier la couleur de la bordure d'un bouton](http://www.youtube.com/watch?v=DWJHDS5hQsw). A Bash script is also shipped with Clearlooks-Phenix to assist the modification of SVG and PNG files. To use it, copy the file `doc/images.sh.txt`, paste it in the root folder of your development theme (same emplacement as the file `index.theme`) and rename it `images.sh`. Then, change variables in the first section of the file according to the color variant desired and run the script in a terminal (`bash images.sh`). The package `imagemagick` is required.
 
