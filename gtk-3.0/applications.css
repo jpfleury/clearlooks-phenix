@@ -121,7 +121,9 @@ GsmFailWhaleDialog {
 	color: @os_chrome_fg_color;
 }
 
-/* gnome-terminal */
+/******************
+ * gnome-terminal *
+ ******************/
 
 TerminalScreen {
 	background-color: @theme_base_color;
@@ -136,7 +138,9 @@ FmStandardView ExoIconView {
 	background-color: @theme_base_color;
 }
 
-/* Unity */
+/*********
+ * Unity *
+ *********/
 
 UnityPanelWidget,
 .unity-panel {
