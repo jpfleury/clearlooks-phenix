@@ -561,6 +561,8 @@ GtkColorChooserWidget #add-color-button {
 GtkComboBox.combobox-entry .button:active,
 .primary-toolbar .button:active,
 .primary-toolbar .button:active:hover,
+.primary-toolbar .button:focus:active,
+.primary-toolbar .button:focus:active:hover,
 .inline-toolbar .button:active,
 .inline-toolbar .button:active:hover {
 	background-image: linear-gradient(to bottom,
