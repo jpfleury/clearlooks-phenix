@@ -50,8 +50,6 @@ Regardless of the installation method chosen, the theme must be selected once th
 	
 	- You can check in your package manager the version of the package `libgtk-3-0`.
 	
-	- If you use a Gnome application (gedit, Nautilus, File Roller, Evince, etc.), you can open it and go to *Help > About*. For example, if you have gedit 3.2.3, then you have GTK 3.2.
-	
 	- If you use Ubuntu, here's a correspondence between its versions and those of GTK (for a default installation of Ubuntu):
 	
 		- Ubuntu 11.10: GTK 3.2
