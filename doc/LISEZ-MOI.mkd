@@ -50,8 +50,6 @@ Peu importe la méthode d'installation choisie, le thème devra être sélection
 	
 	- Vous pouvez vérifier dans votre gestionnaire de paquets la version du paquet `libgtk-3-0`.
 	
-	- Si vous avez un logiciel de Gnome (gedit, Nautilus, File Roller, Evince, etc.) sur votre système, vous pouvez ouvrir ce dernier et visiter l'élément de menu *Aide > À propos*. Par exemple, si votre version de gedit est 3.2.3, alors vous avez GTK 3.2.
-	
 	- Si vous utilisez Ubuntu, voici une correspondance entre ses versions et celles de GTK (pour une installation par défaut d'Ubuntu):
 	
 		- Ubuntu 11.10: GTK 3.2
@@ -162,7 +160,7 @@ Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtre
 
 ## Développement
 
-Dernière version: 3.0.12 (2012-11-25)
+Dernière version: 3.0.13 (2012-12-09)
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
 
