@@ -76,9 +76,9 @@ Le paquet [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlooks-
 
 ### Gentoo
 
-Le `ebuild` suivant peut être utilisé:
+Voir le paquet suivant:
 
-	http://bbgentoo.ilb.ru/repos/bbgentoo/bbgentoo_overlay/tags/current/x11-themes/clearlooks-phenix/clearlooks-phenix-2.0.10.ebuild
+	http://packages.gentoo.org/package/x11-themes/clearlooks-phenix
 
 ### Ubuntu
 
