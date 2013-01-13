@@ -76,9 +76,9 @@ Le paquet [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlooks-
 
 ### Gentoo
 
-Le `ebuild` suivant peut être utilisé:
+Voir le paquet suivant:
 
-	http://bbgentoo.ilb.ru/repos/bbgentoo/bbgentoo_overlay/tags/current/x11-themes/clearlooks-phenix/clearlooks-phenix-2.0.10.ebuild
+	http://packages.gentoo.org/package/x11-themes/clearlooks-phenix
 
 ### Ubuntu
 
@@ -160,7 +160,7 @@ Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtre
 
 ## Développement
 
-Dernière version: 3.0.13 (2012-12-09)
+Dernière version: 3.0.14 (2013-01-13)
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
 
