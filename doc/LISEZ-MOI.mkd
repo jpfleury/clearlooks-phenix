@@ -1,4 +1,4 @@
-<p lang="en"><strong><a hreflang="en" href="http://www.jpfleury.net/en/software/clearwaita.php">Read this page in English.</a></strong></p>
+<p lang="en"><strong><a hreflang="en" href="http://www.jpfleury.net/en/software/clearlooks-phenix.php">Read this page in English.</a></strong></p>
 
 ## À propos
 
@@ -8,19 +8,13 @@ Clearwaita est un thème GTK2/GTK3. Les fichiers pour GTK3 correspondent à une 
 
 Aussi, des fichiers pour les gestionnaires de fenêtres Metacity, Openbox et Xfwm4 sont inclus.
 
-Voici deux captures d'écran (cliquer pour télécharger l'image au format original):
-
-<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png" alt="Capture d'écran du bureau sous Gnome 3 (mode fallback) avec le thème Clearwaita" width="684" height="482" /></a>
-
-<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png" alt="Capture d'écran de gedit 3 avec le thème Clearwaita" width="684" height="565" /></a>
-
 ## Dépendances
 
 S'assurer que le paquet `gnome-themes-standard` est installé. Ça devrait être le cas sous Gnome 3, mais pas sous Xfce.
 
 ## Installation
 
-- [Télécharger l'archive de la dernière version.](http://jpfleury.indefero.net/p/clearwaita/source/download/master/)
+- [Télécharger l'archive de la dernière version.](https://gitorious.org/projets-divers/clearlooks-phenix/archive/v1.zip)
 
 - Extraire l'archive.
 
@@ -58,19 +52,14 @@ L'arrière-plan est une légère modification d'une [image de volvoguy](http://w
 
 ## Développement
 
-Dernière version: 1.0.5 (2013-02-06)
+Dernière version: 1.0.6 (2013-09-07)
 
-Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
-
-Clearwaita dispose également d'un [système de suivi], sur lequel les rapports de bogues et les suggestions peuvent être soumis.
-
-[git]: http://jpfleury.indefero.net/p/clearwaita/source/tree/master/
-[système de suivi]: http://jpfleury.indefero.net/p/clearwaita/issues/
+Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.](https://gitorious.org/projets-divers/clearlooks-phenix)
 
 ## Licence
 
-Auteur: Jean-Philippe Fleury <contact@jpfleury.net>  
-Copyright © Jean-Philippe Fleury, 2011-2012.
+Auteur: Jean-Philippe Fleury (<http://www.jpfleury.net/contact.php>)  
+Copyright © Jean-Philippe Fleury, 2011-2013.
 
 Ce programme est un logiciel libre; vous pouvez le redistribuer ou le
 modifier suivant les termes de la GNU General Public License telle que
