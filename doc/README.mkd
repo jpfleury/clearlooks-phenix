@@ -1,4 +1,4 @@
-<p lang="fr"><strong><a hreflang="fr" href="http://www.jpfleury.net/logiciels/clearwaita.php">Lire cette page en français.</a></strong></p>
+<p lang="fr"><strong><a hreflang="fr" href="http://www.jpfleury.net/logiciels/clearlooks-phenix.php">Lire cette page en français.</a></strong></p>
 
 ## Overview
 
@@ -8,19 +8,13 @@ Clearwaita is a GTK2/GTK3 theme. Files for GTK3 are a modified version of Adwait
 
 Also, files for Metacity, Openbox and Xfwm4 window managers are included.
 
-Here are two screenshots (click to download the original image):
-
-<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple1.png" alt="Screenshot of a Gnome 3 desktop (fallback mode) with Clearwaita theme" width="684" height="482" /></a>
-
-<a href="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png"><img src="http://jpfleury.indefero.net/p/clearwaita/source/tree/master/doc/exemple2.png" alt="Screenshot of gedit 3 with Clearwaita theme" width="684" height="565" /></a>
-
 ## Requirements
 
 The package `gnome-themes-standard` must be installed. It should be the case on Gnome 3, but not on Xfce.
 
 ## Installation
 
-- [Download the archive of the latest version.](http://jpfleury.indefero.net/p/clearwaita/source/download/master/)
+- [Download the archive of the latest version.](https://gitorious.org/projets-divers/clearlooks-phenix/archive/v1.zip)
 
 - Extract the archive.
 
@@ -60,17 +54,12 @@ The wallpaper is a slightly modified version of an [image from volvoguy](http://
 
 Last version: 1.0.5 (2013-02-06)
 
-Git is used for revision control. [Repository can be browsed online or cloned.][git]
-
-Clearwaita has an [issue tracker], on which bug reports and feature requests can be submitted.
-
-[git]: http://jpfleury.indefero.net/p/clearwaita/source/tree/master/
-[issue tracker]: http://jpfleury.indefero.net/p/clearwaita/issues/
+Git is used for revision control. [Repository can be browsed online or cloned.](https://gitorious.org/projets-divers/clearlooks-phenix)
 
 ## License
 
-Author: Jean-Philippe Fleury <contact@jpfleury.net>  
-Copyright © 2011-2012 Jean-Philippe Fleury
+Author: Jean-Philippe Fleury (<http://www.jpfleury.net/en/contact.php>)  
+Copyright © 2011-2013 Jean-Philippe Fleury
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
