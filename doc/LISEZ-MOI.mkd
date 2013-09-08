@@ -4,14 +4,6 @@
 
 Le projet Clearlooks-Phénix (anciennement nommé Clearwaita) a pour but de créer une version GTK3 de Clearlooks, thème par défaut de Gnome 2. Un style est également inclus pour GTK2, Unity et les gestionnaires de fenêtres Metacity, Openbox et Xfwm4.
 
-Voici quelques captures d'écran (s'il y a lieu, cliquer pour télécharger l'image au format original):
-
-<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png" alt="Capture d'écran du bureau sous Gnome 3 (mode fallback) avec le thème Clearlooks-Phénix" width="658" height="493" /></a>
-
-<img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png" alt="Capture d'écran de gedit 3 avec le thème Clearlooks-Phénix" width="658" height="529" />
-
-<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple3.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple3.png" alt="Capture d'écran de GTK+ Widget Factory avec le thème Clearlooks-Phénix" width="658" height="435" /></a>
-
 ## Dépendances
 
 - Dépendances de Clearlooks-Phénix 1: paquets `gtk2-engines` (si des logiciels GTK2 sont utilisés) et `gnome-themes-standard`.
@@ -36,9 +28,9 @@ Le paquet [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlo
 
 - Télécharger l'archive de la version correspondant à votre situation:
 
-	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/v1/);
+	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](https://gitorious.org/projets-divers/clearlooks-phenix/archive/v1.zip);
 	
-	- pour GTK 3.4: [télécharger Clearlooks-Phénix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/v2/).
+	- pour GTK 3.4: [télécharger Clearlooks-Phénix 2](https://gitorious.org/projets-divers/clearlooks-phenix/archive/v2.zip).
 	
 	Pour connaître sa version de GTK:
 	
@@ -138,20 +130,14 @@ Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtre
 
 ## Développement
 
-Dernière version: 2.0.17 (2013-02-06)
+Dernière version: 2.0.18 (2013-09-07)
 
-Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
-
-Clearlooks-Phénix dispose également d'un [système de suivi], sur lequel les rapports de bogues et les suggestions peuvent être soumis. Des commentaires peuvent également être postés sur la page de [Clearlooks-Phénix sur GNOME-Look.org][gnome-look].
-
-[git]: http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/
-[système de suivi]: http://jpfleury.indefero.net/p/clearlooks-phenix/issues/
-[gnome-look]: http://gnome-look.org/content/show.php?content=145210
+Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.](https://gitorious.org/projets-divers/clearlooks-phenix)
 
 ## Licence
 
-Auteur: Jean-Philippe Fleury <contact@jpfleury.net>  
-Copyright © Jean-Philippe Fleury, 2011-2012.
+Auteur: Jean-Philippe Fleury (<http://www.jpfleury.net/contact.php>)  
+Copyright © Jean-Philippe Fleury, 2011-2013.
 
 Ce programme est un logiciel libre; vous pouvez le redistribuer ou le
 modifier suivant les termes de la GNU General Public License telle que
