@@ -6,11 +6,11 @@ The Clearlooks-Phenix project (formerly known as Clearwaita) aims at creating a 
 
 Here are screenshots (if applicable, click to download the original image):
 
-<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png" alt="Screenshot of a Gnome 3 desktop (fallback mode) with the Clearlooks-Phenix theme" width="658" height="493" /></a>
+<a href="https://gitorious.org/projets-divers/clearlooks-phenix/raw/master:doc/exemple1.png"><img src="https://gitorious.org/projets-divers/clearlooks-phenix/raw/master:doc/exemple1.png" alt="Screenshot of a Gnome 3 desktop (fallback mode) with the Clearlooks-Phenix theme" width="658" height="493" /></a>
 
-<img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png" alt="Screenshot of gedit 3 with the Clearlooks-Phenix theme" width="659" height="537" />
+<img src="https://gitorious.org/projets-divers/clearlooks-phenix/raw/master:doc/exemple2.png" alt="Screenshot of gedit 3 with the Clearlooks-Phenix theme" width="659" height="537" />
 
-<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple3.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple3.png" alt="Screenshot of GTK+ Widget Factory with the Clearlooks-Phenix theme" width="658" height="435" /></a>
+<a href="https://gitorious.org/projets-divers/clearlooks-phenix/raw/master:doc/exemple3.png"><img src="https://gitorious.org/projets-divers/clearlooks-phenix/raw/master:doc/exemple3.png" alt="Screenshot of GTK+ Widget Factory with the Clearlooks-Phenix theme" width="658" height="435" /></a>
 
 ## Requirements
 
@@ -40,11 +40,11 @@ Regardless of the installation method chosen, the theme must be selected once th
 
 - Download the appropriate version according to your situation:
 
-	- for GTK 3.0 and 3.2: [download Clearlooks-Phenix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/v1/);
+	- for GTK 3.0 and 3.2: [download Clearlooks-Phenix 1](https://gitorious.org/projets-divers/clearlooks-phenix/archive/v1.zip);
 	
-	- for GTK 3.4: [download Clearlooks-Phenix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/v2/).
+	- for GTK 3.4: [download Clearlooks-Phenix 2](https://gitorious.org/projets-divers/clearlooks-phenix/archive/v2.zip).
 	
-	- for GTK 3.6 and newer: [download Clearlooks-Phenix 3](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/).
+	- for GTK 3.6 and newer: [download Clearlooks-Phenix 3](https://gitorious.org/projets-divers/clearlooks-phenix/archive/master.zip).
 	
 	To find your GTK version:
 	
@@ -82,7 +82,7 @@ See the following package:
 
 ### Ubuntu
 
-The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlooks-phenix-theme) can be installed on Ubuntu 12.10 and newer. However, this package is not up-to-date, and the [PPA maintained by Andrew Shadura](https://launchpad.net/~andrewshadoura/+archive/clearlooks-phenix) can be used instead.
+The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/search?keywords=clearlooks-phenix-theme) can be installed on Ubuntu 12.10 and newer.
 
 ## Configuration
 
@@ -110,15 +110,7 @@ The icon theme used for the same screenshot is Mist, installed with the package 
 	
 	- on Xfce: by going to *Settings > Appearence > Icons* in the main menu.
 
-Also, color schemes were made by DDZ to fit with Clearlooks-Phenix:
-
-- [Gnome-Colors-Clearlooks](http://opendesktop.org/content/show.php?content=151907), color scheme for the icon theme Gnome-Colors;
-
-- [Humanities-Clearlooks](http://opendesktop.org/content/show.php?content=151908), color scheme for the icon theme Humanities.
-
-- [KDE3-Clearlooks-Colors](http://opendesktop.org/content/show.php?content=151994), color scheme for KDE 3.
-
-- [KDE4-Clearlooks-Colors](http://opendesktop.org/content/show.php?content=151993), color scheme for KDE 4.
+Also, [color schemes](http://opendesktop.org/usermanager/search.php?username=DDZ&action=contents) were made by DDZ to fit with Clearlooks-Phenix.
 
 ### Desktop managed by Nautilus
 
@@ -162,18 +154,12 @@ If after installing or updating Ubuntu, the window buttons are on the left side,
 
 Last version: 3.0.15 (2013-02-06)
 
-Git is used for revision control. [Repository can be browsed online or cloned.][git]
-
-Clearlooks-Phenix has an [issue tracker], on which bug reports and feature requests can be submitted. Comments can also be posted on the webpage [Clearlooks-Phenix on GNOME-Look.org][gnome-look].
-
-[git]: http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/
-[issue tracker]: http://jpfleury.indefero.net/p/clearlooks-phenix/issues/
-[gnome-look]: http://gnome-look.org/content/show.php?content=145210
+Git is used for revision control. [Repository can be browsed online or cloned.](https://gitorious.org/projets-divers/clearlooks-phenix)
 
 ## License
 
-Author: Jean-Philippe Fleury <contact@jpfleury.net>  
-Copyright © 2011-2012 Jean-Philippe Fleury
+Author: Jean-Philippe Fleury (<http://www.jpfleury.net/en/contact.php>)  
+Copyright © 2011-2013 Jean-Philippe Fleury
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

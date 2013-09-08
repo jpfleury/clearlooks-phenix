@@ -6,11 +6,11 @@ Le projet Clearlooks-Phénix (anciennement nommé Clearwaita) a pour but de cré
 
 Voici quelques captures d'écran (s'il y a lieu, cliquer pour télécharger l'image au format original):
 
-<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple1.png" alt="Capture d'écran du bureau sous Gnome 3 (mode fallback) avec le thème Clearlooks-Phénix" width="658" height="493" /></a>
+<a href="https://gitorious.org/projets-divers/clearlooks-phenix/raw/master:doc/exemple1.png"><img src="https://gitorious.org/projets-divers/clearlooks-phenix/raw/master:doc/exemple1.png" alt="Capture d'écran du bureau sous Gnome 3 (mode fallback) avec le thème Clearlooks-Phénix" width="658" height="493" /></a>
 
-<img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple2.png" alt="Capture d'écran de gedit 3 avec le thème Clearlooks-Phénix" width="659" height="537" />
+<img src="https://gitorious.org/projets-divers/clearlooks-phenix/raw/master:doc/exemple2.png" alt="Capture d'écran de gedit 3 avec le thème Clearlooks-Phénix" width="659" height="537" />
 
-<a href="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple3.png"><img src="http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/doc/exemple3.png" alt="Capture d'écran de GTK+ Widget Factory avec le thème Clearlooks-Phénix" width="658" height="443" /></a>
+<a href="https://gitorious.org/projets-divers/clearlooks-phenix/raw/master:doc/exemple3.png"><img src="https://gitorious.org/projets-divers/clearlooks-phenix/raw/master:doc/exemple3.png" alt="Capture d'écran de GTK+ Widget Factory avec le thème Clearlooks-Phénix" width="658" height="443" /></a>
 
 ## Dépendances
 
@@ -40,11 +40,11 @@ Peu importe la méthode d'installation choisie, le thème devra être sélection
 
 - Télécharger l'archive de la version correspondant à votre situation:
 
-	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/v1/);
+	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](https://gitorious.org/projets-divers/clearlooks-phenix/archive/v1.zip);
 	
-	- pour GTK 3.4: [télécharger Clearlooks-Phénix 2](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/v2/).
+	- pour GTK 3.4: [télécharger Clearlooks-Phénix 2](https://gitorious.org/projets-divers/clearlooks-phenix/archive/v2.zip).
 	
-	- pour GTK 3.6 et versions suivantes: [télécharger Clearlooks-Phénix 3](http://jpfleury.indefero.net/p/clearlooks-phenix/source/download/master/).
+	- pour GTK 3.6 et versions suivantes: [télécharger Clearlooks-Phénix 3](https://gitorious.org/projets-divers/clearlooks-phenix/archive/master.zip).
 	
 	Pour connaître sa version de GTK:
 	
@@ -82,7 +82,7 @@ Voir le paquet suivant:
 
 ### Ubuntu
 
-Le paquet [`clearlooks-phenix-theme`](http://packages.ubuntu.com/quantal/clearlooks-phenix-theme) peut être installé sous Ubuntu 12.10 ou toute version ultérieure. Cependant, le paquet n'est pas à jour, et le [PPA d'Andrew Shadura](https://launchpad.net/~andrewshadoura/+archive/clearlooks-phenix) peut être utilisé à la place.
+Le paquet [`clearlooks-phenix-theme`](http://packages.ubuntu.com/search?keywords=clearlooks-phenix-theme) peut être installé sous Ubuntu 12.10 ou toute version ultérieure.
 
 ## Configuration
 
@@ -110,15 +110,7 @@ Le thème d'icônes utilisé dans la même capture d'écran est Mist, installé 
 	
 	- sous Xfce: en allant dans *Paramètres > Apparence > Icônes* du menu principal.
 
-Aussi, des jeux de couleurs ont été réalisés par DDZ pour s'agencer avec Clearlooks-Phénix:
-
-- [Gnome-Colors-Clearlooks](http://opendesktop.org/content/show.php?content=151907), jeu de couleurs pour le thème d'icônes Gnome-Colors;
-
-- [Humanities-Clearlooks](http://opendesktop.org/content/show.php?content=151908), jeu de couleurs pour le thème d'icônes Humanities.
-
-- [KDE3-Clearlooks-Colors](http://opendesktop.org/content/show.php?content=151994), jeu de couleurs pour KDE 3.
-
-- [KDE4-Clearlooks-Colors](http://opendesktop.org/content/show.php?content=151993), jeu de couleurs pour KDE 4.
+Aussi, des [jeux de couleurs](http://opendesktop.org/usermanager/search.php?username=DDZ&action=contents) ont été réalisés par DDZ pour s'agencer avec Clearlooks-Phénix.
 
 ### Bureau géré par Nautilus
 
@@ -162,18 +154,12 @@ Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtre
 
 Dernière version: 3.0.15 (2013-02-06)
 
-Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.][git]
-
-Clearlooks-Phénix dispose également d'un [système de suivi], sur lequel les rapports de bogues et les suggestions peuvent être soumis. Des commentaires peuvent également être postés sur la page de [Clearlooks-Phénix sur GNOME-Look.org][gnome-look].
-
-[git]: http://jpfleury.indefero.net/p/clearlooks-phenix/source/tree/master/
-[système de suivi]: http://jpfleury.indefero.net/p/clearlooks-phenix/issues/
-[gnome-look]: http://gnome-look.org/content/show.php?content=145210
+Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.](https://gitorious.org/projets-divers/clearlooks-phenix)
 
 ## Licence
 
-Auteur: Jean-Philippe Fleury <contact@jpfleury.net>  
-Copyright © Jean-Philippe Fleury, 2011-2012.
+Auteur: Jean-Philippe Fleury (<http://www.jpfleury.net/contact.php>)  
+Copyright © Jean-Philippe Fleury, 2011-2013.
 
 Ce programme est un logiciel libre; vous pouvez le redistribuer ou le
 modifier suivant les termes de la GNU General Public License telle que
