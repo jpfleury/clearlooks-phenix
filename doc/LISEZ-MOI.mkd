@@ -130,7 +130,7 @@ Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtre
 
 ## Développement
 
-Dernière version: 2.0.17 (2013-02-06)
+Dernière version: 2.0.18 (2013-09-07)
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.](https://gitorious.org/projets-divers/clearlooks-phenix)
 
