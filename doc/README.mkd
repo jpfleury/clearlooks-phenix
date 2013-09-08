@@ -52,7 +52,7 @@ The wallpaper is a slightly modified version of an [image from volvoguy](http://
 
 ## Development
 
-Last version: 1.0.5 (2013-02-06)
+Last version: 1.0.6 (2013-09-07)
 
 Git is used for revision control. [Repository can be browsed online or cloned.](https://gitorious.org/projets-divers/clearlooks-phenix)
 
