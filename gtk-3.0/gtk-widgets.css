@@ -1106,6 +1106,7 @@ GtkTreeMenu .menuitem * {
 .menubar .menuitem {
 	border-style: none;
 	padding: 3px 5px;
+	background-color: transparent;
 }
 
 .menubar .menuitem:hover {
