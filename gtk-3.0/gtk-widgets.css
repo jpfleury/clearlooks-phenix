@@ -1351,27 +1351,9 @@ GtkCheckButton:selected:focus {
  ***********/
 
 .sidebar,
-.sidebar .view {
+.sidebar .view,
+.sidebar GtkScrolledWindow {
 	background-color: @sidebar_bg_color;
-}
-
-.sidebar .scrollbar.trough {
-	border-radius: 100px;
-	border-style: solid;
-	border-width: 2px;
-	border-color: transparent;
-}
-
-.sidebar .scrollbar.trough {
-	background-color: shade(@sidebar_bg_color, 0.8);
-}
-
-.sidebar .scrollbar.slider {
-	background-color: @sidebar_bg_color;
-}
-
-.sidebar .scrollbar.slider:hover {
-	background-color: @theme_base_color;
 }
 
 .sidebar .radio,
