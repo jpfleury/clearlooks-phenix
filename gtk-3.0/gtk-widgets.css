@@ -1047,16 +1047,13 @@ GtkComboBox .button *:hover {
  *********/
 
 /* combobox menus */
-GtkTreeMenu.menu {
-	background-color: @theme_base_color;
+GtkTreeMenu.menu,
+GtkTreeMenu.menu * {
+	background-color: @menu_bg_color;
 }
 
 GtkTreeMenu .menuitem {
 	padding: 2px;
-}
-
-GtkTreeMenu .menuitem * {
-	color: @theme_text_color;
 }
 
 .menu {
@@ -1137,8 +1134,11 @@ GtkTreeMenu .menuitem * {
 
 .menu .menuitem {
 	-GtkMenuItem-arrow-scaling: 0.5;
-	background-color: @menu_bg_color;
 	padding: 4px;
+}
+
+.menu .menuitem > * {
+	background-color: transparent;
 }
 
 .menu .menuitem:hover {
@@ -1151,13 +1151,6 @@ GtkTreeMenu .menuitem:hover,
 	border-style: solid;
 	border-width: 1px;
 	border-color: @menubar_menuitem_hover_border_color;
-	background-image: -gtk-gradient (linear,
-	                  left top,
-	                  left bottom,
-	                  from (@menubar_menuitem_hover_gradient_a),
-	                  color-stop (0.50, @menubar_menuitem_hover_gradient_b),
-	                  color-stop (0.50, @menubar_menuitem_hover_gradient_c),
-	                  to (@menubar_menuitem_hover_gradient_d));
 }
 
 GtkTreeMenu .menuitem *:hover,
@@ -1166,6 +1159,13 @@ GtkTreeMenu .menuitem *:hover,
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
 	color: @theme_selected_fg_color;
+	background-image: -gtk-gradient (linear,
+	                  left top,
+	                  left bottom,
+	                  from (@menubar_menuitem_hover_gradient_a),
+	                  color-stop (0.50, @menubar_menuitem_hover_gradient_b),
+	                  color-stop (0.50, @menubar_menuitem_hover_gradient_c),
+	                  to (@menubar_menuitem_hover_gradient_d));
 }
 
 .menu .menuitem:insensitive,
