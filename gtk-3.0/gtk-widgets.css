@@ -454,6 +454,11 @@ GtkComboBox.combobox-entry .button {
 	border-color: transparent;
 }
 
+/* We want anything inside the buttons to use their background */
+.button * {
+	background-color: transparent;
+}
+
 /* We may want a background for focused buttons, but in the meantime let's remove it too */
 .primary-toolbar .button,
 .primary-toolbar .button:insensitive {
