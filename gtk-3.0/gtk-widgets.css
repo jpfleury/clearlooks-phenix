@@ -1721,25 +1721,25 @@ GtkInfoBar:last-child,
 	border-style: solid;
 }
 
-.info {
+.info > * {
 	background-color: @info_bg_color;
 	color: @info_fg_color;
 	border-color: darker(@info_bg_color);
 }
 
-.warning {
+.warning > * {
 	background-color: @warning_bg_color;
 	color: @warning_fg_color;
 	border-color: darker(@warning_bg_color);
 }
 
-.question {
+.question > * {
 	background-color: @question_bg_color;
 	color: @question_fg_color;
 	border-color: darker(@question_bg_color);
 }
 
-.error {
+.error > * {
 	background-color: @error_bg_color;
 	color: @error_fg_color;
 	border-color: darker(@error_bg_color);
