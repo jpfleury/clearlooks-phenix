@@ -1146,6 +1146,7 @@ GtkTreeMenu .menuitem {
 .menu .menuitem {
 	-GtkMenuItem-arrow-scaling: 0.5;
 	padding: 4px;
+	background-color: @menu_bg_color;
 }
 
 .menu .menuitem > * {
