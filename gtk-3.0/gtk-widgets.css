@@ -690,6 +690,7 @@ GtkComboBox.combobox-entry .button:insensitive {
 	border-radius: 3px;
 	border-style: solid;
 	border-width: 1px;
+	background-color: transparent;
 }
 
 .notebook tab.top {
@@ -778,6 +779,10 @@ GtkComboBox.combobox-entry .button:insensitive {
 	                  @notebook_active_tab_strip_border_bottom_color 4px,
 	                  @notebook_active_tab_gradient_a 4px,
 	                  @notebook_active_tab_gradient_b);
+}
+
+.notebook tab * {
+	background-color: transparent;
 }
 
 /* close button styling */
