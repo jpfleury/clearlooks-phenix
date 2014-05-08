@@ -1807,3 +1807,19 @@ GtkInfoBar:last-child,
 	border-style: solid;
 	margin: 10px;
 }
+
+/************
+ * Popovers *
+ ************/
+
+GtkPopover {
+	border: 1px solid;
+	border-radius: 7px;
+	border-color: @border_color;
+	background-clip: border-box;
+}
+
+GtkPopover > .toolbar,
+GtkPopover.osd > .toolbar .button {
+	background-color: transparent;
+}
