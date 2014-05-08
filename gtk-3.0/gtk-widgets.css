@@ -464,6 +464,7 @@ GtkComboBox.combobox-entry .button {
 }
 
 /* We may want a background for focused buttons, but in the meantime let's remove it too */
+GtkMenuToolButton *,
 .primary-toolbar .button,
 .primary-toolbar .button:insensitive {
 	background-image: none;
