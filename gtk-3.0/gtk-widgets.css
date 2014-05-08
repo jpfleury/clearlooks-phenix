@@ -63,7 +63,11 @@ GtkWindow {
 GtkImage,
 GtkImage:insensitive,
 GtkLabel,
-GtkLabel:insensitive {
+GtkLabel:insensitive,
+GtkBox,
+GtkBox:insensitive,
+GtkGrid,
+GtkGrid:insensitive {
 	background-color: transparent;
 }
 
