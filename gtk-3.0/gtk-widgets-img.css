@@ -386,6 +386,7 @@ GtkComboBox.combobox-entry .button,
 GtkSwitch.trough,
 /* generic button borders */
 .button,
+.titlebar .titlebutton:hover,
 .primary-toolbar .button.raised,
 .primary-toolbar .raised .button,
 .primary-toolbar GtkComboBox .button,
