@@ -24,6 +24,10 @@
  * gedit *
  *********/
 
+GeditMultiNotebook .notebook {
+	border-width: 0px 0px 1px 1px;
+}
+
 GeditViewFrame .gedit-search-slider {
 	padding: 4px;
 	border-image: url("img/border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
