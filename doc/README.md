@@ -91,30 +91,6 @@ The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/search?keywor
 
 ## Configuration
 
-### Wallpaper
-
-The wallpaper used for the Gnome 3 desktop screenshot is available in the folder `wallpapers`.
-
-### Icons
-
-The icon theme used for the same screenshot is Mist, installed with the package [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes), under LGPL. However, this package is no longer available with last Ubuntu versions. Here's an easy way to install Mist:
-
-- [Download the archive of the Mist icon theme.](http://www.jpfleury.net/site/fichiers/Mist.tar)
-
-- Extract the archive.
-
-- Copy the folder `Mist` in one of the following two locations:
-
-	- `~/.icons/` for the current user;
-	
-	- `/usr/share/icons/` for all users.
-
-- Then, choose Mist:
-
-	- on Gnome: with gnome-tweak-tool by setting *Theme > Icon theme*;
-	
-	- on Xfce: by going to *Settings > Appearence > Icons* in the main menu.
-
 ### Desktop managed by Nautilus
 
 By default, the font color on a desktop managed by Nautilus is black. To set it to white, open the file `gtk-3.0/applications.css` with a text editor, find the code relative to Nautilus:
@@ -141,17 +117,35 @@ and uncomment it, as follows:
 
 To get a custom color, change the color directly in the file `gtk-3.0/applications.css`.
 
-### Color variants
-
-From Clearlooks-Phenix 2, it's possible to create color variants of the GTK3 theme. Only a few color declarations must be changed in the file `gtk-3.0/gtk-variant.css`.
-
-About button borders, they come from SVG files. [Inkscape](http://inkscape.org/) can be used to modify them. For more details, see the screencast [Utiliser Inkscape pour modifier la couleur de la bordure d'un bouton](http://www.youtube.com/watch?v=DWJHDS5hQsw). A Bash script is also shipped with Clearlooks-Phenix to assist the modification of SVG and PNG files. To use it, copy the file `doc/images.sh.txt`, paste it in the root folder of your development theme (same emplacement as the file `index.theme`) and rename it `images.sh`. Then, change variables in the first section of the file according to the color variant desired and run the script in a terminal (`bash images.sh`). The package `imagemagick` is required.
-
 ### Window buttons layout
 
 If after installing or updating Ubuntu, the window buttons are on the left side, but you want them to the right, run the following command in a terminal:
 
 	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
+
+### Wallpaper
+
+The wallpaper used for the Gnome 3 desktop screenshot is available in the folder `wallpapers`.
+
+### Icons
+
+The icon theme used for the same screenshot is Mist, installed with the package [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes), under LGPL. However, this package is no longer available with last Ubuntu versions. Here's an easy way to install Mist:
+
+- [Download the archive of the Mist icon theme.](http://www.jpfleury.net/site/fichiers/Mist.tar)
+
+- Extract the archive.
+
+- Copy the folder `Mist` in one of the following two locations:
+
+	- `~/.icons/` for the current user;
+	
+	- `/usr/share/icons/` for all users.
+
+- Then, choose Mist:
+
+	- on Gnome: with gnome-tweak-tool by setting *Theme > Icon theme*;
+	
+	- on Xfce: by going to *Settings > Appearence > Icons* in the main menu.
 
 ## Development
 

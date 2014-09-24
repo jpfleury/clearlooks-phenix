@@ -91,30 +91,6 @@ Le paquet [`clearlooks-phenix-theme`](http://packages.ubuntu.com/search?keywords
 
 ## Configuration
 
-### Arrière-plan
-
-L'arrière-plan utilisé dans la capture d'écran du bureau de Gnome est disponible dans le dossier `wallpapers`.
-
-### Icônes
-
-Le thème d'icônes utilisé dans la même capture d'écran est Mist, installé avec le paquet [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes), sous licence LGPL. Cependant, ce paquet n'est plus disponible pour les dernières versions d'Ubuntu. Voici une méthode simple pour installer Mist:
-
-- [Télécharger l'archive du thème d'icônes Mist.](http://www.jpfleury.net/site/fichiers/Mist.tar)
-
-- Extraire l'archive.
-
-- Copier le dossier `Mist` dans un des deux emplacements suivants:
-
-	- `~/.icons/` pour l'utilisateur courant;
-	
-	- `/usr/share/icons/` pour tous les utilisateurs.
-
-- Ensuite, choisir le thème d'icônes Mist:
-
-	- sous Gnome: avec le logiciel gnome-tweak-tool en paramétrant *Theme > Icon theme*;
-	
-	- sous Xfce: en allant dans *Paramètres > Apparence > Icônes* du menu principal.
-
 ### Bureau géré par Nautilus
 
 Par défaut, le texte des icônes sur un bureau géré par Nautilus est noir. Pour afficher le texte en blanc, ouvrir le fichier `gtk-3.0/applications.css` dans un éditeur de texte, trouver le code relatif à Nautilus:
@@ -141,17 +117,35 @@ et le décommenter, ce qui donne:
 
 Pour avoir une couleur personnalisée, modifier la couleur directement dans le fichier `gtk-3.0/applications.css`.
 
-### Variantes de couleurs
-
-À partir de Clearlooks-Phénix 2, il est possible de créer une variante de couleurs du thème GTK3. Seulement quelques déclarations de couleur doivent être modifiées dans le fichier `gtk-3.0/gtk-variant.css`.
-
-En ce qui concerne la bordure des boutons, elle provient de fichiers au format SVG, qui peuvent être modifiés avec [Inkscape](http://inkscape.org/). Pour plus de détails, voir la capture vidéo [Utiliser Inkscape pour modifier la couleur de la bordure d'un bouton](http://www.youtube.com/watch?v=DWJHDS5hQsw). Un script Bash est également inclus avec Clearlooks-Phénix dans le but d'accélérer la modification des images SVG et PNG. Pour l'utiliser, copier le fichier `doc/images.sh.txt`, le coller à la racine du thème en cours de développement (au même emplacement que le fichier `index.theme`) et le renommer `images.sh`. Ensuite, il ne reste plus qu'à modifier les variables dans la première section du fichier selon la variante de couleurs voulue et à lancer le script dans une console (`bash images.sh`). Le paquet `imagemagick` est requis.
-
 ### Emplacement des boutons de fenêtres
 
 Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtres se trouvent à gauche, mais que vous les voulez à droite, lancez la commande suivante dans une console:
 
 	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
+
+### Arrière-plan
+
+L'arrière-plan utilisé dans la capture d'écran du bureau de Gnome est disponible dans le dossier `wallpapers`.
+
+### Icônes
+
+Le thème d'icônes utilisé dans la même capture d'écran est Mist, installé avec le paquet [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes), sous licence LGPL. Cependant, ce paquet n'est plus disponible pour les dernières versions d'Ubuntu. Voici une méthode simple pour installer Mist:
+
+- [Télécharger l'archive du thème d'icônes Mist.](http://www.jpfleury.net/site/fichiers/Mist.tar)
+
+- Extraire l'archive.
+
+- Copier le dossier `Mist` dans un des deux emplacements suivants:
+
+	- `~/.icons/` pour l'utilisateur courant;
+	
+	- `/usr/share/icons/` pour tous les utilisateurs.
+
+- Ensuite, choisir le thème d'icônes Mist:
+
+	- sous Gnome: avec le logiciel gnome-tweak-tool en paramétrant *Theme > Icon theme*;
+	
+	- sous Xfce: en allant dans *Paramètres > Apparence > Icônes* du menu principal.
 
 ## Développement
 
