@@ -155,7 +155,7 @@ If after installing or updating Ubuntu, the window buttons are on the left side,
 
 ## Development
 
-Git is used for revision control. [Repository can be browsed online or cloned.](hhttps://github.com/jpfleury/clearlooks-phenix)
+Git is used for revision control. [Repository can be browsed online or cloned.](https://github.com/jpfleury/clearlooks-phenix)
 
 ## License
 
