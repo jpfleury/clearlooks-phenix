@@ -44,7 +44,9 @@ Regardless of the installation method chosen, the theme must be selected once th
 	
 	- for GTK 3.6: [download Clearlooks-Phenix 3](https://github.com/jpfleury/clearlooks-phenix/archive/v3.zip);
 	
-	- for GTK 3.8: [download Clearlooks-Phenix 4](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
+	- for GTK 3.8: [download Clearlooks-Phenix 4](https://github.com/jpfleury/clearlooks-phenix/archive/v4.zip);
+	
+	- for GTK 3.10: [download Clearlooks-Phenix 5](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
 	
 	To find your GTK version:
 	
@@ -56,6 +58,7 @@ Regardless of the installation method chosen, the theme must be selected once th
 		- Ubuntu 12.04: GTK 3.4
 		- Ubuntu 12.10 and 13.04: GTK 3.6
 		- Ubuntu 13.10: GTK 3.8
+		- Ubuntu 14.04: GTK 3.10
 
 - Extract the archive.
 
