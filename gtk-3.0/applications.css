@@ -24,8 +24,38 @@
  * gedit *
  *********/
 
-GeditFloatingSlider .entry.not-found:focus {
-	border-image: url("img/border-error.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+GeditMultiNotebook .notebook {
+	border-width: 0px 0px 1px 1px;
+}
+
+GeditPanel.horizontal .notebook {
+	border-width: 0px 1px 1px 1px;
+}
+
+GeditPanel.vertical .notebook {
+	border-width: 0px 1px 1px 1px;
+}
+
+GeditViewFrame .gedit-search-slider {
+	padding: 4px;
+	border-image: url("img/border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+}
+
+GeditViewFrame .gedit-search-slider .not-found {
+	background-color: @error_bg_color;
+	color: @error_fg_color;
+}
+
+GeditViewFrame .gedit-search-slider .not-found:selected {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
+}
+
+.gedit-search-entry-occurrences-tag {
+	color: @theme_text_color;
+	background-color: @theme_bg_color;
+	margin: 2px 0px 2px 2px;
+	padding: 2px;
 }
 
 /*******************
