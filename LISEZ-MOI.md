@@ -12,11 +12,11 @@ Voici quelques captures d'écran (s'il y a lieu, cliquer pour voir l'image au fo
 
 ## Dépendances
 
-- Dépendances de Clearlooks-Phénix 1: paquets `gtk2-engines` (si des logiciels GTK2 sont utilisés) et `gnome-themes-standard`.
+- Dépendances de Clearlooks-Phénix v1: paquets `gtk2-engines` (si des logiciels GTK2 sont utilisés) et `gnome-themes-standard`.
 
-- Dépendances de Clearlooks-Phénix 2: paquets `gtk2-engines` (si des logiciels GTK2 sont utilisés), `gnome-themes-standard` et `gtk3-engines-unico`.
+- Dépendances de Clearlooks-Phénix v2: paquets `gtk2-engines` (si des logiciels GTK2 sont utilisés), `gnome-themes-standard` et `gtk3-engines-unico`.
 
-- Dépendances de Clearlooks-Phénix 3 et versions suivantes: paquet `gtk2-engines` (si des logiciels GTK2 sont utilisés).
+- Dépendances de Clearlooks-Phénix v3 et versions suivantes: paquet `gtk2-engines` (si des logiciels GTK2 sont utilisés).
 
 ## Installation
 
@@ -38,15 +38,15 @@ Peu importe la méthode d'installation choisie, le thème devra être sélection
 
 - Télécharger l'archive de la version correspondant à votre situation:
 
-	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix 1](https://github.com/jpfleury/clearlooks-phenix/archive/v1.zip);
+	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix v1](https://github.com/jpfleury/clearlooks-phenix/archive/v1.zip);
 	
-	- pour GTK 3.4: [télécharger Clearlooks-Phénix 2](https://github.com/jpfleury/clearlooks-phenix/archive/v2.zip);
+	- pour GTK 3.4: [télécharger Clearlooks-Phénix v2](https://github.com/jpfleury/clearlooks-phenix/archive/v2.zip);
 	
-	- pour GTK 3.6: [télécharger Clearlooks-Phénix 3](https://github.com/jpfleury/clearlooks-phenix/archive/v3.zip);
+	- pour GTK 3.6: [télécharger Clearlooks-Phénix v3](https://github.com/jpfleury/clearlooks-phenix/archive/v3.zip);
 	
-	- pour GTK 3.8: [télécharger Clearlooks-Phénix 4](https://github.com/jpfleury/clearlooks-phenix/archive/v4.zip);
+	- pour GTK 3.8: [télécharger Clearlooks-Phénix v4](https://github.com/jpfleury/clearlooks-phenix/archive/v4.zip);
 	
-	- pour GTK 3.10 et versions suivantes: [télécharger Clearlooks-Phénix 5](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
+	- pour GTK 3.10 et 3.12: [télécharger Clearlooks-Phénix v5](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
 	
 	Pour connaître sa version de GTK:
 	
