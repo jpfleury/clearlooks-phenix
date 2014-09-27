@@ -580,6 +580,7 @@ GtkColorChooserWidget #add-color-button {
 .button:checked:hover,
 .button:active,
 .button:active:hover,
+.menuitem.button:hover,
 .spinbutton .button:active,
 .spinbutton .button:active:hover,
 .toolbar .button:active,
@@ -1187,6 +1188,7 @@ GtkTreeMenu .menuitem:hover,
 }
 
 GtkTreeMenu .menuitem *:hover,
+GtkComboBox .menuitem:hover *,
 .menu .menuitem:active,
 .menu .menuitem *:active,
 .menu .menuitem:hover,
