@@ -595,13 +595,20 @@ GtkSwitch.trough:insensitive,
 	border-color: transparent;
 }
 
+.button.flat,
+.button.flat:insensitive {
+    border-image: none;
+    background-image: none;
+}
+
 /* focused element borders */
 .entry:focus,
 .combobox-entry .entry:focus,
+.button.flat:focus:active,
 .button:focus:active,
 .button.default:active,
 /* focused button borders */
-.button:focus,
+.button.flat:focus,
 .button.default,
 .primary-toolbar .entry:focus,
 .primary-toolbar .button:active:focus,
