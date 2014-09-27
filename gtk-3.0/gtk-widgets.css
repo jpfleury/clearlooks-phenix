@@ -496,7 +496,9 @@ GtkMenuToolButton *,
 
 .primary-toolbar .button *:active,
 .inline-toolbar .button *:active,
-.button *:active {
+.button *:active,
+.button *:active:focus,
+.button *:focus {
 	color: @button_active_text_color;
 }
 
@@ -574,6 +576,8 @@ GtkColorChooserWidget #add-color-button {
 }
 
 /* Pushed button background */
+.button:checked,
+.button:checked:hover,
 .button:active,
 .button:active:hover,
 .spinbutton .button:active,
