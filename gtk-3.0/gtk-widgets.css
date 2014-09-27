@@ -1818,10 +1818,13 @@ GtkInfoBar:last-child,
 	font: Bold;
 }
 
+.titlebar :first-child {
+	padding: 5px 5px 6px 5px;
+}
+
 .titlebar .titlebutton {
 	background: none;
 	border-image: none;
-	padding: 5px 5px 6px 5px;
 }
 
 .window-frame {
