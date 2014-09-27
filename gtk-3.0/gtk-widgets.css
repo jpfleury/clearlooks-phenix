@@ -693,9 +693,6 @@ GtkColorChooserWidget #add-color-button:hover {
 
 .notebook {
 	padding: 0;
-	border-color: @border_color;
-	border-style: solid;
-	border-width: 1px;
 	background-clip: border-box;
 	background-color: @notebook_bg_color;
 	-GtkNotebook-tab-overlap: 2;
@@ -703,13 +700,18 @@ GtkColorChooserWidget #add-color-button:hover {
 	-GtkNotebook-initial-gap: 0;
 }
 
+.notebook.header.frame {
+	border-width: 0;
+}
+
 .notebook GtkViewport {
-	background-color: @theme_base_color;
+	background-color: @theme_bg_color;
 }
 
 .notebook tab {
 	padding: 3px;
 	border-radius: 3px;
+	border-color: @border_color;
 	border-style: solid;
 	border-width: 1px;
 	background-color: transparent;
