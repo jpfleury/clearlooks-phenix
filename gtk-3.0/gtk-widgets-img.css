@@ -387,8 +387,8 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
 
 /* generic element borders */
 .entry,
-GtkComboBox.combobox-entry .entry,
-GtkComboBox.combobox-entry .button,
+.combobox-entry .entry,
+.combobox-entry .button,
 .button:active,
 .trough,
 .trough.highlight,
@@ -404,8 +404,8 @@ GtkSwitch.trough,
 .primary-toolbar GtkComboBox .button,
 /* primary toolbar - generic element borders */
 .primary-toolbar .entry,
-.primary-toolbar GtkComboBox.combobox-entry .entry,
-.primary-toolbar GtkComboBox.combobox-entry .button,
+.primary-toolbar .combobox-entry .entry,
+.primary-toolbar .combobox-entry .button,
 .primary-toolbar .button:active,
 .primary-toolbar .button.raised:active,
 .primary-toolbar .raised .button:active,
@@ -425,12 +425,12 @@ GtkSwitch.trough,
 }
 
 .primary-toolbar .entry,
-.primary-toolbar GtkComboBox.combobox-entry .entry {
+.primary-toolbar .combobox-entry .entry {
 	border-width: 1px 2px 2px;
 }
 
 .primary-toolbar .entry:focus,
-.primary-toolbar GtkComboBox.combobox-entry .entry:focus {
+.primary-toolbar .combobox-entry .entry:focus {
 	border-width: 1px 2px 2px;
 }
 
@@ -583,8 +583,8 @@ GtkSwitch.trough,
 
 /* generic insensitive element borders */
 GtkSwitch.trough:insensitive,
-GtkComboBox.combobox-entry .entry:insensitive,
-GtkComboBox.combobox-entry .button:insensitive,
+.combobox-entry .entry:insensitive,
+.combobox-entry .button:insensitive,
 .entry:insensitive,
 .button:insensitive,
 .trough row {
@@ -597,7 +597,7 @@ GtkComboBox.combobox-entry .button:insensitive,
 
 /* focused element borders */
 .entry:focus,
-GtkComboBox.combobox-entry .entry:focus,
+.combobox-entry .entry:focus,
 .button:focus:active,
 .button.default:active,
 /* focused button borders */
@@ -606,8 +606,8 @@ GtkComboBox.combobox-entry .entry:focus,
 .primary-toolbar .entry:focus,
 .primary-toolbar .button:active:focus,
 .primary-toolbar .button:focus:hover,
-.primary-toolbar GtkComboBox.combobox-entry .entry:focus,
-.primary-toolbar GtkComboBox.combobox-entry .button:focus,
+.primary-toolbar .combobox-entry .entry:focus,
+.primary-toolbar .combobox-entry .button:focus,
 .primary-toolbar .button.raised:focus:active,
 .primary-toolbar .raised .button:focus:active,
 .primary-toolbar .button.raised.default:active,
