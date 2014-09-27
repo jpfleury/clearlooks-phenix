@@ -1045,7 +1045,7 @@ GtkComboBox .button *:hover {
 .scrollbar.button:insensitive {
 	color: @scrollbar_button_insensitive_color;
 }
-
+/*
 .scrollbar.button.top:insensitive {
 	border-bottom: none;
 }
@@ -1061,6 +1061,7 @@ GtkComboBox .button *:hover {
 .scrollbar.button.right:insensitive {
 	border-left: none;
 }
+*/
 
 .scrollbar.slider {
 	background-color: @scrollbar_slider_bg_color;
