@@ -11,7 +11,7 @@
 	-GtkPaned-handle-size: 5;
 
 	-GtkCheckButton-indicator-size: 16;
-	-GtkCheckMenuItem-indicator-size: 12;
+	-GtkCheckMenuItem-indicator-size: 10;
 
 	-GtkScrolledWindow-scrollbar-spacing: 3;
 	-GtkScrolledWindow-scrollbars-within-bevel: 0;
@@ -43,7 +43,8 @@ GtkWindow {
 	color: @theme_fg_color;
 }
 
-* {
+.background {
+	color: @theme_fg_color;
 	background-color: @theme_bg_color;
 }
 
@@ -92,8 +93,23 @@ GtkGrid:insensitive {
  * Miscellaneous *
  *****************/
 
+@keyframes spin {
+	to {
+	    -gtk-icon-transform: rotate(1turn);
+	}
+}
+.spinner {
+	background-image: none;
+	background-color: blue;
+	opacity: 0;
+	-gtk-icon-source: -gtk-icontheme("process-working-symbolic");
+}
 .spinner:active {
-	transition: 750ms linear loop;
+	opacity: 1;
+	animation: spin 1s linear infinite;
+}
+.spinner:active:insensitive {
+	opacity: 0.5;
 }
 
 .floating-bar {
@@ -444,7 +460,7 @@ GtkScrolledWindow GtkViewport.frame {
 
 .button,
 .button.menuitem.menubar,
-GtkComboBox.combobox-entry .button {
+.combobox-entry .button {
 	padding: 1px 4px;
 }
 
@@ -480,7 +496,9 @@ GtkMenuToolButton *,
 
 .primary-toolbar .button *:active,
 .inline-toolbar .button *:active,
-.button *:active {
+.button *:active,
+.button *:active:focus,
+.button *:focus {
 	color: @button_active_text_color;
 }
 
@@ -543,8 +561,8 @@ GtkMenuToolButton *,
 .toolbar .raised .button:focus,
 .toolbar GtkComboBox .button,
 .toolbar GtkComboBox .button:focus,
-GtkComboBox.combobox-entry .button,
-.primary-toolbar GtkComboBox.combobox-entry .button,
+.combobox-entry .button,
+.primary-toolbar .combobox-entry .button,
 .titlebar .titlebutton:hover,
 GtkColorChooserWidget #add-color-button {
 	background-image: -gtk-gradient (linear,
@@ -558,8 +576,11 @@ GtkColorChooserWidget #add-color-button {
 }
 
 /* Pushed button background */
+.button:checked,
+.button:checked:hover,
 .button:active,
 .button:active:hover,
+.menuitem.button:hover,
 .spinbutton .button:active,
 .spinbutton .button:active:hover,
 .toolbar .button:active,
@@ -568,8 +589,8 @@ GtkColorChooserWidget #add-color-button {
 .toolbar .raised .button:active,
 .toolbar .button.raised:active:hover,
 .toolbar .raised .button:active:hover,
-.primary-toolbar GtkComboBox.combobox-entry .button:active,
-GtkComboBox.combobox-entry .button:active,
+.primary-toolbar .combobox-entry .button:active,
+.combobox-entry .button:active,
 .primary-toolbar .button:active,
 .primary-toolbar .button:active:hover,
 .primary-toolbar .button:focus:active,
@@ -610,8 +631,8 @@ GtkComboBox.combobox-entry .button:active,
 .toolbar .raised .button:hover,
 .toolbar GtkComboBox .button:hover,
 .primary-toolbar .button:hover,
-GtkComboBox.combobox-entry .button:hover,
-.primary-toolbar GtkComboBox.combobox-entry .button:hover,
+.combobox-entry .button:hover,
+.primary-toolbar .combobox-entry .button:hover,
 GtkColorChooserWidget #add-color-button:hover {
 	background-color: transparent;
 	background-image: linear-gradient(to bottom,
@@ -623,7 +644,7 @@ GtkColorChooserWidget #add-color-button:hover {
 /* Insensitive button background */
 .button:insensitive,
 .toolbar GtkComboBox .button:insensitive,
-GtkComboBox.combobox-entry .button:insensitive {
+.combobox-entry .button:insensitive {
 	background-image: linear-gradient(to bottom,
 	                  @button_insensitive_inner_border_color 1px,
 	                  @button_insensitive_gradient_a 2px,
@@ -672,9 +693,6 @@ GtkComboBox.combobox-entry .button:insensitive {
 
 .notebook {
 	padding: 0;
-	border-color: @border_color;
-	border-style: solid;
-	border-width: 1px;
 	background-clip: border-box;
 	background-color: @notebook_bg_color;
 	-GtkNotebook-tab-overlap: 2;
@@ -682,13 +700,18 @@ GtkComboBox.combobox-entry .button:insensitive {
 	-GtkNotebook-initial-gap: 0;
 }
 
+.notebook.header.frame {
+	border-width: 0;
+}
+
 .notebook GtkViewport {
-	background-color: @theme_base_color;
+	background-color: @theme_bg_color;
 }
 
 .notebook tab {
 	padding: 3px;
 	border-radius: 3px;
+	border-color: @border_color;
 	border-style: solid;
 	border-width: 1px;
 	background-color: transparent;
@@ -841,40 +864,40 @@ GtkComboBox .separator {
 	-GtkWidget-vertical-separator: 0;
 }
 
-GtkComboBox.combobox-entry .entry:first-child,
-GtkComboBox.combobox-entry .button:first-child {
+.combobox-entry .entry:first-child,
+.combobox-entry .button:first-child {
 	border-image-width: 3px 0 4px 3px;
 	border-radius: 3px 0 0 3px;
 	border-right-width: 0;
 }
 
-GtkComboBox.combobox-entry .entry:last-child,
-GtkComboBox.combobox-entry .button:last-child {
+.combobox-entry .entry:last-child,
+.combobox-entry .button:last-child {
 	border-image-width: 3px 3px 4px 0;
 	border-radius: 0 3px 3px 0;
 	border-left-width: 0;
 }
 
-GtkComboBox.combobox-entry .button:last-child {
+.combobox-entry .button:last-child {
 	border-image-width: 3px 3px 4px 2px;
 }
 
-.primary-toolbar GtkComboBox.combobox-entry .entry:first-child,
-.primary-toolbar GtkComboBox.combobox-entry .button:first-child {
+.primary-toolbar .combobox-entry .entry:first-child,
+.primary-toolbar .combobox-entry .button:first-child {
 	border-image-width: 4px 0 4px 4px;
 	border-radius: 3px 0 0 3px;
 	border-right-width: 0;
 }
 
-.primary-toolbar GtkComboBox.combobox-entry .entry:last-child,
-.primary-toolbar GtkComboBox.combobox-entry .button:last-child {
+.primary-toolbar .combobox-entry .entry:last-child,
+.primary-toolbar .combobox-entry .button:last-child {
 	border-image-width: 4px 4px 4px 0;
 	border-radius: 0 3px 3px 0;
 	border-left-width: 0;
 }
 
-GtkComboBox.combobox-entry .button *:active,
-GtkComboBox.combobox-entry .button *:active:hover {
+.combobox-entry .button *:active,
+.combobox-entry .button *:active:hover {
 	color: @theme_text_color;
 }
 
@@ -1022,7 +1045,7 @@ GtkComboBox .button *:hover {
 .scrollbar.button:insensitive {
 	color: @scrollbar_button_insensitive_color;
 }
-
+/*
 .scrollbar.button.top:insensitive {
 	border-bottom: none;
 }
@@ -1038,6 +1061,7 @@ GtkComboBox .button *:hover {
 .scrollbar.button.right:insensitive {
 	border-left: none;
 }
+*/
 
 .scrollbar.slider {
 	background-color: @scrollbar_slider_bg_color;
@@ -1167,6 +1191,7 @@ GtkTreeMenu .menuitem:hover,
 }
 
 GtkTreeMenu .menuitem *:hover,
+GtkComboBox .menuitem:hover *,
 .menu .menuitem:active,
 .menu .menuitem *:active,
 .menu .menuitem:hover,
@@ -1796,10 +1821,13 @@ GtkInfoBar:last-child,
 	font: Bold;
 }
 
+.titlebar :first-child {
+	padding: 5px 5px 6px 5px;
+}
+
 .titlebar .titlebutton {
 	background: none;
 	border-image: none;
-	padding: 5px 5px 6px 5px;
 }
 
 .window-frame {
@@ -1817,6 +1845,7 @@ GtkPopover {
 	border: 1px solid;
 	border-radius: 7px;
 	border-color: @border_color;
+	background-color: @theme_bg_color;
 	background-clip: border-box;
 }
 
