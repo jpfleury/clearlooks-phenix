@@ -1837,6 +1837,7 @@ GtkPopover {
 	border: 1px solid;
 	border-radius: 7px;
 	border-color: @border_color;
+	background-color: @theme_bg_color;
 	background-clip: border-box;
 }
 
