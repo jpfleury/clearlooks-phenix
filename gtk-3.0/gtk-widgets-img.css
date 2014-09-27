@@ -571,6 +571,8 @@ GtkSwitch.trough:insensitive,
 	border-color: transparent;
 }
 
+.menuitem.button.flat,
+.menuitem.button.flat:active,
 .button.flat,
 .button.flat:insensitive {
     border-image: none;
