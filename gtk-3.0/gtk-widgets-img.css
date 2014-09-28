@@ -573,7 +573,9 @@ GtkSwitch.trough:insensitive,
 
 .menuitem.button.flat,
 .button.flat,
-.button.flat:insensitive {
+.button.flat:insensitive,
+GtkListBoxRow.button.list-row,
+GtkListBoxRow.button.list-row:hover {
     border-image: none;
     background-image: none;
 }

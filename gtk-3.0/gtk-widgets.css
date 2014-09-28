@@ -505,6 +505,27 @@ GtkMenuToolButton *,
 	background-color: transparent;
 }
 
+GtkListBoxRow.button.list-row {
+	color: @theme_text_color;
+	background-color: @theme_base_color;
+	border: none;
+}
+
+GtkListBoxRow.button.list-row:selected {
+	color: @theme_selected_fg_color;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 0px;
+	border-color: @menubar_menuitem_hover_border_color;
+	background-image: -gtk-gradient (linear,
+	                  left top,
+	                  left bottom,
+	                  from (@menubar_menuitem_hover_gradient_a),
+	                  color-stop (0.50, @menubar_menuitem_hover_gradient_b),
+	                  color-stop (0.50, @menubar_menuitem_hover_gradient_c),
+	                  to (@menubar_menuitem_hover_gradient_d));
+}
+
 .primary-toolbar .button {
 	border-image: none;
 	border-style: solid;
