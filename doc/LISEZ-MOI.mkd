@@ -44,7 +44,7 @@ Peu importe la méthode d'installation choisie, le thème devra être sélection
 	
 	- pour GTK 3.4: [télécharger Clearlooks-Phénix 2](https://gitorious.org/projets-divers/clearlooks-phenix/archive/v2.zip).
 	
-	- pour GTK 3.6 et versions suivantes: [télécharger Clearlooks-Phénix 3](https://gitorious.org/projets-divers/clearlooks-phenix/archive/master.zip).
+	- pour GTK 3.6: [télécharger Clearlooks-Phénix 3](https://gitorious.org/projets-divers/clearlooks-phenix/archive/v3.zip).
 	
 	Pour connaître sa version de GTK:
 	
