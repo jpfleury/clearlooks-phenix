@@ -34,9 +34,9 @@ GtkSwitch.slider:insensitive {
 	background-image: url("img/resize-grip.png");
 }
 
-/***************
+/*************
  * Scrollbar *
- ***************/
+ *************/
 
 .scrollbar.slider {
 	background-repeat: no-repeat;
@@ -94,109 +94,127 @@ GtkSwitch.slider:insensitive {
 .check,
 .check row:selected,
 .check row:selected:focus {
-	background-image: url("img/checkbox-unchecked.png");
+	-gtk-icon-source: url("img/checkbox-unchecked.png");
 }
 
 .check:hover,
 .check row:selected:hover,
 .check row:selected:focus:hover {
-	background-image: url("img/checkbox-unchecked-hover.png");
+	-gtk-icon-source: url("img/checkbox-unchecked-hover.png");
 }
 
 .check:insensitive,
 .check row:selected:insensitive,
 .check row:selected:focus:insensitive {
-	background-image: url("img/checkbox-unchecked-insensitive.png");
+	-gtk-icon-source: url("img/checkbox-unchecked-insensitive.png");
 }
 
+.check:checked,
+.check row:selected:checked,
+.check row:selected:focus:checked,
 .check:active,
 .check row:selected:active,
 .check row:selected:focus:active {
-	background-image: url("img/checkbox-checked.png");
+	-gtk-icon-source: url("img/checkbox-checked.png");
 }
 
+.check:checked:hover,
+.check row:selected:checked:hover,
+.check row:selected:focus:checked:hover,
 .check:active:hover,
 .check row:selected:active:hover,
 .check row:selected:focus:active:hover {
-	background-image: url("img/checkbox-checked-hover.png");
+	-gtk-icon-source: url("img/checkbox-checked-hover.png");
 }
 
+.check:checked:insensitive,
+.check row:selected:checked:insensitive,
+.check row:selected:focus:checked:insensitive,
 .check:active:insensitive,
 .check row:selected:active:insensitive,
 .check row:selected:focus:active:insensitive {
-	background-image: url("img/checkbox-checked-insensitive.png");
+	-gtk-icon-source: url("img/checkbox-checked-insensitive.png");
 }
 
 .check:inconsistent,
 .check row:selected:inconsistent,
 .check row:selected:focus:inconsistent {
-	background-image: url("img/checkbox-mixed.png");
+	-gtk-icon-source: url("img/checkbox-mixed.png");
 }
 
 .check:inconsistent:hover,
 .check row:selected:inconsistent:hover,
 .check row:selected:focus:inconsistent:hover {
-	background-image: url("img/checkbox-mixed-hover.png");
+	-gtk-icon-source: url("img/checkbox-mixed-hover.png");
 }
 
 .check:inconsistent:insensitive,
 .check row:selected:inconsistent:insensitive,
 .check row:selected:focus:inconsistent:insensitive {
-	background-image: url("img/checkbox-mixed-insensitive.png");
+	-gtk-icon-source: url("img/checkbox-mixed-insensitive.png");
 }
 
 .radio,
 .radio row:selected,
 .radio row:selected:focus {
-	background-image: url("img/radio-unchecked.png");
+	-gtk-icon-source: url("img/radio-unchecked.png");
 }
 
 .radio:hover,
 .radio row:selected:hover,
 .radio row:selected:focus:hover {
-	background-image: url("img/radio-unchecked-hover.png");
+	-gtk-icon-source: url("img/radio-unchecked-hover.png");
 }
 
 .radio:insensitive,
 .radio row:selected:insensitive,
 .radio row:selected:focus:insensitive {
-	background-image: url("img/radio-unchecked-insensitive.png");
+	-gtk-icon-source: url("img/radio-unchecked-insensitive.png");
 }
 
+.radio:checked,
+.radio row:selected:checked,
+.radio row:selected:focus:checked,
 .radio:active,
 .radio row:selected:active,
 .radio row:selected:focus:active {
-	background-image: url("img/radio-checked.png");
+	-gtk-icon-source: url("img/radio-checked.png");
 }
 
+.radio:checked:hover,
+.radio row:selected:checked:hover,
+.radio row:selected:focus:checked:hover,
 .radio:active:hover,
 .radio row:selected:active:hover,
 .radio row:selected:focus:active:hover {
-	background-image: url("img/radio-checked-hover.png");
+	-gtk-icon-source: url("img/radio-checked-hover.png");
 }
 
+.radio:checked:insensitive,
+.radio row:selected:checked:insensitive,
+.radio row:selected:focus:checked:insensitive,
 .radio:active:insensitive,
 .radio row:selected:active:insensitive,
 .radio row:selected:focus:active:insensitive {
-	background-image: url("img/radio-checked-insensitive.png");
+	-gtk-icon-source: url("img/radio-checked-insensitive.png");
 }
 
 .radio:inconsistent,
 .radio row:selected:inconsistent,
 .radio row:selected:focus:inconsistent {
-	background-image: url("img/radio-mixed.png");
+	-gtk-icon-source: url("img/radio-mixed.png");
 }
 
 .radio:inconsistent:hover,
 .radio row:selected:inconsistent:hover,
 .radio row:selected:focus:inconsistent:hover {
-	background-image: url("img/radio-mixed-hover.png");
+	-gtk-icon-source: url("img/radio-mixed-hover.png");
 }
 
 .radio:inconsistent:insensitive,
 .radio row:selected:inconsistent:insensitive,
 .radio row:selected:focus:inconsistent:insensitive {
-	background-image: url("img/radio-mixed-insensitive.png");
+	-gtk-icon-source: url("img/radio-mixed-insensitive.png");
 }
 
 /*********************
@@ -283,81 +301,72 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
  *********/
 
 .menu .menuitem.check {
-	background-image: url("img/menuitem-checkbox.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-checkbox.png");
 }
 
 .menu .menuitem.check:hover {
-	background-image: url("img/menuitem-checkbox-hover.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-checkbox-hover.png");
 }
 
 .menu .menuitem.check:insensitive {
-	background-image: url("img/menuitem-checkbox-insensitive.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-checkbox-insensitive.png");
 }
 
+.menu .menuitem.check:checked,
 .menu .menuitem.check:active {
-	background-image: url("img/menuitem-checkbox-checked.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-checkbox-checked.png");
 }
 
+.menu .menuitem.check:checked:hover,
 .menu .menuitem.check:active:hover {
-	background-image: url("img/menuitem-checkbox-checked-hover.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-checkbox-checked-hover.png");
 }
 
+.menu .menuitem.check:checked:insensitive,
 .menu .menuitem.check:active:insensitive {
-	background-image: url("img/menuitem-checkbox-checked-insensitive.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-checkbox-checked-insensitive.png");
 }
 
 .menu .menuitem.check:inconsistent,
 .menu .menuitem.radio:inconsistent {
-	background-image: url("img/menuitem-checkbox-mixed.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-checkbox-mixed.png");
 }
 
 .menu .menuitem.check:inconsistent:hover,
 .menu .menuitem.radio:inconsistent:hover {
-	background-image: url("img/menuitem-checkbox-mixed-hover.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-checkbox-mixed-hover.png");
 }
 
 .menu .menuitem.check:inconsistent:insensitive,
 .menu .menuitem.radio:inconsistent:insensitive {
-	background-image: url("img/menuitem-checkbox-mixed-insensitive.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-checkbox-mixed-insensitive.png");
 }
 
 .menu .menuitem.radio {
-	background-image: url("img/menuitem-radio.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-radio.png");
 }
 
 .menu .menuitem.radio:hover {
-	background-image: url("img/menuitem-radio-hover.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-radio-hover.png");
 }
 
 .menu .menuitem.radio:insensitive {
-	background-image: url("img/menuitem-radio-insensitive.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-radio-insensitive.png");
 }
 
+.menu .menuitem.radio:checked,
 .menu .menuitem.radio:active {
-	background-image: url("img/menuitem-radio-checked.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-radio-checked.png");
 }
 
+.menu .menuitem.radio:checked:hover,
 .menu .menuitem.radio:active:hover {
-	background-image: url("img/menuitem-radio-checked-hover.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-radio-checked-hover.png");
 }
 
+.menu .menuitem.radio:checked:insensitive,
 .menu .menuitem.radio:active:insensitive {
-	background-image: url("img/menuitem-radio-checked-insensitive.png");
-	background-repeat: no-repeat;
+	-gtk-icon-source: url("img/menuitem-radio-checked-insensitive.png");
 }
 
 /*********
@@ -378,22 +387,26 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
 
 /* generic element borders */
 .entry,
-GtkComboBox.combobox-entry .entry,
-GtkComboBox.combobox-entry .button,
+.combobox-entry .entry,
+.combobox-entry .button,
 .button:active,
 .trough,
 .trough.highlight,
 GtkSwitch.trough,
 /* generic button borders */
 .button,
+.button.flat:active,
+.button.flat:hover,
+.menu-button:active,
 .titlebar .titlebutton:hover,
+.primary-toolbar .button:checked,
 .primary-toolbar .button.raised,
 .primary-toolbar .raised .button,
 .primary-toolbar GtkComboBox .button,
 /* primary toolbar - generic element borders */
 .primary-toolbar .entry,
-.primary-toolbar GtkComboBox.combobox-entry .entry,
-.primary-toolbar GtkComboBox.combobox-entry .button,
+.primary-toolbar .combobox-entry .entry,
+.primary-toolbar .combobox-entry .button,
 .primary-toolbar .button:active,
 .primary-toolbar .button.raised:active,
 .primary-toolbar .raised .button:active,
@@ -413,40 +426,15 @@ GtkSwitch.trough,
 }
 
 .primary-toolbar .entry,
-.primary-toolbar GtkComboBox.combobox-entry .entry {
+.primary-toolbar .combobox-entry .entry {
 	border-width: 1px 2px 2px;
 }
 
 .primary-toolbar .entry:focus,
-.primary-toolbar GtkComboBox.combobox-entry .entry:focus {
+.primary-toolbar .combobox-entry .entry:focus {
 	border-width: 1px 2px 2px;
 }
 
-/* linked buttons */
-/* Middle button */
-.linked .entry,
-.linked .button,
-.linked .button:active,
-.linked .button:active:hover,
-.linked .button:focus,
-.linked .button:focus:active,
-.linked .button:insensitive,
-/* Leftmost button */
-.linked .entry:first-child,
-.linked .button:first-child,
-.linked .button:active:first-child,
-.linked .button:active:hover:first-child,
-.linked .button:focus:first-child,
-.linked .button:focus:active:first-child,
-.linked .button:insensitive:first-child,
-/* Rightmost button */
-.linked .entry:last-child,
-.linked .button:last-child,
-.linked .button:active:last-child,
-.linked .button:active:hover:last-child,
-.linked .button:focus:last-child,
-.linked .button:focus:active:last-child,
-.linked .button:insensitive:last-child,
 /* Linked single button */
 .linked .entry:only-child,
 .linked .button:only-child,
@@ -571,8 +559,8 @@ GtkSwitch.trough,
 
 /* generic insensitive element borders */
 GtkSwitch.trough:insensitive,
-GtkComboBox.combobox-entry .entry:insensitive,
-GtkComboBox.combobox-entry .button:insensitive,
+.combobox-entry .entry:insensitive,
+.combobox-entry .button:insensitive,
 .entry:insensitive,
 .button:insensitive,
 .trough row {
@@ -583,19 +571,27 @@ GtkComboBox.combobox-entry .button:insensitive,
 	border-color: transparent;
 }
 
+.menuitem.button.flat,
+.menuitem.button.flat:active,
+.button.flat,
+.button.flat:insensitive {
+    border-image: none;
+    background-image: none;
+}
+
 /* focused element borders */
 .entry:focus,
-GtkComboBox.combobox-entry .entry:focus,
+.combobox-entry .entry:focus,
+.button.flat:focus:active,
 .button:focus:active,
 .button.default:active,
 /* focused button borders */
-.button:focus,
+.button.flat:focus,
 .button.default,
 .primary-toolbar .entry:focus,
 .primary-toolbar .button:active:focus,
-.primary-toolbar .button:focus:hover,
-.primary-toolbar GtkComboBox.combobox-entry .entry:focus,
-.primary-toolbar GtkComboBox.combobox-entry .button:focus,
+.primary-toolbar .combobox-entry .entry:focus,
+.primary-toolbar .combobox-entry .button:focus,
 .primary-toolbar .button.raised:focus:active,
 .primary-toolbar .raised .button:focus:active,
 .primary-toolbar .button.raised.default:active,
@@ -607,15 +603,6 @@ GtkComboBox.combobox-entry .entry:focus,
 .primary-toolbar .raised .button.default,
 .primary-toolbar GtkComboBox .button:focus {
 	border-image: url("img/border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
-	border-radius: 3px;
-	border-width: 1px 1px 2px 1px;
-	border-style: solid;
-	border-color: transparent;
-}
-
-/* focused primary toolbar button borders */
-.primary-toolbar .button:focus {
-	border-image: url("img/border-focused-ptb.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
 	border-radius: 3px;
 	border-width: 1px 1px 2px 1px;
 	border-style: solid;
@@ -664,3 +651,61 @@ column-header:last-child .button:active:focus {
 	border-right: none;
 }
 
+/* Leftmost button */
+.linked .entry:first-child,
+.linked > GtkComboBox:first-child > .button:last-child,
+.linked > GtkComboBox:first-child > .button:active:last-child,
+.linked > GtkComboBox:first-child > .button:active:hover:last-child,
+.linked > GtkComboBox:first-child > .button:focus:last-child,
+.linked > GtkComboBox:first-child > .button:focus:active:last-child,
+.linked > GtkComboBox:first-child > .button:insensitive:last-child,
+.linked .button:first-child,
+.linked .button:active:first-child,
+.linked .button:active:hover:first-child,
+.linked .button:focus:first-child,
+.linked .button:focus:active:first-child,
+.linked .button:insensitive:first-child {
+    border-image: none;
+    border-radius: 3px 0 0 3px;
+    border-color: @border_color;
+    border-width: 1px;
+    padding: 1px 2px;
+}
+
+/* Middle button */
+.linked .entry,
+.linked > GtkComboBox > .button:last-child,
+.linked > GtkComboBox > .button:active:last-child,
+.linked > GtkComboBox > .button:active:hover:last-child,
+.linked > GtkComboBox > .button:focus:last-child,
+.linked > GtkComboBox > .button:focus:active:last-child,
+.linked > GtkComboBox > .button:insensitive:last-child,
+.linked .button,
+.linked .button:active,
+.linked .button:active:hover,
+.linked .button:focus,
+.linked .button:focus:active,
+.linked .button:insensitive {
+    border-image: none;
+	border-radius: 0;
+    border-color: @border_color;
+    border-width: 1px 0;
+    padding: 1px 2px;
+}
+
+/* Rightmost button */
+.linked .entry:last-child,
+.linked > GtkComboBox:last-child > .button,
+.linked > GtkComboBox:last-child > .button:last-child,
+.linked .button:last-child,
+.linked .button:active:last-child,
+.linked .button:active:hover:last-child,
+.linked .button:focus:last-child,
+.linked .button:focus:active:last-child,
+.linked .button:insensitive:last-child {
+    border-image: none;
+	border-radius: 0 3px 3px 0;
+    border-color: @border_color;
+    border-width: 1px;
+    padding: 1px 2px;
+}

@@ -20,22 +20,6 @@ Here are screenshots (if applicable, click to see the original image):
 
 ## Installation
 
-Regardless of the installation method chosen, the theme must be selected once the installation is complete:
-
-- On Gnome: with [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), by setting *Theme > Window theme* and *Theme > GTK+ theme*, or in a terminal:
-
-		dconf write /org/gnome/desktop/wm/preferences/theme \'Clearlooks-Phenix\'
-		dconf write /org/gnome/desktop/interface/gtk-theme \'Clearlooks-Phenix\'
-
-- On Xfce: by going to *Settings > Appearence > Style* in the main menu for the GTK theme, and to *Settings > Window Manager > Style* for the Xfwm4 theme, or in a terminal:
-
-		xfconf-query -s Clearlooks-Phenix -c xfwm4 -p /general/theme
-		xfconf-query -s Clearlooks-Phenix -c xsettings -p /Net/ThemeName
-
-### Manually
-
-**Manual installation ensures you get the latest version of the theme.** See below for other installation methods.
-
 - Download the appropriate version according to your situation:
 
 	- for GTK 3.0 and 3.2: [download Clearlooks-Phenix v1](https://github.com/jpfleury/clearlooks-phenix/archive/v1.zip);
@@ -46,7 +30,9 @@ Regardless of the installation method chosen, the theme must be selected once th
 	
 	- for GTK 3.8: [download Clearlooks-Phenix v4](https://github.com/jpfleury/clearlooks-phenix/archive/v4.zip);
 	
-	- for GTK 3.10 and 3.12: [download Clearlooks-Phenix v5](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
+	- for GTK 3.10 and 3.12: [download Clearlooks-Phenix v5](https://github.com/jpfleury/clearlooks-phenix/archive/v5.zip);
+	
+	- for GTK 3.14: [download Clearlooks-Phenix v6](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
 	
 	To find your GTK version:
 	
@@ -71,23 +57,19 @@ Regardless of the installation method chosen, the theme must be selected once th
 	
 	- `/usr/share/themes/` for all users, including style for programs ran with root privileges (e.g. Synaptic).
 
-### Arch Linux
+### Selection
 
-An [AUR package](https://aur.archlinux.org/packages.php?ID=60380) is maintained by eworm.
+The theme must be selected once the installation is complete:
 
-### Debian
+- On Gnome: with [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), by setting *Theme > Window theme* and *Theme > GTK+ theme*, or in a terminal:
 
-The package [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlooks-phenix-theme) can be installed on Debian unstable.
+		dconf write /org/gnome/desktop/wm/preferences/theme \'Clearlooks-Phenix\'
+		dconf write /org/gnome/desktop/interface/gtk-theme \'Clearlooks-Phenix\'
 
-### Gentoo
+- On Xfce: by going to *Settings > Appearence > Style* in the main menu for the GTK theme, and to *Settings > Window Manager > Style* for the Xfwm4 theme, or in a terminal:
 
-See the following package:
-
-	http://packages.gentoo.org/package/x11-themes/clearlooks-phenix
-
-### Ubuntu
-
-The package [`clearlooks-phenix-theme`](http://packages.ubuntu.com/search?keywords=clearlooks-phenix-theme) can be installed on Ubuntu 12.10 and newer.
+		xfconf-query -s Clearlooks-Phenix -c xfwm4 -p /general/theme
+		xfconf-query -s Clearlooks-Phenix -c xsettings -p /Net/ThemeName
 
 ## Configuration
 
@@ -171,13 +153,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ### Third-party code
 
-- Adwaita theme, from the package [`gnome-themes-standard`](http://packages.ubuntu.com/oneiric/gnome-themes-standard), under LGPL.
+- Adwaita theme, from the package [`gnome-themes-standard`](http://packages.ubuntu.com/search?keywords=gnome-themes-standard), under LGPL.
 
-- File `gtk-2.0/gtkrc`, from the package [`gtk2-engines`](http://packages.ubuntu.com/oneiric/gtk2-engines), under LGPL.
+- File `gtk-2.0/gtkrc`, from the package [`gtk2-engines`](http://packages.ubuntu.com/search?keywords=gtk2-engines), under LGPL.
 
-- File `metacity-1/metacity-theme-1.xml`, from the package [`gnome-themes-selected`](http://packages.ubuntu.com/oneiric/gnome-themes-selected), under LGPL.
+- File `metacity-1/metacity-theme-1.xml`, from the package [`gnome-themes-selected`](http://packages.ubuntu.com/search?keywords=gnome-themes-selected), under LGPL.
 
-- File `openbox-3/themerc`, from the package [`openbox`](http://packages.ubuntu.com/oneiric/openbox), under GPL.
+- File `openbox-3/themerc`, from the package [`openbox`](http://packages.ubuntu.com/search?keywords=openbox), under GPL.
 
 - [Clearlooks XFWM4](http://xfce-look.org/content/show.php/Clearlooks+for+XFWM4?content=137055) theme, under GPL.
 
