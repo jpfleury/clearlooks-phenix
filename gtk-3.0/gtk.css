@@ -427,9 +427,9 @@
 @define-color trough_gradient_a shade(@core_color_b, 0.81);
 @define-color trough_gradient_b shade(@core_color_b, 0.90);
 
-/*************
- * imports 2 *
- *************/
+/***********
+ * imports *
+ ***********/
 
 @import url("gtk-widgets-img.css");
 @import url("gtk-widgets.css");

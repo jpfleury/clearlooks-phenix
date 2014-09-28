@@ -34,9 +34,9 @@ GtkSwitch.slider:insensitive {
 	background-image: url("img/resize-grip.png");
 }
 
-/***************
+/*************
  * Scrollbar *
- ***************/
+ *************/
 
 .scrollbar.slider {
 	background-repeat: no-repeat;
@@ -435,7 +435,6 @@ GtkSwitch.trough,
 	border-width: 1px 2px 2px;
 }
 
-/* linked buttons */
 /* Linked single button */
 .linked .entry:only-child,
 .linked .button:only-child,
@@ -720,4 +719,3 @@ column-header:last-child .button:active:focus {
     border-width: 1px;
     padding: 1px 2px;
 }
-

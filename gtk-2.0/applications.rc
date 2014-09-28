@@ -61,4 +61,3 @@ style "chrome-hacks"
 
 class "ChromeGtkFrame" style "chrome-hacks"
 widget_class "*Chrom*Button*" style "chromium_toolbar_button"
-
