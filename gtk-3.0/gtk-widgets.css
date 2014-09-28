@@ -461,7 +461,7 @@ GtkScrolledWindow GtkViewport.frame {
 .button,
 .button.menuitem.menubar,
 .combobox-entry .button {
-	padding: 1px 4px;
+	padding: 5px 8px 6px;
 }
 
 .button {
