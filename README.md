@@ -46,7 +46,7 @@ Regardless of the installation method chosen, the theme must be selected once th
 	
 	- for GTK 3.8: [download Clearlooks-Phenix v4](https://github.com/jpfleury/clearlooks-phenix/archive/v4.zip);
 	
-	- for GTK 3.10 and 3.12: [download Clearlooks-Phenix v5](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
+	- for GTK 3.10 and 3.12: [download Clearlooks-Phenix v5](https://github.com/jpfleury/clearlooks-phenix/archive/v5.zip).
 	
 	To find your GTK version:
 	
