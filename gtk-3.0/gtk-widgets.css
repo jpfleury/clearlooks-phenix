@@ -1131,7 +1131,8 @@ GtkTreeMenu .menuitem {
 }
 
 .menubar .menuitem:hover,
-.flat.menuitem:hover {
+.menuitem.button.flat:hover,
+.menuitem.button.flat:active {
 	background-color: @menu_bg_color;
 	border-style: solid;
 	border-width: 1px 1px 0px;
@@ -1147,8 +1148,9 @@ GtkTreeMenu .menuitem {
 	                  to (@menubar_menuitem_hover_gradient_d));
 }
 
-.flat.menuitem:hover {
+.menuitem.button.flat:hover {
 	border-width: 1px;
+	border-radius: 3px;
 }
 
 .menubar .menuitem *:hover {
