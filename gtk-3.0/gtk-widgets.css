@@ -1808,6 +1808,15 @@ GtkInfoBar:last-child,
 	margin: 10px;
 }
 
+/**************
+ * Action bar *
+ **************/
+
+.action-bar {
+	border: none;
+	padding: 7px 7px 3px 7px;
+}
+
 /************
  * Popovers *
  ************/
