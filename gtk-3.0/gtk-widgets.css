@@ -1773,6 +1773,7 @@ GtkInfoBar:last-child,
 	border-radius: 7px 7px 0px 0px;
 	border-bottom: 1px solid;
 	border-color: shade(@border_color, 1.30);
+	padding: 2px;
 }
 
 .titlebar > * {
