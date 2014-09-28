@@ -20,22 +20,6 @@ Voici quelques captures d'écran (s'il y a lieu, cliquer pour voir l'image au fo
 
 ## Installation
 
-Peu importe la méthode d'installation choisie, le thème devra être sélectionné une fois l'installation terminée:
-
-- Sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), en paramétrant *Theme > Window theme* et *Theme > GTK+ theme*, ou en console:
-
-		dconf write /org/gnome/desktop/wm/preferences/theme \'Clearlooks-Phenix\'
-		dconf write /org/gnome/desktop/interface/gtk-theme \'Clearlooks-Phenix\'
-
-- Sous Xfce: en allant dans *Paramètres > Apparence > Style* du menu principal pour le thème GTK, et dans *Paramètres > Gestionnaire de fenêtres > Style* pour le thème de Xfwm4, ou en console:
-
-		xfconf-query -s Clearlooks-Phenix -c xfwm4 -p /general/theme
-		xfconf-query -s Clearlooks-Phenix -c xsettings -p /Net/ThemeName
-
-### Manuellement
-
-**La méthode manuelle assure d'installer la dernière version du thème.** Voir plus bas pour d'autres méthodes d'installation.
-
 - Télécharger l'archive de la version correspondant à votre situation:
 
 	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix v1](https://github.com/jpfleury/clearlooks-phenix/archive/v1.zip);
@@ -71,23 +55,19 @@ Peu importe la méthode d'installation choisie, le thème devra être sélection
 	
 	- `/usr/share/themes/` pour tous les utilisateurs, incluant le style des logiciels lancés en tant que superutilisateur (par exemple Synaptic).
 
-### Arch Linux
+### Sélection du thème
 
-Un [paquet AUR](https://aur.archlinux.org/packages.php?ID=60380) est maintenu par eworm.
+Le thème doit être sélectionné une fois l'installation terminée:
 
-### Debian
+- Sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), en paramétrant *Theme > Window theme* et *Theme > GTK+ theme*, ou en console:
 
-Le paquet [`clearlooks-phenix-theme`](http://packages.debian.org/sid/clearlooks-phenix-theme) peut être installé sous Debian unstable.
+		dconf write /org/gnome/desktop/wm/preferences/theme \'Clearlooks-Phenix\'
+		dconf write /org/gnome/desktop/interface/gtk-theme \'Clearlooks-Phenix\'
 
-### Gentoo
+- Sous Xfce: en allant dans *Paramètres > Apparence > Style* du menu principal pour le thème GTK, et dans *Paramètres > Gestionnaire de fenêtres > Style* pour le thème de Xfwm4, ou en console:
 
-Voir le paquet suivant:
-
-	http://packages.gentoo.org/package/x11-themes/clearlooks-phenix
-
-### Ubuntu
-
-Le paquet [`clearlooks-phenix-theme`](http://packages.ubuntu.com/search?keywords=clearlooks-phenix-theme) peut être installé sous Ubuntu 12.10 ou toute version ultérieure.
+		xfconf-query -s Clearlooks-Phenix -c xfwm4 -p /general/theme
+		xfconf-query -s Clearlooks-Phenix -c xsettings -p /Net/ThemeName
 
 ## Configuration
 
@@ -172,13 +152,13 @@ ce programme; si ce n'est pas le cas, consultez
 
 ### Matériel tiers
 
-- Thème Adwaita, provenant du paquet [`gnome-themes-standard`](http://packages.ubuntu.com/oneiric/gnome-themes-standard), sous licence LGPL.
+- Thème Adwaita, provenant du paquet [`gnome-themes-standard`](http://packages.ubuntu.com/search?keywords=gnome-themes-standard), sous licence LGPL.
 
-- Fichier `gtk-2.0/gtkrc`, provenant du paquet [`gtk2-engines`](http://packages.ubuntu.com/oneiric/gtk2-engines), sous licence LGPL.
+- Fichier `gtk-2.0/gtkrc`, provenant du paquet [`gtk2-engines`](http://packages.ubuntu.com/search?keywords=gtk2-engines), sous licence LGPL.
 
-- Fichier `metacity-1/metacity-theme-1.xml`, provenant du paquet [`gnome-themes-selected`](http://packages.ubuntu.com/oneiric/gnome-themes-selected), sous licence LGPL.
+- Fichier `metacity-1/metacity-theme-1.xml`, provenant du paquet [`gnome-themes-selected`](http://packages.ubuntu.com/search?keywords=gnome-themes-selected), sous licence LGPL.
 
-- Fichier `openbox-3/themerc`, provenant du paquet [`openbox`](http://packages.ubuntu.com/oneiric/openbox), sous licence GPL.
+- Fichier `openbox-3/themerc`, provenant du paquet [`openbox`](http://packages.ubuntu.com/search?keywords=openbox), sous licence GPL.
 
 - Thème [Clearlooks XFWM4](http://xfce-look.org/content/show.php/Clearlooks+for+XFWM4?content=137055), sous licence GPL.
 
