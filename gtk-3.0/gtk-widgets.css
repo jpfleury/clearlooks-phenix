@@ -464,6 +464,24 @@ GtkScrolledWindow GtkViewport.frame {
 	padding: 5px 8px 6px;
 }
 
+.path-bar .button,
+.path-bar .button GtkImage,
+.path-bar .button GtkLabel {
+	padding: 2px;
+}
+
+.path-bar .button {
+	border-width: 1px 0px 1px 1px;
+}
+
+.path-bar .button:hover:active {
+	border-left-width: 1px;
+}
+
+.path-bar .button.image-button:first-child {
+	border-right: none;
+}
+
 .button {
 	-GtkButton-image-spacing: 4;
 	-GtkButton-interior-focus: true;
