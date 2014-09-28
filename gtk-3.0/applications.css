@@ -24,16 +24,34 @@
  * gedit *
  *********/
 
+GeditMenuStackSwitcher.button.flat {
+	border-image: url("img/border.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-radius: 3px;
+	border-width: 1px 1px 2px 1px;
+	border-style: solid;
+	border-color: transparent;
+}
+
+.gedit-side-panel-paned,
+.gedit-bottom-panel-paned {
+	border-style: solid;
+	border-color: @toolbar_border_top_color;
+}
+
+.gedit-side-panel-paned {
+	border-width: 0px 1px 0px 0px;
+}
+
+.gedit-bottom-panel-paned {
+	border-width: 1px 0px 0px 0px;
+}
+
+.gedit-menu-stack-switcher {
+	padding: 15px 15px 2px 15px;
+}
+
 GeditMultiNotebook .notebook {
 	border-width: 0px 0px 1px 1px;
-}
-
-GeditPanel.horizontal .notebook {
-	border-width: 0px 1px 1px 1px;
-}
-
-GeditPanel.vertical .notebook {
-	border-width: 0px 1px 1px 1px;
 }
 
 GeditViewFrame .gedit-search-slider {
@@ -41,21 +59,19 @@ GeditViewFrame .gedit-search-slider {
 	border-image: url("img/border-focused.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
 }
 
-GeditViewFrame .gedit-search-slider .not-found {
-	background-color: @error_bg_color;
-	color: @error_fg_color;
-}
-
-GeditViewFrame .gedit-search-slider .not-found:selected {
-	background-color: @theme_selected_bg_color;
-	color: @theme_selected_fg_color;
-}
-
 .gedit-search-entry-occurrences-tag {
 	color: @theme_text_color;
 	background-color: @theme_bg_color;
 	margin: 2px 0px 2px 2px;
 	padding: 2px;
+}
+
+GeditStatusbar .frame.flat {
+	border: none;
+}
+
+GtkHeaderBar .header-bar {
+	padding: 3px;
 }
 
 /*******************

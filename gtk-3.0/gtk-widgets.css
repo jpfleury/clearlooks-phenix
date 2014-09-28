@@ -1112,7 +1112,8 @@ GtkTreeMenu .menuitem {
 	background-color: transparent;
 }
 
-.menubar .menuitem:hover {
+.menubar .menuitem:hover,
+.flat.menuitem:hover {
 	background-color: @menu_bg_color;
 	border-style: solid;
 	border-width: 1px 1px 0px;
@@ -1126,6 +1127,10 @@ GtkTreeMenu .menuitem {
 	                  color-stop (0.50, @menubar_menuitem_hover_gradient_b),
 	                  color-stop (0.50, @menubar_menuitem_hover_gradient_c),
 	                  to (@menubar_menuitem_hover_gradient_d));
+}
+
+.flat.menuitem:hover {
+	border-width: 1px;
 }
 
 .menubar .menuitem *:hover {
