@@ -106,20 +106,6 @@
 @define-color button_active_insensitive_gradient_e shade(@core_color_b, 0.99);
 @define-color button_active_insensitive_gradient_f shade(@core_color_b, 0.96);
 
-/* primary toolbar focus */
-
-@define-color pt_button_focus_gradient_a mix(#fafafa, shade(@core_color_a, 1.09), 0.3);
-@define-color pt_button_focus_gradient_b mix(#ededed, shade(@core_color_a, 1.05), 0.3);
-@define-color pt_button_focus_gradient_c mix(#e8e8e8, shade(@core_color_a, 1.01), 0.25);
-@define-color pt_button_focus_gradient_d mix(#e8e8e8, shade(@core_color_a, 0.96), 0.3);
-
-/* primary toolbar focus hover */
-
-@define-color pt_button_focus_hover_gradient_a mix(#fcfcfc, shade(@core_color_a, 1.09), 0.15);
-@define-color pt_button_focus_hover_gradient_b mix(#fcfcfc, shade(@core_color_a, 1.05), 0.15);
-@define-color pt_button_focus_hover_gradient_c mix(#fcfcfc, shade(@core_color_a, 1.01), 0.2);
-@define-color pt_button_focus_hover_gradient_d mix(#e8e8e8, shade(@core_color_a, 0.96), 0.2);
-
 /*****************
  * color chooser *
  *****************/
