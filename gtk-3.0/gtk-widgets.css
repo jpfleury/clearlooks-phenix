@@ -1858,6 +1858,14 @@ GtkInfoBar:last-child,
 	padding: 7px 7px 3px 7px;
 }
 
+/**************
+ * Header bar *
+ **************/
+
+GtkHeaderBar .header-bar {
+	padding: 3px;
+}
+
 /************
  * Popovers *
  ************/

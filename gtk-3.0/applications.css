@@ -70,10 +70,6 @@ GeditStatusbar .frame.flat {
 	border: none;
 }
 
-GtkHeaderBar .header-bar {
-	padding: 3px;
-}
-
 /*******************
  * gnome-documents *
  *******************/
