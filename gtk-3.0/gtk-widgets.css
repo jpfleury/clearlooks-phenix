@@ -707,6 +707,24 @@ GtkColorChooserWidget #add-color-button:hover {
 	background-color: transparent;
 }
 
+/* Focused primary toolbar button background */
+.primary-toolbar .button:focus {
+	background-image: linear-gradient(to bottom,
+	                  @pt_button_focus_gradient_a,
+	                  @pt_button_focus_gradient_b 50%,
+	                  @pt_button_focus_gradient_c 50%,
+	                  @pt_button_focus_gradient_d);
+}
+
+/* Focused + prelit primary toolbar button background */
+.primary-toolbar .button:focus:hover {
+	background-image: linear-gradient(to bottom,
+	                  @pt_button_focus_hover_gradient_a,
+	                  @pt_button_focus_hover_gradient_b 50%,
+	                  @pt_button_focus_hover_gradient_c 50%,
+	                  @pt_button_focus_hover_gradient_d);
+}
+
 /*****************
  * Notebooks and *
  * tabs          *
