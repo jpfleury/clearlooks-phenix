@@ -1192,6 +1192,10 @@ GtkTreeMenu .menuitem {
 	border-radius: 3px;
 }
 
+.menuitem.button.flat:focus {
+	color: @theme_text_color;
+}
+
 .menubar .menuitem *:hover {
 	border-width: 1px;
 	color: @menubar_menuitem_hover_color;
