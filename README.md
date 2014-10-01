@@ -1,36 +1,36 @@
 ## Overview
 
-The Clearlooks-Phenix project aims at creating a GTK3 port of Clearlooks, the default theme for Gnome 2. Style is also included for GTK2, Unity and for Metacity, Openbox and Xfwm4 window managers.
+The Clearlooks-Phénix project aims at creating a GTK3 port of Clearlooks, the default theme for Gnome 2. Style is also included for GTK2, Unity and for Metacity, Openbox and Xfwm4 window managers.
 
 Here are screenshots (if applicable, click to see the original image):
 
-<a href="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple1.png"><img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple1.png" alt="Screenshot of a Gnome 3 desktop (fallback mode) with the Clearlooks-Phenix theme" width="658" height="493" /></a>
+<a href="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple1.png"><img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple1.png" alt="Screenshot of a Gnome 3 desktop (fallback mode) with the Clearlooks-Phénix theme" width="658" height="493" /></a>
 
-<img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple2.png" alt="Screenshot of gedit 3 with the Clearlooks-Phenix theme" width="659" height="537" />
+<img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple2.png" alt="Screenshot of gedit 3 with the Clearlooks-Phénix theme" width="659" height="537" />
 
-<a href="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple3.png"><img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple3.png" alt="Screenshot of GTK+ Widget Factory with the Clearlooks-Phenix theme" width="658" height="435" /></a>
+<a href="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple3.png"><img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple3.png" alt="Screenshot of GTK+ Widget Factory with the Clearlooks-Phénix theme" width="658" height="435" /></a>
 
 ## Requirements
 
-- Requirements for Clearlooks-Phenix v1: packages `gtk2-engines` (if GTK2 applications are used) and `gnome-themes-standard`.
+- Requirements for Clearlooks-Phénix v1: packages `gtk2-engines` (if GTK2 applications are used) and `gnome-themes-standard`.
 
-- Requirements for Clearlooks-Phenix v2: packages `gtk2-engines` (if GTK2 applications are used), `gnome-themes-standard` and `gtk3-engines-unico`.
+- Requirements for Clearlooks-Phénix v2: packages `gtk2-engines` (if GTK2 applications are used), `gnome-themes-standard` and `gtk3-engines-unico`.
 
-- Requirements for Clearlooks-Phenix v3 and newer: package `gtk2-engines` (if GTK2 applications are used).
+- Requirements for Clearlooks-Phénix v3 and newer: package `gtk2-engines` (if GTK2 applications are used).
 
 ## Installation
 
 - Download the appropriate version according to your situation:
 
-	- for GTK 3.0 and 3.2: [download Clearlooks-Phenix v1](https://github.com/jpfleury/clearlooks-phenix/archive/v1.zip);
+	- for GTK 3.0 and 3.2: [download Clearlooks-Phénix v1](https://github.com/jpfleury/clearlooks-phenix/archive/v1.zip);
 	
-	- for GTK 3.4: [download Clearlooks-Phenix v2](https://github.com/jpfleury/clearlooks-phenix/archive/v2.zip);
+	- for GTK 3.4: [download Clearlooks-Phénix v2](https://github.com/jpfleury/clearlooks-phenix/archive/v2.zip);
 	
-	- for GTK 3.6: [download Clearlooks-Phenix v3](https://github.com/jpfleury/clearlooks-phenix/archive/v3.zip);
+	- for GTK 3.6: [download Clearlooks-Phénix v3](https://github.com/jpfleury/clearlooks-phenix/archive/v3.zip);
 	
-	- for GTK 3.8: [download Clearlooks-Phenix v4](https://github.com/jpfleury/clearlooks-phenix/archive/v4.zip);
+	- for GTK 3.8: [download Clearlooks-Phénix v4](https://github.com/jpfleury/clearlooks-phenix/archive/v4.zip);
 	
-	- for GTK 3.10 and 3.12: [download Clearlooks-Phenix v5](https://github.com/jpfleury/clearlooks-phenix/archive/v5.zip).
+	- for GTK 3.10 and 3.12: [download Clearlooks-Phénix v5](https://github.com/jpfleury/clearlooks-phenix/archive/v5.zip).
 	
 	To find your GTK version:
 	
