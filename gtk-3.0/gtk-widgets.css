@@ -1894,7 +1894,7 @@ GtkHeaderBar .header-bar {
 
 GtkPopover {
 	border: 1px solid;
-	border-radius: 7px;
+	border-radius: 0px;
 	border-color: @border_color;
 	background-color: @theme_bg_color;
 	background-clip: border-box;
