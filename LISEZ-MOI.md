@@ -136,7 +136,7 @@ Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être
 ## Licence
 
 Auteur: Jean-Philippe Fleury (<http://www.jpfleury.net/contact.php>)  
-Copyright © Jean-Philippe Fleury, 2011-2014.
+Copyright © Jean-Philippe Fleury, 2011-2014.  
 Copyright © Andrew Shadura, 2013-2014.
 
 Ce programme est un logiciel libre; vous pouvez le redistribuer ou le
