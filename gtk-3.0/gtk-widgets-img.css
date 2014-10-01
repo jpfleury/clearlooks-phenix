@@ -675,14 +675,7 @@ column-header:last-child .button:active:focus {
 .linked .button:active:hover:first-child,
 .linked .button:focus:first-child,
 .linked .button:focus:active:first-child,
-.linked .button:insensitive:first-child {
-    border-image: none;
-    border-radius: 3px 0 0 3px;
-    border-color: @border_color;
-    border-width: 1px;
-    padding: 1px 2px;
-}
-
+.linked .button:insensitive:first-child,
 /* Middle button */
 .linked .entry,
 .linked > GtkComboBox > .button:last-child,
@@ -696,14 +689,7 @@ column-header:last-child .button:active:focus {
 .linked .button:active:hover,
 .linked .button:focus,
 .linked .button:focus:active,
-.linked .button:insensitive {
-    border-image: none;
-	border-radius: 0;
-    border-color: @border_color;
-    border-width: 1px 0;
-    padding: 1px 2px;
-}
-
+.linked .button:insensitive,
 /* Rightmost button */
 .linked .entry:last-child,
 .linked > GtkComboBox:last-child > .button,
@@ -714,9 +700,9 @@ column-header:last-child .button:active:focus {
 .linked .button:focus:last-child,
 .linked .button:focus:active:last-child,
 .linked .button:insensitive:last-child {
-    border-image: none;
-	border-radius: 0 3px 3px 0;
-    border-color: @border_color;
-    border-width: 1px;
-    padding: 1px 2px;
+	border-image: none;
+	border-radius: 3px;
+	border-color: @border_color;
+	border-width: 1px;
+	padding: 1px 2px;
 }
