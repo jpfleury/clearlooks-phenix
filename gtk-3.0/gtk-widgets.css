@@ -1836,7 +1836,7 @@ GtkInfoBar:last-child,
 	border-radius: 0px;
 	border-bottom: 1px solid;
 	border-color: shade(@border_color, 1.30);
-	padding: 2px;
+	padding: 3px;
 }
 
 .titlebar > * {
