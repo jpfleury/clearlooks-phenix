@@ -31,6 +31,12 @@
 
 	-GtkWidget-focus-padding: 2;
 	-GtkWidget-focus-line-width: 1;
+	outline-color: @focus_border_color;
+	outline-style: dashed;
+	outline-offset: -2px;
+	outline-width: 1px;
+	outline-radius: 2px;
+	
 	-GtkWindow-resize-grip-width: 11;
 	-GtkWindow-resize-grip-height: 11;
 }
