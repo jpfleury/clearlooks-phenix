@@ -136,7 +136,8 @@ Git is used for revision control. [Repository can be browsed online or cloned.](
 ## License
 
 Author: Jean-Philippe Fleury (<http://www.jpfleury.net/en/contact.php>)  
-Copyright © 2011 Jean-Philippe Fleury
+Copyright © 2011-2014 Jean-Philippe Fleury
+Copyright © 2013-2014 Andrew Shadura
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
