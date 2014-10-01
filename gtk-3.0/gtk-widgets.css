@@ -511,6 +511,10 @@ GtkListBoxRow.button.list-row {
 	border: none;
 }
 
+GtkListBoxRow.button.list-row:hover {
+	background-color: shade(@menubar_menuitem_hover_gradient_a, 1.25);
+}
+
 GtkListBoxRow.button.list-row:selected {
 	color: @theme_selected_fg_color;
 	border-style: solid;
@@ -1557,7 +1561,8 @@ GtkTreeView:insensitive {
 	color: @insensitive_fg_color;
 }
 
-GtkTreeView:selected:focus {
+GtkTreeView:hover {
+	background-color: shade(@menubar_menuitem_hover_gradient_a, 1.25);
 }
 
 column-header.button,
