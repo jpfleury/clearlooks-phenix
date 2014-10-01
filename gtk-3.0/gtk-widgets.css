@@ -1803,10 +1803,10 @@ GtkInfoBar:last-child,
 }
 
 .window-frame {
-	border-width: 1px;
+	border-width: 0px;
 	border-radius: 7px 7px 0 0;
 	border-style: solid;
-	margin: 10px;
+	margin: 0px;
 }
 
 /************
