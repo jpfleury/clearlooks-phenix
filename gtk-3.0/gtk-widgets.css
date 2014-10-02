@@ -476,6 +476,11 @@ GtkScrolledWindow GtkViewport.frame {
 	padding: 5px 8px 6px;
 }
 
+.primary-toolbar.toolbar.horizontal .button,
+.primary-toolbar.toolbar.horizontal .button:active {
+	padding: 2px;
+}
+
 .path-bar .button,
 .path-bar .button GtkImage,
 .path-bar .button GtkLabel {
