@@ -515,31 +515,6 @@ GtkMenuToolButton *,
 	background-color: transparent;
 }
 
-GtkListBoxRow.button.list-row {
-	color: @theme_text_color;
-	background-color: @theme_base_color;
-	border-radius: 0px;
-	border: none;
-}
-
-GtkListBoxRow.button.list-row:hover {
-	background-color: shade(@menubar_menuitem_hover_gradient_a, 1.25);
-}
-
-GtkListBoxRow.button.list-row:selected {
-	color: @theme_selected_fg_color;
-	border-style: solid;
-	border-width: 1px;
-	border-color: @menubar_menuitem_hover_border_color;
-	background-image: -gtk-gradient (linear,
-	                  left top,
-	                  left bottom,
-	                  from (@menubar_menuitem_hover_gradient_a),
-	                  color-stop (0.50, @menubar_menuitem_hover_gradient_b),
-	                  color-stop (0.50, @menubar_menuitem_hover_gradient_c),
-	                  to (@menubar_menuitem_hover_gradient_d));
-}
-
 .primary-toolbar .button {
 	border-image: none;
 	border-style: solid;
@@ -649,7 +624,8 @@ GtkColorChooserWidget #add-color-button {
 .primary-toolbar .button:focus:active,
 .primary-toolbar .button:focus:active:hover,
 .inline-toolbar .button:active,
-.inline-toolbar .button:active:hover {
+.inline-toolbar .button:active:hover,
+GtkListBoxRow.button.list-row:hover {
 	background-image: linear-gradient(to bottom,
 	                  @button_active_gradient_a,
 	                  @button_active_gradient_b 3px,
@@ -658,6 +634,27 @@ GtkColorChooserWidget #add-color-button {
 	                  @button_active_gradient_e 50%,
 	                  @button_active_gradient_f);
 	background-color: transparent;
+}
+
+GtkListBoxRow.button.list-row {
+	color: @theme_text_color;
+	background-color: @theme_base_color;
+	border-radius: 0px;
+	border: none;
+}
+
+GtkListBoxRow.button.list-row:selected {
+	color: @theme_selected_fg_color;
+	border-style: solid;
+	border-width: 1px;
+	border-color: @menubar_menuitem_hover_border_color;
+	background-image: -gtk-gradient (linear,
+	                  left top,
+	                  left bottom,
+	                  from (@menubar_menuitem_hover_gradient_a),
+	                  color-stop (0.50, @menubar_menuitem_hover_gradient_b),
+	                  color-stop (0.50, @menubar_menuitem_hover_gradient_c),
+	                  to (@menubar_menuitem_hover_gradient_d));
 }
 
 .trough,
@@ -1572,7 +1569,14 @@ GtkTreeView:insensitive {
 }
 
 GtkTreeView:hover {
-	background-color: shade(@menubar_menuitem_hover_gradient_a, 1.25);
+	background-image: linear-gradient(to bottom,
+	                  @button_active_gradient_a,
+	                  @button_active_gradient_b 3px,
+	                  @button_active_gradient_c 4px,
+	                  @button_active_gradient_d 50%,
+	                  @button_active_gradient_e 50%,
+	                  @button_active_gradient_f);
+	background-color: transparent;
 }
 
 column-header.button,
