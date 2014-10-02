@@ -490,7 +490,7 @@ GtkScrolledWindow GtkViewport.frame {
 	border-left-width: 1px;
 }
 
-.path-bar .button.image-button:first-child {
+.path-bar .button:first-child {
 	border-right: none;
 }
 
