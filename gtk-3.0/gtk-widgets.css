@@ -501,6 +501,11 @@ GtkScrolledWindow GtkViewport.frame {
 	border-right-width: 1px;
 }
 
+.linked.raised .button:first-child,
+.linked.raised .button:first-child:hover:active {
+	border-right-width: 0px;
+}
+
 .button {
 	-GtkButton-image-spacing: 4;
 	-GtkButton-interior-focus: true;
