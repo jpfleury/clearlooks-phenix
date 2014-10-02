@@ -33,7 +33,8 @@ GeditMenuStackSwitcher.button.flat {
 }
 
 .gedit-side-panel-paned,
-.gedit-bottom-panel-paned {
+.gedit-bottom-panel-paned,
+.gedit-bottom-panel-stack-switcher .notebook GtkBox.vertical {
 	border-style: solid;
 	border-color: @toolbar_border_top_color;
 }
@@ -44,6 +45,10 @@ GeditMenuStackSwitcher.button.flat {
 
 .gedit-bottom-panel-paned {
 	border-width: 1px 0px 0px 0px;
+}
+
+.gedit-bottom-panel-stack-switcher .notebook GtkBox.vertical {
+	border-width: 1px;
 }
 
 .gedit-menu-stack-switcher {
