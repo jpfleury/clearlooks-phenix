@@ -75,6 +75,18 @@ GeditStatusbar .frame.flat {
 	border: none;
 }
 
+/**********
+ * evince *
+ **********/
+
+EvPageActionWidget .linked .entry:first-child {
+	border-right-width: 0px;
+}
+
+EvHistoryAction.linked .button:first-child {
+	border-right-width: 0px;
+}
+
 /*******************
  * gnome-documents *
  *******************/
