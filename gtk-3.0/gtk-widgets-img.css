@@ -720,3 +720,30 @@ column-header:last-child .button:active:focus {
     border-width: 1px;
     padding: 1px 2px;
 }
+
+/* Dialog Action Area */
+
+/* Leftmost button */
+.dialog-action-area.linked .button:first-child,
+.dialog-action-area.linked .button:active:first-child,
+.dialog-action-area.linked .button:active:hover:first-child,
+.dialog-action-area.linked .button:focus:first-child,
+.dialog-action-area.linked .button:focus:active:first-child,
+.dialog-action-area.linked .button:insensitive:first-child,
+/* Middle button */
+.dialog-action-area.linked .button,
+.dialog-action-area.linked .button:active,
+.dialog-action-area.linked .button:active:hover,
+.dialog-action-area.linked .button:focus,
+.dialog-action-area.linked .button:focus:active,
+.dialog-action-area.linked .button:insensitive,
+/* Rightmost button */
+.dialog-action-area.linked .button:last-child,
+.dialog-action-area.linked .button:active:last-child,
+.dialog-action-area.linked .button:active:hover:last-child,
+.dialog-action-area.linked .button:focus:last-child,
+.dialog-action-area.linked .button:focus:active:last-child,
+.dialog-action-area.linked .button:insensitive:last-child {
+	border-radius: 3px;
+	border-width: 1px;
+}
