@@ -472,12 +472,19 @@ GtkScrolledWindow GtkViewport.frame {
 .button.menuitem.menubar,
 .combobox-entry .button,
 .inline-toolbar.toolbar .button,
-.primary-toolbar.toolbar .button {
+.primary-toolbar.toolbar.horizontal .button,
+.primary-toolbar.toolbar.horizontal .button:active,
+.toolbar.horizontal .button,
+.toolbar.horizontal .button:active,
+.titlebar .linked.raised .button,
+.titlebar .linked.raised .button:active {
 	padding: 5px 8px 6px;
 }
 
-.primary-toolbar.toolbar.horizontal .button,
-.primary-toolbar.toolbar.horizontal .button:active {
+GtkComboBox GtkToggleButton.button,
+GtkComboBoxText GtkToggleButton.button,
+.toolbar.horizontal GtkComboBox GtkToggleButton.button,
+.toolbar.horizontal GtkComboBoxText GtkToggleButton.button {
 	padding: 2px;
 }
 
