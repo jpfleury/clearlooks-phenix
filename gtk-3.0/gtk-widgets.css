@@ -643,8 +643,7 @@ GtkColorChooserWidget #add-color-button {
 .primary-toolbar .button:focus:active,
 .primary-toolbar .button:focus:active:hover,
 .inline-toolbar .button:active,
-.inline-toolbar .button:active:hover,
-GtkListBoxRow.button.list-row:hover {
+.inline-toolbar .button:active:hover {
 	background-image: linear-gradient(to bottom,
 	                  @button_active_gradient_a,
 	                  @button_active_gradient_b 3px,
@@ -652,6 +651,17 @@ GtkListBoxRow.button.list-row:hover {
 	                  @button_active_gradient_d 50%,
 	                  @button_active_gradient_e 50%,
 	                  @button_active_gradient_f);
+	background-color: transparent;
+}
+
+GtkListBoxRow.button.list-row:hover {
+	background-image: linear-gradient(to bottom,
+	                  shade(@button_active_gradient_a, 1.20),
+	                  shade(@button_active_gradient_b, 1.20) 3px,
+	                  shade(@button_active_gradient_c, 1.20) 4px,
+	                  shade(@button_active_gradient_d, 1.20) 50%,
+	                  shade(@button_active_gradient_e, 1.20) 50%,
+	                  shade(@button_active_gradient_f, 1.20));
 	background-color: transparent;
 }
 
@@ -1589,12 +1599,12 @@ GtkTreeView:insensitive {
 
 GtkTreeView:hover {
 	background-image: linear-gradient(to bottom,
-	                  @button_active_gradient_a,
-	                  @button_active_gradient_b 3px,
-	                  @button_active_gradient_c 4px,
-	                  @button_active_gradient_d 50%,
-	                  @button_active_gradient_e 50%,
-	                  @button_active_gradient_f);
+	                  shade(@button_active_gradient_a, 1.20),
+	                  shade(@button_active_gradient_b, 1.20) 3px,
+	                  shade(@button_active_gradient_c, 1.20) 4px,
+	                  shade(@button_active_gradient_d, 1.20) 50%,
+	                  shade(@button_active_gradient_e, 1.20) 50%,
+	                  shade(@button_active_gradient_f, 1.20));
 	background-color: transparent;
 }
 
