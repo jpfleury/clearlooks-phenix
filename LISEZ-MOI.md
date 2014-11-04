@@ -109,13 +109,13 @@ L'arrière-plan utilisé dans la capture d'écran du bureau de Gnome est disponi
 
 ### Icônes
 
-Le thème d'icônes utilisé dans la même capture d'écran est Mist, installé avec le paquet [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes), sous licence LGPL. Cependant, ce paquet n'est plus disponible pour les dernières versions d'Ubuntu. Voici une méthode simple pour installer Mist:
+Le thème d'icônes utilisé dans la même capture d'écran est Mist, installé avec le paquet `gnome-themes`, sous licence LGPL. Cependant, ce paquet n'est plus disponible pour les dernières versions d'Ubuntu. Voici une méthode simple pour installer Mist:
 
-- [Télécharger l'archive du thème d'icônes Mist.](http://www.jpfleury.net/site/fichiers/Mist.tar)
+- [Télécharger l'archive du thème d'icônes Mist.](http://mirror.centos.org/centos/6/os/i386/Packages/gnome-themes-2.28.1-6.el6.noarch.rpm)
 
 - Extraire l'archive.
 
-- Copier le dossier `Mist` dans un des deux emplacements suivants:
+- Copier le dossier `usr/share/icons/Mist` dans un des deux emplacements suivants:
 
 	- `~/.icons/` pour l'utilisateur courant;
 	
