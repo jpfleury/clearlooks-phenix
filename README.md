@@ -109,13 +109,13 @@ The wallpaper used for the Gnome 3 desktop screenshot is available in the folder
 
 ### Icons
 
-The icon theme used for the same screenshot is Mist, installed with the package [`gnome-themes`](http://packages.ubuntu.com/oneiric/gnome-themes), under LGPL. However, this package is no longer available with last Ubuntu versions. Here's an easy way to install Mist:
+The icon theme used for the same screenshot is Mist, installed with the package `gnome-themes`, under LGPL. However, this package is no longer available with last Ubuntu versions. Here's an easy way to install Mist:
 
-- [Download the archive of the Mist icon theme.](http://www.jpfleury.net/site/fichiers/Mist.tar)
+- [Download the archive of the Mist icon theme.](http://mirror.centos.org/centos/6/os/i386/Packages/gnome-themes-2.28.1-6.el6.noarch.rpm)
 
 - Extract the archive.
 
-- Copy the folder `Mist` in one of the following two locations:
+- Copy the folder `usr/share/icons/Mist` in one of the following two locations:
 
 	- `~/.icons/` for the current user;
 	
