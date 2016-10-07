@@ -34,7 +34,7 @@ Here are screenshots (if applicable, click to see the original image):
 	
 	- for GTK 3.14: [download Clearlooks-Phénix v6](https://github.com/jpfleury/clearlooks-phenix/archive/v6.zip);
 	
-	- for GTK 3.20: [download Clearlooks-Phénix v6](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
+	- for GTK 3.20: [download Clearlooks-Phénix v7](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
 	
 	To find your GTK version:
 	
