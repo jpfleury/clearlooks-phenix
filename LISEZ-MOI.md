@@ -32,7 +32,9 @@ Voici quelques captures d'écran (s'il y a lieu, cliquer pour voir l'image au fo
 	
 	- pour GTK 3.10 et 3.12: [télécharger Clearlooks-Phénix v5](https://github.com/jpfleury/clearlooks-phenix/archive/v5.zip);
 	
-	- pour GTK 3.14: [télécharger Clearlooks-Phénix v6](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
+	- pour GTK 3.14: [télécharger Clearlooks-Phénix v6](https://github.com/jpfleury/clearlooks-phenix/archive/v6.zip);
+	
+	- pour GTK 3.20: [télécharger Clearlooks-Phénix v7](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
 	
 	Pour connaître sa version de GTK:
 	
@@ -46,6 +48,10 @@ Voici quelques captures d'écran (s'il y a lieu, cliquer pour voir l'image au fo
 		- Ubuntu 13.10: GTK 3.8
 		- Ubuntu 14.04: GTK 3.10
 		- Ubuntu 14.10: GTK 3.12
+		- Ubuntu 15.04: GTK 3.14
+		- Ubuntu 15.10: GTK 3.16
+		- Ubuntu 16.04: GTK 3.18
+		- Ubuntu 16.10: GTK 3.20
 
 - Extraire l'archive.
 
@@ -129,11 +135,11 @@ Le thème d'icônes utilisé dans la même capture d'écran est Mist, installé 
 	
 	- sous Xfce: en allant dans *Paramètres > Apparence > Icônes* du menu principal.
 
-## Développement
+## Développement et licence
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.](https://github.com/jpfleury/clearlooks-phenix)
 
-## Licence
+Merci à Andrew Shadura et Andrey Cherepanov pour le support de GTK 3.20, et à Yuri Khan pour le support du HiDPI.
 
 Auteur: Jean-Philippe Fleury (<http://www.jpfleury.net/contact.php>)  
 Copyright © Jean-Philippe Fleury, 2011-2014.  

@@ -32,7 +32,9 @@ Here are screenshots (if applicable, click to see the original image):
 	
 	- for GTK 3.10 and 3.12: [download Clearlooks-Phénix v5](https://github.com/jpfleury/clearlooks-phenix/archive/v5.zip);
 	
-	- for GTK 3.14: [download Clearlooks-Phénix v6](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
+	- for GTK 3.14: [download Clearlooks-Phénix v6](https://github.com/jpfleury/clearlooks-phenix/archive/v6.zip);
+	
+	- for GTK 3.20: [download Clearlooks-Phénix v6](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
 	
 	To find your GTK version:
 	
@@ -46,6 +48,10 @@ Here are screenshots (if applicable, click to see the original image):
 		- Ubuntu 13.10: GTK 3.8
 		- Ubuntu 14.04: GTK 3.10
 		- Ubuntu 14.10: GTK 3.12
+		- Ubuntu 15.04: GTK 3.14
+		- Ubuntu 15.10: GTK 3.16
+		- Ubuntu 16.04: GTK 3.18
+		- Ubuntu 16.10: GTK 3.20
 
 - Extract the archive.
 
@@ -129,11 +135,11 @@ The icon theme used for the same screenshot is Mist, installed with the package 
 	
 	- on Xfce: by going to *Settings > Appearence > Icons* in the main menu.
 
-## Development
+## Development and license
 
 Git is used for revision control. [Repository can be browsed online or cloned.](https://github.com/jpfleury/clearlooks-phenix)
 
-## License
+Thanks to Andrew Shadura and Andrey Cherepanov for the support of GTK 3.20, and to Yuri Khan for the support of HiDPI.
 
 Author: Jean-Philippe Fleury (<http://www.jpfleury.net/en/contact.php>)  
 Copyright © 2011-2014 Jean-Philippe Fleury  
