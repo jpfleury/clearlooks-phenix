@@ -32,7 +32,7 @@ Here are screenshots (if applicable, click to see the original image):
 	
 	- for GTK 3.10 and 3.12: [download Clearlooks-Phénix v5](https://github.com/jpfleury/clearlooks-phenix/archive/v5.zip);
 	
-	- for GTK 3.14: [download Clearlooks-Phénix v6](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
+	- for GTK 3.14: [download Clearlooks-Phénix v6](https://github.com/jpfleury/clearlooks-phenix/archive/v6.zip).
 	
 	To find your GTK version:
 	
