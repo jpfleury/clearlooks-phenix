@@ -91,10 +91,6 @@ GtkGrid:insensitive {
 	color: @theme_tooltip_fg_color;
 }
 
-.tooltip * {
-	background-color: transparent;
-}
-
 /*****************
  * Miscellaneous *
  *****************/
