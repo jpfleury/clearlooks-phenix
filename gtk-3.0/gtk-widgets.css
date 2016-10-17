@@ -2582,7 +2582,6 @@ headerbar {
 
 headerbar.titlebar > stackswitcher.linked.stack-switcher > button,
 headerbar.titlebar > stackswitcher.linked.stack-switcher > button:checked:hover {
-	padding: 6px 12px;
 	border-width: 1px 1px 1px 0px;
 }
 
