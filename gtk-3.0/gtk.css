@@ -189,7 +189,7 @@
 @define-color question_bg_color mix(#727272, shade(@core_color_a, 0.90), 0.95);
 @define-color question_fg_color @theme_base_color;
 
-@define-color error_bg_color lighter(mix(#ababab, shade(@error_color, 0.80), 0.95));
+@define-color error_bg_color mix(#ababab, shade(@error_color, 0.77), 0.78);
 @define-color error_fg_color @theme_base_color;
 
 @define-color warning_fg_color @theme_fg_color;
@@ -198,7 +198,7 @@
  * menu *
  ********/
 
-@define-color menu_bg_color shade(@theme_bg_color, 1.04);
+@define-color menu_bg_color @theme_base_color;
 @define-color menu_fg_color @theme_fg_color;
 
 /* Example: submenu arrow. */
