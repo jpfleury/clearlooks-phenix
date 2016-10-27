@@ -2710,3 +2710,25 @@ printdialog.background > box.view.vertical.dialog-vbox {
 dialog.background dialog-vbox.vertical .vertical {
 	background: transparent;
 }
+
+.app-notification,
+.app-notification.frame {
+	padding: 5px;
+	border-radius: 0 0 4px 4px;
+	border-style: solid;
+	border-width: 0 1px 1px 1px;
+	border-color: darker(@theme_bg_color);
+	background-color: @theme_bg_color;
+	background-clip: padding-box;
+}
+
+.app-notification:backdrop,
+.app-notification.frame:backdrop {
+	background-image: none;
+	transition: 200ms ease-out;
+}
+
+.app-notification border,
+.app-notification.frame border {
+	border: none;
+}
