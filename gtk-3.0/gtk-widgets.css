@@ -1709,6 +1709,7 @@ menu menuitem:hover,
 	border-width: 1px;
 	border-color: @menubar_menuitem_hover_border_color;
 	color: @theme_selected_fg_color;
+	background-color: @theme_selected_bg_color;
 	background-image: -gtk-gradient (linear,
 	                  left top,
 	                  left bottom,
