@@ -42,6 +42,14 @@ window {
 	background-color: @theme_bg_color;
 }
 
+.background.client-decorated {
+	background-color: transparent;
+}
+
+.background.window-content {
+	background-color: @theme_bg_color;
+}
+
 *:selected,
 *:selected:focus {
 	background-color: @theme_selected_bg_color;
