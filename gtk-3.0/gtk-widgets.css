@@ -1154,6 +1154,11 @@ combobox arrow {
 	min-height: 16px;
 	min-width: 16px;
 }
+
+combobox arrow:disabled {
+	background-color: transparent;
+}
+
 combobox entry.combo,
 combobox button.combo {
 	padding: 5px 5px 5px 5px;
@@ -1206,7 +1211,7 @@ combobox > .linked > button.combo:focus:hover:last-child,
 combobox > .linked > button.combo:disabled:last-child {
 	border-image-width: 3px 3px 4px 0;
 	border-radius: 0 3px 3px 0;
-	border-width: 0;
+	border-width: 0 1;
 }
 combobox > .linked > entry.combo:only-child,
 combobox > .linked > button.combo:only-child,
@@ -1591,10 +1596,10 @@ treemenu menuitem {
 
 menu,
 .menu {
-	font: normal;
+	font-weight: normal;
 	background-color: @menu_bg_color;
 	color: @menu_fg_color;
-	padding: 1px;
+	padding: 0px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: @menu_border_color;
@@ -1630,7 +1635,7 @@ menu button:disabled,
 menubar,
 .menubar {
 	border-style: none;
-	padding: 4px;
+	padding: 0px;
 	-GtkWidget-window-dragging: true;
 	background-image: -gtk-gradient (linear,
 	                  left top,
@@ -1973,7 +1978,7 @@ placessidebar .view {
 
 assistant .sidebar highlight {
 	color: @theme_fg_color;
-	font: bold;
+	font-weight: bold;
 }
 
 assistant .sidebar {
@@ -2523,7 +2528,7 @@ infobar:last-child,
 }
 
 .titlebar .title {
-	font: Bold;
+	font-weight: bold;
 }
 
 /*.titlebar :first-child {*/
@@ -2539,8 +2544,13 @@ decoration {
 	box-shadow: none;
 }
 
-window decoration {
-	border: solid 2px @insensitive_border_color;
+window.background decoration {
+    border: solid 2px @insensitive_border_color;
+}
+
+combobox window.background decoration,
+menuitem window.background decoration {
+    border: none 0 transparent;
 }
 
 tooltip.csd decoration {
@@ -2572,7 +2582,6 @@ headerbar {
 
 headerbar.titlebar > stackswitcher.linked.stack-switcher > button,
 headerbar.titlebar > stackswitcher.linked.stack-switcher > button:checked:hover {
-	padding: 6px 12px;
 	border-width: 1px 1px 1px 0px;
 }
 
