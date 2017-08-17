@@ -2732,3 +2732,15 @@ dialog.background dialog-vbox.vertical .vertical {
 .app-notification.frame border {
 	border: none;
 }
+
+/**************
+ * Hyperlinks *
+ **************/
+
+*:link {
+  color: @link_color;
+}
+
+*:visited {
+  color: @visited_link_color;
+}
