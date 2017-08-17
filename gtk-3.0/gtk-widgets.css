@@ -2701,3 +2701,15 @@ printdialog.background > box.view.vertical.dialog-vbox {
 dialog.background dialog-vbox.vertical .vertical {
 	background: transparent;
 }
+
+/**************
+ * Hyperlinks *
+ **************/
+
+*:link {
+  color: @link_color;
+}
+
+*:visited {
+  color: @visited_link_color;
+}
