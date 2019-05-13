@@ -95,16 +95,19 @@ tooltip *,
 	    -gtk-icon-transform: rotate(1turn);
 	}
 }
+
 spinner {
 	background-image: none;
 	background-color: blue;
 	opacity: 0;
 	-gtk-icon-source: -gtk-icontheme("process-working-symbolic");
 }
+
 spinner:active {
 	opacity: 1;
 	animation: spin 1s linear infinite;
 }
+
 spinner:active:disabled {
 	opacity: 0.5;
 }
@@ -1136,6 +1139,7 @@ combobox {
 	/*-GtkComboBox-arrow-scaling: 0.5;*/
 	/*-GtkComboBox-shadow-type: none;*/
 }
+
 combobox arrow {
 	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 	color: @theme_fg_color;
@@ -1201,6 +1205,7 @@ combobox > .linked > button.combo:disabled:last-child {
 	border-radius: 0 3px 3px 0;
 	border-width: 0 1;
 }
+
 combobox > .linked > entry.combo:only-child,
 combobox > .linked > button.combo:only-child,
 combobox > .linked > button.combo:focus:only-child,
