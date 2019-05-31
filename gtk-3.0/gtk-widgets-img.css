@@ -244,7 +244,7 @@ radio row:selected:focus:indeterminate:disabled {
 /*********************
  * GtkScale's slider *
  *********************/
- 
+
 scale slider,
 scale.horizontal slider {
 	background-image: -gtk-scaled(url("img/scale-slider-horz.png"),

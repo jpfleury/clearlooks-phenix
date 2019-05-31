@@ -23,7 +23,7 @@
 
 	-gtk-outline-radius: 2px;
 	-gtk-icon-style: regular; /* disable symbolic icons */
-	
+
 	-GtkWindow-resize-grip-width: 11;
 	-GtkWindow-resize-grip-height: 11;
 }
@@ -2051,9 +2051,9 @@ treeview {
 
 view,
 view:selected,
-view:selected:focus, 
+view:selected:focus,
 .view:selected,
-.view:selected:focus, 
+.view:selected:focus,
 view text selection,
 .view text selection,
 view text selection:focus,
