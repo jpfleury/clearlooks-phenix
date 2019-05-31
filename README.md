@@ -125,29 +125,7 @@ The wallpaper used for the Gnome 3 desktop screenshot is available in the folder
 
 ### Icons
 
-The icon theme used for the same screenshot is Mist, installed with the package `gnome-themes`, under LGPL. Here's an easy way to install Mist:
-
-- [Download the archive of the Mist icon theme.](http://mirror.centos.org/centos/6/os/i386/Packages/gnome-themes-2.28.1-6.el6.noarch.rpm)
-
-- Extract the archive.
-
-- Copy the folder `usr/share/icons/Mist` in one of the following locations:
-
-	For the current user:
-	- `$XDG_DATA_HOME/icons/`
-	- `~/.icons/` (for GTK+ 2);
-	
-	For all users:
-	- `/usr/share/icons/`
-
-- Then, choose Mist:
-
-	- on Gnome: with gnome-tweak-tool by setting *Theme > Icon theme*;
-	
-	- on Xfce: by going to *Settings > Appearence > Icons* in the main menu;
-
-	- otherwise, set `gtk-icon-theme-name` in `$XDG_CONFIG_HOME/settings.ini`
-	  for GTK+ 3 or ~/.gtkrc-2.0 for GTK+ 2.
+In the same screenshot, the obsolete icon theme Mist is used.
 
 ## Development and license
 
