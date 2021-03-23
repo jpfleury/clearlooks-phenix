@@ -1962,7 +1962,7 @@ placessidebar .view {
  * GtkAssistant *
  ****************/
 
-assistant .sidebar highlight {
+assistant .sidebar .highlight {
 	color: @theme_fg_color;
 	font-weight: bold;
 }
