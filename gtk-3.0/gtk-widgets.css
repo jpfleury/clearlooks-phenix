@@ -238,6 +238,38 @@ separator:hover,
 	background-color: shade(@border_color, 1.30);
 }
 
+/*********
+ * Paned *
+ *********/
+
+/* the small line between sidebar and view */
+paned > separator {
+	min-width: 3px;
+	min-height: 3px;
+	border-style: none;
+	background-color: @theme_bg_color;
+	background-size: 1px 1px;
+ }
+
+paned > separator:hover,
+paned > separator:selected {
+	background-color: @theme_bg_color;
+}
+
+paned > separator:backdrop {
+}
+
+paned > separator.wide {
+	margin: 0;
+	padding: 0;
+	min-width: 5px;
+	min-height: 5px;
+	background-size: 1px 1px, 1px 1px;
+}
+
+paned > separator.wide:backdrop {
+}
+
 /****************
  * Text Entries *
  ****************/
@@ -946,11 +978,20 @@ button separator {
 notebook {
 	padding: 0;
 	background-clip: border-box;
+}
+
+notebook.frame {
 	background-color: @notebook_bg_color;
-	/*border-radius: 3px 3px 0px 0px;*/
-	/*-GtkNotebook-tab-overlap: 2;
-	-GtkNotebook-tab-curvature: 3;
-	-GtkNotebook-initial-gap: 0;*/
+	background-clip: border-box;
+}
+
+/* view areas, ie. pluma-, caja-tabs */
+paned.horizontal notebook {
+	border-style: none;
+}
+
+paned.horizontal notebook header {
+	box-shadow: none;
 }
 
 notebook viewport {
@@ -966,6 +1007,13 @@ notebook tab {
 
 notebook header.top {
 	box-shadow: inset  0px -1px 0 0 @border_color;
+}
+
+paned.horizontal notebook header.top {
+	margin: 0px;
+	border-width: 0px 0px 0px 0.1px;
+	border-style: solid;
+	border-color: @theme_bg_color;
 }
 
 notebook header.bottom {
@@ -1093,15 +1141,22 @@ notebook header tab:focus {
 }
 
 /* close button styling */
+paned.horizontal notebook button.flat,
 notebook button.flat.small-button {
-    border-image: none;
-    border-radius: 3px;
-    border-style: solid;
-    border-color: transparent;
-    border-width: 1px;
-    background-image: none;
-    background-color: transparent;
-    padding: 0;
+	border-image: none;
+	border-radius: 3px;
+	border-style: solid;
+	border-color: transparent;
+	border-width: 1px;
+	background-image: none;
+	background-color: transparent;
+	padding: 0px;
+}
+
+paned.horizontal notebook button.flat:hover,
+notebook button.flat.small-button:hover{
+	color: @theme_fg_color;
+	border-color: alpha(black, 0.1);
 }
 
 notebook header.* tab button,
@@ -2273,51 +2328,6 @@ row:hover:focus,
 
 .cell:selected {
 	color: @theme_selected_fg_color;
-}
-
-/*********
- * Paned *
- *********/
-
-paned.horizontal separator {
-	min-width: 7px;
-	background-size: 5px 5px;
-	margin: -1px 0 -1px 0;
-	border-style: none;
-	border-width: 0 1px 0 1px;
-	border-color: @border_color;
-	background-color: @theme_bg_color;
-	-gtk-icon-source: none;
-}
-
-paned.vertical > separator {
-	min-height: 7px;
-	background-size: 5px 5px;
-	border-style: none;
-	margin: 0 -1px 0 -1px;
-	border-width: 1px 0 1px 0;
-	border-color: @border_color;
-	background-color: @theme_bg_color;
-	-gtk-icon-source: none;
-}
-
-paned > separator:hover,
-paned > separator:selected {
-	background-color: @theme_bg_color;
-}
-
-paned > separator:backdrop {
-}
-
-paned > separator.wide {
-	margin: 0;
-	padding: 0;
-	min-width: 5px;
-	min-height: 5px;
-	background-size: 1px 1px, 1px 1px;
-}
-
-paned > separator.wide:backdrop {
 }
 
 /* expander */
