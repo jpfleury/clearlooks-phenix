@@ -2332,11 +2332,13 @@ row:hover:focus,
 }
 
 /* expander */
-expander,
-expander:active,
-expander:focus {
-	border-style: none;
+expander {
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 2px;
+	border-color: @border_color;
 	color: @theme_fg_color;
+	background-color: shade(@theme_bg_color, 1.02);
 }
 
 treeview.view.expander {
