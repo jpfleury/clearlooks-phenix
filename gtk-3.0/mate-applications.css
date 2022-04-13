@@ -1,0 +1,660 @@
+/************
+ * Caja *
+ ************/
+
+/* caja sidebar */
+/* all sidebars */
+.caja-side-pane treeview.view,
+.caja-side-pane textview.view text,
+.caja-side-pane viewport.frame,
+.caja-side-pane widget .vertical {
+	background-color: shade (@theme_base_color, 1.00);
+	color: @theme_fg_color;
+}
+
+/* move whole the frame, to free eject button for overlay scrollbars */
+.caja-side-pane scrolledwindow.frame {
+	padding: 0px;
+	margin: 0px 0px 0px -8px;
+}
+
+.caja-side-pane scrolledwindow.frame treeview.view {
+	padding: 3px 0px 3px 0px;
+}
+
+/* better for overlay scrollbars */
+/* to avoid overlap with eject buttons */
+.caja-side-pane scrolledwindow scrollbar.vertical.right.overlay-indicator,
+.caja-side-pane scrolledwindow scrollbar.vertical.right.overlay-indicator trough,
+.caja-side-pane scrolledwindow scrollbar.vertical.right.overlay-indicator slider,
+.caja-side-pane scrolledwindow scrollbar.vertical.right.overlay-indicator button {
+	min-width: 13px;
+}
+
+/* ComboBox views */
+.caja-navigation-window toolbar.primary-toolbar combobox button.combo {
+	padding: 5px;
+	border-image: none;
+}
+
+.caja-navigation-window toolbar.primary-toolbar combobox button.combo:hover {
+	padding: 5px;
+	box-shadow: none;
+}
+
+.caja-canvas-item {
+	border-radius: 3px;
+}
+
+/* EelEditableLabel (icon labels) */
+.caja-navigation-window .view .entry,
+.caja-navigation-window .view .entry:focus,
+.caja-desktop widget.entry,
+.caja-desktop widget.entry:focus {
+   border-image: none;
+   border-style: solid;
+   border-width: 1px;
+   border-color: @theme_fg_color;
+   box-shadow: none;
+   border-radius: 3px;
+   text-shadow: none;
+   background-image: -gtk-gradient(linear,
+								   left top, left bottom,
+								   from	   (shade(@theme_base_color, 0.86)),
+								   color-stop (0.15, shade(@theme_base_color, 0.96)),
+								   color-stop (0.50, shade(@theme_base_color, 0.98)),
+								   to		 (shade(@theme_base_color, 1.00)));
+}
+
+/* desktop */
+.caja-desktop.caja-canvas-item {
+	color: @theme_base_color;
+	text-shadow: 1px 1px alpha (@theme_fg_color, 0.8);
+}
+
+.caja-desktop.caja-canvas-item:active,
+.caja-desktop.caja-canvas-item:hover,
+.caja-desktop.caja-canvas-item:selected {
+	text-shadow: none;
+}
+
+/* view */
+.caja-navigation-window .view.caja-canvas-item {
+	color: @theme_fg_color;
+}
+
+.caja-navigation-window .view.caja-canvas-item:selected {
+	color: @theme_selected_fg_color;
+}
+
+/***************
+ * mate-panel *
+ ***************/
+
+.mate-panel-menu-bar {
+	background-color: @theme_bg_color;
+	padding: 0px;
+	color: @theme_fg_color;
+	text-shadow: none;
+}
+
+PanelToplevel.horizontal.top > grid {
+	border-style: outset;
+	border-width: 0px 0px 1px 0px;
+	border-color: rgba(0, 0, 0, 0.23);
+}
+
+PanelToplevel.horizontal.bottom > grid {
+	border-style: outset;
+	border-width: 1px 0px 0px 0px;
+	border-color: rgba(0, 0, 0, 0.23);
+}
+
+PanelToplevel.vertical.left > grid {
+	border-style: outset;
+	border-width: 0px 1px 0px 0px;
+	border-color: rgba(0, 0, 0, 0.23);
+}
+
+PanelToplevel.vertical.right > grid {
+	border-style: outset;
+	border-width: 0px 0px 0px 1px;
+	border-color: rgba(0, 0, 0, 0.23);
+}
+
+/* hide buttons */
+PanelToplevel > grid > button {
+	padding: 0px;
+	border-radius: 0px;
+}
+
+#PanelApplet {
+	border-width: 0;
+}
+
+PanelSeparator {
+	border-width: 0;
+	background-image: none;
+	color: shade (@theme_bg_color, 0.75);
+	text-shadow: none;
+}
+
+MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
+	background-image: -gtk-scaled(url("img/panel-grid.svg"));
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+/* outlines */
+window.background, /* selector where outlines are written on GtkTrayIcon */
+.mate-panel-menu-bar menubar,
+.mate-panel-menu-bar PanelApplet,
+.mate-panel-menu-bar button,
+#PanelApplet > #clock-applet-button.flat.toggle,
+#PanelApplet > #showdesktop-button,
+#PanelApplet > wnck-tasklist > button,
+PanelApplet.wnck-applet .wnck-pager {
+	outline-offset: -2px;
+	outline-style: solid;
+	outline-color: shade (@theme_selected_bg_color, 0.8);
+	outline-width: 2px;
+}
+
+.mate-panel-menu-bar button {
+	-gtk-outline-radius: 3px;
+	box-shadow: none;
+	border-image: none;
+}
+
+/* main menu */
+/* set normal menubar button */
+.mate-panel-menu-bar menubar {
+	padding: 0px;
+	background-image: none;
+}
+
+/* all applets */
+.mate-panel-menu-bar #PanelApplet button,
+.mate-panel-menu-bar #PanelApplet button.flat,
+.mate-panel-menu-bar #PanelApplet button.toggle,
+.mate-panel-menu-bar #PanelApplet button.flat.toggle {
+	padding: 4px;
+	border-radius: 3px;
+	border-width: 1px;
+	border-style: solid;
+	text-shadow: none;
+	border-color: @border_color;
+	color: @theme_fg_color;
+	background-color: transparent;
+	background-image: -gtk-gradient (linear,
+					  left top,
+					  left bottom,
+					  from (@button_gradient_a),
+					  to (@button_gradient_d));
+}
+
+.mate-panel-menu-bar #PanelApplet button:checked,
+.mate-panel-menu-bar #PanelApplet button:checked:hover,
+.mate-panel-menu-bar #PanelApplet button:hover:active,
+.mate-panel-menu-bar #PanelApplet button.flat:checked,
+.mate-panel-menu-bar #PanelApplet button.flat:checked:hover,
+.mate-panel-menu-bar #PanelApplet button.flat:hover:active,
+.mate-panel-menu-bar #PanelApplet button.toggle:checked,
+.mate-panel-menu-bar #PanelApplet button.toggle:checked:hover,
+.mate-panel-menu-bar #PanelApplet button.toggle:hover:active,
+.mate-panel-menu-bar #PanelApplet button.flat.toggle:checked,
+.mate-panel-menu-bar #PanelApplet button.flat.toggle:checked:hover,
+.mate-panel-menu-bar #PanelApplet button.flat.toggle:hover:active {
+	border-style: solid;
+	background-color: transparent;
+	background-image: linear-gradient(to bottom,
+					  @button_active_gradient_a,
+					  @button_active_gradient_b 3px,
+					  @button_active_gradient_c 4px,
+					  @button_active_gradient_d 50%,
+					  @button_active_gradient_e 50%,
+					  @button_active_gradient_f);
+}
+
+.mate-panel-menu-bar #PanelApplet button:hover,
+.mate-panel-menu-bar #PanelApplet button.flat:hover,
+.mate-panel-menu-bar #PanelApplet button.toggle:hover,
+.mate-panel-menu-bar #PanelApplet button.flat.toggle:hover {
+	border-style: solid;
+	background-color: transparent;
+	background-image: linear-gradient(to bottom,
+					  @button_hover_gradient_a 5%,
+					  @button_hover_gradient_b 95%,
+					  @button_hover_gradient_c);
+}
+
+/* use only outlines if focused */
+.mate-panel-menu-bar #PanelApplet button:focus {
+	box-shadow: none;
+	border-image: none;
+}
+
+/* 1.18 changes for gtk+-3.22 warning fixes*/
+.mate-panel-menu-bar #PanelApplet #drive-button,
+.mate-panel-menu-bar #PanelApplet #drive-button:hover,
+.mate-panel-menu-bar #PanelApplet #charpick-applet-button,
+.mate-panel-menu-bar #PanelApplet #showdesktop-button:checked {
+	border-image: url("img/border.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-width: 0px;
+}
+
+/* checkboxes in applet popup menu */
+.mate-panel-menu-bar menu > menuitem > box > menuitem {
+	padding: 0px 0px 0px 4px;
+}
+
+#PanelApplet > #clock-applet-button.flat.toggle {
+   background-color: transparent;
+   background-image: none;
+   border-color: transparent;
+}
+
+#PanelApplet > #clock-applet-button.flat.toggle:hover {
+	border-style: solid;
+	background-color: transparent;
+	background-image: linear-gradient(to bottom,
+					  @button_hover_gradient_a 5%,
+					  @button_hover_gradient_b 95%,
+					  @button_hover_gradient_c);
+}
+
+#PanelApplet > #clock-applet-button.flat.toggle:checked {
+	border-style: solid;
+	border-color: @border_color;
+	background-color: transparent;
+	background-image: linear-gradient(to bottom,
+					  @button_active_gradient_a,
+					  @button_active_gradient_b 3px,
+					  @button_active_gradient_c 4px,
+					  @button_active_gradient_d 50%,
+					  @button_active_gradient_e 50%,
+					  @button_active_gradient_f);
+}
+
+#PanelApplet > #clock-applet-button.flat.toggle:checked:hover {
+	border-image: none;
+}
+
+/* use only outlines if focused */
+#PanelApplet > #clock-applet-button.flat.toggle:focus {
+	box-shadow: none;
+	border-image: none;
+}
+
+
+#clock-applet-button.flat.toggle > box.horizontal > label {
+	font-weight: normal;
+}
+
+/* calendar window */
+#MatePanelPopupWindow {
+	border-radius: 3px;
+}
+
+#MatePanelPopupWindow expander {
+	border-style: none;
+}
+
+/* Weird, this sets the border color of the clockmap */
+#MatePanelPopupWindow > frame > box > box > box > widget {
+	color: @border_color;
+}
+
+PanelApplet.wnck-applet .wnck-pager {
+	background-image: none;
+	color: shade (@theme_selected_bg_color, 1.30);
+	background-color: transparent;
+	text-shadow: none;
+}
+
+/* selected WnckPager */
+PanelApplet.wnck-applet .wnck-pager:selected {
+	background-image: linear-gradient(to bottom,
+		shade (@theme_selected_bg_color, 0.8),
+		shade (@theme_selected_bg_color, 1.06));
+}
+
+/* hover of WnckPager */
+PanelApplet.wnck-applet .wnck-pager:hover {
+	background-image: linear-gradient(to bottom,
+		shade (@theme_selected_bg_color, 1.86),
+		shade (@theme_selected_bg_color, 1.0));
+}
+
+/* Classic icon style */
+.mate-panel-menu-bar {
+	-PanelMenuBar-icon-visible: true;
+}
+
+na-tray-applet {
+	background-image: none;
+	background-color: transparent;
+	padding: 0;
+	text-shadow: none;
+	-NaTrayApplet-icon-padding: 1px; /*any more and outlines get cut off*/
+}
+
+/* volume applet, brightness applet */
+.mate-panel-applet-slider {
+	background: transparent;
+}
+
+.mate-panel-applet-slider frame {
+	background-color: @theme_bg_color;
+	border-image: none;
+	border-style: solid;
+	border-radius:2px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.mate-panel-applet-slider frame frame {
+	background-color:transparent;
+	border-style: none;
+	box-shadow: none;
+}
+
+.mate-panel-applet-slider frame button {
+	color: @theme_fg_color;
+}
+
+/* xrandr applet */
+.mate-panel-menu-bar menuitem.xrandr-applet:disabled > box > label {
+	color: @menu_fg_color;
+	text-shadow: none;
+}
+
+/* mate-menu, mintmenu fork */
+#mate-menu.background {
+	border-color: @border_color;
+	border-style: solid;
+	border-width: 1px;
+}
+
+/* mate-indicator-applet */
+/* needed for a transparent panel */
+#fast-user-switch-applet > #fast-user-switch-menubar {
+	background-color: transparent;
+	background-image: none;
+}
+
+/* globalmenu (vala-panel-appmenu) */
+#PanelApplet > .-vala-panel-appmenu-core > scrolledwindow > viewport.frame {
+	background-color: transparent;
+}
+
+#PanelApplet > .-vala-panel-appmenu-core > scrolledwindow {
+	border-style: none;
+}
+
+/****************
+ * Pluma *
+ ****************/
+
+/* pluma line numbers */
+.pluma-window textview {
+	background-color: shade (@bg_color, 1.07);
+}
+
+/* Printpreview */
+.pluma-print-preview toolbar.horizontal {
+	background-color: transparent;
+	background-image: linear-gradient(to bottom,
+					  @toolbar_gradient_a 2px,
+					  @toolbar_gradient_b 50%,
+					  @toolbar_gradient_c 50%,
+					  @toolbar_gradient_d);
+	border-width: 1px 0 1px 1px;
+	border-radius: 0;
+	border-style: solid;
+	border-top-color: @toolbar_border_top_color;
+	border-bottom-color: @toolbar_border_bottom_color;
+	padding: 0px;
+}
+
+.pluma-print-preview toolbar.horizontal toolitem entry {
+	padding: 2px 6px;
+}
+
+.pluma-print-preview toolbar.horizontal button.image-button,
+.pluma-print-preview toolbar.horizontal button.flat.image-button {
+	background-color: transparent;
+	padding: 0px;
+}
+
+.pluma-print-preview toolbar.horizontal toolbutton button.text-button,
+.pluma-print-preview toolbar.horizontal toolbutton button.flat.text-button {
+	background-color: transparent;
+	padding: 0px 8px;
+	border-radius: 2px;
+}
+
+/* sidebar file-browser */
+.pluma-window paned.horizontal box.horizontal button.flat {
+	padding: 0px;
+}
+
+.pluma-window paned.horizontal box.vertical notebook.frame {
+	border-width: 1px 0px 0px 0px;
+	border-style: solid;
+	border-color: @border_color;
+	border-radius: 0px;
+}
+
+/* sidebar close button */
+.pluma-window paned.horizontal box.vertical notebook.frame toolbar button {
+  padding: 4px;
+}
+
+.pluma-window paned.horizontal box.vertical notebook.frame #ToolBar toolbutton button {
+	border-width: 1px 1px 2px 1px;
+}
+
+.pluma-window paned.horizontal box.vertical notebook.frame #ToolBar toolbutton button:hover {
+	background-color: transparent;
+	background-image: linear-gradient(to bottom,
+					  @button_hover_gradient_a 5%,
+					  @button_hover_gradient_b 95%,
+					  @button_hover_gradient_c);
+	border-image: url("img/border.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-radius: 3px;
+	border-width: 1px 1px 2px 1px;
+	border-style: solid;
+}
+
+.pluma-window paned.horizontal box.vertical notebook.frame #ToolBar toolbutton button:checked {
+	background-image: linear-gradient(to bottom,
+					  @button_active_gradient_a,
+					  @button_active_gradient_b 3px,
+					  @button_active_gradient_c 4px,
+					  @button_active_gradient_d 50%,
+					  @button_active_gradient_e 50%,
+					  @button_active_gradient_f);
+	background-color: transparent;
+	border-image: url("img/border.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
+	border-radius: 3px;
+	border-width: 1px 1px 2px 1px;
+	border-style: solid;
+}
+
+/*********
+ * Atril *
+ *********/
+
+/* atril and eom */
+EggToolbarEditor.vertical scrolledwindow {
+	background-color: shade (@theme_base_color, 1.0);
+	border-color: @border_color;
+	border-width: 1px;
+	border-radius: 0px;
+	border-style: solid;
+}
+
+/* broken text selection */
+.atril-window scrolledwindow.frame > widget:active,
+.atril-window scrolledwindow.frame > widget:selected {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
+}
+
+.lock-dialog {
+	border-radius: 4px;
+	border-style: solid;
+	border-width: 0px;
+	/* not sure if box-shadow works here */
+	box-shadow: 0 0 0 1px @wm_border, 0 2px 8px 3px @wm_shadow;
+}
+
+.lock-dialog notebook {
+	border-style: none;
+}
+
+/* mate-appearance-properties, UI tab */
+
+.appearance-window > box.vertical.dialog-vbox > notebook.frame  box.vertical > box.vertical > box.horizontal > box.vertical menubar {
+	border-style: solid;
+	border-width: 1px 1px 0px 1px;
+	border-color: darker (@theme_bg_color);
+	-GtkToolbar-button-relief: normal;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.appearance-window > box.vertical.dialog-vbox > notebook.frame  box.vertical > box.vertical > box.horizontal > box.vertical toolbar {
+	border-style: solid;
+	border-width: 1px;
+	border-color: @toolbar_border_top_color;
+	background-color: transparent;
+	background-image: linear-gradient(to bottom,
+					  @toolbar_gradient_a 2px,
+					  @toolbar_gradient_b 50%,
+					  @toolbar_gradient_c 50%,
+					  @toolbar_gradient_d);
+}
+
+/* multimedia OSD */
+MsdOsdWindow.background.osd {
+	border-radius: 20px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.6);
+	background-image: linear-gradient(to bottom,
+									  @osd_toolbar_bg_a,
+									  @osd_toolbar_bg_b 63%,
+									  @osd_toolbar_bg_c);
+	background-color: transparent;
+}
+
+MsdOsdWindow.background.osd .trough {
+	background-color: @osd_trough_bg;
+	border-radius: 3px;
+	border-width: 1px;
+	border-color: rgba(0,0,0,0.6);
+}
+
+MsdOsdWindow.background.osd .progressbar {
+	border-width: 1px;
+	border-radius: 3px;
+	border-color: rgba(0,0,0,0.4);
+	background-color: alpha(shade(@theme_selected_bg_color, 1.0), 0.9);
+}
+
+/*****************
+ * mate-terminal *
+ *****************/
+
+/* override settings for pavu-control */
+window.background.mate-terminal > box.vertical > notebook,
+window.background.mate-terminal > box.vertical > notebook > stack > box {
+	border-style: none;
+	margin: 0px;
+}
+
+/* override settings for pavu-control */
+window.background.mate-terminal > box.vertical > notebook > header.top {
+	border-radius: 3px 0px 0px 0px;
+	margin: 0px;
+	border-style: solid;
+	border-color: @theme_bg_color;
+	border-width: 0px 0px 0px 0.1px;
+}
+
+window.background.mate-terminal > box.vertical > notebook > header.top tab {
+	border-radius: 3px 3px 0px 0px;
+	padding: 4px 2px 4px 6px;
+	margin: 0px 0px 0px -1px;
+	border-style: solid;
+	border-color: @border_color;
+	border-width: 1px;
+}
+
+window.background.mate-terminal > box.vertical > notebook > header.top tab:checked,
+window.background.mate-terminal > box.vertical > notebook > header.top tab:checked:hover {
+	border-radius: 3px 3px 0px 0px;
+	padding: 4px 2px 4px 6px;
+	margin: 0px 0px 0px -1px;
+	border-style: solid;
+	border-color: @border_color;
+	border-top-color: @notebook_active_tab_border;
+	border-left-color: @notebook_active_tab_border;
+	border-right-color: @notebook_active_tab_border;
+	border-width: 1px;
+}
+
+/***********************
+ * mate-volume-control *
+ ***********************/
+
+/* application notebook page */
+GvcMixerDialog notebook.frame scrolledwindow {
+	border-style: none;
+}
+
+/* override previous setting */
+GvcMixerDialog notebook.frame box scrolledwindow.frame {
+	border-style: solid;
+	border-color: @border_color;
+	border-width: 1px;
+	border-radius: 2px;
+	padding: 0;
+}
+
+/***********************
+ * mate-control-center *
+ ***********************/
+
+#MyControlCenter button.flat {
+	outline-style: dashed;
+}
+
+/* mate-keyboard-layout-view, mate-keyboard-layout-chooser */
+/* this way it styles only the border of the keys, the bg of the map itself
+   use the .view class, and use old and new selectors for a while */
+matekbd-keyboard-drawing,
+.gswitchit-layout-view > box.dialog-vbox > box.vertical > widget,
+#xkb-layout-chooser > box.dialog-vbox > box.vertical > box.vertical > frame > widget {
+	background-color: shade (@theme_bg_color, 1.0);
+}
+
+#xkb-layout-chooser > box.dialog-vbox > box.vertical > box.vertical > frame > border {
+	border-radius: 0px;
+}
+
+/* fix for some maximized windows 
+   https://github.com/mate-desktop/mate-desktop/issues/291
+   FIXME Sadly pluma ignore doesn't show the maximised style class */
+
+window.background.maximized.engrampa-window > grid.horizontal > paned.horizontal > scrolledwindow.frame,
+window.background.maximized.atril-window > box.vertical > paned.horizontal > box.vertical > scrolledwindow.frame,
+window.background.pluma-window > box.vertical > paned.horizontal > paned.vertical > notebook box.vertical > scrolledwindow.frame,
+window.background.maximized.logview-window > box.vertical > paned.horizontal > box.vertical > scrolledwindow.frame,
+window.background.maximized.caja-navigation-window notebook.caja-notebook scrolledwindow.frame {
+	border-right-width: 0px;
+}
+
