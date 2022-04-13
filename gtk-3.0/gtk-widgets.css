@@ -34,7 +34,6 @@
 
 window {
 	color: @theme_fg_color;
-	margin: 0px;
 }
 
 .background {
@@ -52,6 +51,12 @@ window {
 	background-color: @insensitive_bg_color;
 	color: @insensitive_fg_color;
 	text-shadow: 1px 1px @insensitive_text_shadow_color;
+	border-color: @insensitive_border_color;
+}
+
+/* Fix for applications that have issues finding a default monospace font */
+.monospace {
+	font-family: Monospace;
 }
 
 image,
@@ -79,6 +84,7 @@ tooltip.background,
 	border-radius: 0px;
 	background-color: @theme_tooltip_bg_color;
 	color: @theme_tooltip_fg_color;
+	text-shadow: none;
 }
 
 tooltip *,
@@ -86,9 +92,24 @@ tooltip *,
 	text-shadow: none;
 }
 
-/*****************
- * Miscellaneous *
- *****************/
+/* needed to override CSD setting */
+tooltip decoration,
+.tooltip decoration,
+tooltip.csd decoration,
+.tooltip.csd decoration,
+tooltip.ssd decoration,
+.tooltip.ssd decoration,
+tooltip.solid-csd decoration,
+.tooltip.solid-csd decoration,
+tooltip.background.csd decoration,
+.tooltip.background.csd decoration,
+tooltip.background.ssd decoration,
+.tooltip.background.ssd decoration,
+tooltip.background.solid-csd decoration,
+.tooltip.background.solid-csd decoration {
+	border-radius: 0px;
+	box-shadow: 0 1px 5px @wm_shadow;
+}
 
 @keyframes spin {
 	to {
@@ -111,6 +132,10 @@ spinner:active {
 spinner:active:disabled {
 	opacity: 0.5;
 }
+
+/*****************
+ * Miscellaneous *
+ *****************/
 
 .floating-bar {
 	background-image: linear-gradient(
@@ -148,7 +173,7 @@ spinner:active:disabled {
 	border-bottom-left-radius: 0;
 }
 
-.floating-bar .button {
+.floating-bar button {
 	background-color: alpha (@theme_base_color, 0.0);
 	background-image: none;
 	border-style: none;
@@ -165,18 +190,18 @@ rubberband {
 	border-radius: 2px;
 }
 
-statusbar {
-	margin: -7px -10px -6px -10px;
-}
-
 statusbar label,
 statusbar frame {
 	color: @theme_fg_color;
-	border-width: 0px;
 }
 
 statusbar frame {
+	padding: 2px 0px;
 	border-width: 0;
+}
+
+statusbar frame button.flat {
+	padding: 2px 0px 0px 0px;
 }
 
 .dnd {
@@ -184,6 +209,22 @@ statusbar frame {
 	border-style: solid;
 	border-color: @theme_selected_bg_color;
 	border-radius: 0;
+}
+
+/*Keep treeviews from jumping, separators drawn at 0 by default until hovered*/
+treeview.view.separator {
+	min-height: 2px;
+}
+
+treeview.view separator,
+treeview.view .separator,
+treeview separator,
+separator,
+separator:hover,
+.separator,
+.separator:hover {
+	color: shade(@border_color, 1.30);
+	background-color: shade(@border_color, 1.30);
 }
 
 /****************
