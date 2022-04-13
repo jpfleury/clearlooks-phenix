@@ -1,6 +1,6 @@
-/************
+/********
  * Caja *
- ************/
+ ********/
 
 /* caja sidebar */
 /* all sidebars */
@@ -87,9 +87,9 @@
 	color: @theme_selected_fg_color;
 }
 
-/***************
+/**************
  * mate-panel *
- ***************/
+ **************/
 
 .mate-panel-menu-bar {
 	background-color: @theme_bg_color;
@@ -129,11 +129,11 @@ PanelToplevel > grid > button {
 }
 
 #PanelApplet {
-	border-width: 0;
+	border-width: 0px;
 }
 
 PanelSeparator {
-	border-width: 0;
+	border-width: 0px;
 	background-image: none;
 	color: shade (@theme_bg_color, 0.75);
 	text-shadow: none;
@@ -335,7 +335,7 @@ PanelApplet.wnck-applet .wnck-pager:hover {
 na-tray-applet {
 	background-image: none;
 	background-color: transparent;
-	padding: 0;
+	padding: 0px;
 	text-shadow: none;
 	-NaTrayApplet-icon-padding: 1px; /*any more and outlines get cut off*/
 }
@@ -393,9 +393,9 @@ na-tray-applet {
 	border-style: none;
 }
 
-/****************
+/*********
  * Pluma *
- ****************/
+ *********/
 
 /* pluma line numbers */
 .pluma-window textview {
