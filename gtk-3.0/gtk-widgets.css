@@ -187,10 +187,14 @@ button spinner:checked {
 	border-image: none;
 }
 
+.view.rubberband,
 .rubberband,
 view rubberband,
 rubberband {
 	background-color: alpha (@theme_selected_bg_color, 0.35);
+	background-image: linear-gradient(to bottom,
+									  alpha (@theme_selected_bg_color, 0.35),
+									  alpha (@theme_selected_bg_color, 0.35));
 	border-color: @theme_selected_bg_color;
 	border-style: solid;
 	border-width: 1px;
