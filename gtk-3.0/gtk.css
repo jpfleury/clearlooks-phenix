@@ -427,6 +427,16 @@
 @define-color trough_gradient_a shade(@core_color_b, 0.81);
 @define-color trough_gradient_b shade(@core_color_b, 0.90);
 
+/******
+ * WM *
+ ******/
+
+@define-color wm_shadow alpha(black, 0.5);
+@define-color wm_border alpha(black,0.18);
+@define-color wm_bg_a shade (@theme_bg_color, 1.05);
+@define-color wm_bg_b @theme_bg_color;
+@define-color wm_csd_solid_border_color shade (@theme_selected_bg_color, 0.55);
+
 /***********
  * imports *
  ***********/
