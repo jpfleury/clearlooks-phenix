@@ -56,6 +56,27 @@ iconview.documents-main-view.check {
 	border-radius: 3px;
 }
 
+/*****************
+ * gnome-weather *
+ *****************/
+
+#weather-page stack > scrolledwindow > viewport.frame,
+#weather-page stack > scrolledwindow > viewport.frame > grid > frame {
+	background-color: transparent;
+}
+
+#weather-page frame.weather-clear .linked.stack-switcher.osd > button,
+#weather-page frame.weather-overcast .linked.stack-switcher.osd > button,
+#weather-page frame.weather-overcast stack > scrolledwindow > .frame label {
+	color: @theme_fg_color;
+	text-shadow: none;
+}
+
+#weather-page frame.weather-clear .linked.stack-switcher.osd > button:checked,
+#weather-page frame.weather-overcast .linked.stack-switcher.osd > button:checked {
+	color: @osd_button_fg_active;
+}
+
 /***************
  * gnome-panel *
  ***************/
