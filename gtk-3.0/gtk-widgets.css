@@ -2554,15 +2554,25 @@ infobar:last-child,
  * Titlebar *
  ************/
 
+headerbar,
 .titlebar {
 	background-image: linear-gradient(to bottom,
 	                  @theme_base_color,
 	                  @theme_bg_color);
 	background-color: transparent;
-	border-radius: 0px;
+	border-radius: 7px 7px 0px 0px;
 	border-bottom: 1px solid;
 	border-color: shade(@border_color, 1.30);
 	padding: 5px 4px 4px 4px;
+}
+
+/* fix for gedit, .titlebar does not match headerbar selector */
+.background.csd > paned.horizontal.titlebar,
+.background.solid-csd > paned.horizontal.titlebar {
+	background-color: transparent;
+	padding: 0px;
+	margin: -2px 0px -2px 0px;
+	border-width: 0px;
 }
 
 .titlebar > * {
@@ -2577,35 +2587,57 @@ infobar:last-child,
 	border-radius: 0;
 }
 
+headerbar .title,
 .titlebar .title {
 	font-weight: bold;
 }
 
-/*.titlebar :first-child {*/
-/*	padding: 5px 5px 6px 5px;*/
-/*}*/
-
+headerbar button.titlebutton,
 .titlebar button.titlebutton {
 	background: none;
 	border-image: none;
 }
 
-decoration {
+/* workaround to avoid unwanted black frames if switching compositor on/off */
+.background decoration {
 	box-shadow: none;
 }
 
-window.background decoration {
-	border: solid 2px @insensitive_border_color;
+.background.csd decoration {
+	border-width: 0px;
+	border-radius: 7px 7px 0 0;
+	border-style: solid;
+	box-shadow: 0 0 0 1px @wm_border, 0 2px 8px 3px @wm_shadow;
+	margin: 10px;
 }
 
-combobox window.background decoration,
-menuitem window.background decoration {
-	border: none 0 transparent;
+/* workaround to avoid unwanted black frames if switching compositor on/off */
+decoration:backdrop {
+/*	box-shadow: 0 0 0 1px shade(@wm_border,1.1), 0 2px 5px 1px*/
+	box-shadow: none;
 }
 
-tooltip.csd decoration {
-	border-radius: 5px;
-	box-shadow: 0 1px 5px @wm_shadow;
+.tiled decoration {
+	border-radius: 0;
+	background-color: @theme_bg_color;
+}
+
+.ssd decoration {
+	box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.23);
+}
+
+.solid-csd decoration {
+	border-radius: 0;
+	margin: 1px;
+	background-color: @wm_bg_a;
+	border: solid 1px @wm_csd_solid_border_color;
+	box-shadow: none;
+}
+
+/* workaround to avoid unwanted black frames if switching compositor on/off */
+.csd.popup decoration {
+	border-radius: 0;
+	box-shadow: none;
 }
 
 messagedialog.csd decoration {
