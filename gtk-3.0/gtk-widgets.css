@@ -830,6 +830,8 @@ button:active,
 button:hover,
 spinbutton button:hover,
 combobox button.combo:hover,
+menu > menuitem:hover,
+.menu > menuitem:hover
 toolbar button:hover,
 toolbar button.raised:hover,
 toolbar .raised button:hover,
