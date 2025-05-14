@@ -51,19 +51,19 @@
 .caja-navigation-window .view .entry:focus,
 .caja-desktop widget.entry,
 .caja-desktop widget.entry:focus {
-   border-image: none;
-   border-style: solid;
-   border-width: 1px;
-   border-color: @theme_fg_color;
-   box-shadow: none;
-   border-radius: 3px;
-   text-shadow: none;
-   background-image: -gtk-gradient(linear,
-								   left top, left bottom,
-								   from	   (shade(@theme_base_color, 0.86)),
-								   color-stop (0.15, shade(@theme_base_color, 0.96)),
-								   color-stop (0.50, shade(@theme_base_color, 0.98)),
-								   to		 (shade(@theme_base_color, 1.00)));
+	border-image: none;
+	border-style: solid;
+	border-width: 1px;
+	border-color: @theme_fg_color;
+	box-shadow: none;
+	border-radius: 3px;
+	text-shadow: none;
+	background-image: -gtk-gradient(linear,
+			left top, left bottom,
+			from (shade(@theme_base_color, 0.86)),
+			color-stop (0.15, shade(@theme_base_color, 0.96)),
+			color-stop (0.50, shade(@theme_base_color, 0.98)),
+			to (shade(@theme_base_color, 1.00)));
 }
 
 /* desktop */
@@ -147,7 +147,8 @@ MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
 }
 
 /* outlines */
-window.background, /* selector where outlines are written on GtkTrayIcon */
+window.background,
+/* selector where outlines are written on GtkTrayIcon */
 .mate-panel-menu-bar menubar,
 .mate-panel-menu-bar PanelApplet,
 .mate-panel-menu-bar button,
@@ -188,10 +189,10 @@ PanelApplet.wnck-applet .wnck-pager {
 	color: @theme_fg_color;
 	background-color: transparent;
 	background-image: -gtk-gradient (linear,
-					  left top,
-					  left bottom,
-					  from (@button_gradient_a),
-					  to (@button_gradient_d));
+			left top,
+			left bottom,
+			from (@button_gradient_a),
+			to (@button_gradient_d));
 }
 
 .mate-panel-menu-bar #PanelApplet button:checked,
@@ -209,12 +210,12 @@ PanelApplet.wnck-applet .wnck-pager {
 	border-style: solid;
 	background-color: transparent;
 	background-image: linear-gradient(to bottom,
-					  @button_active_gradient_a,
-					  @button_active_gradient_b 3px,
-					  @button_active_gradient_c 4px,
-					  @button_active_gradient_d 50%,
-					  @button_active_gradient_e 50%,
-					  @button_active_gradient_f);
+			@button_active_gradient_a,
+			@button_active_gradient_b 3px,
+			@button_active_gradient_c 4px,
+			@button_active_gradient_d 50%,
+			@button_active_gradient_e 50%,
+			@button_active_gradient_f);
 }
 
 .mate-panel-menu-bar #PanelApplet button:hover,
@@ -224,9 +225,9 @@ PanelApplet.wnck-applet .wnck-pager {
 	border-style: solid;
 	background-color: transparent;
 	background-image: linear-gradient(to bottom,
-					  @button_hover_gradient_a 5%,
-					  @button_hover_gradient_b 95%,
-					  @button_hover_gradient_c);
+			@button_hover_gradient_a 5%,
+			@button_hover_gradient_b 95%,
+			@button_hover_gradient_c);
 }
 
 /* use only outlines if focused */
@@ -250,18 +251,18 @@ PanelApplet.wnck-applet .wnck-pager {
 }
 
 #PanelApplet > #clock-applet-button.flat.toggle {
-   background-color: transparent;
-   background-image: none;
-   border-color: transparent;
+	background-color: transparent;
+	background-image: none;
+	border-color: transparent;
 }
 
 #PanelApplet > #clock-applet-button.flat.toggle:hover {
 	border-style: solid;
 	background-color: transparent;
 	background-image: linear-gradient(to bottom,
-					  @button_hover_gradient_a 5%,
-					  @button_hover_gradient_b 95%,
-					  @button_hover_gradient_c);
+			@button_hover_gradient_a 5%,
+			@button_hover_gradient_b 95%,
+			@button_hover_gradient_c);
 }
 
 #PanelApplet > #clock-applet-button.flat.toggle:checked {
@@ -269,12 +270,12 @@ PanelApplet.wnck-applet .wnck-pager {
 	border-color: @border_color;
 	background-color: transparent;
 	background-image: linear-gradient(to bottom,
-					  @button_active_gradient_a,
-					  @button_active_gradient_b 3px,
-					  @button_active_gradient_c 4px,
-					  @button_active_gradient_d 50%,
-					  @button_active_gradient_e 50%,
-					  @button_active_gradient_f);
+			@button_active_gradient_a,
+			@button_active_gradient_b 3px,
+			@button_active_gradient_c 4px,
+			@button_active_gradient_d 50%,
+			@button_active_gradient_e 50%,
+			@button_active_gradient_f);
 }
 
 #PanelApplet > #clock-applet-button.flat.toggle:checked:hover {
@@ -316,15 +317,15 @@ PanelApplet.wnck-applet .wnck-pager {
 /* selected WnckPager */
 PanelApplet.wnck-applet .wnck-pager:selected {
 	background-image: linear-gradient(to bottom,
-		shade (@theme_selected_bg_color, 0.8),
-		shade (@theme_selected_bg_color, 1.06));
+			shade (@theme_selected_bg_color, 0.8),
+			shade (@theme_selected_bg_color, 1.06));
 }
 
 /* hover of WnckPager */
 PanelApplet.wnck-applet .wnck-pager:hover {
 	background-image: linear-gradient(to bottom,
-		shade (@theme_selected_bg_color, 1.86),
-		shade (@theme_selected_bg_color, 1.0));
+			shade (@theme_selected_bg_color, 1.86),
+			shade (@theme_selected_bg_color, 1.0));
 }
 
 /* Classic icon style */
@@ -337,7 +338,8 @@ na-tray-applet {
 	background-color: transparent;
 	padding: 0px;
 	text-shadow: none;
-	-NaTrayApplet-icon-padding: 1px; /*any more and outlines get cut off*/
+	-NaTrayApplet-icon-padding: 1px;
+	/*any more and outlines get cut off*/
 }
 
 /* volume applet, brightness applet */
@@ -349,13 +351,13 @@ na-tray-applet {
 	background-color: @theme_bg_color;
 	border-image: none;
 	border-style: solid;
-	border-radius:2px;
+	border-radius: 2px;
 	padding: 0px;
 	margin: 0px;
 }
 
 .mate-panel-applet-slider frame frame {
-	background-color:transparent;
+	background-color: transparent;
 	border-style: none;
 	box-shadow: none;
 }
@@ -406,10 +408,10 @@ na-tray-applet {
 .pluma-print-preview toolbar.horizontal {
 	background-color: transparent;
 	background-image: linear-gradient(to bottom,
-					  @toolbar_gradient_a 2px,
-					  @toolbar_gradient_b 50%,
-					  @toolbar_gradient_c 50%,
-					  @toolbar_gradient_d);
+			@toolbar_gradient_a 2px,
+			@toolbar_gradient_b 50%,
+			@toolbar_gradient_c 50%,
+			@toolbar_gradient_d);
 	border-width: 1px 0 1px 1px;
 	border-radius: 0;
 	border-style: solid;
@@ -449,7 +451,7 @@ na-tray-applet {
 
 /* sidebar close button */
 .pluma-window paned.horizontal box.vertical notebook.frame toolbar button {
-  padding: 4px;
+	padding: 4px;
 }
 
 .pluma-window paned.horizontal box.vertical notebook.frame #ToolBar toolbutton button {
@@ -459,9 +461,9 @@ na-tray-applet {
 .pluma-window paned.horizontal box.vertical notebook.frame #ToolBar toolbutton button:hover {
 	background-color: transparent;
 	background-image: linear-gradient(to bottom,
-					  @button_hover_gradient_a 5%,
-					  @button_hover_gradient_b 95%,
-					  @button_hover_gradient_c);
+			@button_hover_gradient_a 5%,
+			@button_hover_gradient_b 95%,
+			@button_hover_gradient_c);
 	border-image: url("img/border.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
 	border-radius: 3px;
 	border-width: 1px 1px 2px 1px;
@@ -470,12 +472,12 @@ na-tray-applet {
 
 .pluma-window paned.horizontal box.vertical notebook.frame #ToolBar toolbutton button:checked {
 	background-image: linear-gradient(to bottom,
-					  @button_active_gradient_a,
-					  @button_active_gradient_b 3px,
-					  @button_active_gradient_c 4px,
-					  @button_active_gradient_d 50%,
-					  @button_active_gradient_e 50%,
-					  @button_active_gradient_f);
+			@button_active_gradient_a,
+			@button_active_gradient_b 3px,
+			@button_active_gradient_c 4px,
+			@button_active_gradient_d 50%,
+			@button_active_gradient_e 50%,
+			@button_active_gradient_f);
 	background-color: transparent;
 	border-image: url("img/border.svg") 3 3 4 3 / 3px 3px 4px 3px repeat;
 	border-radius: 3px;
@@ -517,7 +519,7 @@ EggToolbarEditor.vertical scrolledwindow {
 
 /* mate-appearance-properties, UI tab */
 
-.appearance-window > box.vertical.dialog-vbox > notebook.frame  box.vertical > box.vertical > box.horizontal > box.vertical menubar {
+.appearance-window > box.vertical.dialog-vbox > notebook.frame box.vertical > box.vertical > box.horizontal > box.vertical menubar {
 	border-style: solid;
 	border-width: 1px 1px 0px 1px;
 	border-color: darker (@theme_bg_color);
@@ -526,16 +528,16 @@ EggToolbarEditor.vertical scrolledwindow {
 	padding-right: 4px;
 }
 
-.appearance-window > box.vertical.dialog-vbox > notebook.frame  box.vertical > box.vertical > box.horizontal > box.vertical toolbar {
+.appearance-window > box.vertical.dialog-vbox > notebook.frame box.vertical > box.vertical > box.horizontal > box.vertical toolbar {
 	border-style: solid;
 	border-width: 1px;
 	border-color: @toolbar_border_top_color;
 	background-color: transparent;
 	background-image: linear-gradient(to bottom,
-					  @toolbar_gradient_a 2px,
-					  @toolbar_gradient_b 50%,
-					  @toolbar_gradient_c 50%,
-					  @toolbar_gradient_d);
+			@toolbar_gradient_a 2px,
+			@toolbar_gradient_b 50%,
+			@toolbar_gradient_c 50%,
+			@toolbar_gradient_d);
 }
 
 /* multimedia OSD */
@@ -543,11 +545,11 @@ MsdOsdWindow.background.osd {
 	border-radius: 20px;
 	border-style: solid;
 	border-width: 1px;
-	border-color: rgba(0,0,0,0.6);
+	border-color: rgba(0, 0, 0, 0.6);
 	background-image: linear-gradient(to bottom,
-									  @osd_toolbar_bg_a,
-									  @osd_toolbar_bg_b 63%,
-									  @osd_toolbar_bg_c);
+			@osd_toolbar_bg_a,
+			@osd_toolbar_bg_b 63%,
+			@osd_toolbar_bg_c);
 	background-color: transparent;
 }
 
@@ -555,13 +557,13 @@ MsdOsdWindow.background.osd .trough {
 	background-color: @osd_trough_bg;
 	border-radius: 3px;
 	border-width: 1px;
-	border-color: rgba(0,0,0,0.6);
+	border-color: rgba(0, 0, 0, 0.6);
 }
 
 MsdOsdWindow.background.osd .progressbar {
 	border-width: 1px;
 	border-radius: 3px;
-	border-color: rgba(0,0,0,0.4);
+	border-color: rgba(0, 0, 0, 0.4);
 	background-color: alpha(shade(@theme_selected_bg_color, 1.0), 0.9);
 }
 
@@ -646,7 +648,7 @@ matekbd-keyboard-drawing,
 	border-radius: 0px;
 }
 
-/* fix for some maximized windows 
+/* fix for some maximized windows
    https://github.com/mate-desktop/mate-desktop/issues/291
    FIXME Sadly pluma ignore doesn't show the maximised style class */
 
@@ -657,4 +659,3 @@ window.background.maximized.logview-window > box.vertical > paned.horizontal > b
 window.background.maximized.caja-navigation-window notebook.caja-notebook scrolledwindow.frame {
 	border-right-width: 0px;
 }
-
