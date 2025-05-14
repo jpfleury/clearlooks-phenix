@@ -38,7 +38,7 @@ Here are screenshots (if applicable, click to see the original image):
 	
 	To find your GTK version:
 	
-	- You can check in your package manager the version of the package `libgtk-3-0`.
+	- You should be able to find out on the command line via `gtk-launch --version`.
 	
 	- If you use Ubuntu, here's a correspondence between its versions and those of GTK (for a default installation of Ubuntu):
 	
@@ -53,15 +53,21 @@ Here are screenshots (if applicable, click to see the original image):
 		- Ubuntu 16.04: GTK 3.18
 		- Ubuntu 16.10: GTK 3.20
 
+	- For other distributions, you can check out the tables available at [DistroWatch.com](https://distrowatch.com/).
+
 - Extract the archive.
 
 - Rename the extracted folder to `Clearlooks-Phenix`.
 
-- Copy the folder `Clearlooks-Phenix` in one of the following two locations:
+- Copy the folder `Clearlooks-Phenix` in one of the following locations:
 
-	- `~/.themes/` for the current user;
-	
-	- `/usr/share/themes/` for all users, including style for programs ran with root privileges (e.g. Synaptic).
+	For the current user:
+	- [$XDG\_DATA\_HOME](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)`/themes`, or
+	- `~/.themes/` (for GTK+ 2);
+
+	For all users, including style for programs ran with root privileges (e.g.
+	your package-update utility):
+	- `/usr/share/themes/`
 
 ### Selection
 
@@ -76,6 +82,8 @@ The theme must be selected once the installation is complete:
 
 		xfconf-query -s Clearlooks-Phenix -c xfwm4 -p /general/theme
 		xfconf-query -s Clearlooks-Phenix -c xsettings -p /Net/ThemeName
+
+- Otherwise, set `gtk-theme-name` in `$XDG_CONFIG_HOME/settings.ini` (GTK+ 3) or `~/.gtkrc-2.0` (GTK+ 2).
 
 ## Configuration
 
@@ -107,7 +115,7 @@ To get a custom color, change the color directly in the file `gtk-3.0/applicatio
 
 ### Window buttons layout
 
-If after installing or updating Ubuntu, the window buttons are on the left side, but you want them to the right, run the following command in a terminal:
+If after installing or updating GNOME, the window buttons are on the left side, but you want them to the right, run the following command in a terminal:
 
 	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
 
@@ -117,23 +125,29 @@ The wallpaper used for the Gnome 3 desktop screenshot is available in the folder
 
 ### Icons
 
-The icon theme used for the same screenshot is Mist, installed with the package `gnome-themes`, under LGPL. However, this package is no longer available with last Ubuntu versions. Here's an easy way to install Mist:
+The icon theme used for the same screenshot is Mist, installed with the package `gnome-themes`, under LGPL. Here's an easy way to install Mist:
 
 - [Download the archive of the Mist icon theme.](http://mirror.centos.org/centos/6/os/i386/Packages/gnome-themes-2.28.1-6.el6.noarch.rpm)
 
 - Extract the archive.
 
-- Copy the folder `usr/share/icons/Mist` in one of the following two locations:
+- Copy the folder `usr/share/icons/Mist` in one of the following locations:
 
-	- `~/.icons/` for the current user;
+	For the current user:
+	- `$XDG_DATA_HOME/icons/`
+	- `~/.icons/` (for GTK+ 2);
 	
-	- `/usr/share/icons/` for all users.
+	For all users:
+	- `/usr/share/icons/`
 
 - Then, choose Mist:
 
 	- on Gnome: with gnome-tweak-tool by setting *Theme > Icon theme*;
 	
-	- on Xfce: by going to *Settings > Appearence > Icons* in the main menu.
+	- on Xfce: by going to *Settings > Appearence > Icons* in the main menu;
+
+	- otherwise, set `gtk-icon-theme-name` in `$XDG_CONFIG_HOME/settings.ini`
+	  for GTK+ 3 or ~/.gtkrc-2.0 for GTK+ 2.
 
 ## Development and license
 
