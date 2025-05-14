@@ -105,6 +105,12 @@ If, after installing or updating GNOME, the window buttons appear on the left an
 
 	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
 
+### GTK 3 overlay scrollbars
+
+A user has shared a method to disable GTK 3 overlay scrollbars system-wide, for those who prefer it. See [issue #46](https://github.com/jpfleury/clearlooks-phenix/issues/46).
+
+⚠️ Not required or officially supported — for advanced users only.
+
 ### Wallpaper
 
 The wallpaper used for the GNOME 3 desktop screenshot is available in the folder `wallpapers`.
