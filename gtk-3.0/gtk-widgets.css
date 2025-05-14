@@ -1695,6 +1695,7 @@ menu menuitem:hover,
 	border-width: 1px;
 	border-color: @menubar_menuitem_hover_border_color;
 	color: @theme_selected_fg_color;
+	background-color: @theme_selected_bg_color;
 	background-image: -gtk-gradient (linear,
 	                  left top,
 	                  left bottom,
@@ -2702,4 +2703,26 @@ dialog.background dialog-vbox.vertical .vertical {
 
 *:visited {
   color: @visited_link_color;
+}
+
+.app-notification,
+.app-notification.frame {
+	padding: 5px;
+	border-radius: 0 0 4px 4px;
+	border-style: solid;
+	border-width: 0 1px 1px 1px;
+	border-color: darker(@theme_bg_color);
+	background-color: @theme_bg_color;
+	background-clip: padding-box;
+}
+
+.app-notification:backdrop,
+.app-notification.frame:backdrop {
+	background-image: none;
+	transition: 200ms ease-out;
+}
+
+.app-notification border,
+.app-notification.frame border {
+	border: none;
 }
