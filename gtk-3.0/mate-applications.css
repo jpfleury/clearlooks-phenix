@@ -412,8 +412,8 @@ na-tray-applet {
 			@toolbar_gradient_b 50%,
 			@toolbar_gradient_c 50%,
 			@toolbar_gradient_d);
-	border-width: 1px 0 1px 1px;
-	border-radius: 0;
+	border-width: 1px 0px 1px 1px;
+	border-radius: 0px;
 	border-style: solid;
 	border-top-color: @toolbar_border_top_color;
 	border-bottom-color: @toolbar_border_bottom_color;
@@ -624,7 +624,7 @@ GvcMixerDialog notebook.frame box scrolledwindow.frame {
 	border-color: @border_color;
 	border-width: 1px;
 	border-radius: 2px;
-	padding: 0;
+	padding: 0px;
 }
 
 /***********************

@@ -159,27 +159,27 @@ button spinner:checked {
 }
 
 .floating-bar.top {
-	border-top-width: 0;
-	border-top-right-radius: 0;
-	border-top-left-radius: 0;
+	border-top-width: 0px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
 }
 
 .floating-bar.right {
-	border-right-width: 0;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
+	border-right-width: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
 }
 
 .floating-bar.bottom {
-	border-bottom-width: 0;
-	border-bottom-right-radius: 0;
-	border-bottom-left-radius: 0;
+	border-bottom-width: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
 }
 
 .floating-bar.left {
-	border-left-width: 0;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
+	border-left-width: 0px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
 }
 
 .floating-bar button {
@@ -210,7 +210,7 @@ statusbar frame {
 
 statusbar frame {
 	padding: 2px 0px;
-	border-width: 0;
+	border-width: 0px;
 }
 
 statusbar frame button.flat {
@@ -221,7 +221,7 @@ statusbar frame button.flat {
 	border-width: 1px;
 	border-style: solid;
 	border-color: @theme_selected_bg_color;
-	border-radius: 0;
+	border-radius: 0px;
 }
 
 /*Keep treeviews from jumping, separators drawn at 0 by default until hovered*/
@@ -483,7 +483,7 @@ scale.horizontal {
 scale.horizontal slider,
 scale.horizontal slider:hover,
 scale.horizontal slider:disabled {
-	border-radius: 0;
+	border-radius: 0px;
 	border-style: none;
 	background-color: transparent;
 	min-width: 21px;
@@ -494,7 +494,7 @@ scale.horizontal slider:disabled {
 scale.vertical slider,
 scale.vertical slider:hover,
 scale.vertical slider:disabled {
-	border-radius: 0;
+	border-radius: 0px;
 	border-style: none;
 	background-color: transparent;
 	min-width: 13px;
@@ -739,8 +739,8 @@ spinbutton > button:focus:active {
 	background-color: transparent;
 	color: @internal_element_color;
 	padding: 6px;
-	border-radius: 0;
-	border-width: 0 0 0 1px;
+	border-radius: 0px;
+	border-width: 0px 0px 0px 1px;
 	border-style: solid;
 	border-color: @spinbutton_border_color;
 	border-image: none;
@@ -750,7 +750,7 @@ spinbutton > button:disabled {
 	color: @internal_element_insensitive_color;
 	border-color: @insensitive_border_color;
 	border-image: none;
-	border-radius: 0;
+	border-radius: 0px;
 }
 
 spinbutton > button:checked,
@@ -760,11 +760,11 @@ spinbutton > button:hover {
 }
 
 spinbutton.horizontal > button {
-	border-width: 0 0 0 1px;
+	border-width: 0px 0px 0px 1px;
 }
 
 spinbutton.horizontal > button:last-child {
-	border-radius: 0 3px 3px 0;
+	border-radius: 0px 3px 3px 0px;
 }
 
 /*vertical */
@@ -821,7 +821,7 @@ spinbutton.vertical > button:focus:active:last-child {
 .linked.vertical > spinbutton.horizontal > button:focus:active,
 .linked.vertical > spinbutton.horizontal > button:focus:hover {
 	border-radius: 0px;
-	border-width: 0 0 0 1px;
+	border-width: 0px 0px 0px 1px;
 	border-image: none;
 	border-color: @spinbutton_border_color;
 	padding: 6px;
@@ -1255,9 +1255,9 @@ combobox arrow:disabled {
 combobox entry.combo,
 combobox button.combo {
 	padding: 5px 5px 5px 5px;
-	border-image-width: 3px 0 4px 3px;
-	border-radius: 3px 0 0 3px;
-	border-right-width: 0;
+	border-image-width: 3px 0px 4px 3px;
+	border-radius: 3px 0px 0px 3px;
+	border-right-width: 0px;
 }
 
 combobox entry.combo:disabled,
@@ -1290,9 +1290,9 @@ combobox > .linked > button.combo:hover:first-child,
 combobox > .linked > button.combo:checked:first-child,
 combobox > .linked > button.combo:focus:hover:first-child,
 combobox > .linked > button.combo:disabled:first-child {
-	border-image-width: 3px 0 4px 3px;
-	border-radius: 3px 0 0 3px;
-	border-right-width: 0;
+	border-image-width: 3px 0px 4px 3px;
+	border-radius: 3px 0px 0px 3px;
+	border-right-width: 0px;
 }
 
 combobox > .linked > entry.combo:last-child,
@@ -1302,9 +1302,9 @@ combobox > .linked > button.combo:hover:last-child,
 combobox > .linked > button.combo:checked:last-child,
 combobox > .linked > button.combo:focus:hover:last-child,
 combobox > .linked > button.combo:disabled:last-child {
-	border-image-width: 3px 3px 4px 0;
-	border-radius: 0 3px 3px 0;
-	border-width: 0 1;
+	border-image-width: 3px 3px 4px 0px;
+	border-radius: 0px 3px 3px 0px;
+	border-width: 0px 1px;
 }
 
 combobox > .linked > entry.combo:only-child,
@@ -1321,23 +1321,23 @@ combobox > .linked > button.combo:disabled:only-child {
 /*
 toolbar.primary-toolbar combobox > .linked > entry.combo,
 toolbar.primary-toolbar combobox > .linked > button.combo {
-	border-image-width: 4px 4px 4px 0;
-	border-radius: 0 3px 3px 0;
-	border-left-width: 0;
+	border-image-width: 4px 4px 4px 0px;
+	border-radius: 0px 3px 3px 0px;
+	border-left-width: 0px;
 }
 
 toolbar.primary-toolbar combobox > .linked > entry.combo:first-child,
 toolbar.primary-toolbar combobox > .linked > button.combo:first-child {
-	border-image-width: 4px 0 4px 4px;
-	border-radius: 3px 0 0 3px;
-	border-right-width: 0;
+	border-image-width: 4px 0px 4px 4px;
+	border-radius: 3px 0px 0px 3px;
+	border-right-width: 0px;
 }
 
 toolbar.primary-toolbar combobox > .linked > entry.combo:last-child,
 toolbar.primary-toolbar combobox > .linked > button.combo:last-child {
-	border-image-width: 4px 4px 4px 0;
-	border-radius: 0 3px 3px 0;
-	border-left-width: 0;
+	border-image-width: 4px 4px 4px 0px;
+	border-radius: 0px 3px 3px 0px;
+	border-left-width: 0px;
 }
 */
 /* linked combobox */
@@ -1350,7 +1350,7 @@ toolbar.primary-toolbar combobox > .linked > button.combo:last-child {
 .linked > combobox > .linked > button.combo:checked,
 .linked > combobox > .linked > button.combo:disabled {
 	border-image: none;
-	border-radius: 0;
+	border-radius: 0px;
 	border-color: @border_color;
 	border-width: 1px;
 	border-width: 1px;
@@ -1364,7 +1364,7 @@ toolbar.primary-toolbar combobox > .linked > button.combo:last-child {
 .linked > combobox:first-child > .linked > button.combo:focus:hover:first-child,
 .linked > combobox:first-child > .linked > button.combo:checked:first-child,
 .linked > combobox:first-child > .linked > button.combo:disabled:first-child {
-	border-radius: 3px 0 0 3px;
+	border-radius: 3px 0px 0px 3px;
 	border-width: 1px 0px 1px 1px;
 }
 
@@ -1375,7 +1375,7 @@ toolbar.primary-toolbar combobox > .linked > button.combo:last-child {
 .linked > combobox:last-child > .linked > button.combo:focus:hover:last-child,
 .linked > combobox:last-child > .linked > button.combo:checked:last-child,
 .linked > combobox:last-child > .linked > button.combo:disabled:last-child {
-	border-radius: 0 3px 3px 0;
+	border-radius: 0px 3px 3px 0px;
 	border-width: 1px 1px 1px 0px;
 }
 
@@ -1389,7 +1389,7 @@ toolbar.primary-toolbar combobox > .linked > button.combo:last-child {
 .linked.vertical > combobox > .linked > button.combo:checked,
 .linked.vertical > combobox > .linked > button.combo:disabled {
 	border-image: none;
-	border-radius: 0;
+	border-radius: 0px;
 	border-color: @border_color;
 	border-width: 0px 1px 0px 1px;
 	padding: 5px 5px;
@@ -1448,7 +1448,7 @@ scrolledwindow junction {
 
 scrollbar trough {
 	border-color: @scrollbar_trough_border_color;
-	border-radius: 0;
+	border-radius: 0px;
 	border-image: none;
 }
 
@@ -1657,7 +1657,7 @@ scrollbar.horizontal .slider {
 scrollbar slider,
 scrollbar .slider {
 	background-color: @scrollbar_slider_bg_color;
-	border-radius: 0;
+	border-radius: 0px;
 	border-style: solid;
 	border-color: @scrollbar_slider_border_color;
 	border-width: 1px;
@@ -1749,7 +1749,7 @@ menuitem button.flat:active {
 	border-style: solid;
 	border-width: 1px;
 	border-color: @menubar_menuitem_hover_border_color;
-	border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0px 0px;
 	color: @menubar_menuitem_hover_color;
 	background-image: -gtk-gradient (linear,
 			left top,
@@ -1787,7 +1787,7 @@ menu menuitem,
 
 menu menuitem:hover,
 .menu menuitem:hover {
-	border-radius: 0;
+	border-radius: 0px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: @menubar_menuitem_hover_border_color;
@@ -1900,9 +1900,9 @@ menuitem button.flat:active {
 	color: @theme_text_color;
 	background-image: none;
 	background-color: @menu_bg_color;
-	border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0px 0px;
 	border-image: none;
-	border-width: 1px 1px 0 1px;
+	border-width: 1px 1px 0px 1px;
 	border-color: shade(@border_color, 1.30);
 	border-style: solid;
 }
@@ -1972,8 +1972,8 @@ toolbar menubar {
  * hint on the containing vbox, so we need to handle both these cases here.
  */
 toolbar.primary-toolbar {
-	border-width: 1px 0 1px 0;
-	border-radius: 0;
+	border-width: 1px 0px 1px 0px;
+	border-radius: 0px;
 	border-style: solid;
 	border-top-color: @toolbar_border_top_color;
 	border-bottom-color: @toolbar_border_bottom_color;
@@ -2007,15 +2007,15 @@ toolbar.primary-toolbar entry progress {
 
 toolbar.inline-toolbar {
 	border-width: 1px;
-	border-radius: 0;
+	border-radius: 0px;
 	border-style: solid;
 	-GtkToolbar-button-relief: normal;
 	padding: 4px;
 }
 
 toolbar.inline-toolbar:last-child {
-	border-width: 0 1px 1px 1px;
-	border-radius: 0 0 3px 3px;
+	border-width: 0px 1px 1px 1px;
+	border-radius: 0px 0px 3px 3px;
 }
 
 /* Primary and inline toolbars background */
@@ -2263,7 +2263,7 @@ treeview header button:focus:checked,
 treeview header button:focus:hover:active {
 	border-image: none;
 	border-width: 1px;
-	border-radius: 0;
+	border-radius: 0px;
 	border-style: solid;
 	border-color: @column_header_border_top_color @column_header_border_right_color @column_header_border_bottom_color @column_header_border_left_color;
 }
@@ -2285,7 +2285,7 @@ row:hover,
 row:disabled,
 row:selected,
 row:selected:focus {
-	border-width: 0;
+	border-width: 0px;
 }
 
 row:selected,
@@ -2314,7 +2314,7 @@ row:hover:focus,
 .cell {
 	color: @theme_text_color;
 	padding: 2px;
-	border-width: 0;
+	border-width: 0px;
 }
 
 .cell:selected {
@@ -2413,13 +2413,13 @@ calendar.view {
 }
 
 calendar.header {
-	border-radius: 0;
+	border-radius: 0px;
 	background-image: -gtk-gradient (linear,
 			left top,
 			left bottom,
 			from (shade (@theme_bg_color, 1.04)),
 			to (shade (@theme_bg_color, 0.89)));
-	border-width: 0;
+	border-width: 0px;
 }
 
 calendar button,
@@ -2432,9 +2432,9 @@ highlight,
 calendar.highlight {
 	background-color: @theme_selected_bg_color;
 	color: @theme_selected_fg_color;
-	border-radius: 0;
+	border-radius: 0px;
 	padding: 0;
-	border-width: 0;
+	border-width: 0px;
 }
 
 /* Use different button and entry borders on infobars */
@@ -2571,11 +2571,11 @@ headerbar,
 }
 
 .tiled .titlebar {
-	border-radius: 0;
+	border-radius: 0px;
 }
 
 .maximized .titlebar {
-	border-radius: 0;
+	border-radius: 0px;
 }
 
 headerbar .title,
@@ -2596,7 +2596,7 @@ headerbar button.titlebutton,
 
 .background.csd decoration {
 	border-width: 0px;
-	border-radius: 7px 7px 0 0;
+	border-radius: 7px 7px 0px 0px;
 	border-style: solid;
 	box-shadow: 0 0 0 1px @wm_border, 0 2px 8px 3px @wm_shadow;
 	margin: 10px;
@@ -2609,7 +2609,7 @@ decoration:backdrop {
 }
 
 .tiled decoration {
-	border-radius: 0;
+	border-radius: 0px;
 	background-color: @theme_bg_color;
 }
 
@@ -2618,7 +2618,7 @@ decoration:backdrop {
 }
 
 .solid-csd decoration {
-	border-radius: 0;
+	border-radius: 0px;
 	margin: 1px;
 	background-color: @wm_bg_a;
 	border: solid 1px @wm_csd_solid_border_color;
@@ -2627,7 +2627,7 @@ decoration:backdrop {
 
 /* workaround to avoid unwanted black frames if switching compositor on/off */
 .csd.popup decoration {
-	border-radius: 0;
+	border-radius: 0px;
 	box-shadow: none;
 }
 
@@ -2798,9 +2798,9 @@ dialog.background dialog-vbox.vertical .vertical {
 .app-notification,
 .app-notification.frame {
 	padding: 5px;
-	border-radius: 0 0 4px 4px;
+	border-radius: 0px 0px 4px 4px;
 	border-style: solid;
-	border-width: 0 1px 1px 1px;
+	border-width: 0px 1px 1px 1px;
 	border-color: darker(@theme_bg_color);
 	background-color: @theme_bg_color;
 	background-clip: padding-box;
