@@ -53,8 +53,8 @@ jobs:
           echo "Changelog range: $range"
 
           mapfile -t commits < <(
-            git log --reverse "$range" --date=format:'%Y-%m-%d' \
-              --pretty=format:'- %ad: [%h](https://github.com/${{ github.repository }}/commit/%H) %s'
+            git log --reverse "$range" \
+              --pretty=format:'- [%h](https://github.com/${{ github.repository }}/commit/%H) %s'
           )
 
           if [[ ${#commits[@]} == 0 ]]; then
