@@ -1,28 +1,36 @@
 ## À propos
 
-Le projet Clearlooks-Phénix a pour but de créer une version GTK3 de Clearlooks, thème par défaut de Gnome 2. Un style est également inclus pour GTK2, Unity et les gestionnaires de fenêtres Metacity, Openbox et Xfwm4.
+![Clearlooks-Phénix](https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/poster.jpg)
+
+Le projet Clearlooks-Phénix a pour but de créer une version GTK 3 de Clearlooks, thème par défaut de GNOME 2. Un style est également inclus pour GTK 2, Unity et les gestionnaires de fenêtres Metacity, Openbox et Xfwm4.
+
+*À noter que GTK était auparavant connu sous le nom de GTK+.*
+
+### Captures d'écran
 
 Voici quelques captures d'écran (s'il y a lieu, cliquer pour voir l'image au format original):
 
-<a href="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple1.png"><img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple1.png" alt="Capture d'écran du bureau sous Gnome 3 (mode fallback) avec le thème Clearlooks-Phénix" width="658" height="493" /></a>
+<a href="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple1.png"><img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple1.png" alt="Capture d'écran du bureau sous GNOME 3 (mode fallback) avec le thème Clearlooks-Phénix" width="659" height="494"></a>
 
-<img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple2.png" alt="Capture d'écran de gedit 3 avec le thème Clearlooks-Phénix" width="659" height="537" />
+<a href="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/gimp.png"><img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/gimp.png" alt="Capture d'écran de GIMP avec le thème Clearlooks-Phénix" width="659" height="358"></a>
 
-<a href="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple3.png"><img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple3.png" alt="Capture d'écran de GTK+ Widget Factory avec le thème Clearlooks-Phénix" width="658" height="443" /></a>
+<img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple2.png" alt="Capture d'écran de gedit 3 avec le thème Clearlooks-Phénix" width="659" height="537">
+
+<a href="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple3.png"><img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple3.png" alt="Capture d'écran de GTK+ Widget Factory avec le thème Clearlooks-Phénix" width="659" height="444"></a>
 
 ## Dépendances
 
-- Dépendances de Clearlooks-Phénix v1: paquets `gtk2-engines` (si des logiciels GTK2 sont utilisés) et `gnome-themes-standard`.
+- Dépendances de Clearlooks-Phénix v1: paquet `gnome-themes-standard`.
 
-- Dépendances de Clearlooks-Phénix v2: paquets `gtk2-engines` (si des logiciels GTK2 sont utilisés), `gnome-themes-standard` et `gtk3-engines-unico`.
+- Dépendances de Clearlooks-Phénix v2: paquets `gnome-themes-standard` et `gtk3-engines-unico`.
 
-- Dépendances de Clearlooks-Phénix v3 et versions suivantes: paquet `gtk2-engines` (si des logiciels GTK2 sont utilisés).
+Dans tous les cas, il faut installer le paquet `gtk2-engines` si des logiciels GTK 2 sont utilisés.
 
 ## Installation
 
 - Télécharger l'archive de la version correspondant à votre situation:
 
-	- pour GTK 3.0 et 3.2: [télécharger Clearlooks-Phénix v1](https://github.com/jpfleury/clearlooks-phenix/archive/v1.zip);
+	- pour GTK 3.0/3.2: [télécharger Clearlooks-Phénix v1](https://github.com/jpfleury/clearlooks-phenix/archive/v1.zip);
 	
 	- pour GTK 3.4: [télécharger Clearlooks-Phénix v2](https://github.com/jpfleury/clearlooks-phenix/archive/v2.zip);
 	
@@ -30,28 +38,15 @@ Voici quelques captures d'écran (s'il y a lieu, cliquer pour voir l'image au fo
 	
 	- pour GTK 3.8: [télécharger Clearlooks-Phénix v4](https://github.com/jpfleury/clearlooks-phenix/archive/v4.zip);
 	
-	- pour GTK 3.10 et 3.12: [télécharger Clearlooks-Phénix v5](https://github.com/jpfleury/clearlooks-phenix/archive/v5.zip);
+	- pour GTK 3.10/3.12: [télécharger Clearlooks-Phénix v5](https://github.com/jpfleury/clearlooks-phenix/archive/v5.zip);
 	
-	- pour GTK 3.14: [télécharger Clearlooks-Phénix v6](https://github.com/jpfleury/clearlooks-phenix/archive/v6.zip);
+	- pour GTK 3.14/3.18: [télécharger Clearlooks-Phénix v6](https://github.com/jpfleury/clearlooks-phenix/archive/v6.zip);
 	
-	- pour GTK 3.20: [télécharger Clearlooks-Phénix v7](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
+	- pour GTK 3.20+: [télécharger Clearlooks-Phénix v7](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
 	
-	Pour connaître sa version de GTK:
+	Pour vérifier votre version de GTK, exécutez `gtk-launch --version` dans un terminal.
 	
-	- Vous pouvez vérifier dans votre gestionnaire de paquets la version du paquet `libgtk-3-0`.
-	
-	- Si vous utilisez Ubuntu, voici une correspondance entre ses versions et celles de GTK (pour une installation par défaut d'Ubuntu):
-	
-		- Ubuntu 11.10: GTK 3.2
-		- Ubuntu 12.04: GTK 3.4
-		- Ubuntu 12.10 et 13.04: GTK 3.6
-		- Ubuntu 13.10: GTK 3.8
-		- Ubuntu 14.04: GTK 3.10
-		- Ubuntu 14.10: GTK 3.12
-		- Ubuntu 15.04: GTK 3.14
-		- Ubuntu 15.10: GTK 3.16
-		- Ubuntu 16.04: GTK 3.18
-		- Ubuntu 16.10: GTK 3.20
+	Consultez les [versions officielles](https://github.com/jpfleury/clearlooks-phenix/releases) pour télécharger une version précise ou antérieure.
 
 - Extraire l'archive.
 
@@ -67,7 +62,7 @@ Voici quelques captures d'écran (s'il y a lieu, cliquer pour voir l'image au fo
 
 Le thème doit être sélectionné une fois l'installation terminée:
 
-- Sous Gnome: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), en paramétrant *Theme > Window theme* et *Theme > GTK+ theme*, ou en console:
+- Sous GNOME: avec le logiciel [gnome-tweak-tool](https://live.gnome.org/GnomeTweakTool), en paramétrant *Theme > Window theme* et *Theme > GTK+ theme*, ou en console:
 
 		dconf write /org/gnome/desktop/wm/preferences/theme \'Clearlooks-Phenix\'
 		dconf write /org/gnome/desktop/interface/gtk-theme \'Clearlooks-Phenix\'
@@ -76,6 +71,8 @@ Le thème doit être sélectionné une fois l'installation terminée:
 
 		xfconf-query -s Clearlooks-Phenix -c xfwm4 -p /general/theme
 		xfconf-query -s Clearlooks-Phenix -c xsettings -p /Net/ThemeName
+
+- Sinon, définissez `gtk-theme-name` dans `$XDG_CONFIG_HOME/settings.ini` (GTK 3) ou dans `~/.gtkrc-2.0` (GTK 2).
 
 ## Configuration
 
@@ -113,13 +110,13 @@ Si après une installation ou une mise à jour d'Ubuntu, les boutons de fenêtre
 
 ### Arrière-plan
 
-L'arrière-plan utilisé dans la capture d'écran du bureau de Gnome est disponible dans le dossier `wallpapers`.
+L'arrière-plan utilisé dans la capture d'écran du bureau de GNOME est disponible dans le dossier `wallpapers`.
 
 ### Icônes
 
-Le thème d'icônes utilisé dans la même capture d'écran est Mist, installé avec le paquet `gnome-themes`, sous licence LGPL. Cependant, ce paquet n'est plus disponible pour les dernières versions d'Ubuntu. Voici une méthode simple pour installer Mist:
+Le thème d'icônes utilisé dans la même capture d'écran est Mist, installé avec le paquet `gnome-themes`, sous licence LGPL. Cependant, ce paquet n'est plus disponible. Voici une méthode simple pour installer Mist:
 
-- [Télécharger l'archive du thème d'icônes Mist.](http://mirror.centos.org/centos/6/os/i386/Packages/gnome-themes-2.28.1-6.el6.noarch.rpm)
+- [Télécharger l'archive de la dernière version disponible du paquet `gnome-themes`.](https://snapshot.debian.org/archive/debian-ports/20091029T000000Z/pool/main/g/gnome-themes/gnome-themes_2.28.1-1_all.deb)
 
 - Extraire l'archive.
 
@@ -131,7 +128,7 @@ Le thème d'icônes utilisé dans la même capture d'écran est Mist, installé 
 
 - Ensuite, choisir le thème d'icônes Mist:
 
-	- sous Gnome: avec le logiciel gnome-tweak-tool en paramétrant *Theme > Icon theme*;
+	- sous GNOME: avec le logiciel gnome-tweak-tool en paramétrant *Theme > Icon theme*;
 	
 	- sous Xfce: en allant dans *Paramètres > Apparence > Icônes* du menu principal.
 
@@ -139,10 +136,10 @@ Le thème d'icônes utilisé dans la même capture d'écran est Mist, installé 
 
 Le logiciel Git est utilisé pour la gestion de versions. [Le dépôt peut être consulté en ligne ou récupéré en local.](https://github.com/jpfleury/clearlooks-phenix)
 
-Merci à Andrew Shadura et Andrey Cherepanov pour le support de GTK 3.20, et à Yuri Khan pour le support du HiDPI.
+Merci à Yuri Khan pour l'affichage HiDPI, ainsi qu'à Andrew Shadura, Andrey Cherepanov, jsane-h8ms et d'autres pour leurs contributions au support de GTK 3.20+.
 
-Auteur: Jean-Philippe Fleury (<http://www.jpfleury.net/contact.php>)  
-Copyright © Jean-Philippe Fleury, 2011-2014.  
+Auteur: Jean-Philippe Fleury (<https://github.com/jpfleury>)  
+Copyright © Jean-Philippe Fleury, 2011-2014, 2025.  
 Copyright © Andrew Shadura, 2013-2014.
 
 Ce programme est un logiciel libre; vous pouvez le redistribuer ou le

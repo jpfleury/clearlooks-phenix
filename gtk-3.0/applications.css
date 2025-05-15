@@ -18,15 +18,13 @@
 	border-image: none;
 }
 
-}
-
 /*******************
  * gnome-documents *
  *******************/
 
 .documents-scrolledwin.frame {
-	border-width: 1px 0 0 0;
-	border-radius: 0;
+	border-width: 1px 0px 0px 0px;
+	border-radius: 0px;
 }
 
 .documents-main-view.view {
@@ -40,7 +38,7 @@ iconview.documents-main-view.check {
 }
 
 .documents-selection-mode.toolbar {
-	border-width: 0;
+	border-width: 0px;
 }
 
 .documents-selection-mode.toolbar .dim-label {
@@ -56,6 +54,27 @@ iconview.documents-main-view.check {
 .documents-collection-icon {
 	background-color: @theme_bg_color;
 	border-radius: 3px;
+}
+
+/*****************
+ * gnome-weather *
+ *****************/
+
+#weather-page stack > scrolledwindow > viewport.frame,
+#weather-page stack > scrolledwindow > viewport.frame > grid > frame {
+	background-color: transparent;
+}
+
+#weather-page frame.weather-clear .linked.stack-switcher.osd > button,
+#weather-page frame.weather-overcast .linked.stack-switcher.osd > button,
+#weather-page frame.weather-overcast stack > scrolledwindow > .frame label {
+	color: @theme_fg_color;
+	text-shadow: none;
+}
+
+#weather-page frame.weather-clear .linked.stack-switcher.osd > button:checked,
+#weather-page frame.weather-overcast .linked.stack-switcher.osd > button:checked {
+	color: @osd_button_fg_active;
 }
 
 /***************
@@ -101,9 +120,8 @@ PanelApplet .menu .menuitem *:selected {
 	color: @theme_selected_fg_color;
 }
 
-PanelWidget > .button
-{
-	padding: 0;
+PanelWidget > .button {
+	padding: 0px;
 }
 
 WnckPager {
@@ -139,7 +157,7 @@ UnityPanelWidget,
 	background-image: none;
 	background-color: @theme_bg_color;
 	color: @theme_fg_color;
-	border-width: 0;
+	border-width: 0px;
 }
 
 .unity-panel menubar menuitem:hover {
@@ -147,12 +165,12 @@ UnityPanelWidget,
 	border-style: solid;
 	border-width: 1px 1px 0px;
 	border-color: @menubar_menuitem_hover_border_color;
-	border-radius: 3px 3px 0 0;
+	border-radius: 3px 3px 0px 0px;
 	background-image: -gtk-gradient (linear,
-	                  left top,
-	                  left bottom,
-	                  from (@menubar_menuitem_hover_gradient_a),
-	                  color-stop (0.50, @menubar_menuitem_hover_gradient_b),
-	                  color-stop (0.50, @menubar_menuitem_hover_gradient_c),
-	                  to (@menubar_menuitem_hover_gradient_d));
+			left top,
+			left bottom,
+			from (@menubar_menuitem_hover_gradient_a),
+			color-stop (0.50, @menubar_menuitem_hover_gradient_b),
+			color-stop (0.50, @menubar_menuitem_hover_gradient_c),
+			to (@menubar_menuitem_hover_gradient_d));
 }

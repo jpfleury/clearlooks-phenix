@@ -37,8 +37,10 @@
 /* Core colors are only used in the current file, as bases for other
    color declarations. */
 
-@define-color core_color_a #a4c2e8; /* Core color for blue widgets in Clearlooks-Phenix. */
-@define-color core_color_b #edeceb; /* Core color for gray widgets in Clearlooks-Phenix. */
+@define-color core_color_a #a4c2e8;
+/* Core color for blue widgets in Clearlooks-Phenix. */
+@define-color core_color_b #edeceb;
+/* Core color for gray widgets in Clearlooks-Phenix. */
 
 /********************************************
  * End of configuration for color variants. *
@@ -427,6 +429,16 @@
 @define-color trough_gradient_a shade(@core_color_b, 0.81);
 @define-color trough_gradient_b shade(@core_color_b, 0.90);
 
+/******
+ * WM *
+ ******/
+
+@define-color wm_shadow alpha(black, 0.5);
+@define-color wm_border alpha(black, 0.18);
+@define-color wm_bg_a shade (@theme_bg_color, 1.05);
+@define-color wm_bg_b @theme_bg_color;
+@define-color wm_csd_solid_border_color shade (@theme_selected_bg_color, 0.55);
+
 /***********
  * imports *
  ***********/
@@ -434,3 +446,4 @@
 @import url("gtk-widgets-img.css");
 @import url("gtk-widgets.css");
 @import url("applications.css");
+@import url("mate-applications.css");
