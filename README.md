@@ -4,7 +4,7 @@
 
 The Clearlooks-Phénix project aims to create a GTK 3 port of Clearlooks, the default theme for GNOME 2. Style is also included for GTK 2, Unity, and for the Metacity, Openbox, and Xfwm4 window managers.
 
-*Note: GTK is formerly known as GTK+.*
+*Note: GTK was formerly known as GTK+.*
 
 ### Screenshots
 
@@ -28,7 +28,7 @@ In all cases, the `gtk2-engines` package is also required if you're using GTK 2 
 
 ## Installation
 
-- Download the appropriate version according to your situation:
+- Download the appropriate version based on your GTK version:
 
 	- for GTK 3.0/3.2: [download Clearlooks-Phénix v1](https://github.com/jpfleury/clearlooks-phenix/archive/v1.zip);
 	
@@ -42,9 +42,11 @@ In all cases, the `gtk2-engines` package is also required if you're using GTK 2 
 	
 	- for GTK 3.14/3.18: [download Clearlooks-Phénix v6](https://github.com/jpfleury/clearlooks-phenix/archive/v6.zip);
 	
-	- for GTK 3.20+: [download Clearlooks-Phénix v7](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
+	- for GTK 3.20 and later: [download Clearlooks-Phénix v7](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
 	
 	To check your GTK version, run `gtk-launch --version` in a terminal.
+	
+	You can also browse the [official releases](https://github.com/jpfleury/clearlooks-phenix/releases) for specific or older versions.
 
 - Extract the archive.
 
@@ -57,7 +59,7 @@ In all cases, the `gtk2-engines` package is also required if you're using GTK 2 
 	- [$XDG\_DATA\_HOME](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)`/themes`, or
 	- `~/.themes/`
 
-	For all users, including style for programs ran with root privileges (e.g. your package-update utility):
+	For all users, including programs run with root privileges (e.g. your package-update utility):
 	
 	- `/usr/share/themes/`
 
@@ -107,7 +109,7 @@ To get a custom color, change the color directly in the file `gtk-3.0/applicatio
 
 ### Window buttons layout
 
-If, after installing or updating GNOME, the window buttons appear on the left and you prefer them on the right, run the following command in a terminal:
+If, after installing or updating GNOME, the window buttons are on the left, and you'd prefer them on the right, run the following command in a terminal:
 
 	gconftool-2 --set /apps/metacity/general/button_layout --type string ":minimize,maximize,close"
 
@@ -115,7 +117,7 @@ If, after installing or updating GNOME, the window buttons appear on the left an
 
 A user has shared a method to disable GTK 3 overlay scrollbars system-wide, for those who prefer it. See [issue #46](https://github.com/jpfleury/clearlooks-phenix/issues/46).
 
-⚠️ Not required or officially supported — for advanced users only.
+⚠️ Not required or officially supported. Use at your own risk.
 
 ### Wallpaper
 
@@ -123,7 +125,7 @@ The wallpaper used for the GNOME 3 desktop screenshot is available in the folder
 
 ### Icons
 
-The icon theme used in the same screenshot is Mist, which was included in the `gnome-themes` package, licensed under the LGPL. However, this package is no longer available. Here's how to easily install the Mist icon theme anyway:
+The icon theme used in the same screenshot is Mist, which was included in the `gnome-themes` package, licensed under the LGPL. However, this package is no longer available. Here's how to manually install the Mist icon theme:
 
 - [Download the latest available archive of the `gnome-themes` package.](https://snapshot.debian.org/archive/debian-ports/20091029T000000Z/pool/main/g/gnome-themes/gnome-themes_2.28.1-1_all.deb)
 

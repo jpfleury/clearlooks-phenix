@@ -45,6 +45,8 @@ Dans tous les cas, il faut installer le paquet `gtk2-engines` si des logiciels G
 	- pour GTK 3.20+: [télécharger Clearlooks-Phénix v7](https://github.com/jpfleury/clearlooks-phenix/archive/master.zip).
 	
 	Pour vérifier votre version de GTK, exécutez `gtk-launch --version` dans un terminal.
+	
+	Consultez les [versions officielles](https://github.com/jpfleury/clearlooks-phenix/releases) pour télécharger une version précise ou antérieure.
 
 - Extraire l'archive.
 
