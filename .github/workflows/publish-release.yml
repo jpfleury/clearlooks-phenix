@@ -1,0 +1,117 @@
+name: Publish release with changelog
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+'
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+jobs:
+  create-release:
+    name: Create GitHub release
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Determine previous tag
+        id: previous_tag
+        shell: bash
+        run: |
+          readarray -t tags < <(git tag --sort=-creatordate)
+          current_tag=${GITHUB_REF_NAME}
+          previous_tag=""
+          
+          for tag in "${tags[@]}"; do
+            if [[ $tag != "$current_tag" ]]; then
+              previous_tag=$tag
+              
+              break
+            fi
+          done
+          
+          echo "previous_tag=$previous_tag" >> "$GITHUB_OUTPUT"
+          echo "Previous tag: ${previous_tag:-<none>}"
+
+      - name: Generate changelog
+        id: changelog
+        shell: bash
+        run: |
+          previous_tag=${{ steps.previous_tag.outputs.previous_tag }}
+          
+          if [[ -n $previous_tag ]]; then
+            range="$previous_tag..HEAD"
+          else
+            range="HEAD"
+          fi
+          
+          echo "Changelog range: $range"
+
+          mapfile -t commits < <(
+            git log --reverse "$range" --date=format:'%Y-%m-%d' \
+              --pretty=format:'- %ad: [%h](https://github.com/${{ github.repository }}/commit/%H) %s'
+          )
+
+          if [[ ${#commits[@]} == 0 ]]; then
+            commits=("- No changes since last release")
+          fi
+
+          {
+            echo "changelog<<TXT"
+            printf '%s\n' "${commits[@]}"
+            echo "TXT"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Create release archive
+        id: archive
+        shell: bash
+        run: |
+          project=$(basename "${{ github.repository }}")
+          current_tag=${GITHUB_REF_NAME}
+          archive_name="${project}-${current_tag}"
+          
+          git archive --worktree-attributes --format=zip --output="${archive_name}.zip" "$current_tag"
+          git archive --worktree-attributes --format=tar.gz --output="${archive_name}.tar.gz" "$current_tag"
+          
+          sha256sum "${archive_name}.zip" > "${archive_name}.zip.sha256"
+          sha256sum "${archive_name}.tar.gz" > "${archive_name}.tar.gz.sha256"
+          
+          echo "archive_name=${archive_name}" >> "$GITHUB_OUTPUT"
+          echo "Created archive: ${archive_name}.zip"
+          echo "Created archive: ${archive_name}.tar.gz"
+          echo "Created checksum file: ${archive_name}.zip.sha256"
+          echo "Created checksum file: ${archive_name}.tar.gz.sha256"
+
+      - name: Create GitHub release
+        id: create_github_release
+        uses: softprops/action-gh-release@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: ${{ github.ref_name }}
+          name: "${{ github.event.repository.name }} ${{ github.ref_name }}"
+          body: |
+            ## Verification
+            
+            To verify the integrity of the archives:
+            
+            ```bash
+            sha256sum --check "${{ steps.archive.outputs.archive_name }}.zip.sha256"
+            sha256sum --check "${{ steps.archive.outputs.archive_name }}.tar.gz.sha256"
+            ```
+            
+            ## Changelog
+            
+            ${{ steps.changelog.outputs.changelog }}
+          files: |
+            ${{ steps.archive.outputs.archive_name }}.zip
+            ${{ steps.archive.outputs.archive_name }}.tar.gz
+            ${{ steps.archive.outputs.archive_name }}.zip.sha256
+            ${{ steps.archive.outputs.archive_name }}.tar.gz.sha256
+          fail_on_unmatched_files: true
+          draft: false
+          prerelease: false
