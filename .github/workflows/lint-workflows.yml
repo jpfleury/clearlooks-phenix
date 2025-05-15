@@ -1,0 +1,18 @@
+on:
+  push:
+    paths:
+      - .github/workflows/*.yaml
+      - .github/workflows/*.yml
+  pull_request:
+    paths:
+      - .github/workflows/*.yaml
+      - .github/workflows/*.yml
+
+jobs:
+  actionlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run actionlint
+        uses: devops-actions/actionlint@v0.1.9
