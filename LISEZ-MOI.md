@@ -1,6 +1,12 @@
 ## À propos
 
+![Clearlooks-Phénix](https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/poster.jpg)
+
 Le projet Clearlooks-Phénix a pour but de créer une version GTK 3 de Clearlooks, thème par défaut de GNOME 2. Un style est également inclus pour GTK 2, Unity et les gestionnaires de fenêtres Metacity, Openbox et Xfwm4.
+
+*À noter que GTK était auparavant connu sous le nom de GTK+.*
+
+### Captures d'écran
 
 Voici quelques captures d'écran (s'il y a lieu, cliquer pour voir l'image au format original):
 
@@ -11,8 +17,6 @@ Voici quelques captures d'écran (s'il y a lieu, cliquer pour voir l'image au fo
 <img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple2.png" alt="Capture d'écran de gedit 3 avec le thème Clearlooks-Phénix" width="659" height="537">
 
 <a href="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple3.png"><img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple3.png" alt="Capture d'écran de GTK+ Widget Factory avec le thème Clearlooks-Phénix" width="659" height="444"></a>
-
-**À noter que GTK était auparavant connu sous le nom de GTK+.**
 
 ## Dépendances
 
