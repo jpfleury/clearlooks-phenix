@@ -10,13 +10,13 @@ Le projet Clearlooks-Phénix a pour but de créer une version GTK 3 de Clearlook
 
 Voici quelques captures d'écran (s'il y a lieu, cliquer pour voir l'image au format original):
 
+<a href="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple3.png"><img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple3.png" alt="Capture d'écran de GTK+ Widget Factory avec le thème Clearlooks-Phénix" width="659" height="444"></a>
+
 <a href="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple1.png"><img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple1.png" alt="Capture d'écran du bureau sous GNOME 3 (mode fallback) avec le thème Clearlooks-Phénix" width="659" height="494"></a>
 
 <a href="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/gimp.png"><img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/gimp.png" alt="Capture d'écran de GIMP avec le thème Clearlooks-Phénix" width="659" height="358"></a>
 
 <img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple2.png" alt="Capture d'écran de gedit 3 avec le thème Clearlooks-Phénix" width="659" height="537">
-
-<a href="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple3.png"><img src="https://raw.githubusercontent.com/jpfleury/clearlooks-phenix/master/doc/exemple3.png" alt="Capture d'écran de GTK+ Widget Factory avec le thème Clearlooks-Phénix" width="659" height="444"></a>
 
 ## Dépendances
 
